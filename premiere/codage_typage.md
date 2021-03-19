@@ -758,6 +758,7 @@ pour la câbler : trois de type p et trois de type n.
 
 ![](Pictures/10000000000003650000011FE5BF1B4750BAFC1F.png)
 
+
 EXERCICE 10 :
 
 a\) Faire la table de vérité de l'expression booléenne suivante : (A or
