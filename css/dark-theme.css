@@ -1,0 +1,487 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+/* User-Agent Style */
+
+@import "light-theme.css";
+
+html {
+  background-color: #191817 !important;
+}
+
+html,
+body,
+input,
+textarea,
+select,
+button {
+  background-color: #191817;
+}
+html,
+body,
+input,
+textarea,
+select,
+button {
+  border-color: #7b7263;
+  color: #fffae3;
+}
+a {
+  color: #7194b9;
+}
+table {
+  border-color: #615f58;
+}
+::placeholder {
+  color: #c5b9a4;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #5b5929 !important;
+  color: #fffae3 !important;
+}
+::-webkit-scrollbar {
+  background-color: #222220;
+  color: #bdb19d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4e4d48;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #64635c;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #52514c;
+}
+::-webkit-scrollbar-corner {
+  background-color: #191817;
+}
+* {
+  scrollbar-color: #4e4d48 #222220;
+}
+::selection {
+  background-color: #005ccc !important;
+  color: #fff !important;
+}
+::-moz-selection {
+  background-color: #005ccc !important;
+  color: #fff !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], embed[type="application/pdf"]
+{
+  filter: invert(100%) hue-rotate(180deg) contrast(93%) grayscale(33%)
+    sepia(35%) !important;
+}
+
+img{background-color: gainsboro;}
+
+/* Variables Style */
+:root {
+  --darkreader-neutral-background: #131312;
+  --darkreader-neutral-text: #f3e6d0;
+  --darkreader-selection-background: #005ccc;
+  --darkreader-selection-text: #fff;
+}
+
+/* Modified CSS */
+[class*="docsify-tabs--"] .docsify-tabs__tab {
+  background-color: rgb(29, 29, 27);
+  background-image: none;
+  color: rgb(185, 173, 153);
+}
+[class*="docsify-tabs--"] .docsify-tabs__tab--active {
+  background-color: inherit;
+  background-image: inherit;
+  color: inherit;
+}
+[class*="docsify-tabs--"] .docsify-tabs__content {
+  background-color: inherit;
+  background-image: inherit;
+}
+.docsify-tabs--classic .docsify-tabs__content,
+.docsify-tabs--classic .docsify-tabs__tab,
+.docsify-tabs--classic::before {
+  border-color: rgb(60, 59, 55);
+}
+.docsify-tabs--classic .docsify-tabs__content {
+  border-top-color: currentcolor;
+}
+.docsify-tabs--material .docsify-tabs__tab {
+  background-color: transparent;
+  background-image: none;
+  border-color: currentcolor;
+}
+.docsify-tabs--material .docsify-tabs__tab--active {
+  background-color: transparent;
+  background-image: none;
+}
+.docsify-tabs--material .docsify-tabs__content {
+  border-color: rgb(60, 59, 55);
+}
+.progress {
+  background-color: rgb(130, 141, 30);
+}
+.search a:hover {
+  color: rgb(200, 211, 104);
+}
+.search .search-keyword {
+  color: rgb(200, 211, 104);
+}
+body {
+  color: rgb(201, 201, 192);
+}
+kbd {
+  border-color: rgb(71, 70, 65);
+}
+.app-nav ul,
+.app-nav li {
+  list-style-image: none;
+}
+.app-nav a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+.app-nav a:hover {
+  color: rgb(200, 211, 104);
+}
+.app-nav a.active {
+  border-bottom-color: rgb(130, 141, 30);
+  color: rgb(200, 211, 104);
+}
+.app-nav li ul {
+  background-color: rgb(25, 24, 23);
+  border-color: rgb(65, 64, 60) rgb(65, 64, 60) rgb(71, 70, 65);
+}
+.app-nav li ul a.active {
+  border-bottom-color: currentcolor;
+}
+.github-corner {
+  border-bottom-color: currentcolor;
+  text-decoration-color: currentcolor;
+}
+.github-corner svg {
+  color: rgb(255, 250, 227);
+  fill: rgb(200, 211, 104);
+}
+.anchor {
+  text-decoration-color: currentcolor;
+}
+.anchor span {
+  color: rgb(201, 201, 192);
+}
+.anchor:hover {
+  text-decoration-color: currentcolor;
+}
+.sidebar {
+  border-right-color: rgba(151, 140, 121, 0.07);
+}
+.sidebar > h1 a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+.sidebar ul,
+.sidebar ul li {
+  list-style-image: none;
+}
+.sidebar ul li a {
+  border-bottom-color: currentcolor;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-image: none;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(105, 104, 97, 0.4);
+  background-image: none;
+}
+.sidebar:hover::-webkit-scrollbar-track {
+  background-color: rgba(105, 104, 97, 0.1);
+  background-image: none;
+}
+.sidebar-toggle {
+  background-color: rgba(25, 24, 23, 0.8);
+  border-color: currentcolor;
+  outline-color: currentcolor;
+}
+.sidebar-toggle span {
+  background-color: rgb(130, 141, 30);
+}
+.markdown-section hr {
+  border-color: currentcolor currentcolor rgb(59, 58, 54);
+}
+.markdown-section iframe {
+  border-color: rgb(59, 58, 54);
+}
+.markdown-section th {
+  border-color: rgb(65, 64, 60);
+}
+.markdown-section td {
+  border-color: rgb(65, 64, 60);
+}
+.markdown-section tr {
+  border-top-color: rgb(71, 70, 65);
+}
+.markdown-section tr:nth-child(2n) {
+  background-color: rgb(38, 37, 35);
+}
+.markdown-section p.tip {
+  background-color: rgba(147, 93, 90, 0.14);
+  border-left-color: rgba(88, 20, 16, 0.5);
+}
+.markdown-section p.tip::before {
+  background-color: rgba(85, 19, 16);
+  color: rgb(255, 250, 227);
+}
+.markdown-section p.tip code {
+  background-color: rgb(36, 35, 33);
+}
+.markdown-section p.tip em {
+  color: rgb(201, 201, 192);
+}
+.markdown-section p.warn {
+  background-color: rgba(104, 141, 111, 0.1);
+  background-image: none;
+  border-bottom-color: rgba(92, 125, 98, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .sidebar-toggle {
+    background-color: transparent;
+  }
+  body.close .sidebar-toggle {
+    background-color: rgba(25, 24, 23, 0.8);
+  }
+}
+section.cover.has-mask .mask {
+  background-color: rgb(25, 24, 23);
+}
+section.cover a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+section.cover a:hover {
+  text-decoration-color: currentcolor;
+}
+section.cover h1 {
+  color: inherit;
+}
+section.cover .cover-main p a {
+  border-color: rgb(130, 141, 30);
+  background-color: rgba(25, 24, 23, 0.5);
+  color: rgb(200, 211, 104);
+  text-decoration-color: currentcolor;
+}
+.btn-vide a {
+  border-color: rgb(130, 141, 30);
+  background-color: rgba(25, 24, 23, 0.5);
+  color: rgb(200, 211, 104);
+  text-decoration-color: currentcolor;
+}
+details {
+  background-color: rgba(200, 211, 104, 0.05);
+  color: rgb(255, 250, 227);
+}
+section.cover .cover-main p span.btn-plein a {
+  background-color: rgb(130, 141, 30);
+  color: rgb(255, 250, 227);
+}
+.markdown-section .btn-plein a {
+  background-color: rgb(130, 141, 30);
+  color: rgb(255, 250, 227);
+  text-decoration-color: currentcolor;
+}
+section.cover blockquote > p > a {
+  border-bottom-color: rgb(130, 141, 30);
+}
+section.cover blockquote > p > a:hover {
+  color: rgb(200, 211, 104);
+}
+body {
+  background-color: rgb(25, 24, 23);
+}
+.sidebar {
+  background-color: rgb(25, 24, 23);
+  color: rgb(214, 202, 180);
+}
+.sidebar ul li a {
+  color: rgb(191, 179, 159);
+  text-decoration-color: currentcolor;
+}
+.sidebar ul li a:hover {
+  text-decoration-color: currentcolor;
+}
+.sidebar ul li.active > a {
+  border-right-color: currentcolor;
+  color: rgb(200, 211, 104);
+}
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section strong {
+  color: rgb(209, 208, 198);
+}
+.markdown-section h1::after {
+  border-bottom-color: rgba(149, 98, 52, 0.5);
+}
+.markdown-section h2::after {
+  border-bottom-color: rgba(149, 98, 52, 0.5);
+}
+.markdown-section h3::after {
+  border-bottom-color: rgba(149, 98, 52, 0.56);
+}
+.markdown-section a {
+  color: rgb(200, 211, 104);
+}
+.markdown-section h6 {
+  color: rgb(172, 160, 141);
+}
+.markdown-section blockquote {
+  border-left-color: rgb(130, 141, 30);
+  color: rgb(169, 158, 138);
+}
+.markdown-section em {
+  color: rgb(145, 60, 77);
+}
+.markdown-section code {
+  background-color: rgb(38, 37, 35);
+  color: rgb(145, 60, 77);
+}
+.markdown-section pre {
+  background-color: rgb(38, 37, 35);
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: rgb(176, 164, 145);
+}
+.token.boolean,
+.token.number {
+  color: rgb(200, 211, 104);
+}
+.token.punctuation {
+  color: rgb(200, 211, 104);
+}
+.token.property {
+  color: rgb(200, 211, 104);
+}
+.token.tag {
+  color: rgb(154, 175, 184);
+}
+.token.string {
+  color: rgb(200, 211, 104);
+}
+.token.selector {
+  color: rgb(149, 160, 171);
+}
+.token.attr-name {
+  color: rgb(154, 175, 184);
+}
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: rgb(143, 187, 188);
+}
+.token.attr-value,
+.token.control,
+.token.directive,
+.token.unit {
+  color: rgb(200, 211, 104);
+}
+.token.keyword,
+.token.function {
+  color: rgb(200, 211, 104);
+}
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: rgb(143, 187, 188);
+}
+.token.placeholder,
+.token.variable {
+  color: rgb(131, 158, 171);
+}
+.token.deleted {
+  text-decoration-color: currentcolor;
+}
+.token.inserted {
+  border-bottom-color: rgb(90, 93, 115);
+  text-decoration-color: currentcolor;
+}
+.token.important {
+  color: rgb(169, 179, 87);
+}
+.markdown-section pre > code {
+  background-color: rgb(38, 37, 35);
+  color: rgb(200, 188, 167);
+}
+pre::after {
+  color: rgb(224, 211, 190);
+}
+.fa-chevron-right {
+  color: rgb(209, 208, 198);
+}
+.fa-arrow-right {
+  color: rgba(130, 141, 30, 0.65);
+}
+.search {
+  border-bottom-color: rgb(59, 58, 54);
+}
+.search input {
+  outline-color: currentcolor;
+  border-color: transparent;
+}
+.search input:focus {
+  box-shadow: rgb(130, 141, 30) 0px 0px 5px;
+  border-color: rgb(130, 141, 30);
+}
+.search a {
+  text-decoration-color: currentcolor;
+  color: inherit;
+}
+.search .matching-post {
+  border-bottom-color: rgb(59, 58, 54);
+}
+.search .matching-post:last-child {
+  border-bottom-color: currentcolor;
+}
+.fa-border {
+  border-color: rgb(59, 58, 54);
+}
+.fa-inverse {
+  color: rgb(255, 250, 227);
+}
+.sr-only {
+  border-color: currentcolor;
+}
+
+/* Override Style */
+.vimvixen-hint {
+  background-color: #6d5721 !important;
+  border-color: #d5ba64 !important;
+  color: #fffbd7 !important;
+}
+::placeholder {
+  opacity: 0.5 !important;
+}

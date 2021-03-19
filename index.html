@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/light-theme.css" />
+    <link rel="stylesheet" href="css/light-theme.css" id="theme-link" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/solid.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <button class="btn-toggle" onclick="changeTheme()">Mode Sombre</button>
+    </div>
+    <script>
+      window.$docsify = {
+        name: "Cours NSI Scholae",
+        repo: "https://github.com/adrientaudiere/",
+        loadNavbar: true,
+        loadSidebar: true,
+        subMaxLevel: 5,
+        themeColor: "#2e7891",
+        coverpage: false,
+        search: {
+          placeholder: "Rechercher",
+        },
+        tabs: {
+          persist: true, // default
+          sync: true, // default
+          theme: "classic", // default
+          tabComments: true, // default
+          tabHeadings: true, // default
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="https:////cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- docsify-tabs (latest v1.x.x) -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="https:////cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+    <script>
+      function changeTheme() {
+        var element = document.body;
+        // Select the stylesheet <link>
+        const theme = document.querySelector("#theme-link");
+        // Select the button
+        var btn = document.querySelector(".btn-toggle");
+
+        if (theme.getAttribute("href") == "css/light-theme.css") {
+          // ... then switch it to "dark-theme.css"
+          theme.href = "css/dark-theme.css";
+          // Otherwise...
+        } else {
+          // ... switch it to "light-theme.css"
+          theme.href = "css/light-theme.css";
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+    <!-- CDN files for docsify-katex -->
+    <script src="https:////cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+    <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https:////cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
+    />
+  </body>
+</html>
