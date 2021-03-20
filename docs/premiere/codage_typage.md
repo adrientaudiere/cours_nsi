@@ -56,7 +56,7 @@ le microprocesseur. Ainsi un mot de 16 bits comme AB12 sera écrit en
 machine AB 12 en gros boutisme et 12 AB en petit boutisme. 
 
 
-### Les types et leur représentation
+### :fa fa-server:  Les types et leur représentation
 
 Il existe un grand nombre de **nature de données** : nombre entier, nombre à
 virgule, caractère, texte, image... On appelle ces différents types de
@@ -261,7 +261,7 @@ Synthèse des méthodes de conversion entre les bases 2, 10 et 16. Cette fiche e
 
 ---
 
-## :fa fa-server: Représentation des entiers (dont les négatifs)) en machine
+## :fa fa-search-minus: Représentation des entiers (dont les négatifs)) en machine
 
 Les entiers sont traduits en base 2, sur 32 bits au moins. Au regard des calculs précédent,
 on pourrait penser qu'avec 32 bits on peut coder $2^{32} - 1=4\thinspace294\thinspace967\thinspace295$.
@@ -376,7 +376,7 @@ Un nombre binaire s'écrit avec 0b devant, et **bin**(x) permet d'obtenir la con
 ```
 
 
-##  Les nombres réels
+## :fa fa-ruler:  Les nombres réels (à virgules)
 
 On ne peut représenter que des valeurs décimales, vu qu'on ne dispose
 que de mots de longueur finie. Racine de 2 et *P* (*pi*) ne peuvent pas
@@ -483,7 +483,7 @@ suffit pour de nombreuses applications.
 ?> **Exercice 10**: Retrouver en base 10 le nombre qui a pour Signe 1 pour Exposant 10000100 et pour Mantisse 10110100000000000000000.
 [Correction](https://isn-icn-ljm.pagesperso-orange.fr/nsicourschapitre1/co/grain-nombres-reels.html)
 
-## Codage des caractères
+## :fa fa-paragraph: Codage des caractères
 
 Pour permettre les échanges d'informations textuelles entre systèmes
 informatiques, le codage **ASCII** (American Standard Code for
@@ -519,40 +519,40 @@ caractères étonnants.
 <details>
 <summary>Cliquer pour voir la table complète ASCII</summary>
 
-| Dec | Hex | Html  | Char  |     | Dec | Hex | Html   | Char |
-| --- | --- | ----- | ----- | --- | --- | --- | ------ | ---- |
-| 0   | 0   |       | NUL   |     | 64  | 40  | \&#64;  | @    |
-| 1   | 1   |       | SOH   |     | 65  | 41  | \&#65;  | A    |
-| 2   | 2   |       | STX   |     | 66  | 42  | \&#66;  | B    |
-| 3   | 3   |       | ETX   |     | 67  | 43  | \&#67;  | C    |
-| 4   | 4   |       | EOT   |     | 68  | 44  | \&#68;  | D    |
-| 5   | 5   |       | ENQ   |     | 69  | 45  | \&#69;  | E    |
-| 6   | 6   |       | ACK   |     | 70  | 46  | \&#70;  | F    |
-| 7   | 7   |       | BEL   |     | 71  | 47  | \&#71;  | G    |
-| 8   | 8   |       | BS    |     | 72  | 48  | \&#72;  | H    |
-| 9   | 9   |       | TAB   |     | 73  | 49  | \&#73;  | I    |
-| 10  | A   |       | LF    |     | 74  | 4A  | \&#74;  | J    |
-| 11  | B   |       | VT    |     | 75  | 4B  | \&#75;  | K    |
-| 12  | C   |       | FF    |     | 76  | 4C  | \&#76;  | L    |
-| 13  | D   |       | CR    |     | 77  | 4D  | \&#77;  | M    |
-| 14  | E   |       | SO    |     | 78  | 4E  | \&#78;  | N    |
-| 15  | F   |       | SI    |     | 79  | 4F  | \&#79;  | O    |
-| 16  | 10  |       | DLE   |     | 80  | 50  | \&#80;  | P    |
-| 17  | 11  |       | DC1   |     | 81  | 51  | \&#81;  | Q    |
-| 18  | 12  |       | DC2   |     | 82  | 52  | \&#82;  | R    |
-| 19  | 13  |       | DC3   |     | 83  | 53  | \&#83;  | S    |
-| 20  | 14  |       | DC4   |     | 84  | 54  | \&#84;  | T    |
-| 21  | 15  |       | NAK   |     | 85  | 55  | \&#85;  | U    |
-| 22  | 16  |       | SYN   |     | 86  | 56  | \&#86;  | V    |
-| 23  | 17  |       | ETB   |     | 87  | 57  | \&#87;  | W    |
-| 24  | 18  |       | CAN   |     | 88  | 58  | \&#88;  | X    |
-| 25  | 19  |       | EM    |     | 89  | 59  | \&#89;  | Y    |
-| 26  | 1A  |       | SUB   |     | 90  | 5A  | \&#90;  | Z    |
-| 27  | 1B  |       | ESC   |     | 91  | 5B  | \&#91;  | [    |
-| 28  | 1C  |       | FS    |     | 92  | 5C  | \&#92;  | \    |
-| 29  | 1D  |       | GS    |     | 93  | 5D  | \&#93;  | ]    |
-| 30  | 1E  |       | RS    |     | 94  | 5E  | \&#94;  | ^    |
-| 31  | 1F  |       | US    |     | 95  | 5F  | \&#95;  | _    |
+| Dec | Hex | Html   | Char  |     | Dec | Hex | Html    | Char |
+| --- | --- | ------ | ----- | --- | --- | --- | ------- | ---- |
+| 0   | 0   |        | NUL   |     | 64  | 40  | \&#64;  | @    |
+| 1   | 1   |        | SOH   |     | 65  | 41  | \&#65;  | A    |
+| 2   | 2   |        | STX   |     | 66  | 42  | \&#66;  | B    |
+| 3   | 3   |        | ETX   |     | 67  | 43  | \&#67;  | C    |
+| 4   | 4   |        | EOT   |     | 68  | 44  | \&#68;  | D    |
+| 5   | 5   |        | ENQ   |     | 69  | 45  | \&#69;  | E    |
+| 6   | 6   |        | ACK   |     | 70  | 46  | \&#70;  | F    |
+| 7   | 7   |        | BEL   |     | 71  | 47  | \&#71;  | G    |
+| 8   | 8   |        | BS    |     | 72  | 48  | \&#72;  | H    |
+| 9   | 9   |        | TAB   |     | 73  | 49  | \&#73;  | I    |
+| 10  | A   |        | LF    |     | 74  | 4A  | \&#74;  | J    |
+| 11  | B   |        | VT    |     | 75  | 4B  | \&#75;  | K    |
+| 12  | C   |        | FF    |     | 76  | 4C  | \&#76;  | L    |
+| 13  | D   |        | CR    |     | 77  | 4D  | \&#77;  | M    |
+| 14  | E   |        | SO    |     | 78  | 4E  | \&#78;  | N    |
+| 15  | F   |        | SI    |     | 79  | 4F  | \&#79;  | O    |
+| 16  | 10  |        | DLE   |     | 80  | 50  | \&#80;  | P    |
+| 17  | 11  |        | DC1   |     | 81  | 51  | \&#81;  | Q    |
+| 18  | 12  |        | DC2   |     | 82  | 52  | \&#82;  | R    |
+| 19  | 13  |        | DC3   |     | 83  | 53  | \&#83;  | S    |
+| 20  | 14  |        | DC4   |     | 84  | 54  | \&#84;  | T    |
+| 21  | 15  |        | NAK   |     | 85  | 55  | \&#85;  | U    |
+| 22  | 16  |        | SYN   |     | 86  | 56  | \&#86;  | V    |
+| 23  | 17  |        | ETB   |     | 87  | 57  | \&#87;  | W    |
+| 24  | 18  |        | CAN   |     | 88  | 58  | \&#88;  | X    |
+| 25  | 19  |        | EM    |     | 89  | 59  | \&#89;  | Y    |
+| 26  | 1A  |        | SUB   |     | 90  | 5A  | \&#90;  | Z    |
+| 27  | 1B  |        | ESC   |     | 91  | 5B  | \&#91;  | [    |
+| 28  | 1C  |        | FS    |     | 92  | 5C  | \&#92;  | \    |
+| 29  | 1D  |        | GS    |     | 93  | 5D  | \&#93;  | ]    |
+| 30  | 1E  |        | RS    |     | 94  | 5E  | \&#94;  | ^    |
+| 31  | 1F  |        | US    |     | 95  | 5F  | \&#95;  | _    |
 | 32  | 20  | \&#32; | Space |     | 96  | 60  | \&#96;  | `    |
 | 33  | 21  | \&#33; | !     |     | 97  | 61  | \&#97;  | a    |
 | 34  | 22  | \&#34; | \"    |     | 98  | 62  | \&#98;  | b    |
@@ -619,7 +619,7 @@ nombre d'octets, suivi d'un 0. Les caractères sont codés sous la forme
 U+*xxxx* où *xxxx* est la valeur hexadécimale du code. Chaque octet a
 une valeur comprise entre 128 et 255, ils commencent tous par 10.
 
-De manière simplifiée (voir d'autres exemples sur [:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/UTF-8#Exemples), on a :
+De manière simplifiée (voir d'autres exemples sur [:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/UTF-8#Exemples)), on a :
 
 | Caractères codés   | Représentation binaire en UTF-8         | Signification           |
 | ------------------ | --------------------------------------- | ----------------------- |
@@ -721,7 +721,7 @@ représentés de différentes manières (i) une **notation symbolique**,
 ![eaui](../_img/dessin_booleen.svg ':size=70%')
 
 ---
-Synthèse des opérateurs booléens. Cette fiche est disponible en [pdf](../_img/dessin_booleen.pdf).
+**Synthèse des opérateurs booléens**. Cette fiche est disponible en [pdf](../_img/dessin_booleen.pdf).
 
 ---
 
@@ -734,21 +734,76 @@ calcul booléen (que l'on verra dans quelques séances).
 > :fab fa-python: *Typage en python :* le type booléen « bool » est en fait un entier, qui
 vaut False pour 0 et True dans tous les autres cas. Ce qui peut donner des résultats surprenants...
 
+
+---
+
+![eaui](../_img/Circuit_elements.svg ':size=40%')
+
+---
+**Notation des opérateurs booléens** avec leur notation symbolique Américaine et Européenne ainsi que leur équation logique. Cette fiche est disponible en [pdf](../_img/Circuit_elements.pdf).
+
+---
+
+
 **L'opérateur NON**
 
 La porte NON est la plus simple, on l'appelle également inverseur. Elle
 permet d'obtenir le complément. Elle est réalisée avec deux transistors,
-un de type n et un de type p.
+un de type n et un de type p. 
 
- ![](Pictures/100000000000033C000000F5118293B2E7B9A117.png)*9*.2.2.
+<div class="flex" style="display:flex">
+
+<div class="flex" style="flex: 1 1 0%;">
+
+<a href="https://commons.wikimedia.org/wiki/File:Fonctions_logiques(2-a).png#/media/Fichier:Fonctions_logiques(2-a).png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Fonctions_logiques%282-a%29.png" alt="NOT"></a>
+
+<p class="center-p"> Schéma électrique de la porte <strong>NON</strong>. <a href="https://creativecommons.org/licenses/by-sa/1.0" title="Creative Commons Attribution-Share Alike 1.0">CC BY-SA 1.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1027143"><i class="fab fa-wikipedia-w"></i></a>  </p>
+</div>
+
+<div class="flex" style="flex: 1 1 0%;">
+
+| A   | S   |
+| --- | --- |
+| 0   | 1   |
+| 1   | 0   |
+
+<p class="center-p">  Table de vérité de l'opérateur <strong>NON</strong> </p>
+</div>
+</div>
 
 **L'opérateur ET**
 
-La porte ET utilise deux valeurs en entrée. Si les deux entrées sont à
-1, la sortie vaut 1, elle vaut 1 sinon. Il faut 6 transistors pour la
-câbler : trois de type p et trois de type n.
+<div class="img-flow">
+</div>
 
-![](Pictures/100000000000036D00000114C1339CE2C31838FF.png)*9*.2.3. 
+La porte ET utilise deux valeurs en entrée (A et B). Si les deux entrées sont à
+1, la sortie (S) vaut 1, elle vaut 1 sinon. Il faut 6 transistors pour la
+câbler : trois de type p et trois de type n. 
+
+
+<div class="flex" style="display:flex">
+
+<div class="flex" style="flex: 1 1 0%;">
+
+
+<a href="https://commons.wikimedia.org/wiki/File:Fonctions_logiques(3-a).png#/media/Fichier:Fonctions_logiques(3-a).png"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Fonctions_logiques%283-a%29.png" alt="AND"></a>
+
+<p class="center-p"> Schéma électrique de la porte <strong>ET</strong>. <a href="https://creativecommons.org/licenses/by-sa/1.0" title="Creative Commons Attribution-Share Alike 1.0">CC BY-SA 1.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1027148"> <i class="fab fa-wikipedia-w"></i></a></p>
+</div>
+
+<div class="flex" style="flex: 1 1 0%;">
+
+| A   | B   | S   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
+
+<p class="center-p">  Table de vérité de l'opérateur <strong>ET</strong> </p>
+</div>
+</div>
+
 
 **L'opérateur OU**
 
@@ -756,30 +811,57 @@ La porte utilise deux valeurs en entrée. Si les deux entrées sont à 0,
 la sortie vaut 0, elle vaut 1 sinon. Il faut également 6 transistors
 pour la câbler : trois de type p et trois de type n.
 
-![](Pictures/10000000000003650000011FE5BF1B4750BAFC1F.png)
+<div class="flex" style="display:flex">
+
+<div class="flex" style="flex: 1 1 0%;">
+
+<a href="https://commons.wikimedia.org/wiki/File:Fonctions_logiques(4-a).png#/media/Fichier:Fonctions_logiques(4-a).png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Fonctions_logiques%284-a%29.png" alt="OR"></a>
+
+<p class="center-p"> Schéma électrique de la porte <strong>OU</strong>. <a href="https://creativecommons.org/licenses/by-sa/1.0" title="Creative Commons Attribution-Share Alike 1.0">CC BY-SA 1.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1027151"><i class="fab fa-wikipedia-w"></i></a>  </p>
+</div>
+
+<div class="flex" style="flex: 1 1 0%;">
 
 
-EXERCICE 10 :
+| A   | B   | S   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 1   |
 
-a\) Faire la table de vérité de l'expression booléenne suivante : (A or
-B) and C
+<p class="center-p">  Table de vérité de l'opérateur <strong>OU</strong> </p>
+</div>
+</div>
 
-b\) \...
 
-### **9**.3. Circuits logiques de base
+?> **Exercice 11**: Faire la table de vérité de l'expression booléenne suivante : (A or B) and C.
+
+
+### Circuits logiques de base
 
 On peut associer ces trois portes logiques pour fabriquer les autres
 portes logiques de base : le NON ET (**NAND**), le NON OU (**NOR**) et
 le OU EXCLUSIF (**XOR**).
 
-#### 9.3.1. L'opérateur NON ET
+
+#### L'opérateur NON ET
 
 La porte NON ET (ou NAND) utilise deux valeurs en entrée. La sortie vaut
 0 si les deux entrées sont à 1, elle vaut 1 sinon. Elle correspond à
 l'association série d'une porte ET et d'une porte NON.
 
-![](Pictures/100000000000036A000000D7C69E9BE29EFBEA3C.png)![](Pictures/100000000000036A000000D7C69E9BE29EFBEA3C.png)Pour
-réaliser cette fonction, on pourrait mettre bout à bout les circuits
+| A   | B   | S   |
+| --- | --- | --- |
+| 0   | 0   | 1   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 0   |
+
+<p class="center-p">  Table de vérité de l'opérateur <strong>NON ET</strong> </p>
+
+
+Pour réaliser cette fonction, on pourrait mettre bout à bout les circuits
 électriques correspondant aux portes ET et NON mais cette solution
 utiliserait 8 transistors. En pratique, on utilise une solution beaucoup
 plus simple qui n'utilise que 4 transistors. La porte NAND est dite
@@ -787,37 +869,54 @@ universelle car elle permet de reconstituer toutes les autres fonctions
 logiques. Il existe donc des circuits intégrés, comme le 7400, qui ne
 contiennent que des portes NAND.
 
-#### 9.3.2. L'opérateur NON OU
+#### L'opérateur NON OU
 
 La porte NON OU (ou NOR) utilise deux valeurs en entrée. La sortie vaut
-0 si au moins 1 des entrées vaut 1, elle vaut 0 sinon. Elle correspond à
-l'association en série d'une porte OU et d'une porte NON
+0 si au moins 1 des entrées vaut 1, elle vaut 1 sinon. Elle correspond à
+l'association en série d'une porte OU et d'une porte NON.
 
-![](Pictures/100000000000030D0000009E019F6664EC9EAB3F.png)Comme dans le
-cas des portes NAND, il existe un câblage à 4 transistors qui permet
+| A   | B   | S   |
+| --- | --- | --- |
+| 0   | 0   | 1   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 0   |
+
+<p class="center-p">  Table de vérité de l'opérateur <strong>NON OU</strong> </p>
+
+
+Comme dans le cas des portes NAND, il existe un câblage à 4 transistors qui permet
 d'obtenir la porte NOR. Cette porte est également universelle et il
 existe également des circuits intégrés qui ne contiennent que des portes
 NOR, comme le 7402 par exemple.
 
-#### 9.3.3. L'opérateur OU EXCLUSIF
+#### L'opérateur OU EXCLUSIF
 
 La porte OU EXCLUSIF (ou XOR) utilise deux valeurs en entrée. La sortie
-vaut 1 si une seule des
-
-entrées vaut 1, elle vaut 0 sinon. Il faut au minimum 14 transistors
+vaut 1 si une seule des entrées vaut 1, elle vaut 0 sinon. Il faut au minimum 14 transistors
 pour câbler cette fonction.
 
-![](Pictures/1000000000000479000001F7990F7B5350576A37.png)
+| A   | B   | S   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 0   |
+
+
+<p class="center-p">  Table de vérité de l'opérateur <strong>XOR</strong> (OU EXCLUSIF) </p>
+
 
 Il y a de nombreuses façons de câbler la fonction XOR en utilisant des
 portes NON, ET, OU, NAND ou NOR. En voici trois exemples courants :
 
-![](Pictures/10000000000001F80000021CBD43BF6D8B9B944D.png)
+![eaui](../_img/xor.png ':size=30%')
 
-EXERCICE 11 : Vérifier que les logigrammes précédents correspondent bien
-à chaque fonction en dressant leurs tables de vérité.
+<p class="center-p">  3 manières courantes de câbler la fonction XOR. </p>
 
-#### *9*.4. Additionneur binaire
+
+
+#### Additionneur binaire
 
 Si un processeur doit être capable de réaliser des opérations logiques,
 il doit aussi être capable de réaliser des opérations arithmétiques, et
@@ -825,197 +924,143 @@ principalement la plus simple d'entre elles, l'addition. Dans la table
 de vérité d'une addition binaire 1 bit + 1 bit, il y a deux informations
 en sortie : la retenue noté R et la somme notée S.
 
-  --- --- --- ---
-  A   B   R   S
-  0   0   0   0
-  0   1   0   1
-  1   0   0   1
-  1   1   1   1
-  --- --- --- ---
+| A   | B   | R   | S   |
+| --- | --- | --- | --- |
+| 0   | 0   | 0   | 0   |
+| 0   | 1   | 0   | 1   |
+| 1   | 0   | 0   | 1   |
+| 1   | 1   | 1   | 1   |
 
-EXERCICE 12 : À quelles portes logiques correspondent la sortie S et la
-retenue R ?
+<p class="center-p">  Table de vérité d'une addition binaire 1 bit + 1 bit. </p>
 
-Voici le logigramme du demi-additionneur 1 bit + bit :
+?> **Exercice 12**: À quelles portes logiques correspondent la sortie S et la retenue R ?
 
-![](Pictures/1000000000000153000000A6C210D0F5EE7D3627.png)
+<p><a href="https://commons.wikimedia.org/wiki/File:Half-adder.svg#/media/Fichier:Half-adder.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Half-adder.svg/1200px-Half-adder.svg.png" style="max-width:250px;" alt="Half-adder.svg"></a>
+
+<p class="center-p"> Logigramme du demi-additionneur 1 bit + 1 bit.  <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1477592"><i class="fab fa-wikipedia-w"></i></a></p>
 
 Pour obtenir un additionneur complet, on peut partir du
 demi-additionneur en lui ajoutant l'information de la retenue notée
 R~n-1~. Voici la table de vérité d'un additionneur 1 bit + 1 bit + 1
 retenue R-1 :
 
-  --- --- -------- --- ---
-  A   B   R~n-1~   R   S
-  0   0   0        0   0
-  0   1   0        0   1
-  1   0   0        0   1
-  1   1   0        1   0
-  0   0   1        0   1
-  0   1   1        1   0
-  1   0   1        1   0
-  1   1   1        1   1
-  --- --- -------- --- ---
+| A   | B   | $R_{n-1}$ | R   | S   |
+| --- | --- | --------- | --- | --- |
+| 0   | 0   | 0         | 0   | 0   |
+| 0   | 1   | 0         | 0   | 1   |
+| 1   | 0   | 0         | 0   | 1   |
+| 1   | 1   | 0         | 1   | 0   |
+| 0   | 0   | 1         | 0   | 1   |
+| 0   | 1   | 1         | 1   | 0   |
+| 1   | 0   | 1         | 1   | 0   |
+| 1   | 1   | 1         | 1   | 1   |
+
+<p class="center-p"> Table de vérité d'un additionneur </p>
 
 On retrouve le demi-additionneur dans la partie supérieur de la table
 (chiffres en bleu). Il est difficile d'identifier un logigramme à partir
 de cette table de vérité. Voici le logigramme de l'additionneur
 complet.
 
-![](Pictures/1000000000000288000000EF61B5F084AAA98C18.png)
+<p><a href="https://commons.wikimedia.org/wiki/File:Full-adder.svg#/media/Fichier:Full-adder.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Full-adder.svg/1200px-Full-adder.svg.png" alt="Full-adder.svg" style="max-width:250px;" ></a>
 
-EXERCICE 11 :
+<p class="center-p">  Logigramme de l'additionneur complet<a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1477617">Lien</a></p>
 
-\- Dessiner le logigramme d'un additionneur 2 bits.
 
-\- Combien de transistors faut-il au minimum pour construire cet
-additionneur 4 bits ?
-
-EXERCICES CODAGE
+## :fa fa-brain: Exercices
 
 *On demande des calculs **sans** **bin** **et** **hex** **de Python** !
 Vous pouvez utiliser Python comme outil de vérification de vos
 résultats.*
 
-#### Exercices en lignes :
+Les icônes :far fa-flag: indiquent des questions auxquelles il est indispensable de savoir répondre tandis que les icônes :fa fa-award: indiquent des questions de niveau avancé.
 
-\- [codage des nombres
-(](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)[IU](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)[T](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)[](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)[d'informatique
-de
-Reims)](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)
+### Exercices en lignes :
 
-#### Exercices (entiers positifs)
+- [codage des nombres (IUT d'informatique de Reims)](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)
 
-1.  Trouver la représentation en base 2 des nombres 1, 3, 7, 15, 31
-    et 63. Expliquer le résultat.
-2.  Trouver la représentation en base 16 des nombres 158 et 2045. Écrire
-    en décimal le nombre hexadécimal BEEF.
-3.  On donne les nombres suivants, qui sont soit en base 2, soit en
-    base 16. S'ils sont en binaire les écrire en hexa et vice-versa.
+### Ex. entiers positifs
 
-111011001010E15A101010010145
-
-1.  Trouver en base 10 la représentation du nombre
-    ![](./ObjectReplacements/Obj154) (la notation
-    ![](./ObjectReplacements/Obj155)signifiant : nombre exprimé en
-    base 2)
-2.  Pour multiplier par dix un entier naturel exprimé en base dix, il
-    suffit d'ajouter un 0 à sa droite. Quelle est l'opération
+1.  Trouver la représentation en base 2 des nombres décimaux 1, 3, 7, 15, 31 et 63. Expliquer le résultat.
+1.  Trouver la représentation en base 16 des nombres décimaux 158 et 2045. Écrire en décimal le nombre hexadécimal BEEF.
+2.  On donne les nombres suivants, qui sont soit en base 2, soit en base 16. S'ils sont en binaire les écrire en hexadécimal et vice-versa :  $111011001010$ ; $E15A$ ; $1010100101$; $45$.
+3.  Trouver en base 10 la représentation du nombre $10010110_2$. 
+4.  Pour multiplier par dix un entier naturel exprimé en base dix, il suffit d'ajouter un 0 à sa droite. Quelle est l'opération
     équivalente en base 2 ? Le vérifier sur 3, 6 et 12.
-3.  Calculer en binaire la somme ![](./ObjectReplacements/Obj156). On
-    fera comme en primaire, avec des retenues.
-4.  Comment peut-on multiplier un nombre en binaire par 2 ? Le diviser
-    par 2 ? Que peut-il se passer dans ce dernier cas ?
-5.  Écrire en langage naturel un algorithme permettant d'ajouter deux
-    entiers exprimés en binaire. L'implémenter en Python, en utilisant
-    des tableaux de 0 et de 1 pour représenter les nombres en binaire.
+5.  Calculer en binaire la somme $1101101_2 + 1001011_2$. N'oublier pas les retenues.
+6.  Comment peut-on multiplier un nombre en binaire par 2 ? Le diviser par 2 ? Que peut-il se passer dans ce dernier cas ?
+7.  Écrire en langage naturel un algorithme permettant d'ajouter deux entiers exprimés en binaire. L'implémenter en Python, en utilisant des tableaux de 0 et de 1 pour représenter les nombres en binaire.
 
-#### Exercices (entiers relatifs ; codage sur 8 bits sauf mention contraire)
+### Ex. entiers relatifs 
 
-1.  Quels nombres peut-on représenter avec des entiers de 8 bits ? De 32
-    ou 64 bits ?
-2.  Trouver la représentation décimale des entiers relatifs dont la
-    représentation en binaire est ![](./ObjectReplacements/Obj157),
-    ![](./ObjectReplacements/Obj158) et
-    ![](./ObjectReplacements/Obj159).
-3.  Coder -23 et -78.
-4.  Calculer la représentation binaire de 4, puis de -4, sur des mots de
-    8 octets. Vérifier que l'on obtient la représentation de -4 à partir
-    de celle de 4 en inversant les 1 et les 0, puis en ajoutant 1.
-5.  Appliquer la méthode de l'exercice précédent pour trouver la
-    représentation de -16. Vérifier que « ça marche ».
-6.  Comment faire une soustraction à partir d'un part, de la méthode
-    d'addition en binaire, et d'autre part, de la représentation des
-    entiers relatifs ? Appliquer à 15 - 7 (sur des mots de 8 bits)
-7.  Écrire un programme Python qui donne le complément à deux d'un
-    nombre binaire. En entrée on donnera une liste de longueur
-    quelconque comportant les chiffres, et en sortie on aura une liste
-    de même longueur comportant les chiffres du complément.
+*Sauf mention contraire, le codage se fait sur 8 bits.*
 
-#### 
+1. Quels nombres peut-on représenter avec des entiers de 8 bits ? De 32 ou 64 bits ?
+1. Trouver la représentation décimale des entiers relatifs dont la représentation en binaire est $0010010_2$, $1000000_2$ et $10110011_2$.
+2. Coder -23 et -78 en binaire à l'aide de la mantisse.
+1. Calculer la représentation binaire de 4, puis de -4, sur des mots de 8 octets. Vérifier que l'on obtient la représentation de -4 à partir de celle de 4 en inversant les 1 et les 0, puis en ajoutant 1.
+3. Appliquer la méthode de l'exercice précédent pour trouver la représentation de -16. Vérifier que « ça marche ».
+4. Comment faire une soustraction à partir d'un part, de la méthode d'addition en binaire, et d'autre part, de la représentation des entiers relatifs ? Appliquer à 15 - 7 (sur des mots de 8 bits)
+5. Écrire un programme Python qui donne le complément à deux d'un nombre binaire. En entrée on donnera une liste de longueur quelconque comportant les chiffres, et en sortie on aura une liste de même longueur comportant les chiffres du complément.
 
-#### Exercices (représentation des décimaux ; entiers codés sur 8 bits et flottants sur 32 bits).
+### Ex. représentation des décimaux 
 
-1.  Trouver le décimal représenté par le mot :
-    ![](./ObjectReplacements/Obj160)
+*Sauf mention contraire, le codage des entiers se fait sur 8 bits et celui des flottants sur 32 bits.*
+
+1.  Trouver le décimal représenté par le mot : $0100\thinspace0011\thinspace0101\thinspace1110\thinspace0000\thinspace0000_2$
 2.  Coder 141,42 sur 32 bits.
-3.  Comment est représenté le nombre décimal
-    ![](./ObjectReplacements/Obj161) ?
-4.  Comment est représenté le nombre entier 7 ? Et le nombre décimal
-    7,0 ?
+3.  Comment est représenté le nombre décimal $2^{-122} ?
+4.  Comment est représenté le nombre entier 7 ? Et le nombre décimal 7,0 ?
 5.  Comment est représenté le nombre 0,1 ? que remarquez-vous ?
-6.  Quelle précision perd-on si on divise à nombre à virgule par 2, puis
-    qu'on le multiplie à nouveau par 2 ? (cet exercice a plusieurs
+6.  Quelle précision perd-on si on divise à nombre à virgule par 2, puis qu'on le multiplie à nouveau par 2 ? (Cet exercice a plusieurs
     réponses !)
-7.  Quelques tests sous Python ; expliquer les résultats obtenus.
+7.  Trouver le plus petit *x* flottant tel que x == x + 1 renvoie True
+8.  Trouver le plus grand *x* flottant tel que $2.0\*\*100 + x == 2.0\*\*100$ renvoie True (en python \*\* est une fonction qui élève à la puissance)
+9. :fa fa-award: Résoudre « à la main » l'équation $\frac{1}{16}x_2 + \frac{1}{10}x + \frac{1}{25} = 0$. Sous Python, rentrer les trois coefficients en tapant $a = 1/4$, etc. , puis calculer delta. Conclure. 
+10. Quelques tests sous Python ; expliquer les résultats obtenus.
+```python 
+1e75 + 275 - 1e75
+1e75*2 - 1e75
+#puis---------
+x = 1e175
+y = x**2
+y//y
+```
 
-    a.  \>\>\> 1e75 + 275 - 1e75puis \>\>\> 1e75\*2 - 1e75
-    b.  \>\>\> x = 1e175
-
-\>\>\> y = x\*\*2
-
-\>\>\> y//y
-
-1.  Trouver le plus petit *x* flottant tel que x == x + 1 renvoie True
-2.  Trouver le plus grand *x* flottant tel que 2.0\*\*100 + x ==
-    2.0\*\*100 renvoie True
-3.  Résoudre « à la main » et dans l'équation . Sous Python, rentrer les
-    trois coefficients en tapant a = 1/4, etc. , puis calculer .
-    Conclure.
-
-#### 
-
-#### Exercices (représentation des caractères et chaînes)
+### Exercices (représentation des caractères et chaînes)
 
 En Python, les chaînes de caractères sont traitées en partie comme des
 tableaux. Les fonctions ord() et chr() permettent de travailler en
 Python sur les caractères. Les caractères Unicode s'écrivent sous la
-forme \"\\u*point\_de\_code\_en\_hexa*\".
+forme \"\\u*point\_de\_code\_en\_hexa*\". Voir l'exemple ci-dessous.
 
-Exemple :
+```python 
+a = "bonjour"
+premierCar = a[0] # premierCar contient « b »
+ord(premierCar) # renvoie 98, le code décimal ASCII de « b »
+a + " les petits" # renvoie « bonjour les petits » ; c'est une opération de *concaténation* de chaîne
+a + chr(65) # renvoie bonjourA, c'est à dire « bonjour » concaténée avec le caractère dont le *point de code décimal* Unicode vaut 65 : A
+"\u00e9" # codage *hexadécimal* Python du caractère « é »
+```
 
-\>\>\> a = « bonjour »
+1. :fa fa-award: Écrire un programme en Python qui, étant donné une chaîne de caractères, renvoie un tableau contenant les codes ASCII correspondants. Et un autre qui fait le contraire (pour tester ce dernier, n'utiliser que les codes de 65 à 90 --majuscules-, 97 à 122-minuscules-, 32 --espace-).
+2. :fa fa-award: Modifier le programme précédent pour qu'il crypte un message, en décalant les lettres de 3 (code de César). On n'utilisera que des minuscules et des espaces. Les espaces devront rester identiques.
+3. En Python, la norme retenue est UTF-8. Expliquer pourquoi il y a une contradiction apparente avec que l'on peut constater ci dessous.
 
-\>\>\> premierCar = a\[0\]\# premierCar contient « b »
+|                               | Caractère 1                | Caractère 2                         |
+| ----------------------------- | -------------------------- | ----------------------------------- |
+| Écrire avec Microsoft Windows | Alt +265E                  | Alt +1F996                          |
+| UTF-8 (hex)                   | 0xE2 0x99 0x9E (e2999e)    | 0xF0 0x9F 0xA6 0x96 (f09fa696)      |
+| UTF-8 (binary)                | 11100010 10011001 10011110 | 11110000 10011111 10100110 10010110 |
+| UTF-16 (hex)                  | 0x265E (265e)              | 0xD83E 0xDD96 (d83edd96)            |
+| UTF-16 (decimal)              | 9822                       | 55 358 56 726                       |
+| UTF-32 (hex)                  | 0x0000265E (265e)          | 0x0001F996 (1f996)                  |
+| UTF-32 (decimal)              | 9822                       | 129430                              |
+| Python source code            | u"\u265E"                  | u"\U0001F996"                       |
 
-\>\>\> ord(premierCar) \# renvoie 98, le code décimal ASCII de « b »
+### Exercices en rab pour les plus avancés
 
-\>\>\> a + «  les petits »\# renvoie « bonjour les petits » ; c'est une
-opération de *concaténation* de chaîne
-
-\>\>\> a + chr(65)\# renvoie bonjourA, c'est à dire « bonjour »
-concaténée avec le caractère dont le *point de code décimal* Unicode
-vaut 65 : A
-
-\>\>\> \"\\u00e9\"\# codage *hexadécimal* Python du caractère « é »
-
-1.  Écrire un programme en Python qui, étant donné une chaîne de
-    caractères, renvoie un tableau contenant les codes ASCII
-    correspondants. Et un autre qui fait le contraire (pour tester ce
-    dernier, n'utiliser que les codes de 65 à 90 --majuscules-, 97 à
-    122-minuscules-, 32 --espace-).
-2.  Modifier le programme précédent pour qu'il crypte un message, en
-    décalant les lettres de 3 (code de César). On n'utilisera que des
-    minuscules et des espaces. Les espaces devront rester identiques.
-3.  En Python, la norme retenue est UTF-8. Expliquer pourquoi il y a une
-    contradiction apparente avec que l'on peut constater ci dessous.
-
-  ---------------------------------- ---------------------------- -------------------------------------
-                                     Caractère 1                  Caractère 2
-  How to type in Microsoft Windows   Alt **+**265E                Alt **+**1F996
-  UTF-8 (hex)                        0xE2 0x99 0x9E (e2999e)      0xF0 0x9F 0xA6 0x96 (f09fa696)
-  UTF-8 (binary)                     11100010:10011001:10011110   11110000:10011111:10100110:10010110
-  UTF-16 (hex)                       0x265E (265e)                0xD83E 0xDD96 (d83edd96)
-  UTF-16 (decimal)                   9 822                        55 358 56 726
-  UTF-32 (hex)                       0x0000265E (265e)            0x0001F996 (1f996)
-  UTF-32 (decimal)                   9 822                        129 430
-  Python source code                 u\"\\u265E\"                 u\"\\U0001F996\"
-  ---------------------------------- ---------------------------- -------------------------------------
-
-1.  a.  Qui sont les deux personnages suivants, dont les noms sont
-        donnés ci-dessous avec les caractères Unicode, dans une des
-        langues dans lesquels ils sont célèbres ? Indice : l'un est un
-        héros des films Marvel Avengers, l'autre est son papounet.
+- Qui sont les deux personnages suivants, dont les noms sont donnés ci-dessous avec les caractères Unicode, dans une des langues dans lesquels ils sont célèbres ? Indice : l'un est un héros des films Marvel Avengers, l'autre est son papounet.
 
 fiston = \"\\u00DE\"+\"\\u00F3\"+\"\\u0072\"
 
@@ -1025,53 +1070,10 @@ Comparer avec \"\\u00DE\\u00F3\\u0072\"
 
 Tester\"\\u00DE\\u00F3\\u0072tue\"
 
-1.  a.  La bibliothèque *unicodedata* permet d'avoir des informations
-        sur les caractères unicode. Dans les quelques fonctions
-        ci-dessous, *chr* peut être un caractère ou son point de code en
-        format Python \"\\u*xxxx*".
+- La bibliothèque *unicodedata* permet d'avoir des informations sur les caractères unicode. Dans les quelques fonctions ci-dessous, *chr* peut être un caractère ou son point de code en format Python \"\\u*xxxx*".
 
--   unicode.name(*chr*) renvoie le nom du caractère
--   unicode.decomposition(*chr*) renvoie la décomposition du caractère
-    en tant que chaine de caractère.
+  - unicode.name(*chr*) renvoie le nom du caractère
+  - unicode.decomposition(*chr*) renvoie la décomposition du caractère en tant que chaîne de caractère.
 
-Explorer ces deux fonctions pour trouver les points de code et les noms
-des caractères qui forment les caractères « é » (et « ȍ »...si vous
-arrivez à taper ce dernier...). Donner le nom des caractères dont les
-points de code décimaux sont 4031 et 9736. Et éventuellement 129430, ça
-peut planter.
+Explorer ces deux fonctions pour trouver les points de code et les noms des caractères qui forment les caractères « é » (et « ȍ »...si vous arrivez à taper ce dernier...). Donner le nom des caractères dont les points de code décimaux sont 4031 et 9736. Et éventuellement 129430, ça peut planter.
 
-****SOURCE****S****
-
-****
-
-**-- Les* *cours* *de Frédéric Mandon
-(**[**http://www.maths-info-lycee.fr/**](http://www.maths-info-lycee.fr/)**)
-ont servis de* *fondation* *très utile pour construire ce cours.* *Les
-cours de F. Mandon ont utilisés* *comme sources importantes
-d'inspiration le livre* *de* *G.Swinnen :* *Apprendre à programmer avec
-Python 3**
-
-**--* *Les cours de Pierre-Erwan Le Marec* *et Jean* *Mortreux,
-enseignant de NSI à Scholae 2019-2020 pour les premières**
-
-**--* *Les cours de Stéphan Van Zuijlen
-(**[*https://isn-icn-ljm.pagesperso-orange.fr*](https://isn-icn-ljm.pagesperso-orange.fr/)**)
-sous licence libre**
-
-**--* *Les cours en ligne de** [*Mon lycée
-numérique*](http://www.monlyceenumerique.fr/index_nsi.html) **
-
-**--* *Le livre* *Numérique et Sciences de l'Informatiques* *pour les
-premières (éd. Ellipses) co-écrit par T. Balabonski, S. Conchon, J.-C.*
-*Filliâtre et K. Nguyen**
-
-::: {.section .footnotes}
-
-------------------------------------------------------------------------
-
-1.  ::: {#fn1}
-    À l'inverse, les systèmes additifs requièrent d'additionner les
-    chiffres pour obtenir la valeur. C'est le cas du systèmes romains
-    par ex. CXIV = 114 en base 10.[↩](#fnref1){.footnote-back}
-    :::
-:::
