@@ -257,7 +257,7 @@ vicésimal qui serait à l'origine du *quatre-vingt* en français).
 ![eaui](../_img/dessin_conversion_bases.svg ':size=70%')
 
 ---
-Synthèse des méthodes de conversion entre les bases 2, 10 et 16. Cette fiche est disponible en [pdf](../_img/dessin_conversion_bases.pdf).
+**Synthèse des méthodes de conversion** entre les bases 2, 10 et 16. Cette fiche est disponible en [pdf](../_img/dessin_conversion_bases.pdf).
 
 ---
 

@@ -72,16 +72,23 @@ img {
   height: 1.8em;
   vertical-align: middle;
 }
-.img-flow{
+.img-flow {
   float: right;
   margin-left: 16px;
 }
 
-.img-flow-l{
+.img-flow-l {
   float: left;
   margin-right: 16px;
 }
 
+@media (max-width: 600px) {
+  .img-flow,
+  .img-flow-l {
+    float: none;
+    margin: auto;
+  }
+}
 
 a[disabled] {
   cursor: not-allowed;
@@ -236,7 +243,7 @@ main.hidden {
   bottom: 0;
   left: 0;
   transition: transform 250ms ease-out;
-  width: 300px;
+  width: 400px;
   z-index: 20;
 }
 .sidebar > h1 {
@@ -327,12 +334,12 @@ body.sticky .sidebar-toggle {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 300px;
+  left: 400px;
   transition: left 250ms ease;
 }
 .markdown-section {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 800px;
   padding: 30px 15px 40px 15px;
   position: relative;
 }
@@ -435,7 +442,7 @@ body.sticky .sidebar-toggle {
   list-style-type: none;
 }
 body.close .sidebar {
-  transform: translateX(-300px);
+  transform: translateX(-400px);
 }
 body.close .sidebar-toggle {
   width: auto;
@@ -469,7 +476,7 @@ body.close .content {
     overflow-x: hidden;
   }
   .sidebar {
-    left: -300px;
+    left: -400px;
     transition: transform 250ms ease-out;
   }
   .content {
@@ -489,7 +496,7 @@ body.close .content {
     padding: 30px 30px 10px 10px;
   }
   body.close .sidebar {
-    transform: translateX(300px);
+    transform: translateX(400px);
   }
   body.close .sidebar-toggle {
     background-color: rgba(255, 255, 255, 0.8);
@@ -498,7 +505,7 @@ body.close .content {
     padding: 10px;
   }
   body.close .content {
-    transform: translateX(300px);
+    transform: translateX(400px);
   }
   body.close .app-nav,
   body.close .github-corner {
@@ -948,7 +955,7 @@ body {
   margin: 0 2px;
   max-width: inherit;
   overflow: inherit;
-  padding: 2.2em 5px;
+  padding: 1.2em 5px;
   white-space: inherit;
 }
 .markdown-section code::after,
@@ -1032,13 +1039,12 @@ pre::after {
   list-style: none;
 }
 
-
 p.center-p {
-  text-align:center; 
-  text-indent:0;
+  text-align: center;
+  text-indent: 0;
 }
 
-ol li{
+ol li {
   text-indent: 0;
   margin-bottom: 1%;
 }
