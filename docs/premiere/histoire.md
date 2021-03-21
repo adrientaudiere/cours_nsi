@@ -1,4 +1,4 @@
-# Histoire de l'informatique :
+# :fa fa-monument: HISTOIRE DE L'INFORMATIQUE :
 
 ## Le développement des machines 
 

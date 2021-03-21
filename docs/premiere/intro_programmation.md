@@ -1,4 +1,4 @@
-# BASES DE LA PROGRAMMATION
+# :fa fa-project-diagram: BASES DE LA PROGRAMMATION
 
 
 ## Pseudo-code : les instructions principales d'algorithmique.

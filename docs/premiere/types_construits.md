@@ -1,4 +1,4 @@
-# Types construits
+# :fa fa-list-alt: TYPES CONSTRUITS
 
 En programmation, on stocke souvent plusieurs valeurs dans un même objet
 aussi appelé séquence. Ces objets sont des ensembles finis et ordonnés

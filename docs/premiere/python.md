@@ -1,4 +1,4 @@
-# Découvrir le langage python
+# DÉCOUVRIR LE LANGAGE PYTHON
 
 !> !! Work in progress !!
 
