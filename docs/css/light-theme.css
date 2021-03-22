@@ -1048,3 +1048,41 @@ ol li {
   text-indent: 0;
   margin-bottom: 1%;
 }
+
+.pdf-link{
+  display:inline-block;
+  padding-left:9px;
+}
+.pdf-link:hover {
+  opacity: 50%;
+}
+
+
+/* -----------------------
+CSS for printing
+------------------------- */
+@media print {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 0px;
+  }
+  .markdown-section * {
+    margin-top: 0 auto !important;
+    line-height: 1.15 !important;
+    font-size: 90%px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  p, div, pre {
+    break-inside: avoid; /* or 'auto' */
+  }
+  pre{
+    margin: 0.2rem 0;
+  }
+}
+
+/* end of CSS for printing */

@@ -18,7 +18,7 @@ Vous pouvez poster un message d'amélioration en créant une *new issue* sur Git
 
 
 
-## Exemples de règles de styles utilisés dans le site
+## Exemples de règles de styles utilisées dans le site
 
 ?> **Des exercices** : Un exemple de question très intelligente et complexes
 

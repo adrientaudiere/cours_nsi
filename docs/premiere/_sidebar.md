@@ -1,5 +1,3 @@
-<!-- docs/_sidebar.md -->
-
 * [<i class="fa fa-monument" aria-hidden="true"></i> Histoire de l'informatique](premiere/histoire.md)
 * [<i class="fa fa-project-diagram" aria-hidden="true"></i> Base de la programmation](premiere/intro_programmation.md)
 * [<i class="fab fa-python" aria-hidden="true"></i> Intro à Python](premiere/python.md)

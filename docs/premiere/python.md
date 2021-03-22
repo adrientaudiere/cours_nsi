@@ -1,4 +1,4 @@
-# DÉCOUVRIR LE LANGAGE PYTHON
+# DÉCOUVRIR LE LANGAGE PYTHON <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 !> !! Work in progress !!
 

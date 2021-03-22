@@ -1,0 +1,1 @@
+Ce site est un support des cours de Numérique et Sciences Informatiques du lycée privé [Scholae](https://scholae.fr). Il est écrit par Adrien Taudière à l'aide du logiciel [docsify](docsify.js.org/).

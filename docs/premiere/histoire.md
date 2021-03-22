@@ -1,4 +1,4 @@
-# :fa fa-monument: HISTOIRE DE L'INFORMATIQUE :
+# :fa fa-monument: HISTOIRE DE L'INFORMATIQUE <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## Le développement des machines 
 

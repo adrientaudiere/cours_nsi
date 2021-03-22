@@ -1,4 +1,4 @@
-# :fa fa-project-diagram: BASES DE LA PROGRAMMATION
+# :fa fa-project-diagram: BASES DE LA PROGRAMMATION <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 
 ## Pseudo-code : les instructions principales d'algorithmique.
@@ -101,11 +101,174 @@ de compromis** rapidité *vs* facilité d'utilisation :
     très rapides car la traduction en langage machine est facile ; mais
     qui sont complexes à utiliser (car très éloignés du langage
     naturel), on dit que ce sont des langages « proches de la machine ».
-
-<!-- -->
-
 -  Jusqu'aux langages de **haut niveau **: ils sont plus faciles à
     utiliser par les humains car plus proches du langage naturel.
+
+Un même problème peut être résolu par de nombreux langage. Le site [Rosettacode](http://www.rosettacode.org/) (en référence à la [pierre de rosette](https://fr.wikipedia.org/wiki/Pierre_de_Rosette)) propose de très nombreux exemples. Par exemple, le [jeu de Nim](https://fr.wikipedia.org/wiki/Jeux_de_Nim) consiste à faire jouer deux joueurs qui enlèvent alternativement 1 à 3 jetons d'un tas initial de 12 jetons. Le joueur qui prend le dernier jeton à perdu. Voici le code pour 4 langages qui permettent de coder ce jeux ([Rosetta code](http://www.rosettacode.org/wiki/Nim_game) propose 42 langage...).
+
+```python
+print("Py Nim\n")
+ 
+def getTokens(curTokens):
+	global tokens
+ 
+	print("How many tokens would you like to take? ", end='')
+	take = int(input())
+ 
+	if (take < 1 or take > 3):
+		print("Number must be between 1 and 3.\n")
+		getTokens(curTokens)
+		return
+ 
+	tokens = curTokens - take
+	print(f'You take {take} tokens.')
+	print(f'{tokens} tokens remaining.\n')
+ 
+def compTurn(curTokens):
+	global tokens
+ 
+	take = curTokens % 4
+	tokens = curTokens - take
+	print (f'Computer takes {take} tokens.')
+	print (f'{tokens} tokens remaining.\n')
+ 
+ 
+tokens = 12
+while (tokens > 0):
+	getTokens(tokens)
+	compTurn(tokens)
+ 
+print("Computer wins!")
+```
+
+```js
+class Nim {
+	constructor(tokens, printFun) {
+		this.startTokens = tokens;
+		this.tokens = tokens;
+		this.printFun = printFun;
+	}
+ 
+	playerTurn(take) {
+		take = Math.round(take);
+ 
+		if (take < 1 || take > 3) {
+			this.printFun("take must be between 1 and 3.\n")
+			return false;
+		}
+		this.tokens -= take;
+		this.printFun("Player takes " + take + " tokens.");
+		this.printRemaining()
+ 
+		if (this.tokens === 0) {
+			this.printFun("Player wins!\n");
+		}
+		return true;
+	}
+ 
+	computerTurn() {
+		let take = this.tokens % 4;
+		this.tokens -= take;
+		this.printFun("Computer takes " + take + " tokens.");
+		this.printRemaining();
+ 
+		if (this.tokens === 0) {
+			this.printFun("Computer wins.\n");
+		}
+ 
+	}
+ 
+	printRemaining() {
+		this.printFun(this.tokens + " tokens remaining.\n");
+	}
+}
+ 
+ 
+let game = new Nim(12, console.log);
+while (true) {
+	if (game.playerTurn(parseInt(prompt("How many tokens would you like to take?")))){
+		game.computerTurn();
+	}
+	if (game.tokens == 0) {
+		break;
+	}
+}
+```
+
+```c
+#include  <stdio.h>
+ 
+int playerTurn(int numTokens, int take);
+int computerTurn(int numTokens);
+ 
+int main(void)
+{
+	printf("Nim Game\n\n");
+ 
+	int Tokens = 12;
+ 
+	while(Tokens > 0)
+	{
+		printf("How many tokens would you like to take?: ");
+ 
+		int uin;
+		scanf("%i", &uin);
+ 
+		int nextTokens = playerTurn(Tokens, uin);
+ 
+		if (nextTokens == Tokens)
+		{
+			continue;
+		}
+ 
+		Tokens = nextTokens;
+ 
+		Tokens = computerTurn(Tokens);
+	}
+	printf("Computer wins.");
+ 
+	return 0;
+}
+ 
+int playerTurn(int numTokens, int take)
+{
+	if (take < 1 || take > 3)
+	{
+		printf("\nTake must be between 1 and 3.\n\n");
+		return numTokens;
+	}
+	int remainingTokens = numTokens - take;
+ 
+	printf("\nPlayer takes %i tokens.\n", take);
+	printf("%i tokens remaining.\n\n", remainingTokens);
+ 
+	return remainingTokens;
+}
+ 
+int computerTurn(int numTokens)
+{
+	int take = numTokens % 4;
+	int remainingTokens = numTokens - take;
+ 
+	printf("Computer takes %u tokens.\n", take);
+	printf("%i tokens remaining.\n\n", remainingTokens);
+ 
+	return remainingTokens;
+}
+```
+
+```ruby
+[12, 8, 4].each do |remaining|
+  puts "There are #{remaining} dots.\nHow many dots would you like to take? "
+  unless (num=gets.to_i).between?(1, 3)
+    puts "Please enter one of 1, 2 or 3"
+    redo
+  end
+  puts "You took #{num} dots, leaving #{remaining-num}.\nComputer takes #{4-num}.\n\n"
+end
+ 
+puts "Computer took the last and wins."
+```
 
 ### Compilation et interprétation
 
@@ -167,10 +330,7 @@ liberté, pas de prix -- pensez à « liberté d'expression » et pas à
 beer"\]**. Il est souvent le produit de la collaboration bénévole de plusieurs développeurs dispersés dans le monde entier. <br>
 Des exemples de logiciels libres : le système d'exploitation **GNU/Linux**, la suite **Open Office**. 
 Un logiciel non libre est dit **propriétaire** (par ex. le système d'exploitation **Windows**, la suite **Microsoft Office**). Le
-mouvement de l'**open source** (code source accessible à tous), met surtout l'accent sur les avantages pratiques et ne fait pas campagne pour des principes. Pour en savoir plus, aller visiter le site du GNU ([**https://www.gnu.org/philosophy/free-sw.html**](https://www.gnu.org/philosophy/free-sw.html)) dont la traduction française est très bien faîte.
-
-
-
+mouvement de l'**open source** (code source accessible à tous), met surtout l'accent sur les avantages pratiques et ne fait pas campagne pour des principes. Pour en savoir plus, aller visiter le site du [GNU](https://www.gnu.org/philosophy/free-sw.html) dont la traduction française est très bien faîte.
 
 
 

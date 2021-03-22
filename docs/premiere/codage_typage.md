@@ -1,4 +1,4 @@
-# :fa fa-code: CODAGE ET TYPAGE
+# :fa fa-code: CODAGE ET TYPAGE <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 Nous allons voir dans ce chapitre que les ordinateurs ne comprennent que les 1 et le 0 (on parle de système binaire). 
 Pour dialoguer avec la machine, il faut convertir nos mots (par ex. des chaînes de caractères), nos concepts (par ex. des valeurs booléennes) et nos chiffres (nombres entiers positifs, négatifs et nombres réels).
@@ -252,11 +252,11 @@ vicésimal qui serait à l'origine du *quatre-vingt* en français).
 
 ### Conversion entres les bases 2, 10 et 16
 
----
+
 
 ![eaui](../_img/dessin_conversion_bases.svg ':size=70%')
 
----
+
 **Synthèse des méthodes de conversion** entre les bases 2, 10 et 16. Cette fiche est disponible en [pdf](../_img/dessin_conversion_bases.pdf).
 
 ---

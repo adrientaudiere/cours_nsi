@@ -1,4 +1,4 @@
-# :fa fa-list-alt: TYPES CONSTRUITS
+# :fa fa-list-alt: TYPES CONSTRUITS <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 En programmation, on stocke souvent plusieurs valeurs dans un même objet
 aussi appelé séquence. Ces objets sont des ensembles finis et ordonnés
