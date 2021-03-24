@@ -41,7 +41,7 @@ métiers à tisser.
 <div class="img-flow" style="max-width:220px;">
 <img src="premiere/../_img/metier_tisser.JPG" alt="Métier à tisser">
 <p class="center-p"> 
-Métier à tisser Jacquart. <br> <a href="https://creativecommons.org/licenses/by/3.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Wooden_Jacquard_loom_MOSI-11_5544.JPG" target="_blank" rel="noopener"><i class="fab fa-wikipedia"></i></a> 
+Métier à tisser Jacquart. <br> <a href="https://creativecommons.org/licenses/by/3.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Wooden_Jacquard_loom_MOSI-11_5544.JPG" target="_blank" rel="noopener"><i class="fab fa-wikipedia-w"></i></a> 
 </p>
 </div>
 
@@ -83,6 +83,9 @@ pas.
 
 
 ![Canard de Vaucanson](../_img/canard.jpg ':size=50%')
+
+---
+
 <p class="center-p"> 
 
  **Canard de Vaucanson** : cet automate, exposé en 1744 au Palais-Royal, qui peut manger et digérer, cancaner et simuler la nage. Il s'agit ici d'une reconstitution publié dans *Scientific American* en 1899. Domaine public, [:fab fa-wikipedia-w:](https://commons.wikimedia.org/w/index.php?curid=1493624) 
@@ -110,6 +113,13 @@ classement de Hollerith**). En 1887, il dépose le brevet de ses machines
 qui seront utilisées pour le recensement de 1890 qui durera seulement 6
 semaines. L'utilisation des cartes perforées permettra ensuite de
 nombreuses statistiques sur la population américaine.
+
+
+<div class="img-flow" style="max-width:360px;">
+<a href="https://commons.wikimedia.org/wiki/File:Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg#/media/File:Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg/1200px-Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg" alt="Hollerith census machine at CHM by Tomwsulcer.jpg"></a>
+<p class="center-p"><strong>Réplique de la machine d'Hollerith</strong> <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46063689"><i class="fab fa-wikipedia-w"></i></a>
+</p>
+</div>
 
 En 1896, suite à ce succès, Hermann Hollerith fonde sa propre compagnie,
 la Tabulating Machine Corportation, qui deviendra en 1924,
@@ -210,7 +220,7 @@ au lieu d'être codées sur un support externe (cartes perforées, tableau
 de connexion), sont enregistrées dans une mémoire interne selon un
 codage conventionnel. Un compteur contient l'**adresse de
 l'instruction** en cours d'exécution et est automatiquement incrémenté
-après exécution de l'instruction. Un **emplacement de mémoire **peut
+après exécution de l'instruction. Un **emplacement de mémoire** peut
 contenir indifféremment des instructions et des données, et une
 conséquence majeure est qu'**un programme peut être traité comme une
 donnée** par un autre programme.
@@ -238,7 +248,7 @@ sous-programmes.
 
 ### :fa fa-microchip: La révolution électronique : du transistor au microprocesseur
 
-En 1947, **John Bardeen **(1908 – 1991), **William Shockley **(1910 –
+En 1947, **John Bardeen**(1908 – 1991), **William Shockley** (1910 –
 1989) et **Walter Brattain **(1902 – 1987), chercheurs pour les
 laboratoires Bell, inventent le **transistor**. En 1956, ils reçoivent
 le prix Nobel de physique pour cette invention. Il s'agit d'un
@@ -248,7 +258,7 @@ de sortie (drain) en commandant la troisième électrode (grille). Si la
 grille est alimentée, le courant passe de la source au drain ; si la
 grille n'est pas alimentée, le courant ne passe pas.
 
-En 1958, **Jack Kilby **(1923 – 2005), ingénieur pour Texas instrument,
+En 1958, **Jack Kilby** (1923 – 2005), ingénieur pour Texas instrument,
 associe plusieurs transistors ensemble pour effectuer des fonctions
 logiques de l'algèbre de Boole. Il miniaturise ses montages et les
 intègrent dans des puces en silicium. Il invente ainsi le **circuit
@@ -308,7 +318,7 @@ mémoire cache permettant d'accélérer le traitement en limitant l'accès à
 la mémoire vive. Le cache d'instructions reçoit les prochaines
 instructions à exécuter et le cache de données manipule les données.
 
-![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ':size=80%')
+![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ':size=60%')
 
 <p class="center-p"> <strong>Architecture de Von Neumann </strong> : l'unité de contrôle et l'UAL forment l'<strong>unité centrale</strong> aussi appelé <strong>processeur</strong>. <p>
 

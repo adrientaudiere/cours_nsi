@@ -1042,6 +1042,7 @@ pre::after {
 p.center-p {
   text-align: center;
   text-indent: 0;
+  margin-top: 2px;
 }
 
 ol li {
@@ -1057,6 +1058,9 @@ ol li {
   opacity: 50%;
 }
 
+svg[id^="mermaid-"] { 
+ background: rgba(158, 158, 158, 0.2);
+}
 
 /* -----------------------
 CSS for printing
