@@ -36,7 +36,7 @@ répond à cette question en n'utilisant que les chiffres 0 et 1 pour représent
 
 | Base 10 | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8    |
 | ------- | --- | --- | --- | --- | --- | --- | --- | --- | ---- |
-| Base 2  | 0   | 1   | 10  | 11  | 100 | 101 | 110 | 111 | 1111 |
+| Base 2  | 0   | 1   | 10  | 11  | 100 | 101 | 110 | 111 | 1000 |
 
 La valeur (0 ou 1) s'appelle un ***bit*** (binary digit). 8 bits forment
 un ***octet*** (en anglais *bytes*). Un **mot machine** est
@@ -257,7 +257,7 @@ vicésimal qui serait à l'origine du *quatre-vingt* en français).
 ![eaui](../_img/dessin_conversion_bases.svg ':size=70%')
 
 
-**Synthèse des méthodes de conversion** entre les bases 2, 10 et 16. Cette fiche est disponible en [pdf](../_img/dessin_conversion_bases.pdf).
+**Synthèse des méthodes de conversion** entre les bases 2, 10 et 16. Cette fiche est disponible en <a href="https://adrientaudiere.github.io/cours_nsi/_doc/dessin_conversion_bases.pdf" target="_blank"> pdf</a>
 
 ---
 
@@ -721,7 +721,7 @@ représentés de différentes manières (i) une **notation symbolique**,
 ![eaui](../_img/dessin_booleen.svg ':size=70%')
 
 ---
-**Synthèse des opérateurs booléens**. Cette fiche est disponible en [pdf](../_img/dessin_booleen.pdf).
+**Synthèse des opérateurs booléens**. Cette fiche est disponible en <a href="https://adrientaudiere.github.io/cours_nsi/_doc/dessin_booleen.pdf" target="_blank"> pdf</a>.
 
 ---
 
@@ -740,7 +740,7 @@ vaut False pour 0 et True dans tous les autres cas. Ce qui peut donner des résu
 ![eaui](../_img/Circuit_elements.svg ':size=40%')
 
 ---
-**Notation des opérateurs booléens** avec leur notation symbolique Américaine et Européenne ainsi que leur équation logique. Cette fiche est disponible en [pdf](../_img/Circuit_elements.pdf).
+**Notation des opérateurs booléens** avec leur notation symbolique Américaine et Européenne ainsi que leur équation logique. Cette fiche est disponible en <a href="https://adrientaudiere.github.io/cours_nsi/_doc/Circuit_elements.pdf" target="_blank"> pdf</a>.
 
 ---
 

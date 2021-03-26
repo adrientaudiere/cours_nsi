@@ -670,8 +670,22 @@ section.cover .cover-main p a {
   display: none;
 }
 
+.cc-navbar{
+  padding: 6px 10px 6px 10px;
+  border-radius: 50%;
+  text-align: right;
+  position: fixed;
+  bottom: 3px;
+  left:60px;
+  display: none;
+}
+
+
 @media (min-width: 800px) {
   .btn-toggle {
+    display: inline;
+  }
+  .cc-navbar {
     display: inline;
   }
 }
@@ -1050,16 +1064,24 @@ ol li {
   margin-bottom: 1%;
 }
 
-.pdf-link{
-  display:inline-block;
-  padding-left:9px;
+.pdf-link {
+  display: inline-block;
+  padding-left: 9px;
 }
 .pdf-link:hover {
   opacity: 50%;
 }
 
-svg[id^="mermaid-"] { 
- background: rgba(158, 158, 158, 0.2);
+svg[id^="mermaid-"] {
+  background: rgba(158, 158, 158, 0.2);
+}
+
+.markdown-section li p {
+  text-indent: 1px;
+  margin: 0.8em 0;
+}
+.markdown-section li {
+  list-style-type: circle;
 }
 
 /* -----------------------
@@ -1081,10 +1103,12 @@ CSS for printing
     font-size: 90%px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
-  p, div, pre {
+  p,
+  div,
+  pre {
     break-inside: avoid; /* or 'auto' */
   }
-  pre{
+  pre {
     margin: 0.2rem 0;
   }
 }

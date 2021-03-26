@@ -175,6 +175,13 @@ respectant les principes de la machine de Turing. Il sera utilisé pour
 des calculs de vibrations des ailes par l'institut de recherche
 aéronautique allemand et détruite en 1943 lors d'un bombardement allié.
 
+
+<div class="img-flow" style="max-width:320px;">
+<a href="https://commons.wikimedia.org/wiki/File:Z3_Deutsches_Museum.JPG#/media/Fichier:Z3_Deutsches_Museum.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Z3_Deutsches_Museum.JPG/1200px-Z3_Deutsches_Museum.JPG" alt="Z3 Deutsches Museum.JPG"></a>
+<p class="center-p"><strong>Réplique du Zuse 3.</strong> (<em>Deutsches Museum</em> de Munich). <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3632073"><i class="fab fa-wikipedia-w"></i></a>
+</p>
+</div>
+
 A partir de 1937, **Howard Aiken** (1900 – 1973), chercheur à
 l'université d'Harvard, développe une machine de calcul décimal
 programmable en collaboration avec IBM, le **ASCC-Harvard Mark 1**. Pour
@@ -225,6 +232,14 @@ contenir indifféremment des instructions et des données, et une
 conséquence majeure est qu'**un programme peut être traité comme une
 donnée** par un autre programme.
 
+<div class="img-flow" style="max-width:320px;">
+<a href="https://commons.wikimedia.org/wiki/File:Manchester_baby_head_on.JPG#/media/File:Manchester_baby_head_on.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Manchester_baby_head_on.JPG/1200px-Manchester_baby_head_on.JPG" alt="Manchester baby head on.JPG"></a>
+<p class="center-p"><strong>Réplique du SSEM (<em>the Baby</em>).</strong> <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=25760994"><i class="fab fa-wikipedia-w"></i></a>
+</p>
+</div>
+
+
+
 Suite aux départs d'Eckert, de Mauchly et de Von Neumann, le projet
 EDVAC n'aboutit qu'en 1951 alors que d'autres machines basées sur
 l'architecture de Von Neumann avaient déjà été réalisées. Il est cinq
@@ -234,8 +249,7 @@ direction de Max Newman, Frederic Williams (1911 – 1977) et Thomas
 Kilburn (1921 – 2001), de l'université de Manchester, développèrent une
 mémoire utilisant l'écran dans tube cathodique pour le stockage de bits,
 nommée « tube williams » qu'ils expérimentèrent sur un mini-calculateur
-nommé SSEM et surnommé « The baby ». Le premier programme tourna en
-1948. En 1949, ils construisirent ensuite un second calculateur,
+nommé SSEM et surnommé « The baby ». En 1949, ils construisirent ensuite un second calculateur,
 **Manchester Mark 1**, en y ajoutant une mémoire secondaire à tambour
 magnétique. Cette machine fut la première à être commercialisée à partir
 de 1951 par la compagnie Ferranti.
@@ -248,8 +262,8 @@ sous-programmes.
 
 ### :fa fa-microchip: La révolution électronique : du transistor au microprocesseur
 
-En 1947, **John Bardeen**(1908 – 1991), **William Shockley** (1910 –
-1989) et **Walter Brattain **(1902 – 1987), chercheurs pour les
+En 1947, **John Bardeen**(1908 – 1991), **William Shockley** (1910 – 1989)
+et **Walter Brattain **(1902 – 1987), chercheurs pour les
 laboratoires Bell, inventent le **transistor**. En 1956, ils reçoivent
 le prix Nobel de physique pour cette invention. Il s'agit d'un
 **composant semi-conducteur** à trois électrodes qui permet de faire
@@ -257,6 +271,13 @@ circuler le courant d'une électrode d'entrée (source) vers une électrode
 de sortie (drain) en commandant la troisième électrode (grille). Si la
 grille est alimentée, le courant passe de la source au drain ; si la
 grille n'est pas alimentée, le courant ne passe pas.
+
+
+<div class="img-flow" style="max-width:280px;">
+<a href="https://commons.wikimedia.org/wiki/File:Intel_C4004_b.jpg#/media/File:Intel_C4004_b.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Intel_C4004_b.jpg/1200px-Intel_C4004_b.jpg" alt="Intel C4004 b.jpg"></a>
+<p class="center-p"><strong>Processeur Intel C4004.</strong> <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=50603727"><i class="fab fa-wikipedia-w"></i></a>
+</p>
+</div>
 
 En 1958, **Jack Kilby** (1923 – 2005), ingénieur pour Texas instrument,
 associe plusieurs transistors ensemble pour effectuer des fonctions

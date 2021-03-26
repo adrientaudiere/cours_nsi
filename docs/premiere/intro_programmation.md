@@ -385,3 +385,10 @@ mouvement de l'**open source** (code source accessible à tous), met surtout l'a
 somme_div de l'exercice 8. 
     - Écrire un programme principal qui affiche tous les nombres_amis inférieurs à une certaine limite.
 
+<!-- À rajouter au chapitre ou à faire après python
+
+- Spécification, préconditions et postconditions
+- Mise au point de programme
+- Utilisation de bibliothèque
+
+-->
