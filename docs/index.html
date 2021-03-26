@@ -52,6 +52,11 @@
           tabComments: true, // default
           tabHeadings: true, // default
         },
+        copyCode: {
+          buttonText: "Copier le code",
+          errorText: "Erreur",
+          successText: "Copié",
+        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -64,6 +69,7 @@
         navigator.serviceWorker.register("sw.js");
       }
     </script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script>
       function changeTheme() {
         var element = document.body;
@@ -89,7 +95,8 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ruby.min.js"></script>
     <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
     <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js">
-    <script>mermaid.initialize({ startOnLoad: true }); </script>
+      <script>mermaid.initialize({ startOnLoad: true });
+    </script>
     <!-- CDN files for docsify-katex -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
     <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->

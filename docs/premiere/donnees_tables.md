@@ -57,51 +57,46 @@ qu'en JSON on peut l'inclure directement dans le même fichier.
 ?> Convertir le fichier <a href="https://adrientaudiere.github.io/cours_nsi/_doc/pokemon.csv" target="_blank"> pokemon.csv</a> en JSON grâce à ce
 [site](https://csvjson.com/csv2json).
 
-### **3 Importer/exporter les fichiers CSV avec python**
+## Importer/exporter les fichiers CSV avec python
 
-### **3.1 Importer des données CSV**
+### Importer des données CSV
 
 Pour importer un fichier CSV dans un environnement python en vue
 d'utiliser les données ensuite, on utilise la bibliothèque **csv**. Dans
 cette bibliothèque, deux fonctions principales permettent d'importer un
-fichier *.csv *:
+fichier .csv :
 
--- la fonction ***reader()*** renvoie un objet *csv.reader* qui est une
+- la fonction ***reader()*** renvoie un objet *csv.reader* qui est une
 **liste**.
 
-**import*** *csv* \# *importation de la bibliothèque *csv*
+```python
+import csv # importation de la bibliothèque csv
 
-file* = *open(\"test.csv\"*, *\"r\")* \# ouv*erture du* fichier* (ici
-par chemin relatif)**
+file = open("test.csv", "r") # ouverture du fichier (ici par chemin relatif)
 
-*csv\_en\_liste = *csv*.*reader(file*, delimiter = *\",\")* \#
-initialisation d'un lecteur de fichier*, ici* delimiter est facultatif*
-puisque la virgule est la valeur par défaut**
+csvenliste = csv.reader(file, delimiter = ",") #initialisation d'un lecteur de fichier, ici delimiter est facultatif puisque la virgule est la valeur par défaut
 
-**for*** ligne ***in*** csv\_en\_liste: \# parcours du lecteur avec une
-boucle*
+for ligne in csvenliste:  #parcours du lecteur avec une boucle
+    print(ligne)  #affichage ligne à ligne
 
-\* ***print**(*ligne*)* \# affichage ligne à ligne*
+file.close()  #fermeture du fichier
+```
 
-file*.*close()* \# fermeture du fichier*
+- la fonction ***DictReader()*** renvoie un objet **dictionnaire** ordonné *csv.DictReader*.
 
--- la fonction ***DictReader****()*** renvoie un objet **dictionnaire
-ordonné ***csv.DictReader*.
+```python
+import csv  #importation de la bibliothèque csv
 
-**import*** *csv* \# *importation de la bibliothèque *csv*
+file = open("test.csv", "r")  # ouverture du fichier (ici par chemin relatif)
 
-file* = *open(\"test.csv\"*, *\"r\")* \# ouv*erture du* fichier* (ici
-par chemin relatif)**
+csvendico = csv.DictReader(file)  #initialisation d'un lecteur de fichier avec création automatique de dictionnaire
 
-*csv\_en\_dico = *csv*.*DictReader(file)* \# initialisation d'un lecteur
-de fichier avec création automatique de dictionnaire*
+for ligne in csvendico:  #parcours du lecteur avec une boucle
+    print(dict(ligne))  affichage ligne à ligne
 
-**for*** ligne ***in*** csv\_en\_dico: \# parcours du lecteur avec une
-boucle*
+file.close()  #fermeture du fichier
+```
 
-\* ***print**(dict(*ligne*))* \# affichage ligne à ligne*
-
-file*.*close()* \# fermeture du fichier*
 
 ### **3.2 Exporter des données CSV**
 
@@ -111,11 +106,11 @@ qui explique ce que fait la ligne de code.
 
 **import** csv
 
-**def** vers\_csv(nom\_de\_la\_table, ordre, nom\_du\_fichier\_csv):
+**def** verscsv(nomdelatable, ordre, nomdufichiercsv):
 
- table=eval(nom\_de\_la\_table)
+ table=eval(nomdelatable)
 
- with open(nom\_du\_fichier\_csv+'.csv',\"w\") as fic:
+ with open(nomdufichiercsv+'.csv',\"w\") as fic:
 
  dic=csv.DictWriter(fic, fieldnames=ordre)
 
@@ -127,7 +122,7 @@ qui explique ce que fait la ligne de code.
 
  **return** None
 
-table\_exemple=\[{'nom': 'Dupont', 'prenom': 'Jean-Claude', 'age':
+tableexemple=\[{'nom': 'Dupont', 'prenom': 'Jean-Claude', 'age':
 '32'},{'nom': 'Duteil', 'prenom': 'Paul', 'age': '41'},{'nom':
 'Claudon', 'prenom': 'Goery', 'age': '37'},{'nom': 'Tonton', 'prenom':
 'Pierre', 'age': '54'},{'nom': 'Penard', 'prenom': 'Bob', 'age':
@@ -140,10 +135,10 @@ table\_exemple=\[{'nom': 'Dupont', 'prenom': 'Jean-Claude', 'age':
 
 ordre = \['nom', 'prenom', 'age'\]
 
-vers\_csv('table\_exemple', ordre, 'mon\_fichier\_example')
+verscsv('tableexemple', ordre, 'monfichierexample')
 
 4 Manipulez les données
 -----------------------
 
-À faire : faire le TP Titanic en ouvrant le fichier TP\_Titanic.ipynb
+À faire : faire le TP Titanic en ouvrant le fichier TPTitanic.ipynb
 avec VS codium.
