@@ -326,8 +326,7 @@ par là qu'il respecte [**les libertés essentielles de l'utilisateur**](https:/
 la liberté de l'utiliser, de l'étudier, de le modifier et d'en
 redistribuer des copies, modifiées ou non. C'est une question de
 liberté, pas de prix -- pensez à « liberté d'expression » et pas à
-« entrée libre » **\[think of "free speech", not "free
-beer"\]**. Il est souvent le produit de la collaboration bénévole de plusieurs développeurs dispersés dans le monde entier. <br>
+« entrée libre » (think of "free speech", not "free beer"). Il est souvent le produit de la collaboration bénévole de plusieurs développeurs dispersés dans le monde entier. <br>
 Des exemples de logiciels libres : le système d'exploitation **GNU/Linux**, la suite **Open Office**. 
 Un logiciel non libre est dit **propriétaire** (par ex. le système d'exploitation **Windows**, la suite **Microsoft Office**). Le
 mouvement de l'**open source** (code source accessible à tous), met surtout l'accent sur les avantages pratiques et ne fait pas campagne pour des principes. Pour en savoir plus, aller visiter le site du [GNU](https://www.gnu.org/philosophy/free-sw.html) dont la traduction française est très bien faîte.

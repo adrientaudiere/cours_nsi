@@ -1,7 +1,5 @@
 # DONNÉES EN TABLES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> !! Work in progress !!
-
 ## Introduction
 
 Pour stocker des données de façon fiable et organisé il existe plusieurs
@@ -98,47 +96,30 @@ file.close()  #fermeture du fichier
 ```
 
 
-### **3.2 Exporter des données CSV**
+### Exporter des données CSV
 
-À faire : La fonction ci-dessous permet d'exporter un fichier csv vers
+?> La fonction ci-dessous permet d'exporter un fichier csv vers
 votre ordinateur. Annoter le code ligne par ligne avec des commentaires
 qui explique ce que fait la ligne de code.
 
-**import** csv
+```python
+import csv
+def vers_csv(nom_de_la_table, ordre, nom_du_fichier_csv):
+    table=eval(nom_de_la_table)
+    with open(nom_du_fichier_csv+'.csv',"w") as fic:
+        dic=csv.DictWriter(fic, fieldnames=ordre)
+        dic.writeheader()
+        for ligne in table:
+            dic.writerow(ligne)
+    return None
 
-**def** verscsv(nomdelatable, ordre, nomdufichiercsv):
+table_exemple=[{'nom': 'Dupont', 'prenom': 'Jean-Claude', 'age': '32'},{'nom': 'Duteil', 'prenom': 'Paul', 'age': '41'},{'nom': 'Claudon', 'prenom': 'Goery', 'age': '37'},{'nom': 'Tonton', 'prenom': 'Pierre', 'age': '54'},{'nom': 'Penard', 'prenom': 'Bob', 'age': '18'},{'nom': 'Herpoix', 'prenom': 'Stephane', 'age': '55'},{'nom': 'Salicorne', 'prenom': 'Bruno', 'age': '15'},{'nom': 'Poiteau', 'prenom': 'Maxe', 'age': '33'},{'nom': 'Clanget', 'prenom': 'Gilles', 'age': '54'},{'nom': 'Luillier', 'prenom': 'Martin', 'age': '34'},{'nom': 'Clanget', 'prenom': 'Justine', 'age': '14'},{'nom': 'Gillier', 'prenom': 'Paul', 'age': '16'}]
+ordre = ['nom', 'prenom', 'age']
+vers_csv('table_exemple', ordre, 'mon_fichier_example')
+```
 
- table=eval(nomdelatable)
 
- with open(nomdufichiercsv+'.csv',\"w\") as fic:
+## Manipulez les données
 
- dic=csv.DictWriter(fic, fieldnames=ordre)
 
- dic.writeheader()
-
- **for** ligne **in** table:
-
- dic.writerow(ligne)
-
- **return** None
-
-tableexemple=\[{'nom': 'Dupont', 'prenom': 'Jean-Claude', 'age':
-'32'},{'nom': 'Duteil', 'prenom': 'Paul', 'age': '41'},{'nom':
-'Claudon', 'prenom': 'Goery', 'age': '37'},{'nom': 'Tonton', 'prenom':
-'Pierre', 'age': '54'},{'nom': 'Penard', 'prenom': 'Bob', 'age':
-'18'},{'nom': 'Herpoix', 'prenom': 'Stephane', 'age': '55'},{'nom':
-'Salicorne', 'prenom': 'Bruno', 'age': '15'},{'nom': 'Poiteau',
-'prenom': 'Maxe', 'age': '33'},{'nom': 'Clanget', 'prenom': 'Gilles',
-'age': '54'},{'nom': 'Luillier', 'prenom': 'Martin', 'age':
-'34'},{'nom': 'Clanget', 'prenom': 'Justine', 'age': '14'},{'nom':
-'Gillier', 'prenom': 'Paul', 'age': '16'}\]
-
-ordre = \['nom', 'prenom', 'age'\]
-
-verscsv('tableexemple', ordre, 'monfichierexample')
-
-4 Manipulez les données
------------------------
-
-À faire : faire le TP Titanic en ouvrant le fichier TPTitanic.ipynb
-avec VS codium.
+?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site https://isn-icn-ljm.pagesperso-orange.fr/) avec VScodium.
