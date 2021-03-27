@@ -1,6 +1,6 @@
 # DONNÉES EN TABLES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-## Introduction
+## :fa fa-play-circle: Introduction
 
 Pour stocker des données de façon fiable et organisé il existe plusieurs
 façons de procéder. Les jeux de données les plus complexes utilisent des
@@ -28,7 +28,7 @@ relations.
 permet de faire le lien entre la table (collection) des abonnées et
 celle des ouvrages ?
 
-## Le format CSV
+## :fa fa-file-csv: Le format CSV
 
 Le format **CSV** (de l'anglais *comma separated value*, c'est-à-dire
 « **valeurs séparées par des virgules** ») est un format texte utilisé
@@ -55,7 +55,7 @@ qu'en JSON on peut l'inclure directement dans le même fichier.
 ?> Convertir le fichier <a href="https://adrientaudiere.github.io/cours_nsi/_doc/pokemon.csv" target="_blank"> pokemon.csv</a> en JSON grâce à ce
 [site](https://csvjson.com/csv2json).
 
-## Importer/exporter les fichiers CSV avec python
+## :fab fa-python: Importer/exporter les fichiers CSV avec python
 
 ### Importer des données CSV
 
@@ -119,7 +119,7 @@ vers_csv('table_exemple', ordre, 'mon_fichier_example')
 ```
 
 
-## Manipulez les données
+## :fa fa-keyboard: Manipulez les données
 
 
 ?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site https://isn-icn-ljm.pagesperso-orange.fr/) avec VScodium.

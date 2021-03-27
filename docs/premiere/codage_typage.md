@@ -367,12 +367,12 @@ première ligne, on a les nombres à représenter, compris entre $-4$ et $3$.
 Un nombre binaire s'écrit avec 0b devant, et **bin**(x) permet d'obtenir la conversion en binaire. Un nombre hexadécimal s'écrit avec 0x devant, et **hex**(x) permet d'obtenir la conversion en hexadécimal. La fonction **int** permet de faire les conversions vers la base 10.
 
 ```python
->>> bin(199)
-'0b1111000'
->>> hex(199)
-'0xc7'
->>> int('0b11100', base=2)
-28
+bin(199)
+# '0b1111000'
+hex(199)
+# '0xc7'
+int('0b11100', base=2)
+# 28
 ```
 
 

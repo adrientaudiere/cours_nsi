@@ -1,515 +1,313 @@
 # DÉCOUVRIR LE LANGAGE PYTHON <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> !! Work in progress !!
+## :fa fa-terminal: Environnements de développement
 
-## IDE
+Pour lancer le programme python (une fois qu'il est installé sur votre machine) il existe une façon très simple. Vous ouvrez votre terminal :fa fa-terminal: et vous écrivez `python`. Vous pouvez ensuite écrire vos commandes python et observer le retour du programme directement dans le terminal. C'est ce qu'on appelle le mode dynamique.
 
-Sur vos machines plusieurs IDE sont déjà installés (listés du plus simple au plus complet)
+?> Lancer les commandes suivantes dans votre terminal. Quelle est la version de python que vous utilisez? Quels sont les résultats affichés dans le terminal?
 
+```python
+python # lancer le programme python
+print('Salut' + 'à toi')
+1+3
+print(3*4)
+quit() # quitter le programme python
+```
+
+> Remarque sur les **commentaires** dans le code.  Les caractères suivants un dièse (**#**) sont des commentaires, ils n'influent en rien sur le programme mais nous permettent d'annoter le programme pour d'autres utilisateurs, ou pour nous plus tard. On peut mettre des commentaires de plusieurs lignes entre triples guillemets : """ ... """. **Il est très important de commenter son code**. La relecture du programme, la recherche de bug et sa réutilisation future nécessitent des commentaires réguliers dans le code. 
+
+Le problème du terminal, c'est que c'est long de relancer chaque script (ensemble d'instruction) et que l'historique est difficile à conserver. Pour simplifier l'utilisation des langages informatique on utilise des environnements de développement intégré (IDE pour *integrated development environment*) Sur vos machines plusieurs IDE sont déjà installés (listés du plus simple au plus complet):
 - IDLE
 - Tonny
 - Anaconda (une suite de logiciel dont le logiciel Spyder)
 - VScodium (que nous utiliserons sans doute plus tard)
 
+?> Ouvrir le logiciel Tonny, créer un nouveau fichier, y recopier le code déjà testé ci-dessus et lancer le script à l'aide de la flèche verte.
 
-## Comprendre python avec des tortues 
+## :fa fa-spell-check: Quelques règles de sémantique
 
-?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne** :
+Chaque langage a des règles obligatoires (leur manquement entraîne une erreur) et des conventions (règles de bonnes conduite). En python, les noms des **variables** suivent quelques règles :fa fa-exclamation-triangle: et conventions :fa fa-heartbeat: : 
+- :fa fa-exclamation-triangle: le nom d'une variable ne doit contenir que des lettres (a → z , A → Z), des chiffres et le symbole "_" (underscore = tiret du bas) et doit commencer par une lettre
+- :fa fa-exclamation-triangle: les minuscules et les majuscules sont différenciées (*ma_var* et *Ma_var* sont deux variables différentes),
+- :fa fa-exclamation-triangle: certains mots sont « reservés » par python (voir tableau ci-dessous), on ne peut donc pas les utiliser comme nom de variable,
+- :fa fa-heartbeat: il est conseillé de n'écrire les variables qu'avec des minuscules sauf les nombres constants (par exemple si vous utilisez souvent $\pi$ vous pouvez définir cette constante ainsi $PI=3.14$),
+- :fa fa-heartbeat: les accents et les caractères spéciaux sont fortement déconseillés (sauf dans les commentaires) car ils peuvent ne pas être pris correctement en charge par certains OS,
+- :fa fa-heartbeat: plus un nom de variable sera clair, plus il sera facile de relire votre code. Par exemple, préférer *nom_de_famille* à *ndf*; et préférer *moyenne_age* (ou *moy_age*) à *m_age* pour nommer une variable qui représente une moyenne d'âge. 
+
+<details>
+<summary> <strong>Tableau des mots reservés en python</strong>. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank">Source</a> </summary>
+
+---
+
+<p class="center-p"> <strong>Tableau des mots reservés en python</strong> qui ne peuvent pas être utilisé comme nom de variable. Les mots en gras sont des mots que nous utiliserons durant les cours de NSI. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank">Source</a> </p>
+
+| Mot        | Définition                                                               |
+| ---------- | ------------------------------------------------------------------------ |
+| **and**    | Opérateur ET booléen logique                                             |
+| as         |                                                                          |
+| **assert** |                                                                          |
+| break      | Sortie de boucle                                                         |
+| **class**  | Définition de classe d'objet ( Programmation Orientée Objet)             |
+| continue   |                                                                          |
+| **def**    | Définition de fonction                                                   |
+| del        | Suppression de                                                           |
+| **elif**   | Condition contraire                                                      |
+| **else**   | Contraire                                                                |
+| except     | Sauf (à utiliser après "try")                                            |
+| exec       |                                                                          |
+| finally    |                                                                          |
+| **for**    | Boucle                                                                   |
+| **from**   | De                                                                       |
+| global     | Définition (ou utilisation) dans une fonction d'une variable globale     |
+| **if**     | Condition                                                                |
+| **import** | Importation de module                                                    |
+| **in**     | Contient                                                                 |
+| **is**     | Est                                                                      |
+| **is not** | N'est pas                                                                |
+| lambda     | Définition d'une fonction Lambda                                         |
+| **not**    | Négation logique                                                         |
+| **or**     | Opérateur de choix OU booléen logique                                    |
+| pass       |                                                                          |
+| **print**  | Afficher                                                                 |
+| raise      |                                                                          |
+| **return** | Stopper la fonction courante (renvoyer sa valeur)                        |
+| **sort**   | Classer par ordre alphabétique                                           |
+| try        | Essayer (généralement suivi de "except" : sauf)                          |
+| **while**  | Boucle                                                                   |
+| yield      | S'emploie uniquement dans une fonction, et renvoie son résultat régénéré |
+
+</details>
 
 
 
 
+## :fab fa-python: Bases de python 
 
+### Symboles arithmétiques
+En plus des signes d'arithmétiques **+**, **-**, **\*** et **/**, on peut utiliser les symboles suivants :  **//**, **%**, **\*\***.
 
+?> Utiliser les symboles //, % et ** dans des opérations avec des nombres simples. Essayer d'en déduire l'usage de ces trois symboles.
 
-
-
-
-
---- Cours MANDON ----------------------
-
-
-
-I.  Les bases du Python.
-
-    1.  Commentaires.
-
-Les commentaires sur une ligne, ou en fin de ligne, commencent par \# ;
-ils sont indispensables pour la compréhension, la réutilisation
-ultérieure et la relecture d'un programme.
-
-On peut mettre des commentaires de plusieurs lignes entre triples
-guillemets : \"\"\"...\"\"\"
-
-Pour des raisons de compatibilité sur les différents systèmes, évitez
-les accents ainsi que tous les caractères spéciaux dans les noms de
-variables (cf. ci dessous). Vous pouvez en mettre dans les commentaires.
-
-I.  1.  Expressions.
-
-Outre les opérations arihtmétiques standard, on dispose des opérateurs
-suivants:
-
--   //
--   \%
--   \*\*
-
-I.  1.  Variables
-
-> Le nom des variables suit quelques règles de base :
-
--   un nom de variable est une suite de lettres (a → z , A → Z) et/ou de
-    chiffres (0 → 9), qui doit toujours commencer par une lettre ;
-
-<!-- -->
-
--   seules les lettres ordinaires sont autorisées. Les lettres
-    accentuées, les cédilles, les espaces, les caractères spéciaux tels
-    que \$, \#, @, etc. sont à proscrire, à l'exception du caractère \_
-    (tiret bas ou underscore) ;
--   la casse est significative (les caractères majuscules et minuscules
-    sont distingués). Par exemple, **Nombre, nombre, NOMBRE sont des
-    variables différentes. Soyez attentifs !**
--   prenez l'habitude d'écrire l'essentiel des noms de variables en
-    caractères minuscules (y compris la première lettre). Il s'agit
-    d'une simple convention, mais elle est largement respectée.
-    N'utilisez les majuscules qu'à l'intérieur même du nom, pour en
-    augmenter éventuellement la lisibilité, comme dans
-    **nomDeFamille**. Par contre, si vous utilisez le nombre 
-    souvent, c'est une constante ; on écrira alors la variable
-    correspondante en majuscules PI = 3.14159.
--   N'hésitez pas à donner des noms clairs à vos variables. Par exemple,
-    nomDeFamille est plus clair que nf.
 -   De plus, les variables ne peuvent pas être un des « mots
     réservés » suivant utilisés par le langage lui-même :
 
-and asassert break class continue def del
+### Typage
 
-elif else exceptexec Falsefinally for from global
+Chaque variable a un type. Sous python, pour connaître le type d'une variable *var* il suffit d'écrire *type(var)*.  Les types les plus simples sont les types :
+- **int** (*integer*) pour les variables constituées de nombres entiers,
+- **float** pour les variables constituées de nombres décimal (à virgule),
+- **str** pour les variables constituées de chaîne de caractères (par ex. "Ba oui, c'est Scho!"),
+- **bool** pour les variables constituées de booléens (True/False)
 
-if importin is lambdaNonenonlocalnot or pass
 
-print raise return Truetry whilewithyield
+?> Remplacer les trois petits points du code ci-dessous pour obtenir un type *int*. Modifier ensuite votre variable pour obtenir chaqu'un des trois autres types simples vu ci-dessus.
 
-I.  1.  Booléens
-
-Les booléens sont des variables qui ne prennent que deux valeurs : vrai
-ou faux (True et False respectivement en Python, avec des majuscules)
-
-Les variables booléennes sont utilisées pour les tests lors des boucles
-ou des conditionnelles. On peut les combiner à l'aide des connecteurs
-logiques : et, ou, non qui sont en Python and, or, not.
-
-*Opérateurs de comparaison* :
-
-x == y*\# x est égal à y*
-
-x != y*\# x est différent de y*
-
-x \> y*\# x est plus grand que y*
-
-x \< y*\# x est plus petit que y*
-
-x \>= y*\# x est plus grand que, ou égal à y*
-
-x \<= y*\# x est plus petit que, ou égal à y*
-
-Opérateurs logiques :
-
-a and b\# « et » mathématique
-
-a or b\# « ou » mathématique
-
-not(a)\# « non » mathématique
-
-I.  1.  Typage
-
-Au paragraphe précédent, on a vu les variables de type « booléen ».
-Toutes les variables ont un type ; voici ci-dessous les types
-*simples* :
-
--   int : nombre entier
--   float : nombre décimal (nombre à virgule « qui se finit »). On ne
-    peut pas réprésenter en machines des nombres réels « compliqués »
-    comme  ou ![](./ObjectReplacements/Obj100){width="0.681cm"
-    height="0.681cm"} , on en a juste des approximations
--   str : chaîne de caractères, comme « bonjour le monde ». Les chaînes
-    de caractère sont entre guillemets simples ou doubles \"bonjour le
-    monde\" ou 'bonjour le monde'
--   bool : booléens
-
-Le type d'une variable est obtenu avec l'instruction type(var).
-
-Exemple :
-
-\>\>\> a = \"coucou\"
-
-\>\>\> type(a)
-
-\<type \'str\'\>
+```python
+var = ...
+type(var)
+```
 
 On peut forcer une variable d'un type à devenir une variable d'un autre
 type ; attention cela peut causer des erreurs ! Pour changer le type
 d'une variable, on utilise le type que l'on veut affecter :
 
-Exemple :
 
-\>\>\> a = 23.1
+```python
+a = 23.1
+type(a)
+# <type 'float'>
 
-\>\>\> type(a)
+a = str(a)
+a
+# '23.1'
 
-\<type \'float\'\>
+b = 23.1
+b = int(b)
+b
+# 23
 
-\>\>\> a = str(a)
+c = "bonjour"
+int(c)
+# Traceback (most recent call last):
+#   File "<ipython-input-20-089eb950f64f>", line 1, in <module>
+#       int(c)
+#   ValueError: invalid literal for int() with base 10: 'bonjour'
+```
 
-\>\>\> a
 
-'23.1'
+#### Zoom sur les booléens (bool)
 
-\>\>\> b = 23.1
+Pour rappel, une variable booléennes est une variable qui n'autorise que deux valeurs : True et False. 
+On utilise souvent ces variables dans des tests. On peut combiner ces variables à l'aide des connecteurs
+logiques **and**, **or** et **not**.
 
-\>\>\> b = int(b)
+```python
+# Tests logiques
+x == y # x est égal à y
+x != y # x est différent de y
+x > y  # x est plus grand que y
+x < y  # x est plus petit que y
+x >= y # x est plus grand que, ou égal à y
+x <= y # x est plus petit que, ou égal à y
+```
 
-\>\>\>b
+```python
+# Connecteurs logiques
+a and b # « et » mathématique
+a or b  # « ou » mathématique
+not(a)  # « non » mathématique
+```
 
-23
 
-\>\>\> c = "bonjour"
+#### Zoom sur les chaînes de caractères (str)
 
-\>\>\> int(c)
+Les **chaînes de caractères** sont un type particulier de **liste**. Les listes sont des **types complexes** que nous verrons plus tard. On peut effectuer des **opérations** sur ces chaînes, en particulier la **concatenation** (« addition » de texte ensemble) et la répétition (« multiplication » d'une chaîne de caractères). Pour sélectionner la Xème lettre d'une chaîne, on peut utiliser l'écriture chaîne[x-1]. 
+ On peut également connaître la longueur d'une chaîne (le nombre de caractère) avec la fonction `len`.
 
-Traceback (most recent call last):
+```python
+a = "J'aime "
+b = "beaucoup "
+c = "manger "
+d = "à Scholae."
+print(a+c+d)
+print(a+3*b+c+d)
+print(a[1])
+print("Cette phrase comporte " + str(len(a+b+c+d)) + " caractères")
+```
 
-File \"\<ipython-input-20-089eb950f64f\>\", line 1, in \<module\>
+?> Essayer de relancer la dernière ligne de code ci-dessus en enlevant la fonction `str`. Que se passe t'il?
 
- int(c)
+?> Que renvoie `print(a[0])`, `print(a[1:5])` et `print(a[len(a)])`? Expliquer pourquoi.
 
-ValueError: invalid literal for int() with base 10: \'bonjour\'
 
-*Quelques opérations sur les chaînes de caractères données par des
-exemples *:
+###  Instructions conditionnelles
 
-Les chaînes de caractères sont un type particulier de liste, que l'on
-verra ultérieurement plus en détail.
+Le « si *condition* alors *instruction* (sinon *instruction*) » s'écrit en python en utilisant l'indentation (4 espaces). C'est l'un des rares langages à utiliser l'indentation comme structure de code (de nombreux langage utilise les {} pour encadrer les conditions). Les conditions sont des booléens (par exemple le résultat d'un test d'égalité).
 
--   La *concaténation et la répétition* :
-
-\>\>\> a = \"j\'aime \"
-
-\>\>\> b = \"pas \"
-
-\>\>\> c = \"les mathématiques\"
-
-\>\>\> print(a+c)\# concaténation
-
-j'aime les mathématiques
-
-\>\>\> print(3\*b)\# répétition
-
-paspaspas
-
--   Longueur d'une chaîne de caratères :
-
-\>\>\> len(\"j\'aime \")
-
-7\# *Comptez bien tous les caractères !*
-
--   Obtenir un caractère ou un morceau d'une chaîne de caractères :
-
-\>\>\> a = \"bonjour\"
-
-\>\>\> len(a)
-
-7
-
-\>\>\> a\[0\]
-
-'b'
-
-\>\>\> a\[6\]
-
-'r'
-
-\>\>\> a\[7\]
-
-Traceback (most recent call last):
-
- File \"\<ipython-input-7-9cf13ba20553\>\", line 1, in \<module\> a\[7\]
-
-IndexError: string index out of range
-
-Comment fonctionne le comptage des caractères ?
-
-\>\>\> a\[1 :3\]
-
-'on'
-
-Quels sont les indices (numéros) des caractères affichés dans cette
-commande ?
-
-I.  1.  Instructions conditionnelles
-
-Le « si *condition* alors *instruction* (sinon *instruction*) » se
-traduit par :
-
-if *condition* :
-
- *instruction 1*
-
-(else :)
-
- instruction 2
-
-suite du programme
-
-Vous remarquez l'indentation, c'est à dire le fait que l'instruction est
-décalée vers la droite (en général de 4 espaces). Ceci traduit le fait
-que l'instruction 1 sera exécutée uniquement si la condition dans le
-« si » est vraie, l'instruction 2 étant exécutée uniquement si la
-condition est fausse. Bien sûr, l'instruction 1 peut être formée de
-plusieurs instructions élémentaires. Si l'on imbrique plusieurs « si »,
-alors on indentera à chaque fois les instructions. N'oubliez pas les
-« : ».
-
-L'ensemble if *condition* : *instruction 1* forme une instruction
-composée.
-
-La condition évalue un booléen, cf. notebook nsi\_1\_2\_controle.ipynb.
-
-L'instruction « if...elif...elif...etc...(else :) » permet de choisir
-entre plusieurs alternatives (elif est la contraction de else if)
-
-I.  1.  Instructions répétitives
-
-Le « tant que » est traduit par :
-
-while *condition *:
-
-*instruction*
-
-suite du programme
-
-Même remarque sur l'indentation, ainsi que sur la condition qui est un
-booléen, qu'au paragraphe précédent
-
-Le « pour » est traduit par :
-
-for *variable* in *séquence* :
-
-*instruction 1*
-
-suite du programme
-
-Par exemple, « for i in range(0, 10, 3) : » exécutera l'instruction 1
-pour les valeurs de *i* respectivement égales à 0, 3, 6, 9. Si on écrit
-range(0, 10) , alors *i* prend toutes les valeurs de 0 à *9* (10 exclu).
-
-Lorsque l'on a une condition compliquée à tester pour sortir d'une
-boucle par exemple, il est souvent pratique d'utiliser un booléen
-(exemple : un jeu que l'on peut finir de plusieurs manières à
-l'intérieur de la boucle, cf. exercice « deviner un nombre »). Dans ce
-cas, si « continuer » est le nom de la variable booléenne, on écrit
-« while continuer », et non « while continuer == True » qui est un
-pléonasme informatique !
-
-*Remarque :* de nombreux programmes utilisent l'instruction break pour
-sortir d'une boucle, voire d'un test. Cette instruction est à éviter
-autant que possible, pour des raisons de bonnes pratiques de
-programmation. En effet elle rend les programmes moins lisibles, et est
-source d'erreurs difficilement corrigeables. Au lycée, sans interface
-graphique, il n'y a *aucune* utilisation nécessaire de cette
-instruction. En conséquence, elle vous est interdite d'usage. Vous devez
-néanmoins savoir qu'elle existe. Quel que soit le niveau, l'utiliser
-avec un for ou un if est de la mauvaise programmation. Avec un while, on
-voit des exemples comme suit :
-
-+-----------------+-------------------------------+--------------------+
-| while True :    | Que l'on peut remplacer par : | var\_bool = True   |
-|                 |                               |                    |
-|  if condition : |                               | while var\_bool :  |
-|                 |                               |                    |
-|  break          |                               |  if condition :    |
-|                 |                               |                    |
-|  \...           |                               |  var\_bool = False |
-|                 |                               |                    |
-|                 |                               |  else :            |
-|                 |                               |                    |
-|                 |                               |  \...              |
-+-----------------+-------------------------------+--------------------+
-
-I.  1.  Modules
-
-Une bibliothèque (ou un module) est un ensemble de fonctions
-préprogrammées, ainsi le programmeur n'a pas à les refaire.
-
-On inclut une bibliothèque dans un programme à l'aide de la commande
-« import ».
-
-Nous utiliserons les bibliothèque « math », qui permet de calculer des
-cosinus, des racines carrées, des valeurs absolues... et la bibliothèque
-« random », qui permet d'obtenir des nombres aléatoires. Ultérieurement,
-nous utiliserons également des bibliothèques graphiques pour les
-interfaces.
-
-On tape si nécessaire en début de programme :
-
-\>\>\> from math import \*
-
-\>\>\> from random import \*
-
-I.  1.  Lisibilité des programmes et fonctions
-
-Pour être lisible, un programme doit être structuré en fonctions, que
-l'on écrira au début du programme. Lorsque l'on réfléchit à un problème
-que l'on veut programmer, il faut le faire en termes de fonctions : « je
-veux d'abord une fonction qui me permet de rentrer mes données », « je
-veux une fonction qui teste si une variable est positive et dans ce cas
-calcule sa racine carrée » etc...
-
-Les fonctions ressemblent à ce que vous utilisez en mathématiques quand
-vous écrivez ![](./ObjectReplacements/Obj101){width="1.669cm"
-height="0.751cm"} . Vous avez en *paramètre d'entrée* un nombre *x*, une
-fonction qui fait « un truc », et en *paramètre de retour ou de sortie*
-un nombre *y*, résultat de la fonction. En informatique on peut avoir 0,
-1 ou plusieurs paramètres d'entrée, et de même en sortie.
-
-La syntaxe pour les fonctions est :
-
-def *nom\_de\_fonction* (*variables passées en paramètre, à utiliser
-dans la fonction*)* *:
-
-instructions
-
-return (*variable*)
-
-L'appel dans le programme se fait par :
-
-*variable\_resultat *= *nom\_de\_fonction *(*variables à passer en
-paramètre*)
-
-Exemple : le programme suivant teste vos capacités en calcul mental
-
-\# F. Mandon
-
-\#
-
-\# Programme de test de connaissance sur les tables de multiplication
-
-\# bibliotheques
-
-from random import \*
-
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
-
-\# 
-
-\# Fonctions
-
-\#
-
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
-
-def alea10():
-
-\"\"\"
-
-Choix d\'un nombre aléatoire entre 2 et 10
-
-\@param : aucun paramètre d'entrée
-
-\@return n : entier n ≥ 2 et n ≤ 10
-
-\"\"\"
-
-n = randint(2,10)
-
-return (n)
-
-def testTable(x,y,z):
-
-\"\"\"
-
-Teste si le produit de deux nombres est égal à un troisième
-
-\@param x, y, z : trois nombres (a priori de type entier, mais ce n'est
-pas obligatoire)
-
-\@return gagne : booleen, qui vaut Vrai si z = x\*y et Faux sinon
-
-\"\"\"
-
-if z == x\*y:
-
- gagne = True
-
+```python
+if condition :
+    ... # instruction 1
 else:
+    ... # instruction 2
+suite_du_programme
+```
 
- gagne = False
+On peut emboîter des conditions dans des conditions, il faut alors bien faire attention aux indentations.
 
-return(gagne)
-
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
-
-\#
-
-\# Programme principal
-
-\#
-
-\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
-
-a = alea10()
-
-b = alea10()
-
-print(\"Que vaut le produit de \",a,\" par \",b,\" ?\")
-
-c = int(input())
-
-juste = testTable(a,b,c)
-
-if juste:
-
- print(\"Bravo !\")
-
+```python
+if condition_1 :
+    if condition_2 :
+        ... # instruction 1
+    else :
+        ... # instruction 2
 else:
+    ... # instruction 3
+```
 
- print(\"Lamentable\...\")
+Lorsque l'on a plusieurs alternative possible on utilise le mot clé `elif` (abréviation de *else if*).
 
-Dans le code, on met tous les import en premier, puis toutes les
-fonctions, puis le programme principal.
+```python
+if condition_1 :
+    ... # instruction 1
+elif condition_2 :
+    ... # instruction 2
+elif condition_3 :
+    ... # instruction 3
+else:
+    ... # instruction 4
+```
 
-Vous remarquez que les fonctions sont commentées (on dit *spécifiées*),
-on indique d'abord leur nom, puis les noms et types des variables
-passées en paramètre (avec d'éventuelles restrictions), et enfin le(s)
-nom(s) et type(s) de la/des variable(s) renvoyée(s). Les spécifications
-sont mises entre triples guillemets.
 
-On peut préciser dans les commentaires la « stratégie » de la fonction,
-si elle est un peu compliquée. La spécification est *indispensable*. Il
-est préférable de taper les commentaires au fur et à mesure, pendant que
-l'on sait ce que l'on vient de faire... Il est même fréquent de le faire
-avant de construire la fonction, en laissant cette dernière vide si elle
-est compliquée à faire !
+### Boucle while (tant que)
 
-A terme, vous devez dans les spécifications :
+La boucle while est une structure qui répète une instruction jusqu'à ce qu'une condition (de type *bool*) soit remplie. L'indentation est encore primordiale. Attention, il faut bien vérifiér que la condition va être atteinte, sinon la boucle while ne s'arrêtera jamais.
 
--   Définir l'objectif de la fonction
--   Identifier les paramètres de la fonction : ce qui est en entrée, ce
-    qui est en sortie
--   Choisir un nom de fonction clair
--   Choisir des noms de variables clairs
--   Donner les types des paramètres, et préciser s'il y a des conditions
-    dessus (on parle de préconditions pour les paramètres d'entrée et de
-    postconditions pour les paramètres de sortie).
+```python
+a=0
+while a<10:
+    print(a)
+    a = a+1
+```
 
-Les variables crées à l'intérieur des fonctions sont *locales*,
-c'est-à-dire qu'elles n'existent pas en dehors des fonctions. Si dans le
-programme précédent donné en exemple, vous faites un print(z) dans le
-programme principal, il y aura une erreur.
 
-*Remarque* : évitez les petites blagues qui consiste à donner des noms
-rigolos, mais ne facilitent pas la compréhension
+### Boucle for (pour)
 
-def ensedelephant (var icelle)... pour une fonction qui calculerait
-l'écart entre deux dates ne rend pas les choses très claires !
+La boucle for s'écrit selon la séquence **for** var **in** sequences_de_valeur :
+
+```python
+for i in range(0,10):
+    print(i)
+```
+
+?> Lancer la commande ci-dessus. Expliquer ce que vous voyez puis modifier le code pour afficher uniquement les nombres paires de 2 à 20. Il faut utiliser la fonction *if*.
+
+
+### Utilisation de bibliothèques (ou modules)
+
+Dans tout les langages informatiques avec une communauté conséquente, il existe vite un problème à résoudre : comment ne pas recoder (mal) ce qui a déjà été (bien) codé tout en gardant une langage qui ne deviennent pas trop imposant à installer? Autrement dit comment ne pas réinventer la roue tout en permettant aux codeurs qui n'ont pas besoins de roues de ne pas avoir à télécharger cette roue avec le langage. Une solution très utilisée est l'utilisation de bibliothèques (aussi appelées modules ou packages). Ces bibliothèques sont des ensembles de fonctions cohérentes. Par exemple, la bibliothèque « math » permet de calculer, entre autres, des cosinus et des racines carrées. La bibliothèque « random » est utilisé pour générer des nombres aléatoires. Pour charger une bibliothèque on utilise la code **from** *nom_bibliotheque* **import** \*. Ici l'étoile indique que l'on veut charger toute la bibliothèque. Si on a besoins que d'une fonction on remplace l'étoile par le nom de la fonction.
+
+```python
+from math import * # importation de toute les fonctions de la bibliothèque math
+from random import uniform # importation de la fonction uniform de la bibliothèque random
+```
+
+### Fonctions et spécification
+
+Python est un langage qui permet facilement de créer et d'utiliser des fonctions. Une fonction est une **suite d'instruction** qui prend des **paramètres en entrée**, **mouline** puis renvoie des **paramètres de sortie** (ou modifie une variable). Le nombre de paramètres d'entrée et de sortie peut être nul. Le choix d'un bon nom de fonction et de bon nom de paramètre est centrale dans la qualité d'un code. 
+
+> Il existe une citation célèbre en informatique, attribué à Phil Karlton : "There are only two hard things in Computer Science: cache invalidation and naming things" qui peut se traduire par « Il n'y a que deux choses difficiles en les sciences informatiques, l'invalidation de cache ([:fab fa-wikipedia-w:](https://en.wikipedia.org/wiki/Cache_invalidation)) et nommer les choses ». Cette citation est célèbre car elle souligne le caractère cruciale et difficile de l'attribution de nom aux fonctions et aux variables en informatiques.
+
+```python
+def bonjour():
+    '''
+    Cette fonction sans paramètre d'entrée dit bonjour!
+    '''
+    return("Bonjour")
+
+a = bonjour()
+print(a)
+```
+
+Les paramètres d'entrées sont indiqués dans les parenthèses de la fonction. Les paramètres de sortie sont renvoyés grâce à la commande `return`.
+
+```python
+def bonjour_personnalise(nom, prenom):
+    '''
+    Cette fonction dit bonjour de façon personnalisé
+    
+    Parameters:
+        nom (str): nom de famille
+        prenom (str): prénom
+    
+    Returns:
+        Une chaîne de caractère disant bonjour à la personne dont le nom
+        de famille et le prénom ont été donnés en entrée.
+    
+    Raises:
+        TypeError: if nom or prenom is not a string
+    '''
+    return("Bonjour "+ prenom + " " + nom)
+
+b = bonjour_personnalise("Sy", "Omar")
+print(b)
+help(bonjour_personnalise)
+```
+
+?> Que renvoie `print(b)` si vous changer l'ordre des valeurs "Sy" et "Omar"? Et si vous écrivez b = bonjour_personnalise(prenom="Omar", nom="Sy")
+
+L'ordre des paramètres d'entrée est important. Si vous ne connaissez pas l'ordre il y a deux solutions. Soit il faut faire une recherche (commande `help` ou recherche sur le Web), soit il faut nommer les valeurs des paramètres sous la forme ma_fonction(param1="valeur_param1", param2="valeur_param2"). La partie entre ''' est ce qu'on appelle la **docstring** (documentation de code). On parle aussi de **spécification** de la fonction. Cette docstring est indispensable à une fonction. Elle est ce qui va apparaître aux utilisateurs qui utiliserons la commande `help(votre_fonction)`. Cela ne vous empêche pas de commenter certaines lignes de codes importantes et/ou cruciales pour comprendre votre fonction. En python, il n'y a pas de convention dominante pour structurer le docstring, mais pour une bonne spécification il faut que votre docstring:
+-   Définisse l'**objectif** de la fonction,
+-   Liste les **paramètres d'entrée et de sortie** de la fonction (en particulier leur format et leur type),
+-   Précise les conditions pour que votre fonction fonctionne:
+    -   **Précondition**: condition sur les paramètres d'entrée (par ex. mon_param doit être une variable de type *int* et doit être positif),
+    -   **Postcondition**: condition sur les paramètres de sortie (par ex. la postcondition d'une fonction qui fait la somme de deux nombres positifs est que cette somme doit être positive). Il s'agit souvent de condition que l'on testera grâce à des tests unitaires par exemple avec le framework unittest de python (pas au programme).
+
+
+Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe pas en dehors de cette fonction. On dit que la variable est **locale**.
+
+?> Écrire un script qui met en évidence le caractère locale d'une variable définie dans une fonction.
+
+## :fa fa-keyboard: Comprendre python avec des tortues 
+
+?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne.
+
