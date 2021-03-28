@@ -14,20 +14,20 @@ n'est pas possible de modifier un tuple après qu'il ait été créé, on
 dit qu'ils sont immutables. Créons notre premier tuple :
 
 ```python
-mon_tupple = (1, 8, 56, 14)
+mon_tuple = (1, 8, 56, 14)
 ```
 
 Il est possible d'utiliser un élément d'un tuple.
 
 ```python
-a = mon_tupple[3] # appelle le quatrième élément du tuple (indice 3)
+a = mon_tuple[3] # appelle le quatrième élément du tuple (indice 3)
 ```
 
 Les tuples peuvent utiliser des éléments de tous types :
 
 ```python
 mon_tuple = ('hello', 'world')
-print(mon_tupple[0] + ' ' + mon_tupple[1] + ' !')
+print(mon_tuple[0] + ' ' + mon_tuple[1] + ' !')
 ```
 
 Il est courant que les fonctions renvoient des tuples en sortie :
@@ -37,7 +37,7 @@ def add(a, b) :
     c = a + b
     return (a, b, c)
 
-mon_tupple = add(5, 8)
+mon_tuple = add(5, 8)
 
 print(f"{mon_tuple[0]} + {mon_tuple[1]} = {mon_tuple[2]}")
 ```
