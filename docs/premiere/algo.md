@@ -86,14 +86,11 @@ Il existe trois axes de vérifications d'un algorithme:
 - **La correction** : est-que le résultat renvoyé est le bon ?
 - **La complexité** :  quel est le temps d'exécution d'un algorithme et la mémoire qu'il requiert?
 
+https://isn-icn-ljm.pagesperso-orange.fr/1-NSI/res/res_cours_algo.pdf
 
-
-
-
-Exemple du parcours séquentiel d'un tableau
+Exemple du parcours séquentiel d'un tableau (cours ancien Scho)
 
 http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a2_complexite.php
-
 
 ## Algorithme de tri
 http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#4
@@ -104,8 +101,6 @@ http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#4
 ### Tri par sélection
 
 
+?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
 
-
-Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
-
-Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2
+?> Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2

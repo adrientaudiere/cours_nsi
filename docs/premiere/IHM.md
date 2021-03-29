@@ -71,7 +71,7 @@ de les réordonner (TCP) et de les interpréter (Application)
 - Une couche **physique** qui concrétise le transport de données
 (câbles, Wi-Fi ).
 
-#### 1.2.1 IP* (*Internet Protocol)
+#### IP (Internet Protocol)
 <!-- 
 <div class="img-flow" style="max-width:320px;">
 <img src="premiere/../_img/ip_seb_sauvage.png" alt="protocole IP">
@@ -80,12 +80,9 @@ de les réordonner (TCP) et de les interpréter (Application)
 </p>
 </div> -->
 
-Dans le modèle Internet, le protocole IP rajoute à chaque petit paquet de données (votre message) différentes informations :
-
+Dans le modèle Internet, le protocole **IP** rajoute à chaque petit paquet de données (votre message) différentes informations :
  - l'adresse de l'expéditeur (votre adresse IP),
-
  - l'adresse IP du destinataire,
-
  - différentes données supplémentaires de contrôle
 
 L'adresse IP est une adresse unique attribuée à chaque ordinateur sur
@@ -96,9 +93,9 @@ avec lequel vous voulez communiquer. L'adresse IP se présente le plus
 souvent sous forme de 4 nombres (entre 0 et 255) séparés par des points.
 Par exemple: 2.4.158.190
 
-#### 1.2.2 TCP (Transmission Control Protocol)
+#### TCP (Transmission Control Protocol)
 
-TCP est un protocole fiable, qui permet l'acheminement sans erreur de
+**TCP** est un protocole fiable, qui permet l'acheminement sans erreur de
 données issues d'une machine à une autre machine. Son rôle est de
 fragmenter le message à transmettre de manière à pouvoir le faire passer
 sur la couche internet. A l'inverse, sur la machine destination, TCP

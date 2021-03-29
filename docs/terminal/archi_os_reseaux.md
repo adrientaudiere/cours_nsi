@@ -148,13 +148,18 @@ top
 
 ?> **Exercice 1** : sur votre ordinateur, lancer firefox puis trouver le PID et le PPID du processus. Avec la commande *kill*, tuer le processus firefox. Est-il toujours présent dans la liste des processus?
 
-
-
-
-
 ## Protocoles de routage
 
+!> !! Work in progress TODO !!
+
+
+?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) et particulièrement sur les protocoles IP et TCP.
+
 ### Routeurs et topologie
+
+Les ordinateurs reliés à internet forment des réseaux de réseaux dont les sommets sont de deux types : des ordinateurs et des routeurs. Les routeurs sont des machines dont le rôle est de relayer les paquets d'information dans le réseau. Les liens entre les ordinateurs et les routeurs sont établis par des switchs. Les routeurs sont également reliés entre eux. Mais comment les routeurs et les switchs savent à qui transférer les informations? Pour cela chaque routeur va entretenir une table de routage. Une table de routage stocke les noms des destinations, le moyen de l'atteindre et la distance à la destination.
+
+C'est le rôle des protocoles de routages qui utilisent des algorithmes issus de la théorie de graphes. Nous allons voir deux protocoles courant le **RIP** (Routing Information Protocol) et l'**OSPF** (Open Shortest Path First).
 
 ### Protocole RIP
 
@@ -166,7 +171,17 @@ top
 - ping
 - traceroute
 
+
+
+
+
+
+
 ## Sécurisation des communications
+
+!> Work in progress
+
+<!-- https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_chiffrage.pdf -->
 
 ### Cryptographie symétrique
 

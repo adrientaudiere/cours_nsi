@@ -37,7 +37,6 @@ Vous pouvez poster un message d'amélioration en créant une *new issue* sur Git
 - Un truc important 
 - Un autre truc important
 
-
 </div>
 
 ```html
@@ -60,7 +59,7 @@ def ma_super_fonction(x, y)
 
 
 
-Des maths 
+### Des maths 
 
 $$
 c=pm\times sqrt(a^2 + b^2)
@@ -68,3 +67,53 @@ $$
 
 
 Et encore des maths $8_{10} = 1111_{2}$
+
+
+### Des symboles
+
+```bash
+# Obtenir la liste des icônes fontawesome utilisés
+grep -h -r --include "*.md" -o -P '(?<=:fa).*(?=\:\ )' | uniq 
+```
+
+:fa fa-award:
+:fa fa-brain:
+:fa fa-check:
+:fa fa-code:
+:fa fa-cogs:
+:fa fa-cubes:
+:fa fa-dice:
+:fa fa-exclamation-triangle:
+:fa fa-file-csv:
+:fa fa-heartbeat:
+:fa fa-keyboard:
+:fa fa-language:
+:fa fa-laptop-code:
+:fa fa-laptop:
+:fa fa-linux:
+:fa fa-list-alt:
+:fa fa-long-arrow-alt-right:
+:fa fa-magnet:
+:fa fa-memory:
+:fa fa-microchip:
+:fa fa-microscope:
+:fa fa-monument:
+:fa fa-paragraph:
+:fa fa-project-diagram:
+:fa fa-python:
+:fa fa-ruler:
+:fa fa-search-minus:
+:fa fa-server:
+:fa fa-sign-language:
+:fa fa-sitemap:
+:fa fa-spell-check:
+:fa fa-terminal:
+:fa fa-times:
+:fab fa-css3-alt:
+:fab fa-firefox-browser:
+:fab fa-html5:
+:fab fa-linux:
+:fab fa-python:
+:fab fa-suse:
+:far fa-flag:
+:fas fa-arrows-alt-h:

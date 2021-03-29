@@ -140,8 +140,9 @@ de « bug ».
 
 En 1936, **Alan Turing** (1912 – 1954), doctorant de l'université de
 Cambridge, propose un modèle abstrait de fonctionnement d'une machine de
-calcul, c'est la **machine universelle de Turing**. Cette machine est
-constituée des 4 éléments suivants :
+calcul, c'est la **machine universelle de Turing**. Pour voir une animation 
+d'une machine de Turing, aller sur le site [Interstices](https://interstices.info/comment-fonctionne-une-machine-de-turing/).
+ Cette machine est constituée des 4 éléments suivants :
 
 - Le ruban infini divisé en cases contenant chacune un symbole d'un
 alphabet fini,

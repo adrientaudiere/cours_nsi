@@ -4,31 +4,45 @@
 
 
 ## Listes chaînées
-
-## Pilles et files
+!> Work in progress 
+## Piles et files
 
 ## Dictionnaires
 
-## Structures en arbres
 
+
+## Structures en arbres
+!> Work in progress 
 ### Arbres binaires
 
 ### Arbres binaires de recherche
 
 ### Autres structures arborescentes
 
-## Graphe
 
+
+## Graphe
+!> Work in progress 
 ### Définition d'un graphe
 
 ### Parcours en profondeurs et en largeur
 
+
+
 ## Diviser pour régner
 
+!> !! Work in progress TODO !!
+
+
+
 ## Programmation dynamique
+
+!> Work in progress 
 
 ## Recherche textuelle
 
 ?> Faire le TD sur l'algorithme de Boyer-Moore (modifié de Stéphan Van Zuijlen (CC-BY-NC)).
 
 ## Calculabilité
+
+!> !! Work in progress TODO !!
