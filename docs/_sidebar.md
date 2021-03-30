@@ -17,7 +17,8 @@
   * [<i class="fa fa-laptop-code" aria-hidden="true"></i> Algorithmique](/terminal/algo.md)
   * [<i class="fab fa-linux" aria-hidden="true"></i> Architecture materiel, systèmes d'exploitation et réseaux](/terminal/archi_os_reseaux.md)
   * [<i class="fa fa-code-branch" aria-hidden="true"></i> Programmation](/terminal/programmation.md)
-  
+
 ---
-* [*Sources*](/Sources.md)
-* [*À propos*](/apropos.md)
+* [<i class="fas fa-book" aria-hidden="true"></i> *Glossaire*](/glossaire.md)
+* [<i class="fa fa-quote-left" aria-hidden="true"></i> *Sources*](/Sources.md)
+* [<i class="fa fa-info-circle" aria-hidden="true"></i> *À propos*](/apropos.md)

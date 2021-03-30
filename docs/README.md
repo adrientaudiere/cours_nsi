@@ -2,7 +2,8 @@
 
 > Cours de Numérique et Sciences Informatiques d'[Adrien Taudière](https://adrientaudiere.com) au lycée [Scholae](https://scholae.fr)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Sauf mention contraire le contenu de ce site est sous <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.
+Sauf mention contraire le contenu de ce site est sous Licence ***Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International***
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> <img alt="Licence Creative Commons" style="display:inline; vertical-align:middle; margin-left:2px;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 
 Ce site est construit grâce à des logiciels libres, en particulier le logiciel [Docsify](https://docsify.js.org/#/). Il est complété par [fontawesome](https://fontawesome.com/) pour les icônes, [katex](https://katex.org/) pour les équations mathématiques, [mermaid-js](https://mermaid-js.github.io/mermaid/#/) pour les diagrammes et [prismjs](https://prismjs.com/) pour la coloration syntaxique.
 
@@ -19,101 +20,3 @@ Vous pouvez poster un message d'amélioration en créant une *new issue* sur Git
 ### :fa fa-laptop-code: VScodium
 
 ### :fab fa-firefox-browser: Mozilla Firefox
-
-
-
-## Exemples de règles de styles utilisées dans le site
-
-?> **Des exercices** : Un exemple de question très intelligente et complexes
-
-> Des exemples
-
-!> Des phrases importantes 
-
-<div class="nutshell">
-
-**Des résumés**:
-
-- Un truc important 
-- Un autre truc important
-
-</div>
-
-```html
-<p>This is a paragraph</p>
-<a href="//docsify.js.org/">Docsify</a>
-```
-
-```python
-def ma_super_fonction(x, y)
-  return x + y
-
-```
-
-
-| Left Align | Center Align | Right Align | Colonne |
-| ---------- |:------------:| -----------:| ------------------------------ |
-| A1         | A2           | A3          | A4                             |
-| B1         | B2           | B3          | B4                             |
-| C1         | C2           | C3          | C4                             |
-
-
-
-### Des maths 
-
-$$
-c=pm\times sqrt(a^2 + b^2)
-$$
-
-
-Et encore des maths $8_{10} = 1111_{2}$
-
-
-### Des symboles
-
-```bash
-# Obtenir la liste des icônes fontawesome utilisés
-grep -h -r --include "*.md" -o -P '(?<=:fa).*(?=\:\ )' | uniq 
-```
-
-:fa fa-award:
-:fa fa-brain:
-:fa fa-check:
-:fa fa-code:
-:fa fa-cogs:
-:fa fa-cubes:
-:fa fa-dice:
-:fa fa-exclamation-triangle:
-:fa fa-file-csv:
-:fa fa-heartbeat:
-:fa fa-keyboard:
-:fa fa-language:
-:fa fa-laptop-code:
-:fa fa-laptop:
-:fa fa-linux:
-:fa fa-list-alt:
-:fa fa-long-arrow-alt-right:
-:fa fa-magnet:
-:fa fa-memory:
-:fa fa-microchip:
-:fa fa-microscope:
-:fa fa-monument:
-:fa fa-paragraph:
-:fa fa-project-diagram:
-:fa fa-python:
-:fa fa-ruler:
-:fa fa-search-minus:
-:fa fa-server:
-:fa fa-sign-language:
-:fa fa-sitemap:
-:fa fa-spell-check:
-:fa fa-terminal:
-:fa fa-times:
-:fab fa-css3-alt:
-:fab fa-firefox-browser:
-:fab fa-html5:
-:fab fa-linux:
-:fab fa-python:
-:fab fa-suse:
-:far fa-flag:
-:fas fa-arrows-alt-h:
