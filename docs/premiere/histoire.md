@@ -41,7 +41,7 @@ métiers à tisser.
 <div class="img-flow" style="max-width:220px;">
 <img src="premiere/../_img/metier_tisser.JPG" alt="Métier à tisser">
 <p class="center-p"> 
-Métier à tisser Jacquart. <br> <a href="https://creativecommons.org/licenses/by/3.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Wooden_Jacquard_loom_MOSI-11_5544.JPG" target="_blank" rel="noopener"><i class="fab fa-wikipedia-w"></i></a> 
+Métier à tisser Jacquart. <br> <a href="https://creativecommons.org/licenses/by/3.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener" rel="noopener">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Wooden_Jacquard_loom_MOSI-11_5544.JPG" target="_blank" rel="noopener" rel="noopener"><i class="fab fa-wikipedia-w"></i></a> 
 </p>
 </div>
 
@@ -62,7 +62,7 @@ pour mettre au point les orgues de barbarie).
 <div class="img-flow-l" style="max-width:200px;">
 <img src="premiere/../_img/music-box.jpg" alt="Boite à musique">
 <p class="center-p"> 
-Boîte à musique.<br> <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener">CC BY-SA 2.0</a>, <a href="https://www.flickr.com/photos/36692623@N06/5303387162" target="_blank" rel="noopener"><i class="fab fa-flickr"></i></a> 
+Boîte à musique.<br> <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&amp;atype=html" target="_blank" rel="noopener" rel="noopener">CC BY-SA 2.0</a>, <a href="https://www.flickr.com/photos/36692623@N06/5303387162" target="_blank" rel="noopener" rel="noopener"><i class="fab fa-flickr"></i></a> 
 </p>
 </div>
 

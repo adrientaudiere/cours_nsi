@@ -35,11 +35,11 @@ Chaque langage a des règles obligatoires (leur manquement entraîne une erreur)
 - :fa fa-heartbeat: plus un nom de variable sera clair, plus il sera facile de relire votre code. Par exemple, préférer *nom_de_famille* à *ndf*; et préférer *moyenne_age* (ou *moy_age*) à *m_age* pour nommer une variable qui représente une moyenne d'âge. 
 
 <details>
-<summary> <strong>Tableau des mots reservés en python</strong>. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank">Source</a> </summary>
+<summary> <strong>Tableau des mots reservés en python</strong>. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank" rel="noopener">Source</a> </summary>
 
 ---
 
-<p class="center-p"> <strong>Tableau des mots reservés en python</strong> qui ne peuvent pas être utilisé comme nom de variable. Les mots en gras sont des mots que nous utiliserons durant les cours de NSI. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank">Source</a> </p>
+<p class="center-p"> <strong>Tableau des mots reservés en python</strong> qui ne peuvent pas être utilisé comme nom de variable. Les mots en gras sont des mots que nous utiliserons durant les cours de NSI. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank" rel="noopener">Source</a> </p>
 
 | Mot        | Définition                                                               |
 | ---------- | ------------------------------------------------------------------------ |

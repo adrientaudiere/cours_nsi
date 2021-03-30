@@ -52,7 +52,7 @@ qui ont participé à chaque match du fichier *results.csv* et que vous
 voulez indiquez leur âge, il faut faire un deuxième tableau en CSV alors
 qu'en JSON on peut l'inclure directement dans le même fichier.
 
-?> Convertir le fichier <a href="https://adrientaudiere.github.io/cours_nsi/_doc/pokemon.csv" target="_blank"> pokemon.csv</a> en JSON grâce à ce
+?> Convertir le fichier <a href="https://adrientaudiere.github.io/cours_nsi/_doc/pokemon.csv" target="_blank" rel="noopener"> pokemon.csv</a> en JSON grâce à ce
 [site](https://csvjson.com/csv2json).
 
 ## :fab fa-python: Importer/exporter les fichiers CSV avec python

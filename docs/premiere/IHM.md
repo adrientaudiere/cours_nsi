@@ -76,7 +76,7 @@ de les réordonner (TCP) et de les interpréter (Application)
 <div class="img-flow" style="max-width:320px;">
 <img src="premiere/../_img/ip_seb_sauvage.png" alt="protocole IP">
 <p class="center-p"> <strong>Protocole IP</strong>, par 
-<a href="https://sebsauvage.net/comprendre/tcpip/index.html" target="_blank" rel="noopener">Seb Sauvage</i></a> 
+<a href="https://sebsauvage.net/comprendre/tcpip/index.html" target="_blank" rel="noopener" rel="noopener">Seb Sauvage</i></a> 
 </p>
 </div> -->
 
@@ -106,7 +106,7 @@ reconstruire le message initial.
 
 --- 
 
-<p class="center-p"> <strong>Protocole TCP</strong>, par <a href="https://sebsauvage.net/comprendre/tcpip/index.html" target="_blank" rel="noopener">Seb Sauvage</i></a> </p>
+<p class="center-p"> <strong>Protocole TCP</strong>, par <a href="https://sebsauvage.net/comprendre/tcpip/index.html" target="_blank" rel="noopener" rel="noopener">Seb Sauvage</i></a> </p>
 
 ---  -->
 
