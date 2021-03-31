@@ -30,10 +30,27 @@
     />
   </head>
   <body>
+    <script>
+      document.onreadystatechange = function () {
+        var state = document.readyState;
+        if (state == "interactive") {
+          document.getElementById("app").style.visibility = "hidden";
+        } else if (state == "complete") {
+          setTimeout(function () {
+            document.getElementById("interactive");
+            document.getElementById("load").style.visibility = "hidden";
+            document.getElementById("app").style.visibility = "visible";
+          }, 0);
+        }
+      };
+    </script>
+    <div style="width:100%; height:100%; position:fixed; z-index:9999;" id="load">
+    <img src="/_img/loading_icon.svg" alt="loading">
+    </div>
     <div id="app">
-      <button class="btn-toggle" onclick="changeTheme()">Mode Sombre</button>
     </div>
     <script>
+
       window.$docsify = {
         name: "Cours NSI Scholae",
         repo: "https://github.com/adrientaudiere/cours_nsi",
@@ -94,11 +111,13 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ruby.min.js"></script>
     <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
-    <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"> </script>
+    <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
 
-    /*  CDN files for docsify-katex */
-    <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"> </script>
-    /* or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> */
+    /* CDN files for docsify-katex */
+    <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+    /* or
+    <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script>
+    */
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
