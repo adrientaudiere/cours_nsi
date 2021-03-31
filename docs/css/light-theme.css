@@ -1083,6 +1083,10 @@ svg[id^="mermaid-"] {
   list-style-type: circle;
 }
 
+.advanced_level{
+  background-color: rgba(179, 210, 219, 0.534);
+}
+
 /* -----------------------
 CSS for printing
 ------------------------- */

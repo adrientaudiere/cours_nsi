@@ -19,100 +19,80 @@ _______|_______/__/ ____ \__\__|___\__\__|___\__\____
                 https://darkreader.org
 */
 /* User-Agent Style */
-
-@import "light-theme.css";
-
 html {
-  background-color: #191817 !important;
+  background-color: #181714 !important;
 }
-
-html,
-body,
-input,
-textarea,
-select,
-button {
-  background-color: #191817;
+html, body, input, textarea, select, button {
+  background-color: #181714;
 }
-html,
-body,
-input,
-textarea,
-select,
-button {
-  border-color: #7b7263;
-  color: #fffae3;
+html, body, input, textarea, select, button {
+  border-color: #887e6b;
+  color: #ebebeb;
 }
 a {
-  color: #7194b9;
+  color: #92a6b5;
 }
 table {
-  border-color: #615f58;
+  border-color: #706a5b;
 }
 ::placeholder {
-  color: #c5b9a4;
+  color: #d6c6a8;
 }
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  background-color: #5b5929 !important;
-  color: #fffae3 !important;
+  background-color: #655f32 !important;
+  color: #ebebeb !important;
 }
 ::-webkit-scrollbar {
-  background-color: #222220;
-  color: #bdb19d;
+  background-color: #24221e;
+  color: #cfbfa3;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #4e4d48;
+  background-color: #5a5549;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #64635c;
+  background-color: #756e5f;
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: #52514c;
+  background-color: #5f594d;
 }
 ::-webkit-scrollbar-corner {
-  background-color: #191817;
+  background-color: #181714;
 }
 * {
-  scrollbar-color: #4e4d48 #222220;
+  scrollbar-color: #5a5549 #24221e;
 }
 ::selection {
   background-color: #005ccc !important;
-  color: #fff !important;
+  color: #FFF !important;
 }
 ::-moz-selection {
   background-color: #005ccc !important;
-  color: #fff !important;
+  color: #FFF !important;
 }
 
 /* Invert Style */
-.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], embed[type="application/pdf"]
-{
-  filter: invert(100%) hue-rotate(180deg) contrast(93%) grayscale(33%)
-    sepia(35%) !important;
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, embed[type="application/pdf"] {
+  filter: invert(100%) hue-rotate(180deg) brightness(107%) contrast(97%) grayscale(16%) sepia(63%) !important;
 }
-
-img{background-color: gainsboro;}
 
 /* Variables Style */
 :root {
-  --darkreader-neutral-background: #131312;
-  --darkreader-neutral-text: #f3e6d0;
-  --darkreader-selection-background: #005ccc;
-  --darkreader-selection-text: #fff;
+ --darkreader-neutral-background: #11110f;
+ --darkreader-neutral-text: #efddbc;
+ --darkreader-selection-background: #005ccc;
+ --darkreader-selection-text: #FFF;
 }
 
 /* Modified CSS */
 [class*="docsify-tabs--"] .docsify-tabs__tab {
-  background-color: rgb(29, 29, 27);
+  background-color: rgb(30, 28, 24);
   background-image: none;
-  color: rgb(185, 173, 153);
+  color: rgb(203, 188, 160); 
 }
 [class*="docsify-tabs--"] .docsify-tabs__tab--active {
-  background-color: inherit;
-  background-image: inherit;
-  color: inherit;
+  background-color: inherit; background-image: inherit; color: inherit; 
 }
 [class*="docsify-tabs--"] .docsify-tabs__content {
   background-color: inherit;
@@ -121,7 +101,7 @@ img{background-color: gainsboro;}
 .docsify-tabs--classic .docsify-tabs__content,
 .docsify-tabs--classic .docsify-tabs__tab,
 .docsify-tabs--classic::before {
-  border-color: rgb(60, 59, 55);
+  border-color: rgb(67, 64, 55);
 }
 .docsify-tabs--classic .docsify-tabs__content {
   border-top-color: currentcolor;
@@ -136,22 +116,68 @@ img{background-color: gainsboro;}
   background-image: none;
 }
 .docsify-tabs--material .docsify-tabs__content {
-  border-color: rgb(60, 59, 55);
-}
-.progress {
-  background-color: rgb(130, 141, 30);
-}
-.search a:hover {
-  color: rgb(200, 211, 104);
-}
-.search .search-keyword {
-  color: rgb(200, 211, 104);
+  border-color: rgb(67, 64, 55);
 }
 body {
-  color: rgb(201, 201, 192);
+  background-color: rgb(24, 23, 20);
+  background-image: none;
+}
+.timeline::after {
+  background-color: rgb(88, 101, 94);
+  background-image: none;
+}
+.container {
+  background-color: inherit;
+  background-image: inherit;
+}
+.container::after {
+  background-color: rgb(24, 23, 20);
+  background-image: none;
+  border-color: rgb(117, 134, 124);
+}
+.container::before {
+  background-color: rgb(111, 186, 209);
+  background-image: none;
+}
+.container .date {
+  color: rgb(111, 186, 209);
+}
+.container .icon {
+  background-color: rgb(73, 61, 35);
+  background-image: none;
+  border-color: rgb(117, 134, 124);
+  color: rgb(111, 186, 209);
+}
+.container .content-timeline {
+  background-color: rgb(73, 61, 35);
+  background-image: none;
+}
+.container .content-timeline strong {
+  color: rgb(111, 186, 209);
+}
+.container .content-timeline p {
+  color: rgb(255, 253, 216);
+}
+@media (max-width: 767.98px) {
+  .container.left::before,
+  .container.right::before {
+      border-color: transparent rgb(117, 134, 124) transparent transparent;
+  }
+}
+.progress {
+  background-color: rgb(88, 101, 94);
+}
+.search a:hover {
+  color: rgb(111, 186, 209);
+}
+.search .search-keyword {
+  color: rgb(111, 186, 209);
+}
+body {
+  color: rgb(233, 243, 242);
 }
 kbd {
-  border-color: rgb(71, 70, 65);
+  border-color: rgb(81, 76, 66);
 }
 .app-nav ul,
 .app-nav li {
@@ -162,15 +188,15 @@ kbd {
   text-decoration-color: currentcolor;
 }
 .app-nav a:hover {
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
 .app-nav a.active {
-  border-bottom-color: rgb(130, 141, 30);
-  color: rgb(200, 211, 104);
+  border-bottom-color: rgb(117, 134, 124);
+  color: rgb(111, 186, 209);
 }
 .app-nav li ul {
-  background-color: rgb(25, 24, 23);
-  border-color: rgb(65, 64, 60) rgb(65, 64, 60) rgb(71, 70, 65);
+  background-color: rgb(24, 23, 20);
+  border-color: rgb(74, 69, 60) rgb(74, 69, 60) rgb(81, 76, 66);
 }
 .app-nav li ul a.active {
   border-bottom-color: currentcolor;
@@ -180,20 +206,20 @@ kbd {
   text-decoration-color: currentcolor;
 }
 .github-corner svg {
-  color: rgb(255, 250, 227);
-  fill: rgb(200, 211, 104);
+  color: rgb(255, 253, 216);
+  fill: rgb(111, 186, 209);
 }
 .anchor {
   text-decoration-color: currentcolor;
 }
 .anchor span {
-  color: rgb(201, 201, 192);
+  color: rgb(233, 243, 242)
 }
 .anchor:hover {
   text-decoration-color: currentcolor;
 }
 .sidebar {
-  border-right-color: rgba(151, 140, 121, 0.07);
+  border-right-color: rgba(168, 155, 132, 0.07);
 }
 .sidebar > h1 a {
   color: inherit;
@@ -211,68 +237,71 @@ kbd {
   background-image: none;
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(105, 104, 97, 0.4);
+  background-color: rgba(123, 116, 100, 0.4);
   background-image: none;
 }
 .sidebar:hover::-webkit-scrollbar-track {
-  background-color: rgba(105, 104, 97, 0.1);
+  background-color: rgba(123, 116, 100, 0.1);
   background-image: none;
 }
 .sidebar-toggle {
-  background-color: rgba(25, 24, 23, 0.8);
+  background-color: rgba(24, 23, 20, 0.8);
   border-color: currentcolor;
   outline-color: currentcolor;
 }
 .sidebar-toggle span {
-  background-color: rgb(130, 141, 30);
+  background-color: rgb(88, 101, 94);
 }
 .markdown-section hr {
-  border-color: currentcolor currentcolor rgb(59, 58, 54);
+  border-color: currentcolor currentcolor rgba(117, 134, 124, 0.38);
 }
 .markdown-section iframe {
-  border-color: rgb(59, 58, 54);
+  border-color: rgb(66, 63, 54);
 }
 .markdown-section th {
-  border-color: rgb(65, 64, 60);
+  border-color: rgb(74, 69, 60);
 }
 .markdown-section td {
-  border-color: rgb(65, 64, 60);
+  border-color: rgb(74, 69, 60);
 }
 .markdown-section tr {
-  border-top-color: rgb(71, 70, 65);
+  border-top-color: rgb(81, 76, 66);
 }
 .markdown-section tr:nth-child(2n) {
-  background-color: rgb(38, 37, 35);
+  background-color: rgb(40, 38, 33);
 }
 .markdown-section p.tip {
-  background-color: rgba(147, 93, 90, 0.14);
-  border-left-color: rgba(88, 20, 16, 0.5);
+  background-color: rgb(1, 44, 49);
+  border-left-color: rgb(117, 134, 124);
 }
 .markdown-section p.tip::before {
-  background-color: rgba(85, 19, 16);
-  color: rgb(255, 250, 227);
+  background-color: rgb(88, 101, 94);
+  color: rgb(255, 253, 216);
 }
 .markdown-section p.tip code {
-  background-color: rgb(36, 35, 33);
+  background-color: rgb(38, 36, 31);
 }
 .markdown-section p.tip em {
-  color: rgb(201, 201, 192);
+  color: rgb(233, 243, 242)
 }
 .markdown-section p.warn {
-  background-color: rgba(104, 141, 111, 0.1);
+  background-color: rgba(129, 152, 116, 0.1);
   background-image: none;
-  border-bottom-color: rgba(92, 125, 98, 0.5);
+  border-bottom-color: rgba(114, 134, 102, 0.5);
+}
+.warn::before {
+  color: rgb(111, 186, 209);
 }
 @media screen and (max-width: 768px) {
   .sidebar-toggle {
-    background-color: transparent;
+      background-color: transparent;
   }
   body.close .sidebar-toggle {
-    background-color: rgba(25, 24, 23, 0.8);
+      background-color: rgba(24, 23, 20, 0.8);
   }
 }
 section.cover.has-mask .mask {
-  background-color: rgb(25, 24, 23);
+  background-color: rgb(24, 23, 20);
 }
 section.cover a {
   color: inherit;
@@ -285,45 +314,44 @@ section.cover h1 {
   color: inherit;
 }
 section.cover .cover-main p a {
-  border-color: rgb(130, 141, 30);
-  background-color: rgba(25, 24, 23, 0.5);
-  color: rgb(200, 211, 104);
+  border-color: rgb(117, 134, 124);
+  background-color: rgba(24, 23, 20, 0.5);
+  color: rgb(111, 186, 209);
   text-decoration-color: currentcolor;
 }
 .btn-vide a {
-  border-color: rgb(130, 141, 30);
-  background-color: rgba(25, 24, 23, 0.5);
-  color: rgb(200, 211, 104);
+  border-color: rgb(117, 134, 124);
+  background-color: rgba(24, 23, 20, 0.5);
+  color: rgb(111, 186, 209);
   text-decoration-color: currentcolor;
 }
-details {
-  background-color: rgba(200, 211, 104, 0.05);
-  color: rgb(255, 250, 227);
+.btn-toggle {
+  border-color: rgb(117, 134, 124);
 }
 section.cover .cover-main p span.btn-plein a {
-  background-color: rgb(130, 141, 30);
-  color: rgb(255, 250, 227);
+  background-color: rgb(88, 101, 94);
+  color: rgb(255, 253, 216);
 }
 .markdown-section .btn-plein a {
-  background-color: rgb(130, 141, 30);
-  color: rgb(255, 250, 227);
+  background-color: rgb(88, 101, 94);
+  color: rgb(255, 253, 216);
   text-decoration-color: currentcolor;
 }
 section.cover blockquote > p > a {
-  border-bottom-color: rgb(130, 141, 30);
+  border-bottom-color: rgb(117, 134, 124);
 }
 section.cover blockquote > p > a:hover {
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
 body {
-  background-color: rgb(25, 24, 23);
+  background-color: rgb(24, 23, 20);
 }
 .sidebar {
-  background-color: rgb(25, 24, 23);
-  color: rgb(214, 202, 180);
+  background-color: rgb(24, 23, 20);
+  color: rgb(233, 243, 242);
 }
 .sidebar ul li a {
-  color: rgb(191, 179, 159);
+  color: rgb(233, 243, 242);
   text-decoration-color: currentcolor;
 }
 .sidebar ul li a:hover {
@@ -331,157 +359,556 @@ body {
 }
 .sidebar ul li.active > a {
   border-right-color: currentcolor;
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
 .markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4,
 .markdown-section strong {
-  color: rgb(209, 208, 198);
+  color: rgb(233, 243, 242);
 }
 .markdown-section h1::after {
-  border-bottom-color: rgba(149, 98, 52, 0.5);
+  border-bottom-color: rgba(117, 134, 124, 0.39);
 }
 .markdown-section h2::after {
-  border-bottom-color: rgba(149, 98, 52, 0.5);
+  border-bottom-color: rgba(117, 134, 124, 0.39);
 }
 .markdown-section h3::after {
-  border-bottom-color: rgba(149, 98, 52, 0.56);
+  border-bottom-color: rgba(117, 134, 124, 0.39);
 }
 .markdown-section a {
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
 .markdown-section h6 {
-  color: rgb(172, 160, 141);
+  color: rgb(192, 177, 151);
 }
 .markdown-section blockquote {
-  border-left-color: rgb(130, 141, 30);
-  color: rgb(169, 158, 138);
-}
-.markdown-section em {
-  color: rgb(145, 60, 77);
+  border-left-color: rgb(117, 134, 124);
+  color: ivory;
 }
 .markdown-section code {
-  background-color: rgb(38, 37, 35);
-  color: rgb(145, 60, 77);
+  background-color: rgb(40, 38, 33);
+  color: rgb(186, 109, 112);
 }
 .markdown-section pre {
-  background-color: rgb(38, 37, 35);
+  background-color: rgb(40, 38, 33);
 }
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: rgb(176, 164, 145);
+  color: rgb(196, 181, 154);
 }
 .token.boolean,
 .token.number {
-  color: rgb(200, 211, 104);
+  color: rgb(220, 175, 126);
 }
 .token.punctuation {
-  color: rgb(200, 211, 104);
+  color: rgb(217, 200, 171);
 }
 .token.property {
-  color: rgb(200, 211, 104);
+  color: rgb(236, 202, 141);
 }
 .token.tag {
-  color: rgb(154, 175, 184);
+  color: rgb(185, 193, 184);
 }
 .token.string {
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
 .token.selector {
-  color: rgb(149, 160, 171);
+  color: rgb(173, 174, 169);
 }
 .token.attr-name {
-  color: rgb(154, 175, 184);
+  color: rgb(185, 193, 184);
 }
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: rgb(143, 187, 188);
+  color: rgb(178, 205, 189);
 }
 .token.attr-value,
 .token.control,
 .token.directive,
 .token.unit {
-  color: rgb(200, 211, 104);
+  color: rgb(111, 186, 209);
 }
-.token.keyword,
+.token.keyword {
+  color: rgb(124, 78, 144);
+}
 .token.function {
-  color: rgb(200, 211, 104);
+  color: rgb(242, 183, 120);
 }
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: rgb(143, 187, 188);
+  color: rgb(178, 205, 189);
 }
 .token.placeholder,
 .token.variable {
-  color: rgb(131, 158, 171);
+  color: rgb(162, 176, 171);
 }
 .token.deleted {
   text-decoration-color: currentcolor;
 }
 .token.inserted {
-  border-bottom-color: rgb(90, 93, 115);
+  border-bottom-color: rgb(108, 105, 113);
   text-decoration-color: currentcolor;
 }
 .token.important {
-  color: rgb(169, 179, 87);
+  color: rgb(206, 150, 113);
 }
 .markdown-section pre > code {
-  background-color: rgb(38, 37, 35);
-  color: rgb(200, 188, 167);
+  background-color: rgb(40, 38, 33);
+  color: rgb(217, 200, 171);
 }
 pre::after {
-  color: rgb(224, 211, 190);
+  color: rgb(239, 221, 188);
 }
 .fa-chevron-right {
-  color: rgb(209, 208, 198);
+  color: rgb(233, 243, 242);
 }
 .fa-arrow-right {
-  color: rgba(130, 141, 30, 0.65);
+  color: rgba(242, 183, 120, 0.65);
+}
+.nutshell {
+  background-color: rgb(73, 61, 35);
+  border-color: rgb(117, 134, 124);
+}
+.nutshell::before {
+  background-color: rgb(73, 61, 35);
+  color: rgb(111, 186, 209); 
+}
+.very_strong {
+  -webkit-text-stroke-color: currentcolor; 
+}
+.sidebar-nav ul li {
+  list-style-image: none; 
+}
+svg[id^="mermaid-"] {
+  background-color: rgba(105, 99, 85, 0.2);
+  background-image: none;
+}
+.advanced_level {
+  background-color: rgba(68, 74, 67, 0.53);
+}
+.progress {
+  background-color: rgb(88, 101, 94);
+}
+.search a:hover {
+  color: rgb(111, 186, 209);
+}
+.search .search-keyword {
+  color: rgb(111, 186, 209);
+}
+body {
+  color: rgb(233, 243, 242)
+}
+kbd {
+  border-color: rgb(81, 76, 66);
+}
+.app-nav ul,
+.app-nav li {
+  list-style-image: none;
+}
+.app-nav a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+.app-nav a:hover {
+  color: rgb(111, 186, 209);
+}
+.app-nav a.active {
+  border-bottom-color: rgb(117, 134, 124);
+  color: rgb(111, 186, 209);
+}
+.app-nav li ul {
+  background-color: rgb(24, 23, 20);
+  border-color: rgb(74, 69, 60) rgb(74, 69, 60) rgb(81, 76, 66);
+}
+.app-nav li ul a.active {
+  border-bottom-color: currentcolor;
+}
+.github-corner {
+  border-bottom-color: currentcolor;
+  text-decoration-color: currentcolor;
+}
+.github-corner svg {
+  color: rgb(255, 253, 216);
+  fill: rgb(111, 186, 209);
+}
+.anchor {
+  text-decoration-color: currentcolor;
+}
+.anchor span {
+  color: rgb(233, 243, 242)
+}
+.anchor:hover {
+  text-decoration-color: currentcolor;
+}
+.sidebar {
+  border-right-color: rgba(168, 155, 132, 0.07);
+}
+.sidebar > h1 a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+.sidebar ul,
+.sidebar ul li {
+  list-style-image: none;
+}
+.sidebar ul li a {
+  border-bottom-color: currentcolor;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-image: none;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(123, 116, 100, 0.4);
+  background-image: none;
+}
+.sidebar:hover::-webkit-scrollbar-track {
+  background-color: rgba(123, 116, 100, 0.1);
+  background-image: none;
+}
+.sidebar-toggle {
+  background-color: rgba(24, 23, 20, 0.8);
+  border-color: currentcolor;
+  outline-color: currentcolor;
+}
+.sidebar-toggle span {
+  background-color: rgb(88, 101, 94);
+}
+.markdown-section hr {
+  border-color: currentcolor currentcolor rgba(117, 134, 124, 0.38);
+}
+.markdown-section iframe {
+  border-color: rgb(66, 63, 54);
+}
+.markdown-section th {
+  border-color: rgb(74, 69, 60);
+}
+.markdown-section td {
+  border-color: rgb(74, 69, 60);
+}
+.markdown-section tr {
+  border-top-color: rgb(81, 76, 66);
+}
+.markdown-section tr:nth-child(2n) {
+  background-color: rgb(40, 38, 33);
+}
+.markdown-section p.tip {
+  background-color: rgb(0, 29, 32);
+  border-left-color: rgb(111, 186, 209);
+}
+.markdown-section p.tip::before {
+  background-color: rgb(111, 186, 209);
+  color: rgb(0, 29, 32);
+}
+.markdown-section p.tip code {
+  background-color: rgb(38, 36, 31);
+}
+.markdown-section p.tip em {
+  color: rgb(233, 243, 242)
+}
+.markdown-section p.warn {
+  background-color: rgba(129, 152, 116, 0.1);
+  background-image: none;
+  border-bottom-color: rgba(114, 134, 102, 0.5);
+}
+.warn::before {
+  color: rgb(111, 186, 209);
+}
+@media screen and (max-width: 768px) {
+  .sidebar-toggle {
+      background-color: transparent;
+  }
+  body.close .sidebar-toggle {
+      background-color: rgba(24, 23, 20, 0.8);
+  }
+}
+section.cover.has-mask .mask {
+  background-color: rgb(24, 23, 20);
+}
+section.cover a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+}
+section.cover a:hover {
+  text-decoration-color: currentcolor;
+}
+section.cover h1 {
+  color: inherit;
+}
+section.cover .cover-main p a {
+  border-color: rgb(117, 134, 124);
+  background-color: rgba(24, 23, 20, 0.5);
+  color: rgb(111, 186, 209);
+  text-decoration-color: currentcolor;
+}
+.btn-vide a {
+  border-color: rgb(117, 134, 124);
+  background-color: rgba(24, 23, 20, 0.5);
+  color: rgb(111, 186, 209);
+  text-decoration-color: currentcolor;
+}
+.btn-toggle {
+  border-color: rgb(117, 134, 124);
+}
+details {
+  background-color: rgb(44, 38, 33);
+}
+section.cover .cover-main p span.btn-plein a {
+  background-color: rgb(88, 101, 94);
+  color: rgb(255, 253, 216);
+}
+.markdown-section .btn-plein a {
+  background-color: rgb(88, 101, 94);
+  color: rgb(255, 253, 216);
+  text-decoration-color: currentcolor;
+}
+section.cover blockquote > p > a {
+  border-bottom-color: rgb(117, 134, 124);
+}
+section.cover blockquote > p > a:hover {
+  color: rgb(111, 186, 209);
+}
+body {
+  background-color: rgb(24, 23, 20);
+}
+.sidebar {
+  background-color: rgb(24, 23, 20);
+  color: rgb(230, 212, 181);
+}
+.sidebar ul li a {
+  color: rgb(233, 243, 242);
+  text-decoration-color: currentcolor;
+}
+.sidebar ul li a:hover {
+  text-decoration-color: currentcolor;
+}
+.sidebar ul li.active > a {
+  border-right-color: currentcolor;
+  color: rgb(111, 186, 209);
+}
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section strong {
+  color: rgb(233, 243, 242);
+}
+.markdown-section h1::after {
+  border-bottom-color: rgba(117, 134, 124, 0.39);
+}
+.markdown-section h2::after {
+  border-bottom-color: rgba(117, 134, 124, 0.39);
+}
+.markdown-section h3::after {
+  border-bottom-color: rgba(117, 134, 124, 0.39);
+}
+.markdown-section a {
+  color: rgb(111, 186, 209);
+}
+.markdown-section h6 {
+  color: ivory;
+}
+.markdown-section blockquote {
+  border-left-color: rgb(117, 134, 124);
+  color: ivory;
+}
+.markdown-section code {
+  background-color: rgb(40, 38, 33);
+  color: rgb(186, 109, 112);
+}
+.markdown-section pre {
+  background-color: rgb(40, 38, 33);
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: rgb(196, 181, 154);
+}
+.token.boolean,
+.token.number {
+  color: rgb(220, 175, 126);
+}
+.token.punctuation {
+  color: rgb(217, 200, 171);
+}
+.token.property {
+  color: rgb(236, 202, 141);
+}
+.token.tag {
+  color: rgb(185, 193, 184);
+}
+.token.string {
+  color: rgb(111, 186, 209);
+}
+.token.selector {
+  color: rgb(173, 174, 169);
+}
+.token.attr-name {
+  color: rgb(185, 193, 184);
+}
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: rgb(178, 205, 189);
+}
+.token.attr-value,
+.token.control,
+.token.directive,
+.token.unit {
+  color: rgb(111, 186, 209);
+}
+.token.keyword {
+  color: rgb(124, 78, 144);
+}
+.token.function {
+  color: rgb(242, 183, 120);
+}
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: rgb(178, 205, 189);
+}
+.token.placeholder,
+.token.variable {
+  color: rgb(162, 176, 171);
+}
+.token.deleted {
+  text-decoration-color: currentcolor;
+}
+.token.inserted {
+  border-bottom-color: rgb(108, 105, 113);
+  text-decoration-color: currentcolor;
+}
+.token.important {
+  color: rgb(206, 150, 113);
+}
+.markdown-section pre > code {
+  background-color: rgb(40, 38, 33);
+  color: rgb(217, 200, 171);
+}
+pre::after {
+  color: rgb(239, 221, 188);
+}
+.fa-chevron-right {
+  color: rgb(233, 243, 242);
+}
+.fa-arrow-right {
+  color: rgba(242, 183, 120, 0.65);
+}
+.nutshell {
+  background-color: rgb(17, 0, 24);
+  border-color: rgb(72, 0, 100);
+}
+.nutshell::before {
+  background-color: rgb(17, 0, 24);
+  color: rgb(72, 0, 100); 
+  color: whitesmoke;
+}
+.very_strong {
+  -webkit-text-stroke-color: currentcolor; 
+}
+.sidebar-nav ul li {
+  list-style-image: none; 
+}
+svg[id^="mermaid-"] {
+  background-color: rgba(105, 99, 85, 0.2);
+  background-image: none;
+}
+.advanced_level {
+  background-color: rgba(68, 74, 67, 0.53);
+}
+.fa-border {
+  border-color: rgb(66, 63, 54);
+}
+.fa-inverse {
+  color: rgb(255, 253, 216);
+}
+.sr-only {
+  border-color: currentcolor;
+}
+.docsify-copy-code-button {
+  border-color: currentcolor;
+  outline-color: currentcolor;
+  background-color: rgb(88, 101, 94);
+  background-image: none;
+  color: rgb(255, 253, 216);
+}
+.docsify-copy-code-button span {
+  background-color: inherit;
+  background-image: inherit;
 }
 .search {
-  border-bottom-color: rgb(59, 58, 54);
+  border-bottom-color: rgb(66, 63, 54);
 }
 .search input {
   outline-color: currentcolor;
   border-color: transparent;
 }
 .search input:focus {
-  box-shadow: rgb(130, 141, 30) 0px 0px 5px;
-  border-color: rgb(130, 141, 30);
+  box-shadow: rgb(88, 101, 94) 0px 0px 5px;
+  border-color: rgb(117, 134, 124);
 }
 .search a {
   text-decoration-color: currentcolor;
   color: inherit;
 }
 .search .matching-post {
-  border-bottom-color: rgb(59, 58, 54);
+  border-bottom-color: rgb(66, 63, 54);
 }
 .search .matching-post:last-child {
   border-bottom-color: currentcolor;
 }
-.fa-border {
-  border-color: rgb(59, 58, 54);
-}
-.fa-inverse {
-  color: rgb(255, 250, 227);
-}
-.sr-only {
+.katex {
   border-color: currentcolor;
+}
+.katex .katex-mathml {
+  border-color: currentcolor;
+}
+.katex .rule {
+  border-color: currentcolor;
+}
+.katex svg {
+  fill: currentcolor;
+  stroke: currentcolor;
+}
+.katex svg path {
+  stroke: none;
+}
+.katex .fbox,
+.katex .fcolorbox {
+  border-color: currentcolor;
+}
+.katex .angl {
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
 }
 
 /* Override Style */
 .vimvixen-hint {
-  background-color: #6d5721 !important;
-  border-color: #d5ba64 !important;
-  color: #fffbd7 !important;
+  background-color: #755f2c !important;
+  border-color: #f0d17b !important;
+  color: #ffffea !important;
 }
 ::placeholder {
   opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+  fill: var(--darkreader-neutral-text) !important;
+}
+
+
+/* Addition to darktheme */
+
+img{
+  background-color: ivory;
+  border: solid ivory 5px;
 }

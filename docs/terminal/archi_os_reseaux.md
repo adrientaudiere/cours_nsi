@@ -150,23 +150,56 @@ top
 
 ## Protocoles de routage
 
-!> !! Work in progress TODO !!
-
-<iframe src="https://invidious.xyz/watch?v=s18KtOLpCg4"></iframe>
+?> Regarder la <a href='https://www.youtube.com/watch?v=dz7Ntp7KQGA' target="_blank" rel=noopener>vidéo</a> suivante qui fait un petit rappel du programme de seconde.
 
 ?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) et particulièrement sur les protocoles IP et TCP.
 
 ### Routeurs et topologie
 
-Les ordinateurs reliés à internet forment des réseaux de réseaux dont les sommets sont de deux types : des ordinateurs et des routeurs. Les routeurs sont des machines dont le rôle est de relayer les paquets d'information dans le réseau. Les liens entre les ordinateurs et les routeurs sont établis par des switchs. Les routeurs sont également reliés entre eux. Mais comment les routeurs et les switchs savent à qui transférer les informations? Pour cela chaque routeur va entretenir une table de routage. Une table de routage stocke les noms des destinations, le moyen de l'atteindre et la distance à la destination.
+Les ordinateurs reliés à internet forment des réseaux de réseaux dont les sommets sont de deux types : des ordinateurs et des **routeurs**. Les routeurs sont des machines dont le rôle est de relayer les paquets d'information dans le réseau internet. Les liens entre les ordinateurs et les routeurs sont établis par des switchs. Les routeurs sont également reliés entre eux. Mais comment les routeurs et les switchs savent à qui transférer les informations? 
 
+La première solution consiste à centraliser les informations du réseau vers un ordinateur qui peut alors prendre les meilleurs décisions. Dans le cas des très petits réseaux, on peut même utilisé un routage pré-établis par l'administrateur·ice, c'est le routage statique (sans calcul). Mais cette solution centralisée est très gourmande en information dès lors que le réseau devient grand. La deuxième solution est une solution distribuée (on dit aussi décentralisée) et dynamique (l'administrateur·ice ne). Chaque routeur va entretenir une table de routage qui lui permettra d'avoir des informations sur quels voisins contacter lorsqu'il veux atteindre tel machine. Une table de routage stocke les noms des destinations, le moyen de l'atteindre et la distance à la destination. Les routeurs dynamiques sont plus complexes à mettre en place mais sont plus facile à maintenir. De plus, les protocoles utilisés permettent de recalculer des chemins lorsque certains routeurs sont en pannes.
+
+| Réseau destination | Moyen de l'atteindre | Distance |
+| ------------------ | -------------------- | -------- |
+| 127.0.0.0/8        | 127.0.0.1            | 1        |
+| 192.168.0.0/24     | 192.168.0.100        | 4        |
+
+---
+<p class="center-p">
+
+    Exemple d'une table de routage simplifiée. Dans les table de routage, le moyen d'atteindre la destination est plus détaillé que ça. En particulier, des masques de sous réseaux ([:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Sous-r%C3%A9seau)) permettent d'assigner un ensemble de nœuds du réseau à un même sous réseau. Cela facilite la gestion des paquets entre des régions très distantes sur le réseau.
+
+</p>
+
+
+?> Lancer la commande `ip route` dans votre terminal Linux. À l'aide de recherche en ligne si besoin, décrire le résultat de cette commande.
+
+> Par **analogie**, le **routeur** peut être vu comme un **bureau de poste**. Les courriers représentent les paquets de données qui transitent dans le réseau. Le bureau de poste établie vers quelle bureau de poste plus proche de la destination il doit envoyer le courrier. Ainsi, pour filer l'analogie, vous postez une lettre à Saint-Hippolyte-du-Fort à destination de Montretout dans les Hauts-de-Seine.Le bureau de poste de St Hippolyte ferait transiter cette lettre par Montpellier qui lui est recommandé pour les destinations hors de sa région. Puis le bureau de poste de Montpellier, en regardant sa « table de routage » ferait suivre au bureau de poste de Paris qui pourrait enfin livrer la lettre à Montretout. 
+
+Une fois que l'on a compris le rôle des routeurs, il reste à expliquer comment les routeurs choisissent les « meilleurs » chemins dans le réseau.
 C'est le rôle des protocoles de routages qui utilisent des algorithmes issus de la théorie de graphes. Nous allons voir deux protocoles courant le **RIP** (Routing Information Protocol) et l'**OSPF** (Open Shortest Path First).
 
-### Protocole RIP
+### Protocole RIP (Routing Information Protocol)
 
+Dans le protocole **RIP** (Routing Information Protocol), les **routeurs s'envoient périodiquement des messages** entre voisins. Ces messages contiennent **la liste de tous les réseaux connus** par le routeur. Les routeurs voisins peuvent ainsi **mettre à jour régulièrement leur table de routage** puis transmettrons ces changement lors de l'envoie des messages périodiques. La métrique de distance utilisée par le protocole RIP est simple : il suffit de compter le **nombre de pas** dans le réseau entre le routeur et la destination, c'est à dire le nombre de routeur traversé.
 
+Pour calculer les plus courts chemins dans un graphe, le protocole RIP utilise l'algorithme de **Bellman-Ford**. Le problème du protocole RIP sur des gros réseaux est que le nombre d'information que doivent s'envoyer les routeurs est très importants, surtout si on a des tables de routage avec beaucoup d'entrée, ce qui est important si on veux fluidifier le traffic de paquets.
 
-### Protocole OSPF
+?> Faire les activités (*À faire vous-même*) du document protocoles de routage sur [pixees](https://pixees.fr/informatiquelycee/n_site/nsi_term_archi_routage.html).
+
+### Protocole OSPF (Open Shortest Path First)
+
+Le protocole **OSPF** (Open Shortest Path First) repose aussi sur l'**échanges d'informations entre les routeurs**, mais de façon plus parcimonieuse que dans le protocole RIP. La principale différence qu'il faut retenir entre ces deux protocoles et la manière de **calculer les distances entre les nœuds** du réseau. Le protocole OSPF ne se base pas sur le nombre de saut mais sur le coût effectif de la route. Pour cela, le protocole OSPF calcul les **débits** entre les routeurs. Lorsqu'un chemin entre deux routeurs empruntent des liaisons à fort débits le coût de la route sera faible. Donc la distance calculée sera faible et ce chemin sera privilégié. À l'inverse, lorsque les liaisons entre deux routeurs ont des faibles débits, leur distance calculé dans la table de routage est forte et donc ce chemin ne sera pas privilégié. Le protocole OSPF repose sur l'**algorithme de Dijkstra** pour calculer le chemin le plus court.
+
+Ce protocole a également l'avantage de s'appuyer sur les débits réels et non sur un nombre de routeur. Ainsi, si une liaison entre deux routeurs directement reliés est très lente, alors qu'une liaison via un troisième routeur est plus rapide, le protocole OSPF choisira le chemin le plus rapide au contraire du protocole RIP. C'est d'autant plus important que les débits au sein d'un réseau sont aujourd'hui très variables selon les liaisons.
+
+> RIP c'est un peu une application GPS qui vous ferez passer par une petite route de montagne pour vous faire gagner du temps car elle ne sait pas prendre en compte la différence entre une route de montagne et une autoroute. Le problème c'est que notre GPS RIP fait l'hypothèse que la distance de trajet est suffisante pour estimer le temps de trajet. Au contraire, OSPF est une application qui sait que passer par l'autoroute prend tant de temps et que c'est plus rapide que par la route de montagne.
+ 
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+- Une suite de [vidéos](https://www.youtube.com/watch?v=e3I4opl8EH4&list=PLjXls-kqM6JDyMO3Llm5olS_U2I_P6OHG) qui reprend tout les concepts de routage vu en cours. 
+</details>
 
 ### Commande UNIX de gestion des protocoles
 

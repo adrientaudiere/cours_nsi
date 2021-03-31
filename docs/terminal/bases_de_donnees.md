@@ -165,6 +165,14 @@ INNER JOIN Types
 ON Monstres.Type = Types.Type
 ```
 
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?>  Pour s'exercer au SQL vous pouvez suivre les cours du [COLIBRI](https://colibri.unistra.fr/fr/course/list/notions-de-base-en-sql) de Strasbourg et vous entraîner sur la [Khan academy](https://fr.khanacademy.org/computing/computer-programming/sql).
+
+</details>
+
 ## Systèmes de Gestion de Bases de Données (SGBD)
 
 Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui permet … la gestion de bases de données en facilitant :

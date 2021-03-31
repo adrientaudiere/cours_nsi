@@ -17,6 +17,7 @@ Filliâtre et K. Nguyen
 
 
 
+
 ## Sources secondaire
 
 
@@ -33,8 +34,8 @@ https://freecodecamp.org/
 
 ### Internet 
 
-[L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR) 
-
+- [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR) 
+- Routage sur [idum](http://idum.fr/spip.php?article213)
 
 ### À creuser
 

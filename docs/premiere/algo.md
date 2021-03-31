@@ -25,7 +25,7 @@ graph LR
 --- 
 <p class="center-p"> Schema simplifié d'un algorithme.</p>
 
-<details>
+<details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
 Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Donald E. Knuth, Algorithmes, Stanford, CSLI Publications, 2011, 510 p. (ISBN 978-1-57586-620-8)"> 2011 </abbr>) : 
