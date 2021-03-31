@@ -152,6 +152,7 @@ top
 
 !> !! Work in progress TODO !!
 
+<iframe src="https://invidious.xyz/watch?v=s18KtOLpCg4"></iframe>
 
 ?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) et particulièrement sur les protocoles IP et TCP.
 
@@ -162,6 +163,8 @@ Les ordinateurs reliés à internet forment des réseaux de réseaux dont les so
 C'est le rôle des protocoles de routages qui utilisent des algorithmes issus de la théorie de graphes. Nous allons voir deux protocoles courant le **RIP** (Routing Information Protocol) et l'**OSPF** (Open Shortest Path First).
 
 ### Protocole RIP
+
+
 
 ### Protocole OSPF
 

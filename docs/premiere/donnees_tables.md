@@ -36,9 +36,15 @@ couramment pour représenter des données structurées en tableau. On peut
 facilement importer ou exporter des fichiers *.csv* avec un tableur (par
 ex. Libreoffice Calc).
 
-?> Ouvrir les fichiers results.csv et Pokemon.csv avec
-Libreoffice Calc puis avec le logiciel VScodium. Les deux logiciels
+?> Enregistrer les fichiers [results.csv] et Pokemon.csv sur votre
+ordinateur, puis les ouvrir avec le logiciel
+LibreOffice Calc puis avec VScodium. Les deux logiciels
 réagissent-ils pareil à l'ouverture d'un fichier CSV ?
+
+?> En utilisant LibreOffice Calc, trouver le nombre de pokémons légendaires? Est-ce que l'attaque moyenne des pokémons légendaires est supérieurs à celle des autres pokémons?
+
+?> Essayer d'ouvrir le fichiers [Pokemon2.csv](https://raw.githubusercontent.com/adrientaudiere/cours_nsi/main/docs/_doc/Pokemon2.csv) de façon satisfaisante avec LibreOffice Calc. 
+
 
 Dans le format CSV, chaque ligne représente un **enregistrement** (par
 exemple chaque ligne correspond à un match ou à un nom de Pokémon). Sur
@@ -52,8 +58,12 @@ qui ont participé à chaque match du fichier *results.csv* et que vous
 voulez indiquez leur âge, il faut faire un deuxième tableau en CSV alors
 qu'en JSON on peut l'inclure directement dans le même fichier.
 
-?> Convertir le fichier <a href="https://adrientaudiere.github.io/cours_nsi/_doc/pokemon.csv" target="_blank" rel="noopener"> pokemon.csv</a> en JSON grâce à ce
+?> Convertir le fichier <a href="https://raw.githubusercontent.com/adrientaudiere/cours_nsi/main/docs/_doc/Pokemon.csv" target="_blank" rel="noopener"> pokemon.csv</a> en JSON grâce à ce
 [site](https://csvjson.com/csv2json).
+
+?> Comparer la taille en ko des fichiers Pokemon.csv et Pokemon.json. En cochant la case *minify* (optimisé) sur le convertisseur en ligne dans l'exercice précédent, qu'est ce qui change dans le format json et combien gagne t'on de d'espace disque par rapport au json non optimisé?
+
+
 
 ## :fab fa-python: Importer/exporter les fichiers CSV avec python
 

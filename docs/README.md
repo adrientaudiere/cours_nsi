@@ -20,3 +20,7 @@ Vous pouvez poster un message d'amélioration en créant une *new issue* sur Git
 ### :fa fa-laptop-code: VScodium
 
 ### :fab fa-firefox-browser: Mozilla Firefox
+
+### Anaconda
+
+!> Pour lancer anaconda sur les ordinateurs de Scholae, il faut ouvrir un terminal et y écrire : 

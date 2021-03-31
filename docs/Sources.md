@@ -19,20 +19,33 @@ Filliâtre et K. Nguyen
 
 ## Sources secondaire
 
+
+
 https://www.apprendre-en-ligne.net/index-info.html
 
 http://jargonf.org/wiki/Accueil
 
+### Se former en ligne
+
+https://openclassrooms.com/fr/
+
+https://freecodecamp.org/
+
 ### Internet 
+
 [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR) 
 
 
 ### À creuser
 
 https://science.sciencemag.org/content/sci/332/6025/60/F2.large.jpg
+
 https://royalsocietypublishing.org/doi/10.1098/rsos.181393
+
 https://www.martinhilbert.net/worldinfocapacity-html/
+
 http://documents1.worldbank.org/curated/en/896971468194972881/310436360_201602630200201/additional/102725-PUB-Replacement-PUBLIC.pdf
+
 https://townline.org/welcome-to-the-world-of-big-data/
 
 https://www.internetlivestats.com/
