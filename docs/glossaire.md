@@ -1,5 +1,133 @@
 # Glossaire
 
+## Liste de termes pour la Terminale
+<div class="list_of_terms">
+
+### Structure de données
+
+> Dictionnaire vs Liste (en python)
+
+Définition
+
+> Piles
+
+Définition (parler de LIFO)
+
+> Files
+
+Définition (parler de FIFO)
+
+> Arbres binaires
+
+Définition (parler de sa taille et de sa hauteur)
+
+
+### Programmation orientée objet
+
+> Objet
+
+Définition
+
+> Classe
+
+Définition
+
+> Attribut
+
+Définition
+
+> Méthode
+
+Définition
+
+> Instance
+
+Définition
+
+### Modèle relationnel
+
+> Relation
+
+Définition
+
+> Attribut
+
+Définition
+
+> Contrainte d'intégrité 
+
+Définition (parler du domaine) 
+
+> Clef primaire
+
+Définition
+
+> Clef étrangère
+
+Définition
+
+> Schéma relationnel
+
+Définition
+
+> SQL
+
+Définition
+
+> Bases de données
+
+Définition
+
+### Architectures matérielles
+
+> SoCs
+
+Définition
+
+### Systèmes d'exploitation
+
+> Processus
+
+Définition
+
+> Ordonnancement
+
+Définition
+
+### Réseaux
+
+> Table de routage
+
+Définition
+
+> Protocole RIP **vs** OSPF 
+
+Définition
+
+### Algorithmique 
+
+> Parcours infixe, préfixe et suffixe d'un arbre binaire
+
+Définition
+
+> Coût logarithmique 
+
+Définition
+
+> Diviser pour mieux régner
+
+Définition
+
+> Algorithme dynamique
+
+Définition
+
+> Algorithme de Boyer-Moore
+
+Définition
+
+</div>
+
 
 ## Unité de mesure en informatique
 
@@ -43,5 +171,4 @@ des mesures en informatique. Les préfixes binaires sont de la forme :
 
 L’usage de cette norme de préfixe binaire ne s’est pas encore généralisé totalement. Certains logiciels et systèmes d’exploitations (comme Ubuntu à partir de la version 10.10 et Mac OS X à partir de Snow Leopard) se sont mis à jour avec cette norme et propose donc des valeurs en GiO plutôt qu'en GO. D'autres entreprises, comme Microsoft Windows pour ne pas les citer, continuent d'utiliser des valeurs binaires avec des préfixes SI (système international). Les fabricants de périphérique de stockage utilisent également les préfixes SI car la valeur est ainsi plus élevé. Un disque dur de 1 To est en fait un disque dur pouvant contenir 0.91 TiO, ce qui est moins vendeur...
 
-eaursnt trneiaurt eituar 
-tuieran str uitr ea+
+

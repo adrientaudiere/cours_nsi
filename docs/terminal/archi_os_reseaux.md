@@ -198,7 +198,9 @@ Ce protocole a également l'avantage de s'appuyer sur les débits réels et non 
  
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
+
 - Une suite de [vidéos](https://www.youtube.com/watch?v=e3I4opl8EH4&list=PLjXls-kqM6JDyMO3Llm5olS_U2I_P6OHG) qui reprend tout les concepts de routage vu en cours. 
+
 </details>
 
 ### Commande UNIX de gestion des protocoles

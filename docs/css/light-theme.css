@@ -670,16 +670,15 @@ section.cover .cover-main p a {
   display: none;
 }
 
-.cc-navbar{
+.cc-navbar {
   padding: 6px 10px 6px 10px;
   border-radius: 50%;
   text-align: right;
   position: fixed;
   bottom: 3px;
-  left:60px;
+  left: 60px;
   display: none;
 }
-
 
 @media (min-width: 800px) {
   .btn-toggle {
@@ -1083,7 +1082,7 @@ svg[id^="mermaid-"] {
   list-style-type: circle;
 }
 
-.advanced_level{
+.advanced_level {
   background-color: rgba(179, 210, 219, 0.534);
 }
 
