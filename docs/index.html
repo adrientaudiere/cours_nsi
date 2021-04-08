@@ -31,6 +31,8 @@
   </head>
   <body>
     <script>
+      /* Print the load div before the page is entirely load, then hide the load div and
+      print the app div */
       document.onreadystatechange = function () {
         var state = document.readyState;
         if (state == "interactive") {

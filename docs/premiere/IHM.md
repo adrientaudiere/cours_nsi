@@ -41,6 +41,8 @@ trouve autre chose que le "web" sur internet, par exemple, les emails
 avec le protocole SMTP (Simple Mail Transfert Protocol) et les
 transferts de fichiers avec le protocole FTP (File Transfert Protocol).
 
+?> Aller sur le site [internet live stats](https://www.internetlivestats.com/one-second/) et trouver le nombre de recherches google effectués et d'emails envoyés en 30 secondes.
+
 ### Internet : un protocole pour communiquer dans un réseau informatique globale
 
 Dès les années cinquante, les ordinateurs ont été mis en réseau pour
