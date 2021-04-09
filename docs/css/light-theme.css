@@ -1051,7 +1051,7 @@ pre::after {
   list-style: none;
 }
 
-p.center-p {
+p.center-p + p {
   text-align: center;
   text-indent: 0;
   margin-top: 2px;
@@ -1084,6 +1084,19 @@ svg[id^="mermaid-"] {
 
 .advanced_level {
   background-color: rgba(179, 210, 219, 0.534);
+}
+
+.markdown-section  .list_of_terms blockquote {
+  border-left-color: rgba(210, 105, 30, 0.411);
+  color: chocolate;
+  margin: 0;
+  padding-left: 20px;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.markdown-section  .list_of_terms blockquote p {
+  margin: 0.2em 0;
 }
 
 /* -----------------------

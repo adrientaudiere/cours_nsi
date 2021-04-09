@@ -221,6 +221,30 @@ Ce protocole a également l'avantage de s'appuyer sur les débits réels et non 
 
 <!-- https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_chiffrage.pdf -->
 
+---------------------
+https://www.nextinpact.com/article/24930/99777-chiffrement-notre-antiseche-pour-expliquer-a-vos-parents
+
+https://chiffrer.info/
+
+https://chiffrer.info/cryptris/
+
+https://youtu.be/8BM9LPDjOw0
+
+https://encipher.it/
+
+    Chiffrer : il s’agit de rendre un document illisible avec une clef de chiffrement, excepté pour son destinataire
+    Déchiffrer : il s’agit de rendre lisible un document chiffré, en ayant connaissance de la clef de chiffrement
+    Décrypter : il s’agit de rendre lisible un document chiffré, sans avoir connaissance de la clef de chiffrement
+
+    Cryptologie : il s’agit de la science du secret, c’est son sens étymologique. Elle regroupe plusieurs disciplines :
+        La cryptographie : vise à étudier comment protéger par le chiffrement
+        La cryptanalyse : vise à analyser les méthodes de chiffrement pour les casser
+
+    Crypter : cela n’existe pas
+    Chiffrage : cela existe, dans le domaine de la comptabilité ou de la musique
+
+https://fr.wikipedia.org/wiki/Atbash
+
 ### Cryptographie symétrique
 
 ### Cryptographie asymétrique

@@ -342,7 +342,11 @@ instructions à exécuter et le cache de données manipule les données.
 
 ![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ':size=60%')
 
-<p class="center-p"> <strong>Architecture de Von Neumann </strong> : l'unité de contrôle et l'UAL forment l'<strong>unité centrale</strong> aussi appelé <strong>processeur</strong>. <p>
+<p class="center-p"> 
+
+**Architecture de Von Neumann** : l'unité de contrôle et l'UAL forment l'**unité centrale** aussi appelé **processeur**. 
+
+</p>
 
 ?> **Activité** : Faire une frise chronologique de l'histoire de l'informatique en illustrant avec des photos (des personnages et de machines) trouvées sur internet. Vous pouvez utiliser le site [frisechronos.fr/](https://frisechronos.fr/).
 
