@@ -6,5 +6,6 @@
 
 ---
 * [<i class="fas fa-book" aria-hidden="true"></i> *Glossaire*](/glossaire.md)
+* [<i class="fas fa-hands-wash" aria-hidden="true"></i> *Hygiène numérique*](/hygiene_numerique.md)
 * [<i class="fa fa-quote-left" aria-hidden="true"></i> *Sources*](/Sources.md)
 * [<i class="fa fa-info-circle" aria-hidden="true"></i> *À propos*](/apropos.md)
