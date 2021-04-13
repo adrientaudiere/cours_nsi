@@ -89,7 +89,97 @@ Il existe trois axes de vérifications d'un algorithme:
 
 https://isn-icn-ljm.pagesperso-orange.fr/1-NSI/res/res_cours_algo.pdf
 
-Exemple du parcours séquentiel d'un tableau (cours ancien Scho)
+
+### :fa fa-stopwatch: Coût d'un algorithme (complexité temporelle)
+
+Pour mesurer la complexité temporelle d'un algorithme on compte le nombre maximal d'opérations exécutées par un programme. Chaque affectation (a = 2), comparaison (a>0), accès en mémoire (lire fichier a.txt), et opération élémentaire (a+b) compte pour une opération (une unité de temps). 
+Ainsi, la complexité (noté T(n)) de l'expression `a <- a*b+3` est égale à 5 (une affectation, un accès à la mémoire pour a, un accès à la mémoire pour b, une multiplication, une addition).
+
+#### L'exemple du parcours séquentiel d'un tableau
+
+Pour illustrer la complexité temporelle (coût d'un algorithme), prenons l'exemple du parcours séquentiel d'un tableau. Il y a deux cas à traiter : 
+- (i) l'entier recherché est présent dans le tableau en position j,
+- (ii) l'entier n'est pas dans le tableau qui contient n élements.
+
+
+```pseudo code
+                                                 Nombre d'opérations       
+                                               cas (i)          cas (ii)
+tr ← Faux                                      (1 op.)          (1 op.)
+i ← 1                                          (1 op.)          (1 op.)
+tant que i <= longueur(t) et que tr == FAUX   (j+1 op.)        (n+1 op.) 
+    si t[i]==x :                               (j op.)          (n op.) 
+        tr ← VRAI                              (1 op.)          (0 op.)
+    fin si
+    i ← i+1                                    (j op.)          (n op.)
+fin tant que
+renvoyer la valeur de tr                       (1 op.)          (1 op.)
+
+                                         TOTAL = 3j+5             3n+4
+```
+
+Le **coût de l’algorithme** est donné par le **nombre d’opérations effectuées dans le pire des cas**. 
+
+?> Dans notre exemple, quel est le coût de l'algorithme ? <abbr title="Ici, le nombre d'opérations maximum est atteint lorsque le nombre recherché se situe en dernière position (position n)"> <i class="fas fa-life-ring"></i> Indices </abbr>. <!-- 3n+5 -->
+
+#### Différents ordres de grandeur
+
+Le coût d'un algorithme dépend très souvent de la taille (notée *N*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
+- Complexité **constante** *0(1)* : si le nombre d'opérations ne dépend pas de N,
+- Complexité **logarithmique** *0(log N)* : si le nombre d'opérations est proche de log(N),
+- Complexité **linéaire** *0(N)* : si le nombre d'opérations est d'ordre N,
+- Complexité **quadratique** *0(N²)* : si le nombre d'opérations est d'ordre $N^2$,
+- Complexité **exponentielle** *0($2^N$)* : si l'ordre est une forme de puissance de N.
+
+Le coût de l'algorithme du parcours séquentiel d'un tableau (3n+5) est linéaire (noté).
+
+![Représentation graphique des principaux ordres de grandeur des complexités algorithmiques](../_img/complexite.png ':size=80%')
+
+<p class="center-p"> 
+
+Représentation graphique des **principaux ordres de grandeur** des complexités algorithmiques. 
+
+</p>
+
+?> Compter le nombre d'opération faire_la_fete() exécutées par les algorithmes suivants avec n=3. Exprimer le nombre d'opération faire_la_fete() exécutées par les algorithmes 1 à 4 en fonction de n. Puis noter le type de complexité de tout les algorithmes.
+
+
+```python
+# Algo 1
+for i in range (1, 5*n/n):
+    faire_la_fete()
+
+# Algo 2
+for i in range(1, n):
+    for j in range(1, n):
+        faire_la_fete()
+
+# Algo 3
+for i in range(1, n):
+    for j in range(1, i):
+        faire_la_fete()
+
+# Algo 4
+for i in range(5, n-5):
+    for j in range(i-5, i+5):
+        faire_la_fete()
+
+# Algo 5
+for i in range(1, n):
+    for j in range(1, i):
+        for k in range(1, j):
+            faire_la_fete()
+```
+
+<!-- 
+Algo 1 : 5                  -> Constant
+Algo 2 : n*n=n²             -> Quadratique
+Algo 3 : n*(n+1)/2          -> Quadratique O(n²)
+Algo 4 : (n-9)*11 = 11n-99  -> Linéaire O(n)
+Algo 4 : (n-9)*11 = 11n-99  -> O()
+-->
+
+
 
 http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a2_complexite.php
 

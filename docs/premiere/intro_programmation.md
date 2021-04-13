@@ -79,6 +79,14 @@ mon_mot = input()
 print(mon_mot)
 ```
 
+Un script en pseudo-code permet d'utiliser tous les ingrédients (que nous verrons au fur et à mesure du cours) d'un programme informatique : 
+- des **données** sous forme de constantes (non modifiables) ou de variables (modifiables),
+- des **opérateurs** arithmétiques (+, -, / …), relationnels (==, !=, > …) et logique (et, ou, …),
+- des **expressions** (par ex. b/a),
+- des **instructions** (par ex. des affectations x <- b/a),
+- des **fonctions** qui automatisent les tâches répétitives.
+
+
 ## Quelques notions de base sur la programmation.
 
 Un programme informatique est un ensemble d'opérations  destinées à être exécutées par un ordinateur.
