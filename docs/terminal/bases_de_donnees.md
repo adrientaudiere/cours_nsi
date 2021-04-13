@@ -1,5 +1,4 @@
 # BASES DE DONNÉES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
-!> !! Work in progress !!
 
 ## Un peu d'histoire
 
@@ -185,16 +184,44 @@ Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui
 
 ### Propriétés ACID
 
-!> !! Work in progress !!
+En informatique, les propriétés ACID (atomicité, cohérence, isolation et durabilité) sont un ensemble de propriétés qui garantissent qu'une transaction informatique est exécutée de façon fiable ([:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Propri%C3%A9t%C3%A9s_ACID)).
+
+- **Atomicité** : il faut qu'une transaction informatique se fasse complètement ou ne se fasse pas du tout. Cette propriété permet d'éviter des erreurs dûs à des transactions incomplètes. Par exemple, si une requête SQL d'ajout d'une entité n'ajoute qu'une partie des attributs (par ex. à cause d'une coupure de courant), alors il faut annuler la transaction.
+ 
+- **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
+     
+- **Isolation** : chaque transaction est indépendante, elles s’exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
+ 
+- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente. 
+ 
+> À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants on des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
+
 
 ## Un peu de SQL sous python
 
-!> !! Work in progress !!
+On peut utiliser le langage SQL sous python dans sa version SQLite grâce à la bibliothèque `sqlite3`.
+
+```python
+import sqlite3
+# Connexion à la base de données
+## Créé une nouvelle BD si elle n'existais pas
+connexion = sqlite3.connect('maBD.db') 
+curseur = connexion.cursor()
+# l'utilisation du nom cursor n'est pas au programme
+
+# Exécution d'une requête
+curseur.execute ("MA REQUÊTE SQL")
+
+# Affichage des résultats de la requête
+for element in curseur:
+  print(element)
+
+# Fermeture de la connexion
+connexion.close()
+```
+
+?> Créer une base de données de vos 5 jeux préférés (ordinateurs, jeux de sociétés, sports...) entièrement sous python.
 
 ## Attaque par injection de code SQL
 
 ?> À l'aide d'une recherche sur le web, faire un schéma du processus à l'oeuvre lors d'une attaque informatique par injection de code SQL.
-
-
-!> !! Work in progress !!
-

@@ -51,6 +51,7 @@ graph LR
     D --> E[a reçoit la <br> valeur de b]
     E --> F[b reçoit la <br> valeur de r]
     F --> B
+    classDef default fill:#2e789163,stroke:#2e7891,stroke-width:2px;
 ```
 Il s'agit d'un algorithme assez simple mais qui a quand même une caractéristique assez complexe, c'est la boucle dans l'algorithme. En fait, l'algorithme recommencera au début (mais avec de nouvelles valeurs) jusqu'à remplir la condition (b=0). On appelle une fonction qui s'appelle elle même une fonction récursive. C'est au programme de NSI mais en Terminale seulement. Pour comprendre les codes ci-dessous, il faut savoir que a%b (on le lit « a modulo b ») renvoie le reste de la division euclidienne de a par b. Par exemple 15%4=3, 240%13=6 ou encore 17%12=5. Il s'agit bien de la façon de calculer notre petit r.
 
