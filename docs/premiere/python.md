@@ -1,4 +1,4 @@
-# DÉCOUVRIR LE LANGAGE PYTHON <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Découvrir le langage python <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## :fa fa-terminal: Environnements de développement
 

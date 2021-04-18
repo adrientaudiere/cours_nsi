@@ -1,4 +1,4 @@
-# INTERFACES HOMMES-MACHINES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Interfaces homme-machine <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## Introduction : le Web (:fa fa-spider:) utilise Internet (:fa fa-network-wired:)
 

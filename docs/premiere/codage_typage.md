@@ -1,4 +1,4 @@
-# :fa fa-code: CODAGE ET TYPAGE <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# :fa fa-code: Codage et typage <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 Nous allons voir dans ce chapitre que les ordinateurs ne comprennent que les 1 et le 0 (on parle de système binaire). 
 Pour dialoguer avec la machine, il faut convertir nos mots (par ex. des chaînes de caractères), nos concepts (par ex. des valeurs booléennes) et nos chiffres (nombres entiers positifs, négatifs et nombres réels).

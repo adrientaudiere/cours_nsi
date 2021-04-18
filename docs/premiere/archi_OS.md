@@ -1,4 +1,4 @@
-# ARCHITECTURE MATÈRIEL ET SYSTÈME D'EXPLOITATION <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Architecture matèriel et système d'exploitation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## :fa fa-laptop: Introduction : c'est quoi un ordinateur
 

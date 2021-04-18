@@ -1,4 +1,4 @@
-# DONNÉES EN TABLES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Données en tables <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## :fa fa-play-circle: Introduction
 

@@ -1,4 +1,4 @@
-# BASES DE DONNÉES <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Bases de données <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## Un peu d'histoire
 

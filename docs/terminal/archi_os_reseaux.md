@@ -1,4 +1,4 @@
-# ARCHITECTURE MATERIEL, OS ET RÉSEAUX <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Architecture materiel, OS et réseaux <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 !> !! Work in progress !!
 
 ![Understanding computer technology](../_img/understanding_computer.jpg ':size=70%')

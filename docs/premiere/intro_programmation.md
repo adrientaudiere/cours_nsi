@@ -1,4 +1,4 @@
-# :fa fa-project-diagram: BASES DE LA PROGRAMMATION <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# :fa fa-project-diagram: Bases de la programmation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 
 ## Pseudo-code : les instructions principales d'algorithmique.

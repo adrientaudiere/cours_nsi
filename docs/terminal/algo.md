@@ -1,4 +1,4 @@
-# ALGORITHMIQUE <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 !> !! Work in progress !!
 

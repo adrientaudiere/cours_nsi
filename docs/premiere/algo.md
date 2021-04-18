@@ -1,4 +1,4 @@
-# ALGORITHMIQUE <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 !> !! Work in progress !!
 
@@ -87,8 +87,6 @@ Il existe trois axes de vérifications d'un algorithme:
 - **La correction** : est-que le résultat renvoyé est le bon ?
 - **La complexité** :  quel est le temps d'exécution d'un algorithme et la mémoire qu'il requiert?
 
-https://isn-icn-ljm.pagesperso-orange.fr/1-NSI/res/res_cours_algo.pdf
-
 
 ### :fa fa-stopwatch: Coût d'un algorithme (complexité temporelle)
 
@@ -124,14 +122,14 @@ Le **coût de l’algorithme** est donné par le **nombre d’opérations effect
 
 #### Différents ordres de grandeur
 
-Le coût d'un algorithme dépend très souvent de la taille (notée *N*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
-- Complexité **constante** *0(1)* : si le nombre d'opérations ne dépend pas de N,
-- Complexité **logarithmique** *0(log N)* : si le nombre d'opérations est proche de log(N),
-- Complexité **linéaire** *0(N)* : si le nombre d'opérations est d'ordre N,
-- Complexité **quadratique** *0(N²)* : si le nombre d'opérations est d'ordre $N^2$,
-- Complexité **exponentielle** *0($2^N$)* : si l'ordre est une forme de puissance de N.
+Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
+- Complexité **constante** *Θ(1)* : si le nombre d'opérations ne dépend pas de n,
+- Complexité **logarithmique** *Θ(log n)* : si le nombre d'opérations est proche de log(n),
+- Complexité **linéaire** *Θ(n)* : si le nombre d'opérations est d'ordre n,
+- Complexité **quadratique** *Θ(n²)* : si le nombre d'opérations est d'ordre $n^2$,
+- Complexité **exponentielle** *Θ($2^n$)* : si l'ordre est une forme de puissance de n.
 
-Le coût de l'algorithme du parcours séquentiel d'un tableau (3n+5) est linéaire (noté).
+Le coût de l'algorithme du parcours séquentiel d'un tableau (3n+5) est linéaire (noté Θ(n)).
 
 ![Représentation graphique des principaux ordres de grandeur des complexités algorithmiques](../_img/complexite.png ':size=80%')
 
@@ -141,7 +139,7 @@ Représentation graphique des **principaux ordres de grandeur** des complexités
 
 </p>
 
-?> Compter le nombre d'opération faire_la_fete() exécutées par les algorithmes suivants avec n=3. Exprimer le nombre d'opération faire_la_fete() exécutées par les algorithmes 1 à 4 en fonction de n. Puis noter le type de complexité de tout les algorithmes.
+?> Compter le nombre d'opération *faire_la_fete()* exécutées par les algorithmes suivants avec n=3. Exprimer le nombre d'opération faire_la_fete() exécutées par les algorithmes 1 à 4 en fonction de n. Puis noter le type de complexité de tous les algorithmes.
 
 
 ```python
@@ -176,22 +174,80 @@ Algo 1 : 5                  -> Constant
 Algo 2 : n*n=n²             -> Quadratique
 Algo 3 : n*(n+1)/2          -> Quadratique O(n²)
 Algo 4 : (n-9)*11 = 11n-99  -> Linéaire O(n)
-Algo 4 : (n-9)*11 = 11n-99  -> O()
+Algo 5 :                    -> O(n³)
 -->
 
 
-
-http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a2_complexite.php
-
 ## Algorithme de tri
-http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#4
+
+Trier une liste de valeurs (des nombres, des lettres, des cartes...) est un processus courant. L'informatique est particulièrement dépendant de ces tris pour faciliter certains algorithmes. Il existe plusieurs manières de trier une suite de valeur.
 
 ### Tri par insertion
+
+Une des façons intuitive de trier des cartes, c'est :
+- de poser la première carte sur la table, 
+- de comparer la valeur de la deuxième carte et de la placer à droite si la nouvelle carte a une valeur plus importante et à gauche dans le cas inverse,
+- de sortir une troisième carte et de l'insérer entre les deux si la valeur est entre les deux cartes déjà posées,
+- et de continuer ainsi à insérer les cartes dans la liste déjà triée.
+
+```pseudocode
+tri_insertion(liste L)
+	Pour i allant de 1 à la longueur de L-1 faire
+		placer l'élément L[i] dans la liste déjà classée L[0:i-1] 
+	retourner la liste L
+```
+
+```python
+def tri_insertion(L):
+	for i in range(1, len(L)):			
+		elt = L[i] 						
+		j = i
+		while elt < L[j-1] and j > 0:	
+			L[j]  =L[j-1]     
+			j -= 1 
+		L[j] = elt						
+	return L
+```
+
+?> Regarder les animations [en ligne](http://lwh.free.fr/pages/algo/tri/tri_insertion.html) du tri par insertion. Vous pouvez également visualiser l'algorithme de tri par insertion grâce à des [danseurs roumains](https://www.youtube.com/watch?v=ROalU379l3U).
+
+Calculons maintenant le coût de l'algorithme de tri par insertion à travers deux cas : 
+- Si la liste est déjà triée, l'algorithme a une complexité linéaire notée Θ(n). En effet chaque valeurs va être comparée avec la valeur suivante une seule fois. 
+- Si la liste est mélangée de façon aléatoire, il faudra en moyenne (n2-n)/4 opération. On est face à une complexité quadratique notée Θ(n²).
+
+?> Effectuer sur une feuille (papier ou virtuel) la suite d'opération en pseudo-code pour trier la suite de valeur [1, 2, 3, 4, 5]. Combien d'opération faut t'il faire? Faire la même chose avec la suite [1, 4, 3, 5, 2]. 
+
+Le tri par insertion a un coût quadratique qui le rend très peu efficace sur des listes avec beaucoup d'éléments.
 
 
 ### Tri par sélection
 
+?> Regarder les animations [en ligne](http://lwh.free.fr/pages/algo/tri/tri_selection.html) du tri par selection. Vous pouvez également visualiser l'algorithme de tri par selection grâce à des [danseurs roumains](https://www.youtube.com/watch?v=Ns4TPTC8whw).
+
+?> Grâce à ces ressources, expliquer le tri par selection à votre grand-père/grand-mère pour qu'iel range plus vite son jeu de carte. 
+
+Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité est donc en Θ(n2) tout comme l'algorithme de tri par insertion. Il existe de meilleurs algorithmes de tri qui sont plus complexes mais plus rapides.
+
+
+## Invariant et preuve de terminaison
+
+http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1
+
+
+
+
+
+## Apprentissage et algorithme du plus proche voisin 
+
+!> Work in progress
+
+
+
+
+## Algorithmes gloutons
+
+
+
 
 ?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
-
 ?> Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2
