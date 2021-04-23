@@ -234,6 +234,7 @@ Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité 
 http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1
 
 
+!> Work in progress
 
 
 
@@ -247,7 +248,9 @@ http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1
 ## Algorithmes gloutons
 
 
+!> Work in progress
 
 
 ?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
+
 ?> Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2

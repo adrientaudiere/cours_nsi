@@ -93,3 +93,7 @@ grep -h -r --include "*.md" -o -P '(?<=:fa).*(?=\:\ )' | uniq
 :fab fa-suse:
 :far fa-flag:
 :fas fa-arrows-alt-h:
+
+:fas fa-dungeon: --- Pour les activités longues
+
+

@@ -146,7 +146,7 @@ Voici les mesures en informatiques selon le système international de notation s
 | Zetta-octet | Zo                | 1 000 Eo             | Trilliard   | Zetta-byte (ZB)    |
 | Yotta-octet | Yo                | 1 000 Eo             | Quadrillion | Yotta-byte (YB)    |
 
-!> Les notations en anglais prêtent à confusion : les mesures avec un b minuscule sont 8 fois plus petites que les mesures avec un 1 majuscule.
+!> Les notations en anglais prêtent à confusion : les mesures avec un b minuscule sont 8 fois plus petites que les mesures avec un B majuscule.
 $$ 
 8Mb = 8 000 bits = 1 Mo (1000 octets) = 1 MB
 32 Gb != 4 GB = 4 Go
