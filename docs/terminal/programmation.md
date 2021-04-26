@@ -4,9 +4,11 @@
 
 
 ## Récursivité
+!> Work in progress
 
 ## Modularité
 
+!> Work in progress
 
 ## Programmation objet
 
@@ -21,5 +23,8 @@
 
 ## Mise au point de programme
 
+!> Work in progress
 
 ## Programmation fonctionnelle
+
+!> Work in progress
