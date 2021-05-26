@@ -80,7 +80,7 @@ def algo_euclide(a, b):
    return algo_euclide(b, a%b)
 ```
 
-?> Tester la fonction algo_euclide avec les valeurs 20 et 30 sur le site [python tutor](htpps://pythontutor.com/) qui permet de suivre chaque étape de l'algorithme.
+?> Tester la fonction algo_euclide avec les valeurs 20 et 30 sur le site [python tutor](https://pythontutor.com/) qui permet de suivre chaque étape de l'algorithme.
 
 ## Analyse des algorithmes
 
