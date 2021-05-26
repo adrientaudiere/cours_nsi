@@ -122,7 +122,7 @@ Le **coût de l’algorithme** est donné par le **nombre d’opérations effect
 
 #### Différents ordres de grandeur
 
-Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
+Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
 - Complexité **constante** *Θ(1)* : si le nombre d'opérations ne dépend pas de n,
 - Complexité **logarithmique** *Θ(log n)* : si le nombre d'opérations est proche de log(n),
 - Complexité **linéaire** *Θ(n)* : si le nombre d'opérations est d'ordre n,
