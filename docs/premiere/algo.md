@@ -74,7 +74,7 @@ fonction euclide(a, b)
 ```
 
 ```python
-def algo_euclide(a, b)
+def algo_euclide(a, b):
    if b == 0 :
       return a
    return algo_euclide(a%b, a)
