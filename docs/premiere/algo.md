@@ -77,7 +77,7 @@ fonction euclide(a, b)
 def algo_euclide(a, b)
    if b == 0 :
       return a
-   return gcd(a%b, a)
+   return algo_euclide(a%b, a)
 ```
 
 ## Analyse des algorithmes
