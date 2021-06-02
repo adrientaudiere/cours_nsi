@@ -133,3 +133,9 @@ vers_csv('table_exemple', ordre, 'mon_fichier_example')
 
 
 ?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site https://isn-icn-ljm.pagesperso-orange.fr/) avec VScodium.
+
+---
+
+## :fa fa-brain: Exercices
+
+!> Work in progress

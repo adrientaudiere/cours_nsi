@@ -1051,7 +1051,7 @@ pre::after {
   list-style: none;
 }
 
-p.center-p + p {
+p.center-p {
   text-align: center;
   text-indent: 0;
   margin-top: 2px;

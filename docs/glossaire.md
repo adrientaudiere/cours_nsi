@@ -172,3 +172,19 @@ des mesures en informatique. Les préfixes binaires sont de la forme :
 L’usage de cette norme de préfixe binaire ne s’est pas encore généralisé totalement. Certains logiciels et systèmes d’exploitations (comme Ubuntu à partir de la version 10.10 et Mac OS X à partir de Snow Leopard) se sont mis à jour avec cette norme et propose donc des valeurs en GiO plutôt qu'en GO. D'autres entreprises, comme Microsoft Windows pour ne pas les citer, continuent d'utiliser des valeurs binaires avec des préfixes SI (système international). Les fabricants de périphérique de stockage utilisent également les préfixes SI car la valeur est ainsi plus élevé. Un disque dur de 1 To est en fait un disque dur pouvant contenir 0.91 TiO, ce qui est moins vendeur...
 
 
+## Divers
+
+<div class="list_of_terms">
+
+> Fichier dossier caché
+
+Un dossier caché est un dossier invisible sauf à le demander expressément. Il s'agit d'un moyen de simplifier le cheminement dans l'arbre des dossiers. On symbolise ces dossiers par un point devant le nom (par ex. ".monDossier").
+
+Les dossiers cachés sont visibles via la commande ls -a (a pour all) et sont accessibles par leur chemins comme les dossiers normaux.
+Les fichiers cachés suivent le même principe.
+
+> Fichier caché
+
+Sous Linux les fichiers et dossiers cachés sont matérialisés par un point devant leur nom.Exemple : .sshLes fichiers et dossiers cachés sont visibles via la commande ls -a (a pour all) et sont accessiblespar leur chemins comme les dossiers normaux. Exemple de chemin : ~/.ssh
+
+</div>

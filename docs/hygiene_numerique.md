@@ -21,3 +21,6 @@ Il est fortement conseiller d'utiliser un gestionnaire de mot de passe. L'idée 
 
 
 
+## Écologie et numérique
+
+https://httparchive.org/reports/page-weight

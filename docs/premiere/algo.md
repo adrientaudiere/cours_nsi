@@ -5,7 +5,7 @@
 
 ## Définissons un algorithme
 
-D'un point de vue mathématique, un algorithme est une « **suite finie et non ambigüe d’opérations ou d’instructions permettant de résoudre une problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot *algorithme* est une référence au mathématicien perse  **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
+D'un point de vue mathématique, un algorithme est une « **suite finie et non ambigüe d’opérations ou d’instructions permettant de résoudre un problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot *algorithme* est une référence au mathématicien perse  **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
 
 D'un point de vue des sciences informatiques, un algorithme est une **procédure de calcul définie par une suite finie d’opérations élémentaires obéissant à un enchaînement déterminé**. Il s'agit de résoudre un problème en un certain nombre d'étapes clairement définies dans un dialogue avec un ou des ordinateurs. La grande majorité des algorithmes prennent des **valeurs en entrée** et à la **suite des opérations** des l'algorithme renvoient des **valeurs de sortie**.
 
@@ -252,11 +252,13 @@ Un **algorithme glouton** est une stratégie qui consiste à tenter de trouver u
 Imaginez un paysage dans lequel vous souhaitez atteindre le point le plus haut. Quels sont les solutions pour atteindre ce sommet? 
 - La première est de cartographier l'ensemble de la région et ainsi de savoir exactement où se situe le sommet. C'est la solution par **force brute**. Bien sûr, si vous avez déjà une carte avec vous, c'est que quelqu'un d'autre a précédemment utilisé la force brute et vous en fait bénéficier. Dans le cas ou vous n'avez pas de carte, créer une carte juste pour trouver le point le plus haut reviens à prendre un bazooka pour tuer une mouche... 
 - Une deuxième solution consiste à toujours choisir le chemin qui monte. Si vous monter jusqu'à ne plus pouvoir monter vous avez trouver un point assez haut, sans doute un sommet local. Ce n'est peut être pas le sommet le plus haut, mais c'est assez facile de trouver ce point géographique. Ici on utilise un **algorithme glouton**, on cherche des solutions locales optimales en espérant se rapprocher de la solution optimal globale.
-- 
+
 
 ?> Prenons l'exemple d'un commerçant qui doit vous rendre 9€ en monnaie. Combien y a t'il de combinaisons possibles sachant que le commerçant a des pièces de 1€, de 2€ et des billet de 5€ et de 10€? Lister toutes ces solutions. Quelle est la solution qui utilise le moins de pièces/billets ? 
 
-Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ * 113, 1€*111 + 2€ …) ? Une solution assez simple suit un algorithme glouton. Avec une stratégie gloutonne de rendu de monnaie, on va d'abord rendre la valeur maximal possible (ici 5€). Pour rendre 9 euros, on ne peut pas utiliser un billet de 10€, donc on rend d'abord un billet de 5€. Il reste alors 4€ à rendre. On va rendre alors une pièce de 2€. Il reste 2€ à rendre. On rend enfin une deuxième pièce de 2€. Dans le cas du rendu de monnaie en euro, un algorithme glouton va toujours permettre de trouver la solution optimal. On dit que le système en euro est **canonique**. Avec d'autres systèmes monétaire, l'algorithme glouton peut manquer la solution optimale.
+Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ * 113, 1€*111 + 2€ …) ? 
+
+Une solution assez simple utilise un algorithme glouton. Avec une stratégie gloutonne de rendu de monnaie, on va d'abord rendre la valeur maximal possible (ici 5€). Pour rendre 9 euros, on ne peut pas utiliser un billet de 10€, donc on rend d'abord un billet de 5€. Il reste alors 4€ à rendre. On va rendre alors une pièce de 2€. Il reste 2€ à rendre. On rend enfin une deuxième pièce de 2€. Dans le cas du rendu de monnaie en euro, un algorithme glouton va toujours permettre de trouver la solution optimal. On dit que le système en euro est **canonique**. Avec d'autres systèmes monétaire, l'algorithme glouton peut manquer la solution optimale.
 
 ?> Prenons un système monétaire avec des coupures de 1, 6 et 10. Trouver la solution optimale pour rendre 12. Ensuite effectuer les étapes d'un algorithme glouton comme ci-dessus. Combien de coupures avez vous besoin de rendre selon l'algorithme glouton?
 
@@ -276,7 +278,8 @@ Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Mainten
 Selon les problèmes, les algorithmes gloutons produisent d’excellents résultats ou se trompe complétement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
 
 --- 
-## Exercices supplémentaires
+
+## :fa fa-brain: Exercices
 
 ?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
 

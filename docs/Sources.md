@@ -15,7 +15,7 @@ Python 3
 Filliâtre et K. Nguyen
 
 
-
+- Les cours en ligne du site [librecours.net](https://librecours.net) écrit par [Stéphane Crozat](http://stph.crzt.fr) dont la majorité est sous licence [CC-by-sa-3.0](http://creativecommons.org/licenses/by-sa/3.0/fr/)
 
 
 ## Sources secondaire
@@ -31,6 +31,8 @@ http://jargonf.org/wiki/Accueil
 https://openclassrooms.com/fr/
 
 https://freecodecamp.org/
+
+https://librecours.net/
 
 ### Internet 
 
