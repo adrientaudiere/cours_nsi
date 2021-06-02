@@ -74,11 +74,13 @@ fonction euclide(a, b)
 ```
 
 ```python
-def algo_euclide(a, b)
+def algo_euclide(a, b):
    if b == 0 :
       return a
-   return gcd(a%b, a)
+   return algo_euclide(b, a%b)
 ```
+
+?> Tester la fonction algo_euclide avec les valeurs 20 et 30 sur le site [python tutor](https://pythontutor.com/) qui permet de suivre chaque étape de l'algorithme.
 
 ## Analyse des algorithmes
 
@@ -122,7 +124,7 @@ Le **coût de l’algorithme** est donné par le **nombre d’opérations effect
 
 #### Différents ordres de grandeur
 
-Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
+Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
 - Complexité **constante** *Θ(1)* : si le nombre d'opérations ne dépend pas de n,
 - Complexité **logarithmique** *Θ(log n)* : si le nombre d'opérations est proche de log(n),
 - Complexité **linéaire** *Θ(n)* : si le nombre d'opérations est d'ordre n,
