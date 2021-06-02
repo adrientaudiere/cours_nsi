@@ -91,6 +91,7 @@ Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à
 ?> Dans un second temps, on voudrait permettre à toute personne de Scholae d'emprunter des livres. Comment mettre cela en place?
 
 
+
 ### Contraintes d'intégrité (=règle de cohérence)
 
 - **Entité** : chaque enregistrement (chaque entité) est unique (=> clef primaire)
