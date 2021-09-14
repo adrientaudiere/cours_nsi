@@ -1,7 +1,6 @@
 # :fa fa-monument: Histoire de l'informatique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-## Le développement des machines 
-
+## Le développement des machines
 
 Dès l'antiquité, l'homme a conçu des machines pour l'aider à calculer
 comme le boulier ou les abaques. Pourtant, ces machines sont basées sur
@@ -11,7 +10,6 @@ siècle, on va chercher à créer des machines qui pourront exécuter
 automatiquement des algorithmes.
 
 ### :fa fa-cogs: Les machines mécaniques
-
 
 En 1642, **Blaise Pascal** (1623 – 1662) invente une première
 calculatrice mécanique, la **Pascaline**, fonctionnant avec des roues
@@ -49,7 +47,7 @@ En 1725, Basile Bouchon (? - ?) invente le premier système de
 programmation d'un métier à tisser en utilisant un ruban perforé qui
 contrôle le passage des aiguilles dans le tissu. En 1728, son assistant
 Jean- Baptiste Falcon (? - ?) améliore son système en utilisant des
-cartes perforées rigides reliées entre elles. En 1745,** Jacques de
+cartes perforées rigides reliées entre elles. En 1745, **Jacques de
 Vaucanson** (1709 – 1782) remplace les cartes perforées par un cylindre
 percé de trous (l'idée sera reprise pour la fabrication des boites à
 musique). Ces machines ont toutes le défaut d'être conçues pour ne
@@ -66,7 +64,6 @@ Boîte à musique.<br> <a href="https://creativecommons.org/licenses/by-sa/2.0/?
 </p>
 </div>
 
-
 A partir de 1834, le mathématicien **Charles Babbage** (1791 – 1871) a
 l'idée de réutiliser les cartes perforées d'un métier Jacquard pour
 envoyer des instructions et des données dans une machine à calculer qui
@@ -81,14 +78,13 @@ utiliser cet algèbre pour faire des opérations autres que numériques sur
 la machine de Babbage. Faute de financement, ces travaux n'aboutiront
 pas.
 
-
-![Canard de Vaucanson](../_img/canard.jpg ':size=50%')
+![Canard de Vaucanson](../_img/canard.jpg ":size=50%")
 
 ---
 
-<p class="center-p"> 
+<p class="center-p">
 
- **Canard de Vaucanson** : cet automate, exposé en 1744 au Palais-Royal, qui peut manger et digérer, cancaner et simuler la nage. Il s'agit ici d'une reconstitution publié dans *Scientific American* en 1899. Domaine public, [:fab fa-wikipedia-w:](https://commons.wikimedia.org/w/index.php?curid=1493624) 
+**Canard de Vaucanson** : cet automate, exposé en 1744 au Palais-Royal, qui peut manger et digérer, cancaner et simuler la nage. Il s'agit ici d'une reconstitution publié dans _Scientific American_ en 1899. Domaine public, [:fab fa-wikipedia-w:](https://commons.wikimedia.org/w/index.php?curid=1493624)
 
 </p>
 
@@ -113,7 +109,6 @@ classement de Hollerith**). En 1887, il dépose le brevet de ses machines
 qui seront utilisées pour le recensement de 1890 qui durera seulement 6
 semaines. L'utilisation des cartes perforées permettra ensuite de
 nombreuses statistiques sur la population américaine.
-
 
 <div class="img-flow" style="max-width:360px;">
 <a href="https://commons.wikimedia.org/wiki/File:Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg#/media/File:Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg/1200px-Hollerith_census_machine_at_CHM_by_Tomwsulcer.jpg" alt="Hollerith census machine at CHM by Tomwsulcer.jpg"></a>
@@ -140,23 +135,23 @@ de « bug ».
 
 En 1936, **Alan Turing** (1912 – 1954), doctorant de l'université de
 Cambridge, propose un modèle abstrait de fonctionnement d'une machine de
-calcul, c'est la **machine universelle de Turing**. Pour voir une animation 
+calcul, c'est la **machine universelle de Turing**. Pour voir une animation
 d'une machine de Turing, aller sur le site [Interstices](https://interstices.info/comment-fonctionne-une-machine-de-turing/).
- Cette machine est constituée des 4 éléments suivants :
+Cette machine est constituée des 4 éléments suivants :
 
 - Le ruban infini divisé en cases contenant chacune un symbole d'un
-alphabet fini,
+  alphabet fini,
 
 - Une tête de lecture/écriture pouvant se déplacer vers la gauche ou la
-droite du ruban,
+  droite du ruban,
 
 - Un registre d'état qui mémorise l'état de la machine de Turing, le
-nombre d'état étant fini,
+  nombre d'état étant fini,
 
 - Une table d'action qui, en fonction du symbole lu sur le ruban et de
-l'état de la machine, indique le symbole à écrire sur le ruban, le sens
-de déplacement de la tête de lecture/écriture et le nouvel état de la
-machine.
+  l'état de la machine, indique le symbole à écrire sur le ruban, le sens
+  de déplacement de la tête de lecture/écriture et le nouvel état de la
+  machine.
 
 A partir de 1936, **Konrad Zuse** (1910 – 1995), ingénieur à
 l'université de Berlin, commence à développer un calculateur binaire à
@@ -175,7 +170,6 @@ Shannon et il faut attendre 1941 et la troisième version de son
 respectant les principes de la machine de Turing. Il sera utilisé pour
 des calculs de vibrations des ailes par l'institut de recherche
 aéronautique allemand et détruite en 1943 lors d'un bombardement allié.
-
 
 <div class="img-flow" style="max-width:320px;">
 <a href="https://commons.wikimedia.org/wiki/File:Z3_Deutsches_Museum.JPG#/media/Fichier:Z3_Deutsches_Museum.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Z3_Deutsches_Museum.JPG/1200px-Z3_Deutsches_Museum.JPG" alt="Z3 Deutsches Museum.JPG"></a>
@@ -239,8 +233,6 @@ donnée** par un autre programme.
 </p>
 </div>
 
-
-
 Suite aux départs d'Eckert, de Mauchly et de Von Neumann, le projet
 EDVAC n'aboutit qu'en 1951 alors que d'autres machines basées sur
 l'architecture de Von Neumann avaient déjà été réalisées. Il est cinq
@@ -272,7 +264,6 @@ circuler le courant d'une électrode d'entrée (source) vers une électrode
 de sortie (drain) en commandant la troisième électrode (grille). Si la
 grille est alimentée, le courant passe de la source au drain ; si la
 grille n'est pas alimentée, le courant ne passe pas.
-
 
 <div class="img-flow" style="max-width:280px;">
 <a href="https://commons.wikimedia.org/wiki/File:Intel_C4004_b.jpg#/media/File:Intel_C4004_b.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Intel_C4004_b.jpg/1200px-Intel_C4004_b.jpg" alt="Intel C4004 b.jpg"></a>
@@ -340,15 +331,12 @@ mémoire cache permettant d'accélérer le traitement en limitant l'accès à
 la mémoire vive. Le cache d'instructions reçoit les prochaines
 instructions à exécuter et le cache de données manipule les données.
 
-![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ':size=60%')
+![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ":size=60%")
 
-<p class="center-p"> 
+<p class="center-p">
 
-**Architecture de Von Neumann** : l'unité de contrôle et l'UAL forment l'**unité centrale** aussi appelé **processeur**. 
+**Architecture de Von Neumann** : l'unité de contrôle et l'UAL forment l'**unité centrale** aussi appelé **processeur**.
 
 </p>
 
 ?> **Activité** : Faire une frise chronologique de l'histoire de l'informatique en illustrant avec des photos (des personnages et de machines) trouvées sur internet. Vous pouvez utiliser le site [frisechronos.fr/](https://frisechronos.fr/).
-
-
-

@@ -2,8 +2,7 @@
 
 ## Un peu d'histoire
 
-Sauvegarder des informations sous la forme de données est une activité fondamentale des sociétés humaines. Les premières traces d'écriture sont liées aux besoins de stocker des valeurs (par ex. l'[écriture cunéiforme](https://fr.wikipedia.org/wiki/Cun%C3%A9iforme) des livres de comptes de la cité d'Uruk et Lagash vers 3400 av. J.-C.). L'objectif de stocker des données est donc intimement lié à l'évolution de l'Humanité. 
-
+Sauvegarder des informations sous la forme de données est une activité fondamentale des sociétés humaines. Les premières traces d'écriture sont liées aux besoins de stocker des valeurs (par ex. l'[écriture cunéiforme](https://fr.wikipedia.org/wiki/Cun%C3%A9iforme) des livres de comptes de la cité d'Uruk et Lagash vers 3400 av. J.-C.). L'objectif de stocker des données est donc intimement lié à l'évolution de l'Humanité.
 
 <div class="timeline">
 <div class="container right">
@@ -73,10 +72,9 @@ Sauvegarder des informations sous la forme de données est une activité fondame
 
 ---
 
-Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à peu près en même temps que les premiers logiciels basées sur les modèles relationnels. Les tableurs sont souvent plus intuitifs et simples au premiers abord mais comporte quand même quelques désavantages quand il s'agit de modéliser des données relativement complexes.
+Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à peu près en même temps que les premiers logiciels basés sur les modèles relationnels. Les tableurs sont souvent plus intuitifs et simples au premiers abord mais comportent quand même quelques désavantages quand il s'agit de modéliser des données relativement complexes.
 
-
-![](../_img/table_BD_vs_tableau.png ':size=70%')
+![](../_img/table_BD_vs_tableau.png ":size=70%")
 
 <p class="center-p"> <strong> Table de comparaison  </strong> entre le modèle par tableur et le modèle relationnel </p>
 
@@ -86,22 +84,18 @@ Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à
 
 ### Modéliser la bibliothèque du lycée
 
-?> Vous avez pour mission collective de stocker les informations concernant les livres de la bibliothèque du lycée. Prenons 10 livres au hasard pour l'exemple. Proposez une façon de stocker ces informations. 
+?> Vous avez pour mission collective de stocker les informations concernant les livres de la bibliothèque du lycée. Prenons 10 livres au hasard pour l'exemple. Proposez une façon de stocker ces informations.
 
 ?> Dans un second temps, on voudrait permettre à toute personne de Scholae d'emprunter des livres. Comment mettre cela en place?
-
-
 
 ### Contraintes d'intégrité (=règle de cohérence)
 
 - **Entité** : chaque enregistrement (chaque entité) est unique (=> clef primaire)
 - **Référence** : les relations (tables) sont liés par des attributs (=> clef étrangère)
-- **Domaine** :  les attributs sont typés (INT, BOOL, CHAR ...)
-- **Métier** :  toutes autres contraintes (par ex. un mail doit contenir un @) 
+- **Domaine** : les attributs sont typés (INT, BOOL, CHAR ...)
+- **Métier** : toutes autres contraintes (par ex. un mail doit contenir un @)
 
-
-
-![](../_img/table_BD.png ':size=60%')
+![](../_img/table_BD.png ":size=60%")
 
 <p class="center-p"> <strong> Modèle de relation entre deux tables </strong> </p>
 
@@ -109,18 +103,15 @@ Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à
 
 ## Le language SQL
 
-
 ?> Faire les parties 1 à 4 des [exercices en ligne](https://fxjollois.github.io/cours-sql/) de FX Jollois (IUT Paris Descartes). Prenez des notes à chaque fois qu'une information vous semble importante.
 
-
-![](../_img/SQLite_figure.png ':size=100%')
-
+![](../_img/SQLite_figure.png ":size=100%")
 
 <p class="center-p"> <strong> Exemple de code SQL </strong> avec à gauche les schéma ou les retours de fonction, et à droite l'état de la base de données. </p>
 
 ---
 
-Le code complet de la figure ci-dessus est présenté ci-dessous. Vous pouvez le copier-coller et faire des tests en ligne avec l'[interpréteur SQLite](https://sql.js.org/examples/GUI/index.html). 
+Le code complet de la figure ci-dessus est présenté ci-dessous. Vous pouvez le copier-coller et faire des tests en ligne avec l'[interpréteur SQLite](https://sql.js.org/examples/GUI/index.html).
 
 ```sql
 DROP TABLE IF EXISTS Monstres;
@@ -140,42 +131,42 @@ INSERT INTO Monstres VALUES (
   2, "Voleur", 5, "Troll"
 );
 
-SELECT Classe, Niveau 
+SELECT Classe, Niveau
 FROM Monstres
 WHERE Niveau>5;
 
 CREATE TABLE Types (
- Type VARCHAR(20) 
+ Type VARCHAR(20)
         PRIMARY KEY,
  Cris VARCHAR(40),
- Humain INT, 
+ Humain INT,
  FOREIGN KEY (Type)
-       REFERENCES Monstres (Type)   
+       REFERENCES Monstres (Type)
 );
 
 INSERT INTO Types
-VALUES 
+VALUES
   ("Elf", "Yo!", 1),
   ("Troll", "Grrr", 0);
 
 SELECT * From Types;
 
-SELECT * FROM Monstres 
+SELECT * FROM Monstres
 INNER JOIN Types
 ON Monstres.Type = Types.Type
 ```
 
-
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-?>  Pour s'exercer au SQL vous pouvez suivre les cours du [COLIBRI](https://colibri.unistra.fr/fr/course/list/notions-de-base-en-sql) de Strasbourg et vous entraîner sur la [Khan academy](https://fr.khanacademy.org/computing/computer-programming/sql).
+?> Pour s'exercer au SQL vous pouvez suivre les cours du [COLIBRI](https://colibri.unistra.fr/fr/course/list/notions-de-base-en-sql) de Strasbourg et vous entraîner sur la [Khan academy](https://fr.khanacademy.org/computing/computer-programming/sql).
 
 </details>
 
 ## Systèmes de Gestion de Bases de Données (SGBD)
 
 Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui permet … la gestion de bases de données en facilitant :
+
 - la **création** de nouvelles bases de données et des relations (tables) qui s'y trouve,
 - la **spécification des contraintes d'intégrités** et leur **respect** lors des modifications,
 - la **modification** (ajout, suppression, mise à jour) de ces bases de données (modification d'entité, d'attribut ou de valeur),
@@ -188,15 +179,13 @@ Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui
 En informatique, les propriétés ACID (atomicité, cohérence, isolation et durabilité) sont un ensemble de propriétés qui garantissent qu'une transaction informatique est exécutée de façon fiable ([:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Propri%C3%A9t%C3%A9s_ACID)).
 
 - **Atomicité** : il faut qu'une transaction informatique se fasse complètement ou ne se fasse pas du tout. Cette propriété permet d'éviter des erreurs dûs à des transactions incomplètes. Par exemple, si une requête SQL d'ajout d'une entité n'ajoute qu'une partie des attributs (par ex. à cause d'une coupure de courant), alors il faut annuler la transaction.
- 
-- **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
-     
-- **Isolation** : chaque transaction est indépendante, elles s’exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
- 
-- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente. 
- 
-> À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants on des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
 
+- **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
+- **Isolation** : chaque transaction est indépendante, elles s’exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
+
+- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
+
+> À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants on des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
 
 ## Un peu de SQL sous python
 
@@ -206,7 +195,7 @@ On peut utiliser le langage SQL sous python dans sa version SQLite grâce à la 
 import sqlite3
 # Connexion à la base de données
 ## Créé une nouvelle BD si elle n'existais pas
-connexion = sqlite3.connect('maBD.db') 
+connexion = sqlite3.connect('maBD.db')
 curseur = connexion.cursor()
 # l'utilisation du nom cursor n'est pas au programme
 
