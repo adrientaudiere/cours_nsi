@@ -1,6 +1,8 @@
 - [<i class="fa fa-graduation-cap" aria-hidden="true"></i> Première](/premiere.md)
 - [<i class="fa fa-user-graduate" aria-hidden="true"></i> Terminal](/terminal.md)
 
+---
+
 - **NSI PREMIÈRE**
 
 - [<i class="fa fa-monument" aria-hidden="true"></i> Histoire de l'informatique](premiere/histoire.md)

@@ -5,7 +5,7 @@
 Dès l'antiquité, l'homme a conçu des machines pour l'aider à calculer
 comme le boulier ou les abaques. Pourtant, ces machines sont basées sur
 des algorithmes que l'homme doit apprendre et exécuter comme c'est le
-cas lorsqu'il réalise une division euclidienne. A partir du 17 ème
+cas lorsqu'il réalise une division euclidienne. À partir du 17 ème
 siècle, on va chercher à créer des machines qui pourront exécuter
 automatiquement des algorithmes.
 
@@ -28,7 +28,7 @@ En 1671, **Gottfried Wilhelm Leibniz** (1646 – 1716) améliore la
 machine de pascal pour qu'elle effectue les multiplications de façon
 automatique en y ajoutant des cylindres cannelés dont les cannelures
 sont de longueurs inégales. Couplées à une roue dentée, les cannelures,
-selon leur longueur, pourront ou non faire tourner la roue. A partir de
+selon leur longueur, pourront ou non faire tourner la roue. À partir de
 1679, il développera également le **calcul binaire** qui d'après lui
 devrait largement simplifier le fonctionnement de machines logiques\...
 De nombreuses autres machines à calculer sont développées pour étendre
@@ -64,14 +64,14 @@ Boîte à musique.<br> <a href="https://creativecommons.org/licenses/by-sa/2.0/?
 </p>
 </div>
 
-A partir de 1834, le mathématicien **Charles Babbage** (1791 – 1871) a
+À partir de 1834, le mathématicien **Charles Babbage** (1791 – 1871) a
 l'idée de réutiliser les cartes perforées d'un métier Jacquard pour
 envoyer des instructions et des données dans une machine à calculer qui
 peut soit conserver des résultats en mémoire soit les afficher. En 1843,
-sa collaboratrice **Ada Lovelace** (1815-1852) va alors développer un
+sa collaboratrice **Ada Lovelace** (1815 – 1852) va alors développer un
 algorithme permettant de calculer les nombres de Bernoulli sur la
 machine analytique de Babbage, c'est le premier programme informatique.
-A partir de 1844, **George Boole** (1815 – 1864) développe une nouvelle
+À partir de 1844, **George Boole** (1815 – 1864) développe une nouvelle
 théorie mathématique basé sur un algèbre binaire afin de traduire des
 concepts logiques en équations. Ada Lovelace propose alors que l'on peut
 utiliser cet algèbre pour faire des opérations autres que numériques sur
@@ -90,7 +90,7 @@ pas.
 
 ### :fa fa-magnet: Les machines électromécaniques
 
-A partir de 1880, **Hermann Hollerith** (1860 – 1929) travaille pour le
+À partir de 1880, **Hermann Hollerith** (1860 – 1929) travaille pour le
 bureau du recensement américain. A cette époque, le recensement est
 manuel et le traitement de toutes les données va durer 9 ans. Hollerith
 va alors chercher à développer en solitaire une machine permettant de
@@ -153,7 +153,7 @@ Cette machine est constituée des 4 éléments suivants :
   de déplacement de la tête de lecture/écriture et le nouvel état de la
   machine.
 
-A partir de 1936, **Konrad Zuse** (1910 – 1995), ingénieur à
+À partir de 1936, **Konrad Zuse** (1910 – 1995), ingénieur à
 l'université de Berlin, commence à développer un calculateur binaire à
 virgule flottante programmable entièrement mécanique mais ne parvient
 pas à la faire fonctionner. En 1937, **Claude Shannon** (1916 – 2001),
@@ -177,8 +177,8 @@ aéronautique allemand et détruite en 1943 lors d'un bombardement allié.
 </p>
 </div>
 
-A partir de 1937, **Howard Aiken** (1900 – 1973), chercheur à
-l'université d'Harvard, développe une machine de calcul décimal
+En 1937, **Howard Aiken** (1900 – 1973), chercheur à
+l'université d'Harvard, commence le développement d'une machine de calcul décimal
 programmable en collaboration avec IBM, le **ASCC-Harvard Mark 1**. Pour
 des raisons financières, il utilise des relais électromécaniques et des
 composants déjà utilisé par IBM. Il mesure 16 m de longueur et pèse
@@ -197,7 +197,7 @@ calculateurs notamment avec les universités de Manchester et de
 Cambridge mais ne pourront jamais utiliser leurs connaissances issues du
 programme Colossus.
 
-A partir 1943, au sein du département américain de la Défense, John
+À partir 1943, au sein du département américain de la Défense, John
 **Eckert** (1919 – 1995) et John **Mauchly** (1907 – 1980) commence à
 développer le calculateur électronique appelé **ENIAC** (Electronic
 Numerical Integrator and Computer) basé sur l'utilisation de tubes

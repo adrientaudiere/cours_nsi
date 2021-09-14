@@ -7,7 +7,8 @@ ce chapitre, nous allons étudier les trois principaux types d'objets
 utilisés en python : les tuples, les listes et les dictionnaires.
 
 ## Les p-uplets (ou tuples)
----------------------------
+
+---
 
 Les **tuples** sont des séquences notées entre **parenthèses**. Il
 n'est pas possible de modifier un tuple après qu'il ait été créé, on
@@ -58,7 +59,7 @@ ma_liste = list() # liste vide*
 
 ma_nouvelle_liste = [1, 2, 3, 4, 5] # liste d'entiers
 
-mon_autre_liste = [1, 3.5, 'une chaine',[]] # liste déléments de différentes classes
+mon_autre_liste = [1, 3.5, 'une chaîne',[]] # liste d'éléments de différentes classes
 ```
 
 On **accède** aux différents éléments d'une liste de la façon que pour
@@ -69,8 +70,8 @@ ma_liste[2] # renvoie le troisième élément de la liste
 ```
 
 Il existe plusieurs méthodes permettant de modifier des listes. La
-méthode *append* permet d'ajouter un élément en fin de liste et la
-méthode *insert* permet de choisir l'indice d'insertion.
+méthode _append_ permet d'ajouter un élément en fin de liste et la
+méthode _insert_ permet de choisir l'indice d'insertion.
 
 ```python
 ma_liste = [1, 2, 3]
@@ -79,7 +80,7 @@ ma_liste = [a, b, d, e]
 ma_liste.insert(2, 'c') # on insère un c à l'indice 2
 ```
 
-On peut aussi **concaténer** deux listes avec la méthode *extend* :
+On peut aussi **concaténer** deux listes avec la méthode _extend_ :
 
 ```python
 ma_liste1 = [3, 4, 5]
@@ -90,7 +91,7 @@ ma_liste1.extend(ma_liste2) # on insère la liste 2 à la fin de la liste 1.
 ```
 
 Pour **supprimer** des éléments d'une liste on peut utiliser le mot-clé
-*del* ou la méthode *remove*.
+_del_ ou la méthode _remove_.
 
 ```python
 ma_liste = [-5, -4, 0, 4, 6, 78]
@@ -99,9 +100,9 @@ ma_liste = [19, 20, 21, 22, 23]
 ma_liste.remove(21) # supprime l'élément 21*
 ```
 
-?>  **Exercice 1** : Que fait le code **ma_liste.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
+?> **Exercice 1** : Que fait le code **ma_liste.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
 
-Pour déterminer la **longueur d'une liste**, on utilise la fonction *len()* :
+Pour déterminer la **longueur d'une liste**, on utilise la fonction _len()_ :
 
 ```python
 ma_liste = [5, 8, 6, 9]
@@ -121,7 +122,7 @@ for elt in ma_liste :
     print elt
 ```
 
-Il est également possible d'utiliser la méthode *enumerate* qui
+Il est également possible d'utiliser la méthode _enumerate_ qui
 retourne un tuple qui donne l'index et l'élément :
 
 ```python
@@ -149,6 +150,7 @@ pi = 3.14159
 ```
 
 Pour effectuer un **filtrage**, il suffit d'ajouter une condition :
+
 ```python
 liste_originale = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -186,7 +188,7 @@ ma_liste2 = [4, 5, 6]
 ma_matrice = [ma_liste1, ma_liste2]
 ```
 
-Dans cet exemple, la valeur 6 de ma matrice *ma_matrice* est donc dans
+Dans cet exemple, la valeur 6 de ma matrice _ma_matrice_ est donc dans
 la deuxième ligne (d'indice 1) et dans la troisième colonne (d'indice
 2). Pour récupérer la valeur 6 dans une variable m, on écrira :
 
@@ -200,7 +202,7 @@ modification d'une des listes utilisées pour créer la matrice modifiera
 également la matrice... En fait, la matrice renvoie directement aux
 listes préalablement crées pour connaître les valeurs.
 
-Pour **parcourir** une matrice, on utilisera une double boucle *for* :
+Pour **parcourir** une matrice, on utilisera une double boucle _for_ :
 
 ```python
 m = [[1, 3, 4], [5, 6, 8], [2, 1, 3], [7, 8, 15]]
@@ -214,10 +216,9 @@ print(a)
 
 ## Les dictionnaires
 
-
 Les dictionnaires sont aussi des séquences, mais au lieu d'héberger des
-informations indexées, ils **associent chaque objet (*value*)
-qu'ils contiennent à une clé (*key*). Cette clé **est, la
+informations indexées, ils **associent chaque objet (_value_)
+qu'ils contiennent à une clé (_key_). Cette clé **est, la
 plupart du temps, une chaîne de caractères mais peut être n'importe
 quel type d'objet. Les **valeurs** peuvent également être n'importe
 quel type d'objets (des entiers, des chaînes de caractères, des
@@ -244,7 +245,7 @@ On peut également créer un dictionnaire déjà rempli :
 ```
 
 Pour supprimer des clés d'un **dictionnaire**, on peut utiliser le
-mot-clé *del* ou la méthode *pop*. La méthode *pop* renvoie
+mot-clé _del_ ou la méthode _pop_. La méthode _pop_ renvoie
 la valeur de la clé supprimée.
 
 ```python
@@ -253,8 +254,8 @@ mon_placard_sans_chemise = mon_placard.pop("chemise")
 print(mon_placard_sans_chemise)
 ```
 
-Pour parcourir les *clés* d'un **dictionnaire**, on utilise la
-méthode ***keys*** :
+Pour parcourir les _clés_ d'un **dictionnaire**, on utilise la
+méthode **_keys_** :
 
 ```python
 for cle in mon_dictionnaire.keys():
@@ -262,28 +263,28 @@ for cle in mon_dictionnaire.keys():
 ```
 
 Pour parcourir les valeurs d'un dictionnaire, on utilise la méthode
-***values*** :
+**_values_** :
 
 ```python
 for valeur in mon_dictionnaire.values():
     print(valeur)
 ```
 
-Pour parcourir les *clés* et les *valeurs* simultanément, on utilise la
-méthode ***items*** :
+Pour parcourir les _clés_ et les _valeurs_ simultanément, on utilise la
+méthode **_items_** :
 
 ```python
 for cle, valeur in mon_dictionnaire.items() :
     print("La clé {} contient la valeur {}.".format(cle, valeur))
 ```
 
-##  Ensembles
+## Ensembles
 
 Python fournit également un type de donnée pour les ensembles.
 Un ensemble est une collection **non ordonnée sans élément dupliqué**.
 Les ensembles sont pratiquent pour effectuer les opérations
 mathématiques telles que les unions, intersections, et différences. On
-créé un ensemble grâce à la fonction *set()* ou avec des accolades.
+créé un ensemble grâce à la fonction _set()_ ou avec des accolades.
 
 ## Les chaînes de caractères sont des séquences
 
@@ -298,9 +299,9 @@ mon_titre = 'introduction'
 mon_titre.upper().center(20)
 ```
 
-?> **Exercice 5** : Expliquer ce que permettent les méthodes *lower*, *upper*, *capitalize* et *center* utilisées ci-dessus.
+?> **Exercice 5** : Expliquer ce que permettent les méthodes _lower_, _upper_, _capitalize_ et _center_ utilisées ci-dessus.
 
-La méthode *format* permet de formater une chaîne de caractère pour l'afficher.
+La méthode _format_ permet de formater une chaîne de caractère pour l'afficher.
 
 ```python
 prenom = 'PE'
@@ -317,7 +318,7 @@ ma_chaine = *'*Hello, world !'
 print(ma_chaine[*4*] + "-" + str(len(ma_chaine)))
 ```
 
-Pour parcourir une chaîne, on peut utiliser une boucle ***while.***
+Pour parcourir une chaîne, on peut utiliser une boucle **_while._**
 
 ```python
 chaine = "Salut"
@@ -328,10 +329,10 @@ while i < len(chaine):
 ```
 
 Pour convertir une chaîne de caractère en liste, on utilise la méthode
-***split***. Pour convertir une liste en chaîne, on utilise la méthode
-***join***.
-
+**_split_**. Pour convertir une liste en chaîne, on utilise la méthode
+**_join_**.
 
 ## :fa fa-brain: Exercices
-1. Créer une fonction *remove_all(list, value)* qui enlève toute les occurrences d'une valeur dans une liste, pas
-seulement la première.
+
+1. Créer une fonction _remove_all(list, value)_ qui enlève toute les occurrences d'une valeur dans une liste, pas
+   seulement la première.

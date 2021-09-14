@@ -1,6 +1,8 @@
 - [<i class="fa fa-graduation-cap" aria-hidden="true"></i> Première](/premiere.md)
 - [<i class="fa fa-user-graduate" aria-hidden="true"></i> Terminal](/terminal.md)
 
+---
+
 - **NSI TERMINAL**
 
 - [<i class="fa fa-play-circle" aria-hidden="true"></i> Introduction](/terminal/intro.md)

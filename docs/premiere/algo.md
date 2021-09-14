@@ -2,17 +2,16 @@
 
 !> !! Work in progress !!
 
-
 ## Définissons un algorithme
 
-D'un point de vue mathématique, un algorithme est une « **suite finie et non ambigüe d’opérations ou d’instructions permettant de résoudre un problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot *algorithme* est une référence au mathématicien perse  **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
+D'un point de vue mathématique, un algorithme est une « **suite finie et non ambiguë d’opérations ou d’instructions permettant de résoudre un problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot _algorithme_ est une référence au mathématicien perse **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
 
 D'un point de vue des sciences informatiques, un algorithme est une **procédure de calcul définie par une suite finie d’opérations élémentaires obéissant à un enchaînement déterminé**. Il s'agit de résoudre un problème en un certain nombre d'étapes clairement définies dans un dialogue avec un ou des ordinateurs. La grande majorité des algorithmes prennent des **valeurs en entrée** et à la **suite des opérations** des l'algorithme renvoient des **valeurs de sortie**.
 
 ```mermaid
 graph LR
     A([Données d'entrée]) --> B{Opération}
-    subgraph Algorithme 
+    subgraph Algorithme
         B --> C{...}
         C --> D{...}
         C --> E{...}
@@ -22,13 +21,15 @@ graph LR
     classDef default fill:#2e789163,stroke:#2e7891,stroke-width:4px;
 ```
 
---- 
+---
+
 <p class="center-p"> Schema simplifié d'un algorithme.</p>
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Donald E. Knuth, Algorithmes, Stanford, CSLI Publications, 2011, 510 p. (ISBN 978-1-57586-620-8)"> 2011 </abbr>) : 
+Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Donald E. Knuth, Algorithmes, Stanford, CSLI Publications, 2011, 510 p. (ISBN 978-1-57586-620-8)"> 2011 </abbr>) :
+
 - **Finitude** : « Un algorithme doit toujours se terminer après un nombre fini d’étapes. »
 - **Définition précise** : « Chaque étape d'un algorithme doit être définie précisément, les actions à transposer doivent être spécifiées rigoureusement et sans ambiguïté pour chaque cas. »
 - **Entrées** : « quantités qui lui sont données avant qu'un algorithme ne commence. Ces entrées sont prises dans un ensemble d'objets spécifié ».
@@ -36,12 +37,11 @@ Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Dona
 - **Rendement** : « toutes les opérations que l'algorithme doit accomplir doivent être suffisamment basiques pour pouvoir être en principe réalisées dans une durée finie par un homme utilisant un papier et un crayon ».
 </details>
 
-
-> Une recette de cuisine peut être réduite à un algorithme. En **entrée** on injecte des ingrédients et on spécifie le matériel utilisé. Ces entrées sont ensuite utilisés par des **instructions élémentaires simples** (couper, frire, mélanger...) pour donner en **sortie** un plat préparé. 
+> Une recette de cuisine peut être réduite à un algorithme. En **entrée** on injecte des ingrédients et on spécifie le matériel utilisé. Ces entrées sont ensuite utilisés par des **instructions élémentaires simples** (couper, frire, mélanger...) pour donner en **sortie** un plat préparé.
 
 ### L'algorithme d'Euclide
 
-L'algorithme antique le plus connu est l'algorithme d'Euclide qui permet de calculer le plus grand commun diviseur (PGCD) de deux nombres entiers, c'est à dire de trouver le plus grand entier qui divise les deux entiers en laissant un reste nul. Cet algorithme simple est décrit ci-dessous grâce à un organigramme, un peuso-code (code en langage naturel) puis sous une version python. 
+L'algorithme antique le plus connu est l'algorithme d'Euclide qui permet de calculer le plus grand commun diviseur (PGCD) de deux nombres entiers, c'est à dire de trouver le plus grand entier qui divise les deux entiers en laissant un reste nul. Cet algorithme simple est décrit ci-dessous grâce à un organigramme, un pseudo-code (code en langage naturel) puis sous une version python.
 
 ```mermaid
 graph LR
@@ -71,7 +71,7 @@ fonction euclide(a, b)
         r=a modulo b
         a=b
         b=r
-        euclide(a,b)        
+        euclide(a,b)
 ```
 
 ```python
@@ -86,30 +86,30 @@ def algo_euclide(a, b):
 ## Analyse des algorithmes
 
 Il existe trois axes de vérifications d'un algorithme:
+
 - **la terminaison** : est-que l'algorithme ne tourne pas de manière infinie ?
 - **La correction** : est-que le résultat renvoyé est le bon ?
-- **La complexité** :  quel est le temps d'exécution d'un algorithme et la mémoire qu'il requiert?
-
+- **La complexité** : quel est le temps d'exécution d'un algorithme et la mémoire qu'il requiert?
 
 ### :fa fa-stopwatch: Coût d'un algorithme (complexité temporelle)
 
-Pour mesurer la complexité temporelle d'un algorithme on compte le nombre maximal d'opérations exécutées par un programme. Chaque affectation (a = 2), comparaison (a>0), accès en mémoire (lire fichier a.txt), et opération élémentaire (a+b) compte pour une opération (une unité de temps). 
+Pour mesurer la complexité temporelle d'un algorithme on compte le nombre maximal d'opérations exécutées par un programme. Chaque affectation (a = 2), comparaison (a>0), accès en mémoire (lire fichier a.txt), et opération élémentaire (a+b) compte pour une opération (une unité de temps).
 Ainsi, la complexité (noté T(n)) de l'expression `a <- a*b+3` est égale à 5 (une affectation, un accès à la mémoire pour a, un accès à la mémoire pour b, une multiplication, une addition).
 
 #### L'exemple du parcours séquentiel d'un tableau
 
-Pour illustrer la complexité temporelle (coût d'un algorithme), prenons l'exemple du parcours séquentiel d'un tableau. Il y a deux cas à traiter : 
-- (i) l'entier recherché est présent dans le tableau en position j,
-- (ii) l'entier n'est pas dans le tableau qui contient n élements.
+Pour illustrer la complexité temporelle (coût d'un algorithme), prenons l'exemple du parcours séquentiel d'un tableau. Il y a deux cas à traiter :
 
+- (i) l'entier recherché est présent dans le tableau en position j,
+- (ii) l'entier n'est pas dans le tableau qui contient n éléments.
 
 ```pseudo code
-                                                 Nombre d'opérations       
+                                                 Nombre d'opérations
                                                cas (i)          cas (ii)
 tr ← Faux                                      (1 op.)          (1 op.)
 i ← 1                                          (1 op.)          (1 op.)
-tant que i <= longueur(t) et que tr == FAUX   (j+1 op.)        (n+1 op.) 
-    si t[i]==x :                               (j op.)          (n op.) 
+tant que i <= longueur(t) et que tr == FAUX   (j+1 op.)        (n+1 op.)
+    si t[i]==x :                               (j op.)          (n op.)
         tr ← VRAI                              (1 op.)          (0 op.)
     fin si
     i ← i+1                                    (j op.)          (n op.)
@@ -119,31 +119,31 @@ renvoyer la valeur de tr                       (1 op.)          (1 op.)
                                          TOTAL = 3j+5             3n+4
 ```
 
-Le **coût de l’algorithme** est donné par le **nombre d’opérations effectuées dans le pire des cas**. 
+Le **coût de l’algorithme** est donné par le **nombre d’opérations effectuées dans le pire des cas**.
 
 ?> Dans notre exemple, quel est le coût de l'algorithme ? <abbr title="Ici, le nombre d'opérations maximum est atteint lorsque le nombre recherché se situe en dernière position (position n)"> <i class="fas fa-life-ring"></i> Indices </abbr>. <!-- 3n+5 -->
 
 #### Différents ordres de grandeur
 
-Le coût d'un algorithme dépend très souvent de la taille (notée *n*) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
-- Complexité **constante** *Θ(1)* : si le nombre d'opérations ne dépend pas de n,
-- Complexité **logarithmique** *Θ(log n)* : si le nombre d'opérations est proche de log(n),
-- Complexité **linéaire** *Θ(n)* : si le nombre d'opérations est d'ordre n,
-- Complexité **quadratique** *Θ(n²)* : si le nombre d'opérations est d'ordre $n^2$,
-- Complexité **exponentielle** *Θ($2^n$)* : si l'ordre est une forme de puissance de n.
+Le coût d'un algorithme dépend très souvent de la taille (notée _n_) du jeux de données en entrée. Il existe un grand nombre d'ordre de grandeurs ([:fa fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Analyse_de_la_complexit%C3%A9_des_algorithmes)) dont les principaux sont les suivants :
+
+- Complexité **constante** _Θ(1)_ : si le nombre d'opérations ne dépend pas de n,
+- Complexité **logarithmique** _Θ(log n)_ : si le nombre d'opérations est proche de log(n),
+- Complexité **linéaire** _Θ(n)_ : si le nombre d'opérations est d'ordre n,
+- Complexité **quadratique** _Θ(n²)_ : si le nombre d'opérations est d'ordre $n^2$,
+- Complexité **exponentielle** _Θ($2^n$)_ : si l'ordre est une forme de puissance de n.
 
 Le coût de l'algorithme du parcours séquentiel d'un tableau (3n+5) est linéaire (noté Θ(n)).
 
-![Représentation graphique des principaux ordres de grandeur des complexités algorithmiques](../_img/complexite.png ':size=80%')
+![Représentation graphique des principaux ordres de grandeur des complexités algorithmiques](../_img/complexite.png ":size=80%")
 
-<p class="center-p"> 
+<p class="center-p">
 
-Représentation graphique des **principaux ordres de grandeur** des complexités algorithmiques. 
+Représentation graphique des **principaux ordres de grandeur** des complexités algorithmiques.
 
 </p>
 
-?> Compter le nombre d'opération *faire_la_fete()* exécutées par les algorithmes suivants avec n=3. Exprimer le nombre d'opération faire_la_fete() exécutées par les algorithmes 1 à 4 en fonction de n. Puis noter le type de complexité de tous les algorithmes.
-
+?> Compter le nombre d'opération _faire_la_fete()_ exécutées par les algorithmes suivants avec n=3. Exprimer le nombre d'opération faire_la_fete() exécutées par les algorithmes 1 à 4 en fonction de n. Puis noter le type de complexité de tous les algorithmes.
 
 ```python
 # Algo 1
@@ -172,14 +172,13 @@ for i in range(1, n):
             faire_la_fete()
 ```
 
-<!-- 
+<!--
 Algo 1 : 5                  -> Constant
 Algo 2 : n*n=n²             -> Quadratique
 Algo 3 : n*(n+1)/2          -> Quadratique O(n²)
 Algo 4 : (n-9)*11 = 11n-99  -> Linéaire O(n)
 Algo 5 :                    -> O(n³)
 -->
-
 
 ## Algorithme de tri
 
@@ -188,7 +187,8 @@ Trier une liste de valeurs (des nombres, des lettres, des cartes...) est un proc
 ### Tri par insertion
 
 Une des façons intuitive de trier des cartes, c'est :
-- de poser la première carte sur la table, 
+
+- de poser la première carte sur la table,
 - de comparer la valeur de la deuxième carte et de la placer à droite si la nouvelle carte a une valeur plus importante et à gauche dans le cas inverse,
 - de sortir une troisième carte et de l'insérer entre les deux si la valeur est entre les deux cartes déjà posées,
 - et de continuer ainsi à insérer les cartes dans la liste déjà triée.
@@ -196,77 +196,69 @@ Une des façons intuitive de trier des cartes, c'est :
 ```pseudocode
 tri_insertion(liste L)
 	Pour i allant de 1 à la longueur de L-1 faire
-		placer l'élément L[i] dans la liste déjà classée L[0:i-1] 
+		placer l'élément L[i] dans la liste déjà classée L[0:i-1]
 	retourner la liste L
 ```
 
 ```python
 def tri_insertion(L):
-	for i in range(1, len(L)):			
-		elt = L[i] 						
+	for i in range(1, len(L)):
+		elt = L[i]
 		j = i
-		while elt < L[j-1] and j > 0:	
-			L[j]  =L[j-1]     
-			j -= 1 
-		L[j] = elt						
+		while elt < L[j-1] and j > 0:
+			L[j]  =L[j-1]
+			j -= 1
+		L[j] = elt
 	return L
 ```
 
 ?> Regarder les animations [en ligne](http://lwh.free.fr/pages/algo/tri/tri_insertion.html) du tri par insertion. Vous pouvez également visualiser l'algorithme de tri par insertion grâce à des [danseurs roumains](https://www.youtube.com/watch?v=ROalU379l3U).
 
-Calculons maintenant le coût de l'algorithme de tri par insertion à travers deux cas : 
-- Si la liste est déjà triée, l'algorithme a une complexité linéaire notée Θ(n). En effet chaque valeurs va être comparée avec la valeur suivante une seule fois. 
+Calculons maintenant le coût de l'algorithme de tri par insertion à travers deux cas :
+
+- Si la liste est déjà triée, l'algorithme a une complexité linéaire notée Θ(n). En effet chaque valeurs va être comparée avec la valeur suivante une seule fois.
 - Si la liste est mélangée de façon aléatoire, il faudra en moyenne (n2-n)/4 opération. On est face à une complexité quadratique notée Θ(n²).
 
-?> Effectuer sur une feuille (papier ou virtuel) la suite d'opération en pseudo-code pour trier la suite de valeur [1, 2, 3, 4, 5]. Combien d'opération faut t'il faire? Faire la même chose avec la suite [1, 4, 3, 5, 2]. 
+?> Effectuer sur une feuille (papier ou virtuel) la suite d'opération en pseudo-code pour trier la suite de valeur [1, 2, 3, 4, 5]. Combien d'opération faut t'il faire? Faire la même chose avec la suite [1, 4, 3, 5, 2].
 
 Le tri par insertion a un coût quadratique qui le rend très peu efficace sur des listes avec beaucoup d'éléments.
-
 
 ### Tri par sélection
 
 ?> Regarder les animations [en ligne](http://lwh.free.fr/pages/algo/tri/tri_selection.html) du tri par selection. Vous pouvez également visualiser l'algorithme de tri par selection grâce à des [danseurs roumains](https://www.youtube.com/watch?v=Ns4TPTC8whw).
 
-?> Grâce à ces ressources, expliquer le tri par selection à votre grand-père/grand-mère pour qu'iel range plus vite son jeu de carte. 
+?> Grâce à ces ressources, expliquer le tri par selection à votre grand-père/grand-mère pour qu'iel range plus vite son jeu de carte.
 
 Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité est donc en Θ(n2) tout comme l'algorithme de tri par insertion. Il existe de meilleurs algorithmes de tri qui sont plus complexes mais plus rapides.
-
 
 ## Invariant et preuve de terminaison
 
 http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1
 
-
 !> Work in progress
 
-
-
-## Apprentissage et algorithme du plus proche voisin 
+## Apprentissage et algorithme du plus proche voisin
 
 !> Work in progress
-
-
-
 
 ## Algorithmes gloutons
 
-Un **algorithme glouton** est une stratégie qui consiste à tenter de trouver une solution optimale à un problème en avançant par étape de solution locale. 
+Un **algorithme glouton** est une stratégie qui consiste à tenter de trouver une solution optimale à un problème en avançant par étape de solution locale.
 
-Imaginez un paysage dans lequel vous souhaitez atteindre le point le plus haut. Quels sont les solutions pour atteindre ce sommet? 
-- La première est de cartographier l'ensemble de la région et ainsi de savoir exactement où se situe le sommet. C'est la solution par **force brute**. Bien sûr, si vous avez déjà une carte avec vous, c'est que quelqu'un d'autre a précédemment utilisé la force brute et vous en fait bénéficier. Dans le cas ou vous n'avez pas de carte, créer une carte juste pour trouver le point le plus haut reviens à prendre un bazooka pour tuer une mouche... 
+Imaginez un paysage dans lequel vous souhaitez atteindre le point le plus haut. Quels sont les solutions pour atteindre ce sommet?
+
+- La première est de cartographier l'ensemble de la région et ainsi de savoir exactement où se situe le sommet. C'est la solution par **force brute**. Bien sûr, si vous avez déjà une carte avec vous, c'est que quelqu'un d'autre a précédemment utilisé la force brute et vous en fait bénéficier. Dans le cas ou vous n'avez pas de carte, créer une carte juste pour trouver le point le plus haut reviens à prendre un bazooka pour tuer une mouche...
 - Une deuxième solution consiste à toujours choisir le chemin qui monte. Si vous monter jusqu'à ne plus pouvoir monter vous avez trouver un point assez haut, sans doute un sommet local. Ce n'est peut être pas le sommet le plus haut, mais c'est assez facile de trouver ce point géographique. Ici on utilise un **algorithme glouton**, on cherche des solutions locales optimales en espérant se rapprocher de la solution optimal globale.
 
+?> Prenons l'exemple d'un commerçant qui doit vous rendre 9€ en monnaie. Combien y a t'il de combinaisons possibles sachant que le commerçant a des pièces de 1€, de 2€ et des billet de 5€ et de 10€? Lister toutes ces solutions. Quelle est la solution qui utilise le moins de pièces/billets ?
 
-?> Prenons l'exemple d'un commerçant qui doit vous rendre 9€ en monnaie. Combien y a t'il de combinaisons possibles sachant que le commerçant a des pièces de 1€, de 2€ et des billet de 5€ et de 10€? Lister toutes ces solutions. Quelle est la solution qui utilise le moins de pièces/billets ? 
-
-Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ * 113, 1€*111 + 2€ …) ? 
+Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ * 113, 1€*111 + 2€ …) ?
 
 Une solution assez simple utilise un algorithme glouton. Avec une stratégie gloutonne de rendu de monnaie, on va d'abord rendre la valeur maximal possible (ici 5€). Pour rendre 9 euros, on ne peut pas utiliser un billet de 10€, donc on rend d'abord un billet de 5€. Il reste alors 4€ à rendre. On va rendre alors une pièce de 2€. Il reste 2€ à rendre. On rend enfin une deuxième pièce de 2€. Dans le cas du rendu de monnaie en euro, un algorithme glouton va toujours permettre de trouver la solution optimal. On dit que le système en euro est **canonique**. Avec d'autres systèmes monétaire, l'algorithme glouton peut manquer la solution optimale.
 
 ?> Prenons un système monétaire avec des coupures de 1, 6 et 10. Trouver la solution optimale pour rendre 12. Ensuite effectuer les étapes d'un algorithme glouton comme ci-dessus. Combien de coupures avez vous besoin de rendre selon l'algorithme glouton?
 
-
-?> Vous partez en sac a dos pour une randonnée de 3 jours en autonomie. Vous aller chez un vendeur spécialisé de repas nutritif léger. Vous voulez prendre 3kg maximum de nourriture pour ne pas trop vous charger. Vous souhaitez également maximiser le nombre de calorie par achat tout diversifiant vos achats (aucun achat en double). Le vendeur vous propose les élements du tableau suivant :
+?> Vous partez en sac a dos pour une randonnée de 3 jours en autonomie. Vous aller chez un vendeur spécialisé de repas nutritif léger. Vous voulez prendre 3kg maximum de nourriture pour ne pas trop vous charger. Vous souhaitez également maximiser le nombre de calorie par achat tout diversifiant vos achats (aucun achat en double). Le vendeur vous propose les éléments du tableau suivant :
 
 | Achat | Poids | Energie (calorie) |
 | ----- | ----- | ----------------- |
@@ -278,12 +270,12 @@ Une solution assez simple utilise un algorithme glouton. Avec une stratégie glo
 
 ?> Appliquer un algorithme glouton en faisant varier la manière de choisir les achats : (i) choisir les achats par ordre d'energie décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos, (ii) choisir les achats par ordre de poids croissant, (iii) choisir les achats par ordre de rapport energie/poids décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos.
 
-Selon les problèmes, les algorithmes gloutons produisent d’excellents résultats ou se trompe complétement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
+Selon les problèmes, les algorithmes gloutons produisent d’excellents résultats ou se trompe complètement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
 
---- 
+---
 
 ## :fa fa-brain: Exercices
 
-?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy. 
+?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy.
 
 ?> Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2
