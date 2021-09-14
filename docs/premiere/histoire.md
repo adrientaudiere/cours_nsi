@@ -256,7 +256,7 @@ sous-programmes.
 ### :fa fa-microchip: La révolution électronique : du transistor au microprocesseur
 
 En 1947, **John Bardeen**(1908 – 1991), **William Shockley** (1910 – 1989)
-et **Walter Brattain **(1902 – 1987), chercheurs pour les
+et **Walter Brattain** (1902 – 1987), chercheurs pour les
 laboratoires Bell, inventent le **transistor**. En 1956, ils reçoivent
 le prix Nobel de physique pour cette invention. Il s'agit d'un
 **composant semi-conducteur** à trois électrodes qui permet de faire
