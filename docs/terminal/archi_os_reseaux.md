@@ -211,7 +211,7 @@ tester l'accessibilité à une autre machine via le réseau. On donne en entrée
 ping fr.wikipedia.org -c 5
 ```
 
-?> À l'aide de la commande suivante (`traceroute`) trouver par quel(s) pays nos paquets passent lorsque l'on navigue sur le site français de wikipedia. Essayer la même chose avec en.wikipedia.org.
+?> À l'aide de la commande suivante (`traceroute`) trouver par quel(s) pays nos paquets passent lorsque l'on navigue sur le site français de wikipedia. Essayer la même chose avec en.wikipedia.org. Si la commande ne fonctionne pas, vous pouvez utiliser le site [tools.keycdn.com](https://tools.keycdn.com/traceroute) pour lancer l'analyse. 
 
 <details >
 <summary> <strong> Astuce:</strong></summary>
