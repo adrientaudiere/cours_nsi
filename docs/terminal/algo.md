@@ -2,42 +2,38 @@
 
 !> !! Work in progress !!
 
-
 ## Listes chaînées
-!> Work in progress 
+
+!> Work in progress
+
 ## Piles et files
 
 ## Dictionnaires
 
-
-
 ## Structures en arbres
-!> Work in progress 
+
+!> Work in progress
 ### Arbres binaires
 
 ### Arbres binaires de recherche
 
 ### Autres structures arborescentes
 
-
-
 ## Graphe
-!> Work in progress 
+
+!> Work in progress
+
 ### Définition d'un graphe
 
 ### Parcours en profondeurs et en largeur
 
-
-
 ## Diviser pour régner
 
-!> !! Work in progress TODO !!
-
-
+!> !! Work in progress
 
 ## Programmation dynamique
 
-!> Work in progress 
+!> Work in progress
 
 ## Recherche textuelle
 
@@ -45,4 +41,4 @@
 
 ## Calculabilité
 
-!> !! Work in progress TODO !!
+!> !! Work in progress

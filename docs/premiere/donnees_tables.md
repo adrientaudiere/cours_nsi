@@ -30,10 +30,10 @@ celle des ouvrages ?
 
 ## :fa fa-file-csv: Le format CSV
 
-Le format **CSV** (de l'anglais *comma separated value*, c'est-à-dire
+Le format **CSV** (de l'anglais _comma separated value_, c'est-à-dire
 « **valeurs séparées par des virgules** ») est un format texte utilisé
 couramment pour représenter des données structurées en tableau. On peut
-facilement importer ou exporter des fichiers *.csv* avec un tableur (par
+facilement importer ou exporter des fichiers _.csv_ avec un tableur (par
 ex. Libreoffice Calc).
 
 ?> Enregistrer les fichiers [results.csv] et Pokemon.csv sur votre
@@ -43,8 +43,7 @@ réagissent-ils pareil à l'ouverture d'un fichier CSV ?
 
 ?> En utilisant LibreOffice Calc, trouver le nombre de pokémons légendaires? Est-ce que l'attaque moyenne des pokémons légendaires est supérieurs à celle des autres pokémons?
 
-?> Essayer d'ouvrir le fichiers [Pokemon2.csv](https://raw.githubusercontent.com/adrientaudiere/cours_nsi/main/docs/_doc/Pokemon2.csv) de façon satisfaisante avec LibreOffice Calc. 
-
+?> Essayer d'ouvrir le fichiers [Pokemon2.csv](https://raw.githubusercontent.com/adrientaudiere/cours_nsi/main/docs/_doc/Pokemon2.csv) de façon satisfaisante avec LibreOffice Calc.
 
 Dans le format CSV, chaque ligne représente un **enregistrement** (par
 exemple chaque ligne correspond à un match ou à un nom de Pokémon). Sur
@@ -54,16 +53,14 @@ d'autres types de **séparateur** comme la tabulation ou le point virgule).
 
 Le format JSON est un peu différent et permet l'imbrication de données
 plus complexes. Par exemple, si vous voulez faire la liste des joueurs
-qui ont participé à chaque match du fichier *results.csv* et que vous
+qui ont participé à chaque match du fichier _results.csv_ et que vous
 voulez indiquez leur âge, il faut faire un deuxième tableau en CSV alors
 qu'en JSON on peut l'inclure directement dans le même fichier.
 
 ?> Convertir le fichier <a href="https://raw.githubusercontent.com/adrientaudiere/cours_nsi/main/docs/_doc/Pokemon.csv" target="_blank" rel="noopener"> pokemon.csv</a> en JSON grâce à ce
 [site](https://csvjson.com/csv2json).
 
-?> Comparer la taille en ko des fichiers Pokemon.csv et Pokemon.json. En cochant la case *minify* (optimisé) sur le convertisseur en ligne dans l'exercice précédent, qu'est ce qui change dans le format json et combien gagne t'on de d'espace disque par rapport au json non optimisé?
-
-
+?> Comparer la taille en ko des fichiers Pokemon.csv et Pokemon.json. En cochant la case _minify_ (optimisé) sur le convertisseur en ligne dans l'exercice précédent, qu'est ce qui change dans le format json et combien gagne t'on de d'espace disque par rapport au json non optimisé?
 
 ## :fab fa-python: Importer/exporter les fichiers CSV avec python
 
@@ -74,7 +71,7 @@ d'utiliser les données ensuite, on utilise la bibliothèque **csv**. Dans
 cette bibliothèque, deux fonctions principales permettent d'importer un
 fichier .csv :
 
-- la fonction ***reader()*** renvoie un objet *csv.reader* qui est une
+- la fonction **_reader()_** renvoie un objet _csv.reader_ qui est une
 **liste**.
 
 ```python
@@ -90,7 +87,7 @@ for ligne in csvenliste:  #parcours du lecteur avec une boucle
 file.close()  #fermeture du fichier
 ```
 
-- la fonction ***DictReader()*** renvoie un objet **dictionnaire** ordonné *csv.DictReader*.
+- la fonction **_DictReader()_** renvoie un objet **dictionnaire** ordonné _csv.DictReader_.
 
 ```python
 import csv  #importation de la bibliothèque csv
@@ -104,7 +101,6 @@ for ligne in csvendico:  #parcours du lecteur avec une boucle
 
 file.close()  #fermeture du fichier
 ```
-
 
 ### Exporter des données CSV
 
@@ -128,9 +124,7 @@ ordre = ['nom', 'prenom', 'age']
 vers_csv('table_exemple', ordre, 'mon_fichier_example')
 ```
 
-
 ## :fa fa-keyboard: Manipulez les données
-
 
 ?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site https://isn-icn-ljm.pagesperso-orange.fr/) avec VScodium.
 
@@ -138,4 +132,4 @@ vers_csv('table_exemple', ordre, 'mon_fichier_example')
 
 ## :fa fa-brain: Exercices
 
-!> Work in progress
+!> TO DO

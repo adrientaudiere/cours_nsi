@@ -1,7 +1,5 @@
 # Architecture materiel, OS et réseaux <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> !! Work in progress !!
-
 ![Understanding computer technology](../_img/understanding_computer.jpg ":size=70%")
 
 ---
@@ -196,8 +194,6 @@ Ce protocole a également l'avantage de s'appuyer sur les débits réels et non 
 </details>
 
 ### Commande UNIX de gestion des protocoles
-
-!> Work in progress
 
 On a déjà vu la commande `ip route` qui permet d'afficher le routage statique de notre ordinateur.
 Cette commande permet également de modifier notre routage, par exemple en ajoutant une route (`ip route add`).

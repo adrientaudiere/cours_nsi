@@ -1,7 +1,5 @@
 # Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> !! Work in progress !!
-
 ## Définissons un algorithme
 
 D'un point de vue mathématique, un algorithme est une « **suite finie et non ambiguë d’opérations ou d’instructions permettant de résoudre un problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot _algorithme_ est une référence au mathématicien perse **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
