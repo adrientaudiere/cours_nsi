@@ -118,7 +118,7 @@ graph LR
 
 ---
 
-En tant normal, l'état des processus variera entre prêt, en attente et en exécution. L'ordonnanceur suspend (très) régulièrement les processus pour allouer de la ressource à d'autres processus. Ainsi, plusieurs tâches s'exécutent les une à la suite des autres, mais tellement rapidement qu'on a l'impression que les processus s'exécutent simultanément. On parle de _pseudo-parallélisme_. Le terme de **calcul parallèle** est reservé au processus qui s'exécute sur deux processeurs différents.
+En tant normal, l'état des processus variera entre prêt, en attente et en exécution. L'ordonnanceur suspend (très) régulièrement les processus pour allouer de la ressource à d'autres processus. Ainsi, plusieurs tâches s'exécutent les une à la suite des autres, mais tellement rapidement qu'on a l'impression que les processus s'exécutent simultanément. On parle de _pseudo-parallélisme_. Le terme de **calcul parallèle** est réservé au processus qui s'exécute sur deux processeurs différents.
 
 Dans certains cas il existe des situations d'interblocage (_deadlock_ en anglais). Cela se produit quand deux processus concurrents s'attendent mutuellement. Par exemple supposons un système possédant les ressources (au sens de ressource informatique) R1 et R2 et avec les processus A et B en cours d'exécution, il y a interblocage dans le cas suivant :
 
@@ -262,6 +262,10 @@ Dans le cas du code de César, il est assez facile de trouver la clé. Mais il e
 
 ?> À l'aide du site [encipher.it](https://encipher.it/), envoyer un message chiffré à un autre élève puis donner lui à l'oral la clé de déchiffrement pour qu'il puisse la lire.
 
+Un autre exemple de cryptographie symétrique plus complexe à retrouver à la main utilise la fonction XOR (ou exclusif).
+
+?> Lire les pages 2 et 3 du [document](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_chiffrage.pdf) écrit par Van Zuijlen Stéphan (CC-BY-NC).
+
 ### Cryptographie asymétrique
 
 Les algorithmes de chiffrement asymétriques utilisent deux clés : une clé publique qui permet de chiffrer et une clé privée qui permet de déchiffrer. Ils sont très coûteux en tant de calcul. On les utilise donc surtout pour faire passer des petits messages, en particulier des clés partagées qui permettront ensuite de communiquer plus efficacement.
@@ -298,19 +302,28 @@ Le protocole HTTP n'est pas sécurisé, les communications entre le client et le
 
 #### Fonctionnement du protocole HTTPS
 
-Le S de HTTPS signifie _secure_. Il s'agit d'un protocole HTTP sur lequel on rajoute une couche de chiffrement (le protocole TSL (_Transport Layer Security_)). La communication HTTPS implique (i) un certificat délivré par une autorité de certification et (ii) une paire de clés asymétriques.
-
-Lors de la communication client-serveur une première étape (**poignée de main TSL**) qui consiste à instaurer la confiance entre le client et le serveur avant de communiquer. Le client envoie une requête HTTPS (du genre : « Salut serveur, j'aimerai discuter avec toi de façon sécurisé »). Le serveur répond avec un certificat et une clé publique (« Ok, tu peux me croire je suis un pote de quelqu'un de confiance. Ma clé publique c'est XXX »). Le client vérifie auprès de l'autorité de certification que le certificat est bien valide (« Salut quelqu'un de confiance, Machin m'a dis que je pouvais lui faire confiance, c'est vrai? »).
-
-À la suite d'une poignée de main réussie, la communication entre le client et le serveur va utiliser le protocole RSA ou Diffie-Hellman pour partager une clé secrète qui chiffrera les informations.
+Le S de HTTPS signifie _secure_. Il s'agit d'un protocole HTTP sur lequel on rajoute une couche de chiffrement (le protocole **TSL** (_Transport Layer Security_)). La communication HTTPS implique (i) un certificat délivré par une **autorité de certification** et (ii) une paire de clés asymétriques.
 
 ![](../_img/https_proc.png ":size=60%")
 
 <p class="center-p"> <strong> Schéma d'une communication HTTPS </strong> . Licence <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a><abbr title="Quentin Duchemin, logos de Assaf Katz, Stalinsunnykvj, MGalloway (WMF), Artdabana@Design.">. Source</abbr>.
 </p>
 
+Lors de la communication client-serveur une première étape (**poignée de main TSL**) qui consiste à instaurer la confiance entre le client et le serveur avant de communiquer. Le client envoie une requête HTTPS (du genre : « Salut serveur, j'aimerai discuter avec toi de façon sécurisé »). Le serveur répond avec un certificat et une clé publique (« Ok, tu peux me croire je suis un pote de quelqu'un de confiance. Ma clé publique c'est XXX »). Le client vérifie auprès de l'autorité de certification que le certificat est bien valide (« Salut quelqu'un de confiance, Machin m'a dis que je pouvais lui faire confiance, c'est vrai? »).
+
+À la suite d'une poignée de main réussie, la communication entre le client et le serveur va utiliser le protocole RSA ou Diffie-Hellman pour partager une clé secrète qui chiffrera les informations.
+
 Les autorités de certification sont des tiers de confiance pouvant être des entreprises spécialisées, des états ou même des associations à but non lucratif. L'initiative [Let's encrypt](https://letsencrypt.org/fr/) fut lancée en 2015 par l'université du Michigan, la fondation Mozilla (à l'origine du navigateur web firefox) et l'Electronic Frontier Foundation. Let's encrypt propose des certificats TSL/SSL gratuits ce qui a grandement facilité l'adoption du protocole HTTPS pour un grand nombre de sites.
+
+![](../_img/tls_1.png ":size=90%")
+
+<p class="center-p"> <strong> Schéma d'un transfert de données par TLS</strong> . Licence <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a><abbr title="Quentin Duchemin, logos de Assaf Katz, Stalinsunnykvj, MGalloway (WMF), Artdabana@Design.">. Source</abbr>.
+</p>
 
 ?> Trouver l'autorité de certification du site de cours. Trouver la version de TLS utilisée.
 
 ?> À l'aide des métaphores du druide [Gépépix](/../_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).
+
+#### Ce que HTTPS laisse visible
+
+« Techniquement, le protocole HTTPS laissent visible les méta-données de la communication, en particulier la source et la destination. Ainsi, il ne garantit pas l'anonymat. Un fournisseur d'accès internet pourra sans problème connaître l'identité de tout utilisateur effectuant une communication HTTPS à l'aide de l'adresse IP contenue dans les méta-données. [...] Le navigateur et le protocole Tor permettent de garantir une anonymisation du flux réseau. Ainsi, la connexion est sécurisée et l'identité de l'utilisateur protégée. Cet outil est très précieux pour des journalistes ou des opposants politiques vivant dans des régimes autoritaires.» ([Source](https://librecours.net/module/culture/chiffrement-web/https.xhtml) : CC-BY-SA)
