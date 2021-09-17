@@ -1,9 +1,9 @@
-# Sources 
+# Sources
 
 ## Sources principales
 
 - Les cours de Frédéric Mandon ([http://www.maths-info-lycee.fr/](http://www.maths-info-lycee.fr/)) ont servis de fondation très utile pour construire ce cours. Les cours de F. Mandon ont utilisés comme sources importantes d'inspiration le livre de G.Swinnen : Apprendre à programmer avec
-Python 3
+  Python 3
 
 - Les cours de Pierre-Erwan Le Marec et Jean Mortreux, enseignant de NSI à Scholae 2019-2020 pour les premières. Ces cours m'ont en particulier aidé à structurer les parties « Histoire de l'informatique » et « codage-typage ».
 
@@ -12,15 +12,11 @@ Python 3
 - Les cours en ligne de [Mon lycée numérique](http://www.monlyceenumerique.fr/index_nsi.html)
 
 - Le livre Numérique et Sciences de l'Informatiques pour les premières (éd. Ellipses) co-écrit par T. Balabonski, S. Conchon, J.-C.
-Filliâtre et K. Nguyen
-
+  Filliâtre et K. Nguyen
 
 - Les cours en ligne du site [librecours.net](https://librecours.net) écrit par [Stéphane Crozat](http://stph.crzt.fr) dont la majorité est sous licence [CC-by-sa-3.0](http://creativecommons.org/licenses/by-sa/3.0/fr/)
 
-
 ## Sources secondaire
-
-
 
 https://www.apprendre-en-ligne.net/index-info.html
 
@@ -34,9 +30,9 @@ https://freecodecamp.org/
 
 https://librecours.net/
 
-### Internet 
+### Internet
 
-- [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR) 
+- [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR)
 - Routage sur [idum](http://idum.fr/spip.php?article213)
 
 ### À creuser
