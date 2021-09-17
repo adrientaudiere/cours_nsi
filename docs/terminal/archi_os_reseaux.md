@@ -211,7 +211,7 @@ tester l'accessibilité à une autre machine via le réseau. On donne en entrée
 ping fr.wikipedia.org -c 5
 ```
 
-?> À l'aide de la commande suivante (`traceroute`) trouver par quel(s) pays nos paquets passent lorsque l'on navigue sur le site français de wikipedia. Essayer la même chose avec en.wikipedia.org. Si la commande ne fonctionne pas, vous pouvez utiliser le site [tools.keycdn.com](https://tools.keycdn.com/traceroute) pour lancer l'analyse. 
+?> À l'aide de la commande suivante (`traceroute`) trouver par quel(s) pays nos paquets passent lorsque l'on navigue sur le site français de wikipedia. Essayer la même chose avec en.wikipedia.org. Si la commande ne fonctionne pas, vous pouvez utiliser le site [tools.keycdn.com](https://tools.keycdn.com/traceroute) pour lancer l'analyse.
 
 <details >
 <summary> <strong> Astuce:</strong></summary>
@@ -224,39 +224,93 @@ traceroute fr.wikipedia.org
 
 ## Sécurisation des communications
 
-!> Work in progress
+### Un peu d'histoire
 
-<!-- https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_chiffrage.pdf -->
+Rendre illisible une information pour un ennemi est un sport qui est apparu sans doute très tôt après l'apparition de l'écriture. David Kahn (_The Codebreakers : A Comprehensive History of Secret Communication from Ancient Times to the Internet, Revised and Updated_) cite comme premier exemple de document chiffré une recette de poterie sur une tablette d'argile dès le XVIe siècle av. J.-C. Le potier avait modifier l'orthographe de certains mots et avait supprimer les consonne. Dès le IVe siècle av. J.-C., Énée le Tacticien écrit un chapitre dans la Poliorcétique sur les procédés de cryptographie.
 
----
+Par la suite Jules César utilisa une technique de substitution mono-alphabétique en décalant les lettres de l'alphabet. Par exemple le code de César avec une valeur de 3 consiste à écrire 'Je t'aime' : _mh w dlph_. Vous pouvez vous amuser a faire des essais sur un [générateur en ligne](https://calculis.net/code-cesar).
 
-https://www.nextinpact.com/article/24930/99777-chiffrement-notre-antiseche-pour-expliquer-a-vos-parents
+<details class="advanced_level">
+<summary> <strong> En savoir plus :</strong></summary>
+La page wikipedia d'[histoire de la cryptologie](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie) est très complet.
+</details>
 
-https://chiffrer.info/
+?> Écrire une fonction python `chiffrer` qui chiffre un texte avec la technique de César. Il faudra mettre un paramètre qui correspond au nombre du décalage.
 
-https://chiffrer.info/cryptris/
+?> Compléter la fonction `chiffrer` sous python en ajoutant un paramètre méthode qui permet de choisir entre la méthode de césar et la méthode [Atbash](https://fr.wikipedia.org/wiki/Atbash). Il faudra donc coder la méthode Atbash dont le nom est formé par les initiales des premières et dernières lettres de l'alphabet hébreu **a**leph, **t**av, **b**eth, **sh**in.
 
-https://youtu.be/8BM9LPDjOw0
+### Quelques précisions sémantiques ([source](https://www.nextinpact.com/article/24930/99777-chiffrement-notre-antiseche-pour-expliquer-a-vos-parents))
 
-https://encipher.it/
+Un site entier est dédié à la terminologie de la cryptologie : [On dit chiffrer, et pas crypter](https://chiffrer.info/)
 
-    Chiffrer : il s’agit de rendre un document illisible avec une clef de chiffrement, excepté pour son destinataire
-    Déchiffrer : il s’agit de rendre lisible un document chiffré, en ayant connaissance de la clef de chiffrement
-    Décrypter : il s’agit de rendre lisible un document chiffré, sans avoir connaissance de la clef de chiffrement
+- **Chiffrer** : il s’agit de rendre un document illisible avec une clef de chiffrement, excepté pour son destinataire
+- **Déchiffrer** : il s’agit de rendre lisible un document chiffré, en ayant connaissance de la clef de chiffrement
+- **Décrypter** : il s’agit de rendre lisible un document chiffré, sans avoir connaissance de la clef de chiffrement
+- **Cryptologie** : il s’agit de la science du secret, c’est son sens étymologique. Elle regroupe plusieurs disciplines :
 
-    Cryptologie : il s’agit de la science du secret, c’est son sens étymologique. Elle regroupe plusieurs disciplines :
-        La cryptographie : vise à étudier comment protéger par le chiffrement
-        La cryptanalyse : vise à analyser les méthodes de chiffrement pour les casser
+  - La cryptographie : vise à étudier comment protéger par le chiffrement
+  - La cryptanalyse : vise à analyser les méthodes de chiffrement pour les casser
 
-    Crypter : cela n’existe pas
-    Chiffrage : cela existe, dans le domaine de la comptabilité ou de la musique
-
-https://fr.wikipedia.org/wiki/Atbash
+- **~~Crypter~~** : cela n’existe pas
+- **Chiffrage** : cela existe, mais uniquement dans le domaine de la comptabilité ou de la musique
 
 ### Cryptographie symétrique
 
+On dit qu'un algorithme de chiffrement est symétrique lorsque c'est la même clé qui permet de chiffrer et de déchiffrer les messages. Cette clé doit être tenu secrète pour éviter que quelqu'un qui intercepte le message puisse le lire. Le code de César est un exemple d'algorithme de chiffrement symétrique : on envoie un message ainsi qu'une clé pour le déchiffrer. Dans le cas du code de César la clé est un nombres qui correspond au décalage dans l'alphabet. La clé qui sert à chiffrer est la même que celle qui permet de déchiffrer.
+
+Dans le cas du code de César, il est assez facile de trouver la clé. Mais il existe des techniques de chiffrement symétrique ([AES](https://fr.wikipedia.org/wiki/Advanced_Encryption_Standard) et [ChaCha20](https://fr.wikipedia.org/wiki/Salsa20) par exemple) plus complexes qui se basent sur des clés composées de nombreux caractères qui sont mélangés au message initial. Ces algorithmes symétriques sont très efficaces, c'est à dire qu'ils sont difficiles à casser/décrypter sans la clé tout en étant très rapide à déchiffrer (avec la clé). Tout le problème de ces méthodes est de se communiquer la clé de façon sûre. C'est tout l'enjeux des algorithmes asymétrique.
+
+?> À l'aide du site [encipher.it](https://encipher.it/), envoyer un message chiffré à un autre élève puis donner lui à l'oral la clé de déchiffrement pour qu'il puisse la lire.
+
 ### Cryptographie asymétrique
 
-### Authentification des participants
+Les algorithmes de chiffrement asymétriques utilisent deux clés : une clé publique qui permet de chiffrer et une clé privée qui permet de déchiffrer. Ils sont très coûteux en tant de calcul. On les utilise donc surtout pour faire passer des petits messages, en particulier des clés partagées qui permettront ensuite de communiquer plus efficacement.
+
+?> Dessiner un schéma de résumé des chiffrements symétriques et asymétriques. Vous devez faire apparaître notamment les mots : clé privée, clé publique, clé secrète, message lisible, message chiffré, algorithme de chiffrement, algorithme de déchiffrement
+
+?> Jouer au jeu [Cryptris](https://chiffrer.info/cryptris/).
+
+#### Protocole de Diffie-Hellman
+
+?> Lire les métaphores du druide [Gépépix](/../_doc/gepepix.pdf) (Source : https://picasoft.net, CC-BY-SA)
+
+Ce protocole résout le problème de l'échange de clé avec un système de clé privé et de clé publique. En revanche, il ne permet pas d'être certain de l'authenticité de la personne avec laquelle on interagit. Cela rend ce protocole vulnérable à une « attaque de l'homme du milieu ». Le protocole RSA résout ce problème d'authentification.
+
+?> Pour comprendre le principe du protocole de Diffie-Hellman, lire la partie « Principe expliqué avec des couleurs » de la page [wikipedia](https://fr.wikipedia.org/wiki/%C3%89change_de_cl%C3%A9s_Diffie-Hellman).
+
+#### Protocole RSA
+
+?> Regarder la [vidéo](https://invidious.fdn.fr/watch?v=8BM9LPDjOw0) de ScienceEtonnante sur les codes secrets. Expliquez pourquoi les méthodes par substitution sont assez facile à déchiffrer. Expliquer en trois phrases le protocole RSA avec vos mots.
+
+Ce protocole repose sur des théorèmes mathématiques complexes. Le chiffrement RSA est surtout utilisé pour transmettre des clé de chiffrement symétrique (par ex. dans le protocole HTTPS avec les tiers de confiance), mais il est aussi utilisé par des protocoles entiers comme le protocole SSH (_Secure SHell_) qui permet d'accéder de façon sécurisé à un serveur distant depuis un ordinateur client.
 
 ### Protocole HTTPS
+
+#### HTTP n'est pas sécurisé
+
+Le protocole HTTP (_HyperText Transfert Protocol_) est un protocole de communication que nous avons déjà vu en première ([Interface homme-machine](../premiere/IHM.md)).
+
+?> Relire la partie HTTP du cours de première ([Interface homme-machine](../premiere/IHM.md))
+
+Le protocole HTTP n'est pas sécurisé, les communications entre le client et le serveur peuvent être interceptées et lues puisque les paquets sont envoyés en clair.
+
+> L'attaque de l'[homme du milieu](https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu) (_man in the middle_) consiste pour un acteur malveillant à intercepter la communication entre le client et le serveur et même à modifier les messages entre les deux machines. Si aucune des deux parties ne se rendent comptent de l'attaque, cela peux permettre à l'homme du milieu de se faire passer pour un serveur (par ex. pour demander des codes de carte bancaire). L'homme du milieu peut également alterer le serveur en se faisant passer pour un client (par ex. en créant plein de fausse requête sur le serveur).
+
+#### Fonctionnement du protocole HTTPS
+
+Le S de HTTPS signifie _secure_. Il s'agit d'un protocole HTTP sur lequel on rajoute une couche de chiffrement (le protocole TSL (_Transport Layer Security_)). La communication HTTPS implique (i) un certificat délivré par une autorité de certification et (ii) une paire de clés asymétriques.
+
+Lors de la communication client-serveur une première étape (**poignée de main TSL**) qui consiste à instaurer la confiance entre le client et le serveur avant de communiquer. Le client envoie une requête HTTPS (du genre : « Salut serveur, j'aimerai discuter avec toi de façon sécurisé »). Le serveur répond avec un certificat et une clé publique (« Ok, tu peux me croire je suis un pote de quelqu'un de confiance. Ma clé publique c'est XXX »). Le client vérifie auprès de l'autorité de certification que le certificat est bien valide (« Salut quelqu'un de confiance, Machin m'a dis que je pouvais lui faire confiance, c'est vrai? »).
+
+À la suite d'une poignée de main réussie, la communication entre le client et le serveur va utiliser le protocole RSA ou Diffie-Hellman pour partager une clé secrète qui chiffrera les informations.
+
+![](../_img/https_proc.png ":size=60%")
+
+<p class="center-p"> <strong> Schéma d'une communication HTTPS </strong> . Licence <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a><abbr title="Quentin Duchemin, logos de Assaf Katz, Stalinsunnykvj, MGalloway (WMF), Artdabana@Design.">. Source</abbr>.
+</p>
+
+Les autorités de certification sont des tiers de confiance pouvant être des entreprises spécialisées, des états ou même des associations à but non lucratif. L'initiative [Let's encrypt](https://letsencrypt.org/fr/) fut lancée en 2015 par l'université du Michigan, la fondation Mozilla (à l'origine du navigateur web firefox) et l'Electronic Frontier Foundation. Let's encrypt propose des certificats TSL/SSL gratuits ce qui a grandement facilité l'adoption du protocole HTTPS pour un grand nombre de sites.
+
+?> Trouver l'autorité de certification du site de cours. Trouver la version de TLS utilisée.
+
+?> À l'aide des métaphores du druide [Gépépix](/../_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).

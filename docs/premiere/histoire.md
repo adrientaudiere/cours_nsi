@@ -185,7 +185,7 @@ composants déjà utilisé par IBM. Il mesure 16 m de longueur et pèse
 4 500 kg. La machine sera opérationnelle en 1943 et servira à des
 applications militaires. En 1938, Alan Turing entre dans les services de
 renseignements britanniques ou il va développer des méthodes de
-décryptage des messages codées allemands. Des calculateurs
+déchiffrage des messages chiffrés allemands. Des calculateurs
 électromécaniques, baptisées **Bombes de Turing**, sont construit à cet
 effet. Sur la base de ces travaux, Max Newman (1897 - 1984) et Thomas
 Flowers (1905 - 1998) développe un autre calculateur, nommé
