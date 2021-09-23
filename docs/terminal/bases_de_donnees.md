@@ -82,6 +82,8 @@ Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à
 
 ## Le modèle relationnel
 
+?> Regarder la [vidéo en ligne](https://invidious.fdn.fr/watch?v=iu8z5QtDQhY) d'introduction à la base de données.
+
 ### Modéliser la bibliothèque du lycée
 
 ?> Vous avez pour mission collective de stocker les informations concernant les livres de la bibliothèque du lycée. Prenons 10 livres au hasard pour l'exemple. Proposez une façon de stocker ces informations.
@@ -101,13 +103,23 @@ Les logiciels types tableurs (par ex. Excel ou LibreOffice Calc) sont apparus à
 
 ---
 
+### Écrire le schéma d'une base de données relationnelle
+
+On peut représenter la structure d'une base données relationnelle à partir d'un **schéma**, sorte de pseudocode qui résume la structure de la base de données et donne quelques indication sur le domaine et les clés des relations.
+
+On écrit une ligne par relation avec ces attributs entre parenthèse et séparés par des virgules. On note également le type des attributs. Par exemple, la base de données des joueurs de football de Ligue 1 pourrait s'écrire :
+
+- *Joueur*(<u><em>Nom</u></em> STRING, *Prénom* STRING, *Age* INT, *Ratio_ _but_par_tir* FLOAT, *Date_naissance* INT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>Club</em></u> STRING)
+
+- *Club*(<u style="border-bottom: 1px dotted; cursor: help;"><em>Acronyme</em></u>, STRING, *Nb_joueurs* INT, *Année_création*)
+
 ## Le language SQL
 
 ?> Faire les parties 1 à 4 des [exercices en ligne](https://fxjollois.github.io/cours-sql/) de FX Jollois (IUT Paris Descartes). Prenez des notes à chaque fois qu'une information vous semble importante.
 
 ![](../_img/SQLite_figure.png ":size=100%")
 
-<p class="center-p"> <strong> Exemple de code SQL </strong> avec à gauche les schéma ou les retours de fonction, et à droite l'état de la base de données. </p>
+<p class="center-p"> <strong> Exemple de code SQL </strong> avec à gauche les schémas ou les retours de fonction, et à droite l'état de la base de données. </p>
 
 ---
 
@@ -115,13 +127,13 @@ Le code complet de la figure ci-dessus est présenté ci-dessous. Vous pouvez le
 
 ```sql
 DROP TABLE IF EXISTS Monstres;
-DROP TABLE IF EXISTS Types;
+DROP TABLE IF EXISTS Races;
 
 CREATE TABLE Monstres (
 ID INT PRIMARY KEY,
 Classe VARCHAR(20),
 Niveau INT,
-Type VARCHAR(20)
+Race VARCHAR(20)
 );
 
 INSERT INTO Monstres VALUES (
@@ -135,8 +147,8 @@ SELECT Classe, Niveau
 FROM Monstres
 WHERE Niveau>5;
 
-CREATE TABLE Types (
- Type VARCHAR(20)
+CREATE TABLE Races (
+ Race VARCHAR(20)
         PRIMARY KEY,
  Cris VARCHAR(40),
  Humain INT,
@@ -144,16 +156,16 @@ CREATE TABLE Types (
        REFERENCES Monstres (Type)
 );
 
-INSERT INTO Types
+INSERT INTO Races
 VALUES
   ("Elf", "Yo!", 1),
   ("Troll", "Grrr", 0);
 
-SELECT * From Types;
+SELECT * From Races;
 
 SELECT * FROM Monstres
-INNER JOIN Types
-ON Monstres.Type = Types.Type
+INNER JOIN Races
+ON Monstres.Race = Races.Race
 ```
 
 <details class="advanced_level">
@@ -218,11 +230,23 @@ connexion.close()
 
 ## :fa fa-brain: Exercices
 
+1. Regrouper les mots synonymes : relation, colonne, entité, column, entité, attribut, table, schéma, base de données, domaine, ligne, type, row
+
 1. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
 
-- _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> String, _emprunté\_le_ Date)
-- _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
+   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> String, _emprunté\_le_ Date)
+   - _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
 
 1. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
 
-1.
+1. Dans la BDR mondial se trouve une table economy qui possède les attributs suivants : Country (le code du pays), GDP (le PIB, en millions de dollars), agriculture (la part de l'agriculture dans le PIB, en pourcentage), Service (la part des services dans le PIB), Industry (la part de l'industrie dans le PIB), Inflation (le taux d'inflation) et Unemployment (le taux de chômage).
+
+Par exemple, la requête suivante affiche les pays majoritairement agricole.
+
+```SQL
+SELECT country.name, economy.agriculture FROM country
+JOIN economy ON country.code = economy.country
+WHERE economy.agriculture>economy.industry AND economy.agriculture > economy.service;
+```
+
+Écrire la requête qui va filtrer les pays dont l'inflation est positive et qui va les trier par le taux de chômage.
