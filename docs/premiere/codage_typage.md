@@ -1,6 +1,6 @@
 # :fa fa-code: Codage et typage <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-Nous allons voir dans ce chapitre que les ordinateurs ne comprennent que les 1 et le 0 (on parle de système binaire). 
+Nous allons voir dans ce chapitre que les ordinateurs ne comprennent que les 1 et le 0 (on parle de système binaire).
 Pour dialoguer avec la machine, il faut convertir nos mots (par ex. des chaînes de caractères), nos concepts (par ex. des valeurs booléennes) et nos chiffres (nombres entiers positifs, négatifs et nombres réels).
 
 ## Jongler entre les nombres
@@ -12,14 +12,13 @@ nombre équivalent d'objets, par exemples des cailloux (*calculus* en
 latin), des bâtons ou les dix doigts de la main (*digitus* en latin).
 C'est l'origine de la **numération en base 10** ou numération décimale qui
 est aujourd'hui la plus couramment utilisé à travers le système de
-numération indo-arabe. 
+numération indo-arabe.
 
 Il existe d'autre façon de calculer. Ainsi la **base 12** (duodécimale) permet de dénombrer les mois de l'année ou les
 heures sur une montre par exemple, la **base 60** (sexagésimale) permet de
 dénombrer les minutes et les secondes. De façon très courante, les
 informaticiens utilisent les bases **2** (binaire), **16** (hexadécimale) et **8**
 (octale).
-
 
 ### :fas fa-microchip: Le microprocesseur
 
@@ -53,8 +52,7 @@ mémoire : est-ce que l'on met les bits dans l'ordre « normal » ou dans
 l'ordre inverse. L'ordre usuel permet une lecture par les humains plus
 facile, tandis que l'ordre inverse permet des calculs plus simples par
 le microprocesseur. Ainsi un mot de 16 bits comme AB12 sera écrit en
-machine AB 12 en gros boutisme et 12 AB en petit boutisme. 
-
+machine AB 12 en gros boutisme et 12 AB en petit boutisme.
 
 ### :fa fa-server:  Les types et leur représentation
 
@@ -62,7 +60,7 @@ Il existe un grand nombre de **nature de données** : nombre entier, nombre à
 virgule, caractère, texte, image... On appelle ces différents types de
 données des ..., **types**. Les données étant toutes traduites en 0 et 1
 dans la machine, le codage associé à un type permet de « comprendre » la
-donnée. 
+donnée.
 
 *Avant de voir comment sont codés les différents types en
 machine, il est nécessaire de faire un petit crochet par les
@@ -70,10 +68,9 @@ mathématiques.*
 
 ## :fa fa-dice: Bases de numération
 
+### La base <span class="very_strong">10</span>
 
-###  La base <span class="very_strong">10</span> 
-
-Certains systèmes de numération sont des systèmes additifs qui requièrent d'additionner les chiffres pour obtenir la valeur. C'est le cas du systèmes romains (par ex. $CXIV = 114_{10}$.) 
+Certains systèmes de numération sont des systèmes additifs qui requièrent d'additionner les chiffres pour obtenir la valeur. C'est le cas du systèmes romains (par ex. $CXIV = 114_{10}$.)
 
 À l'inverse, le principe de la **numération positionnelle** est d'exprimer un nombre en fonction de symboles et de
 puissances de la base de numération. Prenons un
@@ -89,14 +86,13 @@ $$
 En base 10 (numération décimale), les symboles sont les chiffres de 0 à 9. Ce système permet de faire des calculs plus simplement qu'avec d'autres
 systèmes, comme par exemple le système romain. On note la base 10 en utilisant la notation $X_{10}$
 
-###   La base <span class="very_strong">2</span> 
+### La base <span class="very_strong">2</span>
 
-En base 2 (numération binaire), on ne dispose que des chiffres 0 et 1, et des puissances de 2. On note la base 2 en utilisant la notation $X_{2}$ ou $\overline{X}$ (par ex. $3_{10}=11_2=	\overline{11}$).
-
+En base 2 (numération binaire), on ne dispose que des chiffres 0 et 1, et des puissances de 2. On note la base 2 en utilisant la notation $X_{2}$ ou $\overline{X}$ (par ex. $3_{10}=11_2= \overline{11}$).
 
 $$ 6_{10}=110_2=\textcolor{blue}{1} \times 2^2+\textcolor{blue}{1} \times 2^1+ \textcolor{blue}{0} \times 2^0 $$
 
-#### Conversion binaire :fas fa-arrows-alt-h: décimal   
+#### Conversion binaire :fas fa-arrows-alt-h: décimal
 
 Du binaire au décimal : on écrit tout simplement la somme de produits, sans les 0.
 
@@ -117,7 +113,7 @@ $$
 13 &= \textcolor{orange}{6} \times 2 + \textcolor{green}{1} \\
 6 &= \textcolor{orange}{3} \times 2 + \textcolor{green}{0} \\
 3 &= \textcolor{orange}{1} \times 2 + \textcolor{green}{1} \\
-1 &= \textcolor{orange}{0} \times 2 + \textcolor{green}{1} 
+1 &= \textcolor{orange}{0} \times 2 + \textcolor{green}{1}
 \end{aligned}
 $$
 
@@ -126,11 +122,11 @@ résultat : $111_{10} = 1101111_2$.
 
 ?> **Exercice 1** : Convertir $11_2$ , $10001_2$ et $101000101_2$ en base 10. Convertir $12_{10}$, $787_{10}$ et $2329_{10}$ en base 2.
 
-#### Les additions en base 2 :
+#### Les additions en base 2
 
 L'addition binaire respecte les mêmes règles que l'addition décimale :
 
-- $0 + 0 = 0$ 
+- $0 + 0 = 0$
 
 - $0 + 1 = 1 + 0 = 1$
 
@@ -153,11 +149,10 @@ codé sur n bits est $2n-1$ et que : $(2^n - 1) + (2^n - 1) = 2 \times 2^n - 2 =
 
 ?> **Exercice 2** : Effectuer l'addition $111111_2 + 101101_2$. Puis convertir ces deux nombres binaires en nombres décimaux et faire l'addition à partir de ces nombres décimaux.
 
-
-?> **Exercice 3** : Convertir depuis la base 10 vers la base 2 puis effectuer les opérations suivantes et donner le résultat en binaire sur 8 bits : 
+?> **Exercice 3** : Convertir depuis la base 10 vers la base 2 puis effectuer les opérations suivantes et donner le résultat en binaire sur 8 bits :
 $38 + 64$ ; $13 + 41$.
 
-#### Les multiplications en base 2 :
+#### Les multiplications en base 2
 
 En base 10, pour obtenir le résultat d'une multiplication par 10, il
 suffit d'ajouter un 0. En base 2, de la même façon, on ajoute un 0 pour
@@ -182,7 +177,6 @@ $$
 \end{aligned}
 $$
 
-
 On peut facilement démontrer que la multiplication de deux nombres de n
 bits donnera au maximum un nombre de 2n bits. En effet : $(2^n - 1) \times (2^n - 1) = 2^{2n} - 2^n + 1 < 2^{2n} - 1$
 
@@ -201,16 +195,15 @@ binaire. En effet, puisque $2^4=16$, on peut
 regrouper par 4 les chiffres en base 2 (les « bits » par abus de
 langage) pour obtenir un chiffre en base 2.
 
-| Base 16 	| 0    	| 1    	| 2    	| 3    	| 4    	| 5    	| 6    	| 7    	|
-|---------	|------	|------	|------	|------	|------	|------	|------	|------	|
-| Base 10 	| 0    	| 1    	| 2    	| 3    	| 4    	| 5    	| 6    	| 7    	|
-| Base 2  	| 0000 	| 0001 	| 0010 	| 0011 	| 0100 	| 0101 	| 0110 	| 0111 	|
+| Base 16  | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     |
+|--------- |------ |------ |------ |------ |------ |------ |------ |------ |
+| Base 10  | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     |
+| Base 2   | 0000  | 0001  | 0010  | 0011  | 0100  | 0101  | 0110  | 0111  |
 
-| Base 16 	| 8    	| 9    	| A    	| B    	| C    	| D    	| E    	| F    	|
-|---------	|------	|------	|------	|------	|------	|------	|------	|------	|
-| Base 10 	| 8    	| 9    	| 10    	| 11    	| 12    	| 13    	| 14    	| 15    	|
-| Base 2  	| 1000 	| 1001 	| 1010 	| 1011 	| 1100 	| 1101 	| 1110 	| 1111 	|
-
+| Base 16  | 8     | 9     | A     | B     | C     | D     | E     | F     |
+|--------- |------ |------ |------ |------ |------ |------ |------ |------ |
+| Base 10  | 8     | 9     | 10     | 11     | 12     | 13     | 14     | 15     |
+| Base 2   | 1000  | 1001  | 1010  | 1011  | 1100  | 1101  | 1110  | 1111  |
 
 Les codes couleur, pour le web par exemple, sont souvent donnés sous
 l'intensité des trois couleurs additives de base (Rouge Vert Bleu pour
@@ -225,9 +218,9 @@ que : $\textcolor{red}{11000111}\textcolor{green}{00010101}\textcolor{blue}{100
 Par ailleurs, les ordres de grandeur peuvent se deviner facilement ;
 dans ce violet-rouge moyen il y a :
 
--   C7 rouge : c'est beaucoup (C est un grand chiffre)
--   15 vert : c'est peu (1 est un petit chiffre)
--   85 bleu : c'est moyen (8 c'est la moitié de 16, soit la moitié de la
+- C7 rouge : c'est beaucoup (C est un grand chiffre)
+- 15 vert : c'est peu (1 est un petit chiffre)
+- 85 bleu : c'est moyen (8 c'est la moitié de 16, soit la moitié de la
     base)
 
 ?> **Exercice 5**: Convertir $11_2$, $10001_2$ et $101000101_2$ en base 16. Convertir $12_{10}$ et $787_{10}$ en base 16.
@@ -252,10 +245,7 @@ vicésimal qui serait à l'origine du *quatre-vingt* en français).
 
 ### Conversion entres les bases 2, 10 et 16
 
-
-
 ![eaui](../_img/dessin_conversion_bases.svg ':size=70%')
-
 
 **Synthèse des méthodes de conversion** entre les bases 2, 10 et 16. Cette fiche est disponible en <a href="https://adrientaudiere.github.io/cours_nsi/_doc/dessin_conversion_bases.pdf" target="_blank" rel="noopener"> pdf</a>
 
@@ -375,7 +365,6 @@ int('0b11100', base=2)
 # 28
 ```
 
-
 ## :fa fa-ruler:  Les nombres réels (à virgules)
 
 On ne peut représenter que des valeurs décimales, vu qu'on ne dispose
@@ -418,7 +407,7 @@ $0,375 \times 2 = \textcolor{orange}{0},750$ (ce qui signifie que : $0,375 = 0,
 2^{-1}=0 \times 2^{-1}+ 0,75 \times 2^{-1}$).
 
 $0,750 \times 2 = \textcolor{orange}{1},5$ (ce qui signifie que : $0,75 = 1,5 \times
-2^{-1}$ soit encore que : 
+2^{-1}$ soit encore que :
 $0,375 =0 \times 2^{-1}+ ( 1,5 \times 2^{-1}) \times 2^{-1}=0 \times 2^{-1}+ 1,5 \times 2^{-2}= 0 \times 2^{-1}+ 1 \times 2^{-2}+ 0,5 \times 2^{-2}$.
 
 $0,500 \times 2 = \textcolor{orange}{1}$ (ce qui signifie que : $0,5 = 1 \times 2^{-1}$
@@ -457,19 +446,15 @@ Pour 23,375  :fa fa-long-arrow-alt-right: $10111,011_2=1,0111011 \times 2^4_2$
 - L'$\textcolor{#e91e63}{exposant}$: 4 4+127 = 131 qui se code en binaire par : 10000011,
 - La $\textcolor{purple}{Mantisse}$: Il faut la compléter par des 0 pour qu'elle occupe les 23 bits : 01110110000000000000000.
 
-
 | Signe | Exposant | Mantisse               |
 | ----- | -------- | ---------------------- |
 | 0     | 10000011 | 1110110000000000000000 |
-
 
 > Pour un mot en 64 bits on parle de **double précision**. Les nombre décimaux
 peuvent aller de 10^-308^ à 10^308^ (contre 10^-38^ à 10^38^ en simple
 précision, c'est à dire en 32 bits). De plus, en 64 bits on peux décrire
 des nombres beaucoup plus précisément, même si le codage en 32 bits
 suffit pour de nombreuses applications.
-
-
 
 | **Précision**        | **Encodage** | **_Signe_** | **_Exposant_** | **_Mantisse_** | **Valeur d'un nombre**                        | **Précision** | **Chiffres significatifs** |
 | -------------------- | ------------ | ----------- | -------------- | -------------- | --------------------------------------------- | ------------- | -------------------------- |
@@ -478,7 +463,7 @@ suffit pour de nombreuses applications.
 
 **Tableau** de comparaison des systèmes de codage en simple précision (32 bits) et double précision (64 bits)
 
---- 
+---
 
 ?> **Exercice 10**: Retrouver en base 10 le nombre qui a pour Signe 1 pour Exposant 10000100 et pour Mantisse 10110100000000000000000.
 [Correction](https://isn-icn-ljm.pagesperso-orange.fr/nsicourschapitre1/co/grain-nombres-reels.html)
@@ -488,8 +473,8 @@ suffit pour de nombreuses applications.
 Pour permettre les échanges d'informations textuelles entre systèmes
 informatiques, le codage **ASCII** (American Standard Code for
 Information Interchange, voir tableau ci-dessous ou [:fab fa-wikipedia-w:](https://upload.wikimedia.org/wikipedia/commons/1/1b/ASCII-Table-wide.svg)) a été proposé en 1963 (avant c'était le bazar). Chaque caractère est associé à un mot de 7
-bits. Par exemple « R » est associé à $1010010_2= 82_{10} = 52_{16}$ 
-et le symbole « 5 » à $0110101_2=35_{16}. 
+bits. Par exemple « R » est associé à $1010010_2= 82_{10} = 52_{16}$
+et le symbole « 5 » à $0110101_2=35_{16}.
 
 Par commodité, chaque caractère est en fait codé dans un octet. Sont codés en plus des
 caractères de contrôle, comme le « line feed », saut de ligne et
@@ -514,7 +499,6 @@ ces normes intègrent l'ASCII, mais ne sont pas compatibles entre elles.
 Comme il n'y a pas moyen de savoir quel codage est utilisé pour un
 document, cela donne parfois des surprises à la lecture, avec des
 caractères étonnants.
-
 
 <details>
 <summary>Cliquer pour voir la table complète ASCII</summary>
@@ -586,7 +570,7 @@ caractères étonnants.
 | 62  | 3E  | \&#62; | >     |     | 126 | 7E  | \&#126; | ~    |
 | 63  | 3F  | \&#63; | ?     |     | 127 | 7F  | \&#127; | DEL  |
 
-</details> 
+</details>
 
 La norme **ISO 8859** a utilisé le bit libre de la norme ASCII pour
 proposer des caractères supplémentaires, comme les caractères accentués,
@@ -595,8 +579,6 @@ premiers caractères sont ceux de l'ASCII, et les suivants dépendent...
 de la sous-norme ! Il y a en fait 16 tables différentes, par exemple la
 norme **ISO 8859-1**, dite latin-1, est pour l'Europe occidentale, la
 8859-6 pour l'Arabe, etc. [:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/ISO/CEI_8859-1) permet d'accéder à ces tableaux.
-
-
 
 Actuellement la norme qui tend à s'imposer, venant de Linux et du HTML,
 est l'**UTF-8**. Elle est présente par défaut sur les dernières versions
@@ -627,7 +609,6 @@ De manière simplifiée (voir d'autres exemples sur [:fab fa-wikipedia-w:](https
 | U+0080 à U-07FF    | 110x xxxx 10xx xxxx                     | 2 octets codant 11 bits |
 | U+0800 à U+FFFF    | 1110 xxxx 10xx xxxx 10xx xxxx           | 3 octets codant 16 bits |
 | U+10000 à U+10FFFF | 1111 0xxx 10xx xxxx 10xx xxxx 10xx xxxx | 4 octets codant 21 bits |
-
 
 Citons également la norme UTF-16, qui code un caractère sur un minimum
 de 16 bits, et la norme UTF-32, qui codent les caractères
@@ -664,7 +645,7 @@ description au niveau physique (transistors).
 Les **transistors** sont des composants électroniques à 3 bornes : la
 base B (ou grille G), le collecteur C (ou source S) et l'émetteur E (ou
 drain D). Il en existe une grande variété qui ont des fonctionnements
-très différents les uns des autres. 
+très différents les uns des autres.
 
 <div class="img-flow">
 
@@ -672,15 +653,12 @@ très différents les uns des autres.
 
 </div>
 
-
 De manière générale, un transistor
 est un dispositif **semi-conducteur** : il se comporte comme un
 interrupteur entre les bornes C et E, commandé par la borne B. Si la
 borne B est alimentée, le courant circule entre C et E, on dit que le
 transistor est **passant**. Si elle n'est pas alimentée, le courant ne
 circule pas, on dit que le transistor est bloquant.
-
-
 
 <details>
 <summary> <strong> Niveau avancé :</strong></summary>
@@ -734,7 +712,6 @@ calcul booléen (que l'on verra dans quelques séances).
 > :fab fa-python: *Typage en python :* le type booléen « bool » est en fait un entier, qui
 vaut False pour 0 et True dans tous les autres cas. Ce qui peut donner des résultats surprenants...
 
-
 ---
 
 ![eaui](../_img/Circuit_elements.svg ':size=40%')
@@ -744,12 +721,11 @@ vaut False pour 0 et True dans tous les autres cas. Ce qui peut donner des résu
 
 ---
 
-
 **L'opérateur NON**
 
 La porte NON est la plus simple, on l'appelle également inverseur. Elle
 permet d'obtenir le complément. Elle est réalisée avec deux transistors,
-un de type n et un de type p. 
+un de type n et un de type p.
 
 <div class="flex" style="display:flex">
 
@@ -778,13 +754,11 @@ un de type n et un de type p.
 
 La porte ET utilise deux valeurs en entrée (A et B). Si les deux entrées sont à
 1, la sortie (S) vaut 1, elle vaut 1 sinon. Il faut 6 transistors pour la
-câbler : trois de type p et trois de type n. 
-
+câbler : trois de type p et trois de type n.
 
 <div class="flex" style="display:flex">
 
 <div class="flex" style="flex: 1 1 0%;">
-
 
 <a href="https://commons.wikimedia.org/wiki/File:Fonctions_logiques(3-a).png#/media/Fichier:Fonctions_logiques(3-a).png"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Fonctions_logiques%283-a%29.png" alt="AND"></a>
 
@@ -804,7 +778,6 @@ câbler : trois de type p et trois de type n.
 </div>
 </div>
 
-
 **L'opérateur OU**
 
 La porte utilise deux valeurs en entrée. Si les deux entrées sont à 0,
@@ -822,7 +795,6 @@ pour la câbler : trois de type p et trois de type n.
 
 <div class="flex" style="flex: 1 1 0%;">
 
-
 | A   | B   | S   |
 | --- | --- | --- |
 | 0   | 0   | 0   |
@@ -834,16 +806,13 @@ pour la câbler : trois de type p et trois de type n.
 </div>
 </div>
 
-
 ?> **Exercice 11**: Faire la table de vérité de l'expression booléenne suivante : (A or B) and C.
-
 
 ### Circuits logiques de base
 
 On peut associer ces trois portes logiques pour fabriquer les autres
 portes logiques de base : le NON ET (**NAND**), le NON OU (**NOR**) et
 le OU EXCLUSIF (**XOR**).
-
 
 #### L'opérateur NON ET
 
@@ -859,7 +828,6 @@ l'association série d'une porte ET et d'une porte NON.
 | 1   | 1   | 0   |
 
 <p class="center-p">  Table de vérité de l'opérateur <strong>NON ET</strong> </p>
-
 
 Pour réaliser cette fonction, on pourrait mettre bout à bout les circuits
 électriques correspondant aux portes ET et NON mais cette solution
@@ -884,7 +852,6 @@ l'association en série d'une porte OU et d'une porte NON.
 
 <p class="center-p">  Table de vérité de l'opérateur <strong>NON OU</strong> </p>
 
-
 Comme dans le cas des portes NAND, il existe un câblage à 4 transistors qui permet
 d'obtenir la porte NOR. Cette porte est également universelle et il
 existe également des circuits intégrés qui ne contiennent que des portes
@@ -903,9 +870,7 @@ pour câbler cette fonction.
 | 1   | 0   | 1   |
 | 1   | 1   | 0   |
 
-
 <p class="center-p">  Table de vérité de l'opérateur <strong>XOR</strong> (OU EXCLUSIF) </p>
-
 
 Il y a de nombreuses façons de câbler la fonction XOR en utilisant des
 portes NON, ET, OU, NAND ou NOR. En voici trois exemples courants :
@@ -913,8 +878,6 @@ portes NON, ET, OU, NAND ou NOR. En voici trois exemples courants :
 ![eaui](../_img/xor.png ':size=30%')
 
 <p class="center-p">  3 manières courantes de câbler la fonction XOR. </p>
-
-
 
 #### Additionneur binaire
 
@@ -966,7 +929,6 @@ complet.
 
 <p class="center-p">  Logigramme de l'additionneur complet<a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1477617">Lien</a></p>
 
-
 ## :fa fa-brain: Exercices
 
 *On demande des calculs **sans** **bin** **et** **hex** **de Python** !
@@ -975,23 +937,23 @@ résultats.*
 
 Les icônes :far fa-flag: indiquent des questions auxquelles il est indispensable de savoir répondre tandis que les icônes :fa fa-award: indiquent des questions de niveau avancé.
 
-### Exercices en lignes :
+### Exercices en lignes
 
 - [codage des nombres (IUT d'informatique de Reims)](https://iut-info.univ-reims.fr/users/nourrit/codages/index.html)
 
 ### Ex. entiers positifs
 
-1.  Trouver la représentation en base 2 des nombres décimaux 1, 3, 7, 15, 31 et 63. Expliquer le résultat.
-1.  Trouver la représentation en base 16 des nombres décimaux 158 et 2045. Écrire en décimal le nombre hexadécimal BEEF.
-2.  On donne les nombres suivants, qui sont soit en base 2, soit en base 16. S'ils sont en binaire les écrire en hexadécimal et vice-versa :  $111011001010$ ; $E15A$ ; $1010100101$; $45$.
-3.  Trouver en base 10 la représentation du nombre $10010110_2$. 
-4.  Pour multiplier par dix un entier naturel exprimé en base dix, il suffit d'ajouter un 0 à sa droite. Quelle est l'opération
+1. Trouver la représentation en base 2 des nombres décimaux 1, 3, 7, 15, 31 et 63. Expliquer le résultat.
+1. Trouver la représentation en base 16 des nombres décimaux 158 et 2045. Écrire en décimal le nombre hexadécimal BEEF.
+1. On donne les nombres suivants, qui sont soit en base 2, soit en base 16. S'ils sont en binaire les écrire en hexadécimal et vice-versa :  $111011001010$ ; $E15A$ ; $1010100101$; $45$.
+1. Trouver en base 10 la représentation du nombre $10010110_2$.
+1. Pour multiplier par dix un entier naturel exprimé en base dix, il suffit d'ajouter un 0 à sa droite. Quelle est l'opération
     équivalente en base 2 ? Le vérifier sur 3, 6 et 12.
-5.  Calculer en binaire la somme $1101101_2 + 1001011_2$. N'oublier pas les retenues.
-6.  Comment peut-on multiplier un nombre en binaire par 2 ? Le diviser par 2 ? Que peut-il se passer dans ce dernier cas ?
-7.  Écrire en langage naturel un algorithme permettant d'ajouter deux entiers exprimés en binaire. L'implémenter en Python, en utilisant des tableaux de 0 et de 1 pour représenter les nombres en binaire.
+1. Calculer en binaire la somme $1101101_2 + 1001011_2$. N'oublier pas les retenues.
+1. Comment peut-on multiplier un nombre en binaire par 2 ? Le diviser par 2 ? Que peut-il se passer dans ce dernier cas ?
+1. Écrire en langage naturel un algorithme permettant d'ajouter deux entiers exprimés en binaire. L'implémenter en Python, en utilisant des tableaux de 0 et de 1 pour représenter les nombres en binaire.
 
-### Ex. entiers relatifs 
+### Ex. entiers relatifs
 
 *Sauf mention contraire, le codage se fait sur 8 bits.*
 
@@ -1003,22 +965,23 @@ Les icônes :far fa-flag: indiquent des questions auxquelles il est indispensabl
 4. Comment faire une soustraction à partir d'un part, de la méthode d'addition en binaire, et d'autre part, de la représentation des entiers relatifs ? Appliquer à 15 - 7 (sur des mots de 8 bits)
 5. Écrire un programme Python qui donne le complément à deux d'un nombre binaire. En entrée on donnera une liste de longueur quelconque comportant les chiffres, et en sortie on aura une liste de même longueur comportant les chiffres du complément.
 
-### Ex. représentation des décimaux 
+### Ex. représentation des décimaux
 
 *Sauf mention contraire, le codage des entiers se fait sur 8 bits et celui des flottants sur 32 bits.*
 
-1.  Trouver le décimal représenté par le mot : $0100\thinspace0011\thinspace0101\thinspace1110\thinspace0000\thinspace0000_2$
-2.  Coder 141,42 sur 32 bits.
-3.  Comment est représenté le nombre décimal $2^{-122} ?
-4.  Comment est représenté le nombre entier 7 ? Et le nombre décimal 7,0 ?
-5.  Comment est représenté le nombre 0,1 ? que remarquez-vous ?
-6.  Quelle précision perd-on si on divise à nombre à virgule par 2, puis qu'on le multiplie à nouveau par 2 ? (Cet exercice a plusieurs
+1. Trouver le décimal représenté par le mot : $0100\thinspace0011\thinspace0101\thinspace1110\thinspace0000\thinspace0000_2$
+2. Coder 141,42 sur 32 bits.
+3. Comment est représenté le nombre décimal $2^{-122} ?
+4. Comment est représenté le nombre entier 7 ? Et le nombre décimal 7,0 ?
+5. Comment est représenté le nombre 0,1 ? que remarquez-vous ?
+6. Quelle précision perd-on si on divise à nombre à virgule par 2, puis qu'on le multiplie à nouveau par 2 ? (Cet exercice a plusieurs
     réponses !)
-7.  Trouver le plus petit *x* flottant tel que x == x + 1 renvoie True
-8.  Trouver le plus grand *x* flottant tel que $2.0\*\*100 + x == 2.0\*\*100$ renvoie True (en python \*\* est une fonction qui élève à la puissance)
-9. :fa fa-award: Résoudre « à la main » l'équation $\frac{1}{16}x_2 + \frac{1}{10}x + \frac{1}{25} = 0$. Sous Python, rentrer les trois coefficients en tapant $a = 1/4$, etc. , puis calculer delta. Conclure. 
+7. Trouver le plus petit *x* flottant tel que x == x + 1 renvoie True
+8. Trouver le plus grand *x* flottant tel que $2.0\*\*100 + x == 2.0\*\*100$ renvoie True (en python \*\* est une fonction qui élève à la puissance)
+9. :fa fa-award: Résoudre « à la main » l'équation $\frac{1}{16}x_2 + \frac{1}{10}x + \frac{1}{25} = 0$. Sous Python, rentrer les trois coefficients en tapant $a = 1/4$, etc. , puis calculer delta. Conclure.
 10. Quelques tests sous Python ; expliquer les résultats obtenus.
-```python 
+
+```python
 1e75 + 275 - 1e75
 1e75*2 - 1e75
 #puis---------
@@ -1034,7 +997,7 @@ tableaux. Les fonctions ord() et chr() permettent de travailler en
 Python sur les caractères. Les caractères Unicode s'écrivent sous la
 forme \"\\u*point\_de\_code\_en\_hexa*\". Voir l'exemple ci-dessous.
 
-```python 
+```python
 a = "bonjour"
 premierCar = a[0] # premierCar contient « b »
 ord(premierCar) # renvoie 98, le code décimal ASCII de « b »
@@ -1060,7 +1023,7 @@ a + chr(65) # renvoie bonjourA, c'est à dire « bonjour » concaténée avec 
 
 ### Exercices en rab pour les plus avancés
 
-- Qui sont les deux personnages suivants, dont les noms sont donnés ci-dessous avec les caractères Unicode, dans une des langues dans lesquels ils sont célèbres ? Indice : l'un est un héros des films Marvel Avengers, l'autre est son papounet.
+1. Qui sont les deux personnages suivants, dont les noms sont donnés ci-dessous avec les caractères Unicode, dans une des langues dans lesquels ils sont célèbres ? Indice : l'un est un héros des films Marvel Avengers, l'autre est son papounet.
 
 fiston = \"\\u00DE\"+\"\\u00F3\"+\"\\u0072\"
 
@@ -1070,10 +1033,9 @@ Comparer avec \"\\u00DE\\u00F3\\u0072\"
 
 Tester\"\\u00DE\\u00F3\\u0072tue\"
 
-- La bibliothèque *unicodedata* permet d'avoir des informations sur les caractères unicode. Dans les quelques fonctions ci-dessous, *chr* peut être un caractère ou son point de code en format Python \"\\u*xxxx*".
+1. La bibliothèque *unicodedata* permet d'avoir des informations sur les caractères unicode. Dans les quelques fonctions ci-dessous, *chr* peut être un caractère ou son point de code en format Python \"\\u*xxxx*".
 
-  - unicode.name(*chr*) renvoie le nom du caractère
-  - unicode.decomposition(*chr*) renvoie la décomposition du caractère en tant que chaîne de caractère.
+   - unicode.name(*chr*) renvoie le nom du caractère
+   - unicode.decomposition(*chr*) renvoie la décomposition du caractère en tant que chaîne de caractère.
 
 Explorer ces deux fonctions pour trouver les points de code et les noms des caractères qui forment les caractères « é » (et « ȍ »...si vous arrivez à taper ce dernier...). Donner le nom des caractères dont les points de code décimaux sont 4031 et 9736. Et éventuellement 129430, ça peut planter.
-

@@ -1078,7 +1078,7 @@ svg[id^="mermaid-"] {
   text-indent: 1px;
   margin: 0.8em 0;
 }
-.markdown-section li {
+.markdown-section ul li {
   list-style-type: circle;
 }
 
@@ -1086,7 +1086,7 @@ svg[id^="mermaid-"] {
   background-color: rgba(179, 210, 219, 0.534);
 }
 
-.markdown-section  .list_of_terms blockquote {
+.markdown-section .list_of_terms blockquote {
   border-left-color: rgba(210, 105, 30, 0.411);
   color: chocolate;
   margin: 0;
@@ -1095,7 +1095,7 @@ svg[id^="mermaid-"] {
   font-size: 1.2em;
 }
 
-.markdown-section  .list_of_terms blockquote p {
+.markdown-section .list_of_terms blockquote p {
   margin: 0.2em 0;
 }
 

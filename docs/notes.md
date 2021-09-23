@@ -1,16 +1,16 @@
 # Exemples de règles de styles utilisées dans le site
 
-?> **Des exercices** : Un exemple de question très intelligente et complexes
+?> **Des exercices** : Un exemple de question très intelligente et complexe
 
 > Des exemples
 
-!> Des phrases importantes 
+!> Des phrases importantes
 
 <div class="nutshell">
 
 **Des résumés**:
 
-- Un truc important 
+- Un truc important
 - Un autre truc important
 
 </div>
@@ -26,24 +26,19 @@ def ma_super_fonction(x, y)
 
 ```
 
-
 | Left Align | Center Align | Right Align | Colonne |
 | ---------- |:------------:| -----------:| ------------------------------ |
 | A1         | A2           | A3          | A4                             |
 | B1         | B2           | B3          | B4                             |
 | C1         | C2           | C3          | C4                             |
 
-
-
-### Des maths 
+### Des maths
 
 $$
 c=pm\times sqrt(a^2 + b^2)
 $$
 
-
 Et encore des maths $8_{10} = 1111_{2}$
-
 
 ### Des symboles
 
@@ -95,5 +90,3 @@ grep -h -r --include "*.md" -o -P '(?<=:fa).*(?=\:\ )' | uniq
 :fas fa-arrows-alt-h:
 
 :fas fa-dungeon: --- Pour les activités longues
-
-

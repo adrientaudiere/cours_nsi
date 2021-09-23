@@ -1,6 +1,6 @@
 # :fa fa-project-diagram: Bases de la programmation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-## Pseudo-code : les instructions principales d'algorithmique.
+##  Pseudo-code : les instructions principales d'algorithmique.
 
 Pour écrire un algorithme il est souvent plus simple de passer par une étape d'écriture en pseudo-code avant de coder à proprement parler dans un langage de programmation choisis. Nous détaillons ici les instructions principales d'algorithmique et leur écriture en pseudo-code (avec des exemples en français et en anglais) ainsi que leur implémentation en python comme exemple de programmation.
 
@@ -82,7 +82,7 @@ Un script en pseudo-code permet d'utiliser tous les ingrédients (que nous verro
 - des **instructions** (par ex. des affectations x <- b/a),
 - des **fonctions** qui automatisent les tâches répétitives.
 
-## Quelques notions de base sur la programmation.
+## Quelques notions de base sur la programmation
 
 Un **programme informatique** est un ensemble d'opérations destinées à être exécutées par un ordinateur. Un programme peut être écrit dans une ou plusieurs langages de programmation et peux être constitué d'un ou de plusieurs (parfois plusieurs centaines de milliers) de fichier.
 
@@ -113,33 +113,33 @@ Un même problème peut être résolu par de nombreux langage. Le site [Rosettac
 print("Py Nim\n")
 
 def getTokens(curTokens):
-	global tokens
+ global tokens
 
-	print("How many tokens would you like to take? ", end='')
-	take = int(input())
+ print("How many tokens would you like to take? ", end='')
+ take = int(input())
 
-	if (take < 1 or take > 3):
-		print("Number must be between 1 and 3.\n")
-		getTokens(curTokens)
-		return
+ if (take < 1 or take > 3):
+  print("Number must be between 1 and 3.\n")
+  getTokens(curTokens)
+  return
 
-	tokens = curTokens - take
-	print(f'You take {take} tokens.')
-	print(f'{tokens} tokens remaining.\n')
+ tokens = curTokens - take
+ print(f'You take {take} tokens.')
+ print(f'{tokens} tokens remaining.\n')
 
 def compTurn(curTokens):
-	global tokens
+ global tokens
 
-	take = curTokens % 4
-	tokens = curTokens - take
-	print (f'Computer takes {take} tokens.')
-	print (f'{tokens} tokens remaining.\n')
+ take = curTokens % 4
+ tokens = curTokens - take
+ print (f'Computer takes {take} tokens.')
+ print (f'{tokens} tokens remaining.\n')
 
 
 tokens = 12
 while (tokens > 0):
-	getTokens(tokens)
-	compTurn(tokens)
+ getTokens(tokens)
+ compTurn(tokens)
 
 print("Computer wins!")
 ```
@@ -206,57 +206,57 @@ int computerTurn(int numTokens);
 
 int main(void)
 {
-	printf("Nim Game\n\n");
+ printf("Nim Game\n\n");
 
-	int Tokens = 12;
+ int Tokens = 12;
 
-	while(Tokens > 0)
-	{
-		printf("How many tokens would you like to take?: ");
+ while(Tokens > 0)
+ {
+  printf("How many tokens would you like to take?: ");
 
-		int uin;
-		scanf("%i", &uin);
+  int uin;
+  scanf("%i", &uin);
 
-		int nextTokens = playerTurn(Tokens, uin);
+  int nextTokens = playerTurn(Tokens, uin);
 
-		if (nextTokens == Tokens)
-		{
-			continue;
-		}
+  if (nextTokens == Tokens)
+  {
+   continue;
+  }
 
-		Tokens = nextTokens;
+  Tokens = nextTokens;
 
-		Tokens = computerTurn(Tokens);
-	}
-	printf("Computer wins.");
+  Tokens = computerTurn(Tokens);
+ }
+ printf("Computer wins.");
 
-	return 0;
+ return 0;
 }
 
 int playerTurn(int numTokens, int take)
 {
-	if (take < 1 || take > 3)
-	{
-		printf("\nTake must be between 1 and 3.\n\n");
-		return numTokens;
-	}
-	int remainingTokens = numTokens - take;
+ if (take < 1 || take > 3)
+ {
+  printf("\nTake must be between 1 and 3.\n\n");
+  return numTokens;
+ }
+ int remainingTokens = numTokens - take;
 
-	printf("\nPlayer takes %i tokens.\n", take);
-	printf("%i tokens remaining.\n\n", remainingTokens);
+ printf("\nPlayer takes %i tokens.\n", take);
+ printf("%i tokens remaining.\n\n", remainingTokens);
 
-	return remainingTokens;
+ return remainingTokens;
 }
 
 int computerTurn(int numTokens)
 {
-	int take = numTokens % 4;
-	int remainingTokens = numTokens - take;
+ int take = numTokens % 4;
+ int remainingTokens = numTokens - take;
 
-	printf("Computer takes %u tokens.\n", take);
-	printf("%i tokens remaining.\n\n", remainingTokens);
+ printf("Computer takes %u tokens.\n", take);
+ printf("%i tokens remaining.\n\n", remainingTokens);
 
-	return remainingTokens;
+ return remainingTokens;
 }
 ```
 
@@ -336,7 +336,7 @@ modules.
 
 ## :fa fa-brain: Exercices
 
-Attention pour faire ses exercices il faut certaines connaissances en python (voir le chapitre [suivant](premiere/python.md).
+Attention pour faire ses exercices il faut certaines connaissances en python (voir le chapitre [suivant](premiere/python.md)).
 
 ### Introduction
 
@@ -352,24 +352,24 @@ Attention pour faire ses exercices il faut certaines connaissances en python (vo
 
 ### Boucles et conditions
 
-3.  Écrire un programme qui lit une valeur et affiche sa table de
+3. Écrire un programme qui lit une valeur et affiche sa table de
     multiplication (on se limitera aux 12 premiers termes). Faire une
     variante du programme précédent qui affiche la table de
     multiplication de tous les chiffres compris entre 2 et 9 (inclus).
     Pensez à laisser un espace entre deux tables de multiplication (print() imprime une ligne vide).
-4.  :fa fa-award: Écrire un programme qui affiche un triangle rempli d'étoiles (\*)
+4. :fa fa-award: Écrire un programme qui affiche un triangle rempli d'étoiles (\*)
     sur un nombre de lignes donné passé en paramètre, exemple :
     - 1ère version : à l'aide de deux boucles for, en imprimant les \*
       une par une.
     - 2ème version : avec une seul boucle for, et une chaîne de
       caractères où vous accumulerez des étoiles (pour ceux qui vont un
       peu plus vite, print(« machin » end= '') évite de passer à la ligne.
-5.  Écrire un programme qui teste si un nombre _a_ est divisible par un
+5. Écrire un programme qui teste si un nombre _a_ est divisible par un
     nombre _b_, les deux étant rentrés au clavier. Le programme
     retournera un message signalant la divisibilité ou non, et
     éventuellement le reste dans le cas où _a_ n'est pas divisible par
     _b_.
-6.  :fa fa-award: Programmation d'un petit jeu de devinette. L'ordinateur choisit au
+6. :fa fa-award: Programmation d'un petit jeu de devinette. L'ordinateur choisit au
     hasard un nombre compris entre 1 et 100. Le but du jeu est de le
     deviner en un nombre d'essai minimal. À chaque tentative,
     l'ordinateur, indique « gagné », « trop petit » ou « trop grand ».
@@ -378,10 +378,10 @@ Attention pour faire ses exercices il faut certaines connaissances en python (vo
     On utilisera la bibliothèque _random._ Pour cela, on écrit « import random » en début de programme.
     *nombre* = random.randint(a, b) renverra un nombre aléatoire tel que $a \le Nombre \le b$.
     Pour plus d'informations sur le bibliothèque random et de possibilités voir la [**documentation**](https://docs.python.org/3.5/library/random.html).
-7.  Écrire une fonction qui retourne la factorielle d'un nombre (par exemple $6!=6 \times 5 \times 4 \times 3 \times 2 \times 1$).
-8.  :fa fa-award: Un nombre entier est dit parfait s'il est égal à la somme de ses diviseurs (sauf lui-même). Ainsi $6 = 1 + 2 + 3$ est parfait.
+7. Écrire une fonction qui retourne la factorielle d'un nombre (par exemple $6!=6 \times 5 \times 4 \times 3 \times 2 \times 1$).
+8. :fa fa-award: Un nombre entier est dit parfait s'il est égal à la somme de ses diviseurs (sauf lui-même). Ainsi $6 = 1 + 2 + 3$ est parfait.
     - Écrire une fonction somme_div qui retourne la somme des diviseurs d'un nombre passé en paramètre.
     - Écrire une fonction parfait qui teste si un nombre passé en paramètre est parfait et qui retourne 1 s'il l'est et 0 sinon. Écrire un programme principal qui affiche tous les nombres parfaits inférieurs à une certaine limite.
-9.  :fa fa-award: Deux nombres M et N sont appelés nombres_amis si la somme des diviseurs propres (sauf M) de M est égale à N et la somme des diviseurs propres de N est égale à M.
+9. :fa fa-award: Deux nombres M et N sont appelés nombres_amis si la somme des diviseurs propres (sauf M) de M est égale à N et la somme des diviseurs propres de N est égale à M.
     - Écrire une fonction amis qui retourne le nombre_amis (s'il existe) d'un nombre passé en paramètre , cette fonction utilise la fonction
       somme_div de l'exercice 8. - Écrire un programme principal qui affiche tous les nombres_amis inférieurs à une certaine limite.

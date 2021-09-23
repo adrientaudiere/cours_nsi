@@ -62,7 +62,7 @@ Sauvegarder des informations sous la forme de données est une activité fondame
     <div class="date">2010</div>
     <i class="icon fa fa-database"></i>
     <div class="content-timeline">
-      <strong>NoSQL (<em>Not only SQL</em>)</strong> 
+      <strong>NoSQL (<em>Not only SQL</em>)</strong>
       <p>Apparition d'une nouvelle famille de base de données (pas au programme)</p>
     </div>
   </div>
@@ -215,3 +215,14 @@ connexion.close()
 ## Attaque par injection de code SQL
 
 ?> À l'aide d'une recherche sur le web, faire un schéma du processus à l'oeuvre lors d'une attaque informatique par injection de code SQL.
+
+## :fa fa-brain: Exercices
+
+1. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
+
+- _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> String, _emprunté\_le_ Date)
+- _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
+
+1. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
+
+1.
