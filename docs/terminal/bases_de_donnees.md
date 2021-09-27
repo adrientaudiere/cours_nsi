@@ -111,7 +111,9 @@ On écrit une ligne par relation avec ces attributs entre parenthèse et sépar�
 
 - *Joueur*(<u><em>Nom</u></em> STRING, *Prénom* STRING, *Age* INT, *Ratio_ _but_par_tir* FLOAT, *Date_naissance* INT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>Club</em></u> STRING)
 
-- *Club*(<u style="border-bottom: 1px dotted; cursor: help;"><em>Acronyme</em></u>, STRING, *Nb_joueurs* INT, *Année_création*)
+- *Club*(<u style="border-bottom: 1px dotted; cursor: help;"><em>Acronyme</em></u>, STRING, *Nb_joueurs* INT, *Année_création* DATE)
+
+On remarque que les clés primaires sont soulignées et que les clés étrangères sont soulignées en pointillé.
 
 ## Le language SQL
 
@@ -230,16 +232,45 @@ connexion.close()
 
 ## :fa fa-brain: Exercices
 
-1. Regrouper les mots synonymes : relation, colonne, entité, column, entité, attribut, table, schéma, base de données, domaine, ligne, type, row
+### Modèle relationnel
 
 1. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
 
-   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> String, _emprunté\_le_ Date)
+   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> Int, _emprunté\_le_ Date)
    - _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
 
 1. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
 
-1. Dans la BDR mondial se trouve une table economy qui possède les attributs suivants : Country (le code du pays), GDP (le PIB, en millions de dollars), agriculture (la part de l'agriculture dans le PIB, en pourcentage), Service (la part des services dans le PIB), Industry (la part de l'industrie dans le PIB), Inflation (le taux d'inflation) et Unemployment (le taux de chômage).
+1. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
+   1. Il ne peut pas y avoir plusieurs livres qui ont le même titre
+   2. Il ne peux pas y avoir plusieurs livres qui ont le même ISBN
+   3. Il ne peux pas y avoir plusieurs usager qui ont le même couple de valeur Nom/Prénom
+   4. L'attribut *emprunté_par* ne peux pas prendre de valeurs qui ne sont pas dans l'*id* de la table usager.
+
+1. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des relations valides pour votre schéma.
+  
+   1. {}
+   1. {('Ronald', 'MacDo', '0123728938')}
+   1. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
+   1. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
+   1. {('Doe', 'John', +331829900)}
+   1. {('Doe', 'White', '+3318299EE')}
+
+### Base de données relationnelle et langage SQL
+
+1. Regrouper les mots synonymes : relation, colonne, entité, column, entité, attribut, table, schéma, base de données, domaine, ligne, type, row
+
+1. Créer la base de données relationnelle de la médiathèque schématiser dans les exercices précédents à l'aide de la requête CREATE TABLE en ajoutant un maximum de contrainte d'intégrité.
+
+1. Écrire les requêtes SQL sur la base de données de la médiathèque permettant de :
+   1. Tous les titres des livres,
+   2. Les noms des usagers en retirant les doublons,
+   3. Les titres des livres publiés avant 1990,
+   4. Les ISBN des livres à rendre avant le 01/09/2022,
+   5. Les noms d'usagers qui commence par B,
+   6. Les titres de livres dont le nom d'éditeur est composé de plusieurs mots.
+
+2. Dans la BDR mondial se trouve une table economy qui possède les attributs suivants : Country (le code du pays), GDP (le PIB, en millions de dollars), agriculture (la part de l'agriculture dans le PIB, en pourcentage), Service (la part des services dans le PIB), Industry (la part de l'industrie dans le PIB), Inflation (le taux d'inflation) et Unemployment (le taux de chômage).
 
 Par exemple, la requête suivante affiche les pays majoritairement agricole.
 

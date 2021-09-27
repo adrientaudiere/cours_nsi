@@ -272,7 +272,7 @@ Les algorithmes de chiffrement asymétriques utilisent deux clés : une clé pub
 
 #### Protocole de Diffie-Hellman
 
-?> Lire les métaphores du druide [Gépépix](/../_doc/gepepix.pdf) (Source : https://picasoft.net, CC-BY-SA)
+?> Lire les métaphores du druide [Gépépix](/../_doc/gepepix.pdf) (Source : <https://picasoft.net>, CC-BY-SA)
 
 Ce protocole résout le problème de l'échange de clé avec un système de clé privé et de clé publique. En revanche, il ne permet pas d'être certain de l'authenticité de la personne avec laquelle on interagit. Cela rend ce protocole vulnérable à une « attaque de l'homme du milieu ». Le protocole RSA résout ce problème d'authentification.
 
@@ -323,3 +323,8 @@ Les autorités de certification sont des tiers de confiance pouvant être des en
 #### Ce que HTTPS laisse visible
 
 « Techniquement, le protocole HTTPS laissent visible les méta-données de la communication, en particulier la source et la destination. Ainsi, il ne garantit pas l'anonymat. Un fournisseur d'accès internet pourra sans problème connaître l'identité de tout utilisateur effectuant une communication HTTPS à l'aide de l'adresse IP contenue dans les méta-données. [...] Le navigateur et le protocole Tor permettent de garantir une anonymisation du flux réseau. Ainsi, la connexion est sécurisée et l'identité de l'utilisateur protégée. Cet outil est très précieux pour des journalistes ou des opposants politiques vivant dans des régimes autoritaires.» ([Source](https://librecours.net/module/culture/chiffrement-web/https.xhtml) : CC-BY-SA)
+
+## :fa fa-brain: Exercices
+
+1. Quels sont les éléments essentiels d'un microcontrôleur?
+2. Quelles sont les spécificités et les avantages d'un système sur puce?
