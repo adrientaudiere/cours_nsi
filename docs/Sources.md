@@ -16,35 +16,37 @@
 
 - Les cours en ligne du site [librecours.net](https://librecours.net) écrit par [Stéphane Crozat](http://stph.crzt.fr) dont la majorité est sous licence [CC-by-sa-3.0](http://creativecommons.org/licenses/by-sa/3.0/fr/)
 
+- Le travail des lycéens de Scholae pour améliorer le site.
+
 ## Sources secondaire
 
-https://www.apprendre-en-ligne.net/index-info.html
+<https://www.apprendre-en-ligne.net/index-info.html>
 
-http://jargonf.org/wiki/Accueil
+<http://jargonf.org/wiki/Accueil>
 
 ### Se former en ligne
 
-https://openclassrooms.com/fr/
+<https://openclassrooms.com/fr/>
 
-https://freecodecamp.org/
+<https://freecodecamp.org/>
 
-https://librecours.net/
+<https://librecours.net/>
 
-### Internet
+###  Internet
 
 - [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR)
 - Routage sur [idum](http://idum.fr/spip.php?article213)
 
 ### À creuser
 
-https://science.sciencemag.org/content/sci/332/6025/60/F2.large.jpg
+<https://science.sciencemag.org/content/sci/332/6025/60/F2.large.jpg>
 
-https://royalsocietypublishing.org/doi/10.1098/rsos.181393
+<https://royalsocietypublishing.org/doi/10.1098/rsos.181393>
 
-https://www.martinhilbert.net/worldinfocapacity-html/
+<https://www.martinhilbert.net/worldinfocapacity-html/>
 
-http://documents1.worldbank.org/curated/en/896971468194972881/310436360_201602630200201/additional/102725-PUB-Replacement-PUBLIC.pdf
+<http://documents1.worldbank.org/curated/en/896971468194972881/310436360_201602630200201/additional/102725-PUB-Replacement-PUBLIC.pdf>
 
-https://townline.org/welcome-to-the-world-of-big-data/
+<https://townline.org/welcome-to-the-world-of-big-data/>
 
-https://www.internetlivestats.com/
+<https://www.internetlivestats.com/>

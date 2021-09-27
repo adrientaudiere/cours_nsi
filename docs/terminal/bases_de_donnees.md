@@ -153,9 +153,9 @@ CREATE TABLE Races (
  Race VARCHAR(20)
         PRIMARY KEY,
  Cris VARCHAR(40),
- Humain INT,
- FOREIGN KEY (Type)
-       REFERENCES Monstres (Type)
+ Humanoïde BOOL,
+ FOREIGN KEY (Race)
+       REFERENCES Monstres (Race)
 );
 
 INSERT INTO Races
@@ -177,6 +177,36 @@ ON Monstres.Race = Races.Race
 
 </details>
 
+---
+
+<p class="center-p"> <strong> Table des requêtes SQL </strong> de création/modification des données</p>
+
+<div style="font-size:0.8em">
+
+| Fonction                 | Action                             | Options                              | Exemple                                                                                                                       | Explication verbeuse                                                                                                                                                                                                                                      |
+| ------------------------ | ---------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CREATE TABLE Table       | Créer une table                    | PRIMARY KEY, désigne la clé primaire | **CREATE TABLE** Monstres (  Identifiant **PRIMARY KEY** VARCHAR(20),  Classe  VARCHAR(20),  Niveaux INT,   Race VARCHAR(20)) | Je crée une relation (table) qui s'appelle 'Monstres' avec (1) un attribut 'identifiant' qui est la clé primaire, un attribut Classe et qui peu contenir 20 caractères. Je crée (2) un autre attribut 'Niveaux' qui contiendra des nombres entiers (INT). |
+| INSERT INTO Table VALUES | Insérer une entité                 |                                      | **INSERT INTO** Monstres VALUES (   1, "Mage", 75, "Elf" );                                                                   | J'insère une nouvelle entité dans la relation 'Monstres' qui a pour id la valeur « 1 », pour Classe la valeur « Mage », un niveau égale à « 75 » et une appartient à la race des « Elf ».                                                                 |
+| DROP TABLE Table         | Effacer la table                   | IF EXISTS                            | **DROP TABLE** **IF EXISTS** Monstres;                                                                                        | Je supprime la table 'Monstres' si elle existe.                                                                                                                                                                                                           |
+| UPDATE TABLE Table SET   | Modifier la table                  |                                      | **UPDATE** Monstres **SET** Classe = 'Ogre' WHERE Classe = 'Mage'                                                             | Modifier la valeur de classe des entités de la table 'Monstres' dont la classe est égale à « Mage » en mettant la valeur « Ogre » à la place.                                                                                                             |
+| DELETE FROM Table WHERE  | Supprimer une ou plusieurs entités |                                      | **DELETE FROM** Monstres **WHERE** race = 'Elf'                                                                               | Supprimer toutes les entités dont la race est 'Elf'                                                                                                                                                                                                       |
+
+</div>
+
+---
+
+<p class="center-p"> <strong> Table des requêtes SQL </strong> de sélection (affichage) des données</p>
+
+<div style="font-size:0.8em">
+
+| Fonction | Action                                                    | Options                                                                                                                                                                                    | Exemple                                                  | Explication verbeuse                                                                                                                 |
+| -------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| SELECT   | Sélectionner un attribut                                  | * permet de sélectionner tous les attributs de la table                                                                                                                                    | **SELECT** *  **FROM** Monstres ;                        | Je sélectionne tous les attributs de la table monstre pour toutes les entités                                                        |
+| WHERE    | Sélectionner un élément                                   | =, >, >=,  <,  ≤, <br> LIKE (permet la sélection de motif textuel plus complexe), <br> AND, OR, NOT (permet d'ajouter des conditions) <br> BETWEEN : sélectionner entre 2 nombre spécifier | SELECT *      FROM Monstres     **WHERE** Race = 'Mage'; | J'utilise une condition booléenne pour sélectionner tous les attributs des Monstres qui sont de race 'Mage'.                         |
+| ORDER BY | Ordonner la table de manière croissante ou décroissante   | DESC : permet de classer par ordre descendant                                                                                                                                              | SELECT *      FROM Monstres     **ORDER BY** Race;       | Je sélectionne tous les attributs de la table monstre pour toutes les entités en classant les monstres par race (ordre alphabétique) |
+| LIMITE   | Limiter l'affichage de l'attribut par un nombre spécifier |                                                                                                                                                                                            | SELECT Race     FROM Monstres     **LIMIT** 3;           | J'affiche l'attribut race des trois premières entités.                                                                               |
+</div>
+
 ## Systèmes de Gestion de Bases de Données (SGBD)
 
 Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui permet … la gestion de bases de données en facilitant :
@@ -195,7 +225,7 @@ En informatique, les propriétés ACID (atomicité, cohérence, isolation et dur
 - **Atomicité** : il faut qu'une transaction informatique se fasse complètement ou ne se fasse pas du tout. Cette propriété permet d'éviter des erreurs dûs à des transactions incomplètes. Par exemple, si une requête SQL d'ajout d'une entité n'ajoute qu'une partie des attributs (par ex. à cause d'une coupure de courant), alors il faut annuler la transaction.
 
 - **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
-- **Isolation** : chaque transaction est indépendante, elles s’exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
+- **Isolation** : chaque transaction est indépendante, elles s'exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
 
 - **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
 
@@ -234,27 +264,31 @@ connexion.close()
 
 ### Modèle relationnel
 
+1. Compléter les termes dans l'image suivante :
+
+![](../_img/ex_table_BD.png  ":size=150")
+
 1. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
 
    - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> Int, _emprunté\_le_ Date)
    - _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
 
-1. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
+2. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
 
-1. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
+3. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
    1. Il ne peut pas y avoir plusieurs livres qui ont le même titre
    2. Il ne peux pas y avoir plusieurs livres qui ont le même ISBN
    3. Il ne peux pas y avoir plusieurs usager qui ont le même couple de valeur Nom/Prénom
    4. L'attribut *emprunté_par* ne peux pas prendre de valeurs qui ne sont pas dans l'*id* de la table usager.
 
-1. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des relations valides pour votre schéma.
+4. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des relations valides pour votre schéma.
   
    1. {}
-   1. {('Ronald', 'MacDo', '0123728938')}
-   1. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
-   1. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
-   1. {('Doe', 'John', +331829900)}
-   1. {('Doe', 'White', '+3318299EE')}
+   2. {('Ronald', 'MacDo', '0123728938')}
+   3. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
+   4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
+   5. {('Doe', 'John', +331829900)}
+   6. {('Doe', 'White', '+3318299EE')}
 
 ### Base de données relationnelle et langage SQL
 

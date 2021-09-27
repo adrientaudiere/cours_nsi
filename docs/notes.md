@@ -27,10 +27,16 @@ def ma_super_fonction(x, y)
 ```
 
 | Left Align | Center Align | Right Align | Colonne |
-| ---------- |:------------:| -----------:| ------------------------------ |
-| A1         | A2           | A3          | A4                             |
-| B1         | B2           | B3          | B4                             |
-| C1         | C2           | C3          | C4                             |
+| ---------- | :----------: | ----------: | ------- |
+| A1         |      A2      |          A3 | A4      |
+| B1         |      B2      |          B3 | B4      |
+| C1         |      C2      |          C3 | C4      |
+
+### Des images
+
+![](../_img/SQLite_figure.png ":size=100%")
+
+<p class="center-p"> <strong> Exemple de code SQL </strong> avec à gauche les schémas ou les retours de fonction, et à droite l'état de la base de données. </p>
 
 ### Des maths
 
