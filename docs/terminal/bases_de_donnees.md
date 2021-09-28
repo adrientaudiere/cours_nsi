@@ -218,6 +218,20 @@ Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui 
 
 Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui ont accès à des données/fonctions différentes. Ils sont souvent organisés sur un modèle **client-serveur** pour permettre à plusieurs utilisateurs d'avoir un **accès simultanés aux données**. Un autre aspect fondamental des SGBD modernes qui utilisent le langage SQL est que l'utilisateur peut demander des résultats sans coder la manière dont ils vont lui être donnés. Par exemple, si vous demandez une liste triée des livres d'une médiathèque datant de l'année 2000, vous ne faîtes aucune recommendation sur les algorithmes qui vont être utilisés (tri fusion par exemple). C'est le SGBD qui se charge de décider de la meilleure manière de calculer la réponse à votre question. C'est la raison pour laquelle le langage SQL est parfois qualifié de **langage déclaratif**.
 
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+!> Le langage SQL permet l'ajout de contrainte d'intégrité dans de nombreux SGBD. Pour cela on utilise la formule : *CREATE ASSERTION Nom_contrainte CHECK (expression_conditionnelle)*. Par exemple, pour vérifier que l'attribut courriel est composé d'une arrobase entouré par au moins une lettre avant et une après, on utilise la commande ci-dessous. 
+
+```SQL
+CREATE ASSERTION Courriel_valide CHECK (courriel LIKE "%@%")
+```
+
+
+</details>
+
+
 ### Propriétés ACID
 
 En informatique, les propriétés ACID (atomicité, cohérence, isolation et durabilité) sont un ensemble de propriétés qui garantissent qu'une transaction informatique est exécutée de façon fiable ([:fab fa-wikipedia-w:](https://fr.wikipedia.org/wiki/Propri%C3%A9t%C3%A9s_ACID)).
@@ -262,7 +276,7 @@ connexion.close()
 
 ## :fa fa-brain: Exercices
 
-### Modèle relationnel
+### Modèle relationnel et SGBD
 
 1. Compléter les termes dans l'[image en lien](https://adrientaudiere.github.io/cours_nsi/_img/ex_table_BD.png).
 
@@ -287,6 +301,14 @@ connexion.close()
    4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
    5. {('Doe', 'John', +331829900)}
    6. {('Doe', 'White', '+3318299EE')}
+
+1. La table suivante (Anniversaire) comporte des erreurs (des valeurs impossibles). Trouver les erreurs et décrire des contraintes d'integrité qui permettrait de ne pas avoir de nouvelles erreurs lors de l'ajout ultérieur d'entités.  
+
+|Nom (String) | Date (Date)| Heure (Int)| Lieu (String) | Français (Bool)|
+|---|---|---|---|---|
+|Le Gaté| 25/08/45 |11|Paris|F|
+|Le Gaté| 11/08/65 |26|11111|T|
+|Ailopoiro| 05/15/45 |1|Amsterdam|T|
 
 ### Base de données relationnelle et langage SQL
 

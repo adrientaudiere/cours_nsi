@@ -487,7 +487,7 @@ pre::after {
   list-style-image: none; 
 }
 svg[id^="mermaid-"] {
-  background-color: rgba(105, 99, 85, 0.2);
+  background-color: #ececec;
   background-image: none;
 }
 .advanced_level {
