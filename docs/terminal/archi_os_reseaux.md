@@ -140,7 +140,7 @@ top
 
 ## Protocoles de routage
 
-?> Regarder la <a href='https://www.youtube.com/watch?v=dz7Ntp7KQGA' target="_blank" rel=noopener>vidéo</a> suivante qui fait un petit rappel du programme de seconde.
+?> Regarder la <a href='https://invidious.fdn.fr/watch?v=DI3xmtAKZJA' target="_blank" rel=noopener>vidéo</a> suivante qui fait un petit rappel du programme de seconde.
 
 ?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) et particulièrement sur les protocoles IP et TCP.
 
