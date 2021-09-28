@@ -272,7 +272,7 @@ Les algorithmes de chiffrement asymétriques utilisent deux clés : une clé pub
 
 #### Protocole de Diffie-Hellman
 
-?> Lire les métaphores du druide [Gépépix](/../_doc/gepepix.pdf) (Source : <https://picasoft.net>, CC-BY-SA)
+?> Lire les métaphores du druide [Gépépix](https://adrientaudiere.github.io/cours_nsi/_doc/gepepix.pdf) (Source : <https://picasoft.net>, CC-BY-SA)
 
 Ce protocole résout le problème de l'échange de clé avec un système de clé privé et de clé publique. En revanche, il ne permet pas d'être certain de l'authenticité de la personne avec laquelle on interagit. Cela rend ce protocole vulnérable à une « attaque de l'homme du milieu ». Le protocole RSA résout ce problème d'authentification.
 
@@ -318,7 +318,7 @@ Les autorités de certification sont des tiers de confiance pouvant être des en
 
 ?> Trouver l'autorité de certification du site de cours. Trouver la version de TLS utilisée.
 
-?> À l'aide des métaphores du druide [Gépépix](/../_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).
+?> À l'aide des métaphores du druide [Gépépix](https://adrientaudiere.github.io/cours_nsi/_doc/_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).
 
 #### Ce que HTTPS laisse visible
 
