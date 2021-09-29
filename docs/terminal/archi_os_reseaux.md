@@ -318,7 +318,7 @@ Les autorités de certification sont des tiers de confiance pouvant être des en
 
 ?> Trouver l'autorité de certification du site de cours. Trouver la version de TLS utilisée.
 
-?> À l'aide des métaphores du druide [Gépépix](https://adrientaudiere.github.io/cours_nsi/_doc/_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).
+?> À l'aide des métaphores du druide [Gépépix](https://adrientaudiere.github.io/cours_nsi/_doc/gepepix.pdf), faire une métaphore du protocole HTTPS (chiffrement asymétrique (paire de clés) pour échanger une clé commune qui sera ensuite utilisé pour un chiffrement symétrique).
 
 #### Ce que HTTPS laisse visible
 

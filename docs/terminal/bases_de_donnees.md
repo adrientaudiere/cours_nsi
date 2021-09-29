@@ -282,33 +282,47 @@ connexion.close()
 
 2. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
 
-   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> Int, _emprunté\_le_ Date)
+   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par\_id</em></u> Int, _emprunté\_le_ Date)
    - _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
 
-3. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
+3. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, leur nom et leur prénom, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
 
-4. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
+<div class="correction">
+	Deux solutions : 
+  1. Faire deux relations :
+    - _Élèves_(<u><em>id</u></em>INT, _nom_ STRING, _prénom_ STRING) 
+    - _Notes_(<u><em>id_note<u><em> INT, _Matière_ STRING, _Notes_ FLOAT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>id_élève<u><em> INT)
+  2. Faire une relation avec une clef primaire sur deux attributs
+    - _Élèves_(<u><em>id</em> INT, <em>Matière</em> STRING</u>, _nom_ STRING, _prénom_ STRING) 
+</div>
+
+
+1. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
    1. Il ne peut pas y avoir plusieurs livres qui ont le même titre
    2. Il ne peux pas y avoir plusieurs livres qui ont le même ISBN
-   3. Il ne peux pas y avoir plusieurs usager qui ont le même couple de valeur Nom/Prénom
+   3. Il ne peux pas y avoir plusieurs usagers qui ont le même couple de valeur Nom/Prénom
    4. L'attribut *emprunté_par* ne peux pas prendre de valeurs qui ne sont pas dans l'*id* de la table usager.
 
-5. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des relations valides pour votre schéma.
+2. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Pensez à souligner la clé primaire. Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des entités valides pour votre schéma.
   
    1. {}
-   2. {('Ronald', 'MacDo', '0123728938')}
-   3. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
-   4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
-   5. {('Doe', 'John', +331829900)}
-   6. {('Doe', 'White', '+3318299EE')}
+   2. {('Ronald', 'MacDoDo', '+01')}
+   3. {('Ronald', 'MacDo', '0123728938')}
+   4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
+   5. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
+   6. {('Doe', 'John', +331829900)}
+   7. {('', 'Axel', +331829900)}
+   8. {('Doe', 'White', '+3318299EE')}
 
-1. La table suivante (Anniversaire) comporte des erreurs (des valeurs impossibles). Trouver les erreurs et décrire des contraintes d'integrité qui permettrait de ne pas avoir de nouvelles erreurs lors de l'ajout ultérieur d'entités.  
+  À partir des propositions 
 
-|Nom (String) | Date (Date)| Heure (Int)| Lieu (String) | Français (Bool)|
-|---|---|---|---|---|
-|Le Gaté| 25/08/45 |11|Paris|F|
-|Le Gaté| 11/08/65 |26|11111|T|
-|Ailopoiro| 05/15/45 |1|Amsterdam|T|
+6. La table suivante (Anniversaire) comporte des erreurs (des valeurs impossibles). Trouver les erreurs et décrire des contraintes d'integrité qui permettraient de ne pas avoir de nouvelles erreurs lors de l'ajout ultérieur d'entités.  
+
+| <u><em>Nom</u></em> (String) | Date (Date) | Heure (Int) | Lieu (String) | Français (Bool) |
+| ---------------------------- | ----------- | ----------- | ------------- | --------------- |
+| Le Gaté                      | 25/08/45    | 11          | Paris         | F               |
+| Le Gaté                      | 11/08/65    | 26          | 11111         | T               |
+| Ailopoiro                    | 05/15/45    | 1           | Amsterdam     | T               |
 
 ### Base de données relationnelle et langage SQL
 
