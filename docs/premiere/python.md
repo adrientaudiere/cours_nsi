@@ -30,11 +30,11 @@ Le problème du terminal, c'est que c'est long de relancer chaque script (ensemb
 Chaque langage a des règles obligatoires (leur manquement entraîne une erreur) et des conventions (règles de bonnes conduite). En python, les noms des **variables** suivent quelques règles :fa fa-exclamation-triangle: et conventions :fa fa-heartbeat: :
 
 - :fa fa-exclamation-triangle: le nom d'une variable ne doit contenir que des lettres (a → z , A → Z), des chiffres et le symbole "\_" (underscore = tiret du bas) et doit commencer par une lettre
-- :fa fa-exclamation-triangle: les minuscules et les majuscules sont différenciées (_ma_var_ et _Ma_var_ sont deux variables différentes),
+- :fa fa-exclamation-triangle: les minuscules et les majuscules sont différenciées (_ma_var_et_Ma_var_ sont deux variables différentes),
 - :fa fa-exclamation-triangle: certains mots sont « réservés » par python (voir tableau ci-dessous), on ne peut donc pas les utiliser comme nom de variable,
 - :fa fa-heartbeat: il est conseillé de n'écrire les variables qu'avec des minuscules sauf les nombres constants (par exemple si vous utilisez souvent $\pi$ vous pouvez définir cette constante ainsi $PI=3.14$),
 - :fa fa-heartbeat: les accents et les caractères spéciaux sont fortement déconseillés (sauf dans les commentaires) car ils peuvent ne pas être pris correctement en charge par certains OS,
-- :fa fa-heartbeat: plus un nom de variable sera clair, plus il sera facile de relire votre code. Par exemple, préférer _nom_de_famille_ à _ndf_; et préférer _moyenne_age_ (ou _moy_age_) à _m_age_ pour nommer une variable qui représente une moyenne d'âge.
+- :fa fa-heartbeat: plus un nom de variable sera clair, plus il sera facile de relire votre code. Par exemple, préférer _nom_de_famille_ à _ndf_; et préférer _moyenne_age_(ou_moy_age_) à _m_age_ pour nommer une variable qui représente une moyenne d'âge.
 
 <details>
 <summary> <strong>Tableau des mots réservés en python</strong>. <a href="https://fr.wikibooks.org/wiki/Programmation_Python/Tableau_des_mots_r%C3%A9serv%C3%A9s" target="_blank" rel="noopener">Source</a> </summary>
@@ -235,6 +235,8 @@ for i in range(0,10):
 
 ?> Lancer la commande ci-dessus. Expliquer ce que vous voyez puis modifier le code pour afficher uniquement les nombres paires de 2 à 20. Il faut utiliser la fonction _if_.
 
+?> Faire les exercices de la fin de la partie [programmation](/docs/premiere/programmation.md).
+
 ### Utilisation de bibliothèques (ou modules)
 
 Dans tout les langages informatiques avec une communauté conséquente, il existe vite un problème à résoudre : comment ne pas recoder (mal) ce qui a déjà été (bien) codé tout en gardant une langage qui ne deviennent pas trop imposant à installer? Autrement dit comment ne pas réinventer la roue tout en permettant aux codeurs qui n'ont pas besoins de roues de ne pas avoir à télécharger cette roue avec le langage. Une solution très utilisée est l'utilisation de **bibliothèques** (aussi appelées modules ou packages). Ces bibliothèques sont des ensembles de fonctions cohérentes.
@@ -300,8 +302,8 @@ L'ordre des paramètres d'entrée est important. Si vous ne connaissez pas l'ord
 
 Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe pas en dehors de cette fonction. On dit que la variable est **locale**.
 
-?> Écrire un script qui met en évidence le caractère locale d'une variable définie dans une fonction.
+?> :fa fa-award: Écrire un script qui met en évidence le caractère locale d'une variable définie dans une fonction.
 
-## :fa fa-keyboard: Comprendre python avec des tortues
+##  :fa fa-keyboard: Comprendre python avec des tortues
 
 ?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne.

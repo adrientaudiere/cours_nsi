@@ -1,6 +1,6 @@
 # :fa fa-project-diagram: Bases de la programmation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-##  Pseudo-code : les instructions principales d'algorithmique.
+##  Pseudo-code : les instructions principales d'algorithmique
 
 Pour écrire un algorithme il est souvent plus simple de passer par une étape d'écriture en pseudo-code avant de coder à proprement parler dans un langage de programmation choisis. Nous détaillons ici les instructions principales d'algorithmique et leur écriture en pseudo-code (avec des exemples en français et en anglais) ainsi que leur implémentation en python comme exemple de programmation.
 
@@ -336,7 +336,7 @@ modules.
 
 ## :fa fa-brain: Exercices
 
-Attention pour faire ses exercices il faut certaines connaissances en python (voir le chapitre [suivant](premiere/python.md)).
+Attention pour faire certains de ces exercices il faut certaines connaissances en python (voir le chapitre [suivant](premiere/python.md)). Vous pouvez faire les ex. d'introduction en proposant une réponse en pseudo code.
 
 ### Introduction
 
