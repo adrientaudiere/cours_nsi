@@ -53,12 +53,13 @@ X=2
 Y=6
 Z=X+Y
 if X>Y:
-    print('X > Y')
+    print('You win')
 elif X>Z:
-    print('X > Z')
+    print('You mega-win')
 else:
     print('You loose')
 ```
+?> Lancer le script précédent (écrire dans un fichier avec l'extension .py puis le lancer dans un terminal avec python). Modifier les valeurs de Y et ou de X pour obtenir un "You win" d'une part puis un "You mega-win" d'autre part.
 
 **Entrée/sortie**
 

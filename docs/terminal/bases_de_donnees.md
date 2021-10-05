@@ -216,7 +216,21 @@ Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui 
 - la **modification** (ajout, suppression, mise à jour) de ces bases de données (modification d'entité, d'attribut ou de valeur),
 - l'**interrogation** de la base de données (par ex. avec le langage SQL).
 
-Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui ont accès à des données/fonctions différentes. Ils sont souvent organisés sur un modèle **client-serveur** pour permettre à plusieurs utilisateurs d'avoir un **accès simultanés aux données**. Un autre aspect fondamental des SGBD modernes qui utilisent le langage SQL est que l'utilisateur peut demander des résultats sans coder la manière dont ils vont lui être donnés. Par exemple, si vous demandez une liste triée des livres d'une médiathèque datant de l'année 2000, vous ne faîtes aucune recommendation sur les algorithmes qui vont être utilisés (tri fusion par exemple). C'est le SGBD qui se charge de décider de la meilleure manière de calculer la réponse à votre question. C'est la raison pour laquelle le langage SQL est parfois qualifié de **langage déclaratif**.
+Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui ont accès à des données/fonctions différentes. Ils sont souvent organisés sur un modèle **client-serveur** pour permettre à plusieurs utilisateurs d'avoir un **accès simultanés aux données**. Un autre aspect fondamental des SGBD modernes qui utilisent le langage SQL est que l'utilisateur peut demander des résultats sans coder la manière dont ils vont lui être donnés. Par exemple, si vous demandez une liste triée des livres d'une médiathèque datant de l'année 2000, vous ne faîtes aucune recommandation sur les algorithmes qui vont être utilisés (tri fusion par exemple). C'est le SGBD qui se charge de décider de la meilleure manière de calculer la réponse à votre question. C'est la raison pour laquelle le langage SQL est parfois qualifié de **langage déclaratif**.
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+!> Le langage SQL permet l'ajout de contrainte d'intégrité dans de nombreux SGBD. Pour cela on utilise la formule : *CREATE ASSERTION Nom_contrainte CHECK (expression_conditionnelle)*. Par exemple, pour vérifier que l'attribut courriel est composé d'une arrobase entouré par au moins une lettre avant et une après, on utilise la commande ci-dessous. 
+
+```SQL
+CREATE ASSERTION Courriel_valide CHECK (courriel LIKE "%@%")
+```
+
+
+</details>
+
 
 ### Propriétés ACID
 
@@ -262,31 +276,53 @@ connexion.close()
 
 ## :fa fa-brain: Exercices
 
-### Modèle relationnel
+### Modèle relationnel et SGBD
 
 1. Compléter les termes dans l'[image en lien](https://adrientaudiere.github.io/cours_nsi/_img/ex_table_BD.png).
 
 2. Ci dessous est écrit le schéma d'une base de données relationnelle d'une médiathèque. À l'aide de ce schéma, trouver le nombre de relations et leur noms. Citer trois attributs qui ont des domaines différents et expliquer pourquoi ils ont des domaines différents. Identifier la ou les clés primaires et étrangères.
 
-   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par</em></u> Int, _emprunté\_le_ Date)
+   - _Livre_(_titre_ String, _auteur_ String, _éditeur_ String, _année_ Int, <u><em>ISBN</em></u> String, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>emprunté\_par\_id</em></u> Int, _emprunté\_le_ Date)
    - _Usager_(<u><em>id</em></u> Int, _nom_ String, _prénom_ String)
 
-3. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
+3. À l'aide l'exemple précédent, modéliser sous la forme d'un schéma la base de données d'un bulletin scolaire qui doit mentionner (i) les élèves qui possèdent un numéro d'étudiant unique, leur nom et leur prénom, (ii) un ensemble de matières fixées, et (iii) une note sur 20 par matière et par élève.
 
-4. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
+<div class="correction">
+	Deux solutions : 
+  1. Faire deux relations :
+    - _Élèves_(<u><em>id</u></em>INT, _nom_ STRING, _prénom_ STRING) 
+    - _Notes_(<u><em>id_note<u><em> INT, _Matière_ STRING, _Notes_ FLOAT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>id_élève<u><em> INT)
+  2. Faire une relation avec une clef primaire sur deux attributs
+    - _Élèves_(<u><em>id</em> INT, <em>Matière</em> STRING</u>, _nom_ STRING, _prénom_ STRING) 
+</div>
+
+
+1. Dire si les affirmations suivantes sont vraies dans le cadre de notre base de données relationnelle de la médiathèque :
    1. Il ne peut pas y avoir plusieurs livres qui ont le même titre
    2. Il ne peux pas y avoir plusieurs livres qui ont le même ISBN
-   3. Il ne peux pas y avoir plusieurs usager qui ont le même couple de valeur Nom/Prénom
+   3. Il ne peux pas y avoir plusieurs usagers qui ont le même couple de valeur Nom/Prénom
    4. L'attribut *emprunté_par* ne peux pas prendre de valeurs qui ne sont pas dans l'*id* de la table usager.
 
-5. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des relations valides pour votre schéma.
+2. Faire le schéma d'un annuaire téléphonique simple (nom, prénom, téléphone). Pensez à souligner la clé primaire. Attention, le téléphone doit pouvoir commencer par un +. À partir de ce schéma, dire si les proposition ci dessous sont des entités valides pour votre schéma.
   
    1. {}
-   2. {('Ronald', 'MacDo', '0123728938')}
-   3. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
-   4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
-   5. {('Doe', 'John', +331829900)}
-   6. {('Doe', 'White', '+3318299EE')}
+   2. {('Ronald', 'MacDoDo', '+01')}
+   3. {('Ronald', 'MacDo', '0123728938')}
+   4. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '')}
+   5. {('Oscar', 'White', '0123728938'), ('Deau', 'Roro', '0123728938')}
+   6. {('Doe', 'John', +331829900)}
+   7. {('', 'Axel', +331829900)}
+   8. {('Doe', 'White', '+3318299EE')}
+
+  À partir des propositions 
+
+6. La table suivante (Anniversaire) comporte des erreurs (des valeurs impossibles). Trouver les erreurs et décrire des contraintes d'integrité qui permettraient de ne pas avoir de nouvelles erreurs lors de l'ajout ultérieur d'entités.  
+
+| <u><em>Nom</u></em> (String) | Date (Date) | Heure (Int) | Lieu (String) | Français (Bool) |
+| ---------------------------- | ----------- | ----------- | ------------- | --------------- |
+| Le Gaté                      | 25/08/45    | 11          | Paris         | F               |
+| Le Gaté                      | 11/08/65    | 26          | 11111         | T               |
+| Ailopoiro                    | 05/15/45    | 1           | Amsterdam     | T               |
 
 ### Base de données relationnelle et langage SQL
 

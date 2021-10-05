@@ -1099,6 +1099,10 @@ svg[id^="mermaid-"] {
   margin: 0.2em 0;
 }
 
+.correction{
+  display: none;
+}
+
 /* -----------------------
 CSS for printing
 ------------------------- */
