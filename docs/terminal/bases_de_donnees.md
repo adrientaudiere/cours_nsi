@@ -291,7 +291,7 @@ connexion.close()
 	Deux solutions : 
   1. Faire deux relations :
     - _Élèves_(<u><em>id</u></em>INT, _nom_ STRING, _prénom_ STRING) 
-    - _Notes_(<u><em>id_note<u><em> INT, _Matière_ STRING, _Notes_ FLOAT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>id_élève<u><em> INT)
+    - _Notes_(<u><em>id_note</u></em> INT, _Matière_ STRING, _Notes_ FLOAT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>id_élève</u></em> INT)
   2. Faire une relation avec une clef primaire sur deux attributs
     - _Élèves_(<u><em>id</em> INT, <em>Matière</em> STRING</u>, _nom_ STRING, _prénom_ STRING) 
 </div>
