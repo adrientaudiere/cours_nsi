@@ -132,6 +132,14 @@ int(c)
 #       int(c)
 #   ValueError: invalid literal for int() with base 10: 'bonjour'
 ```
+?> Lancer le script ci-dessous et expliquer les résultats ou les erreurs 
+
+```python
+a = "Je suis né en " + "1989"
+b = "Je suis né en " + 1989
+c = "Je suis né en " * "1989"
+d = "Je suis né en " * 1989
+```
 
 #### Zoom sur les booléens (bool)
 
@@ -155,6 +163,19 @@ a and b # « et » mathématique
 a or b  # « ou » mathématique
 not(a)  # « non » mathématique
 ```
+?> Tester le code ci-dessous. À votre avis, comment python compare deux chaînes de caractère?
+
+```python
+a = "Arrivé"
+b = "Sortir"
+
+a == b
+a != b
+a > b
+a < b
+```
+
+
 
 #### Zoom sur les chaînes de caractères (str)
 
