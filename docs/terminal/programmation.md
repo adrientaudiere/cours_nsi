@@ -6,10 +6,18 @@
 
 !> Work in progress
 
-![](../img/fig_recursivite.png ":size=60%")
+![](../_img/fig_recursivite.png ":size=60%")
 
 <p class="center-p"> <strong> Comparaison des boucles whiles, For et récursives. </strong>
 </p>
+
+
+
+![](../_img/image_recu_lesmignons.jpg ":size=60%")
+
+<p class="center-p"> <strong> Mème (Van Zuijlen Stéphan - CC-BY-NC). </strong>
+</p>
+
 
 ## Modularité
 
