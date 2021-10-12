@@ -4,9 +4,7 @@
 
 ## Récursivité
 
-!> Work in progress
-
-Résoudre un problème de façon récursive c'est décomposer un problème en sous-problèmes identiques de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.
+Résoudre un problème de façon récursive c'est **décomposer un problème en sous-problèmes identiques** de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.
 
 ?> Regarder la [vidéo](https://www.youtube.com/watch?v=U3nGNJTxYc4&feature=emb_imp_woyt) sur la tour de Hanoï vue comme un processus récursif. 
 
@@ -108,7 +106,7 @@ print(p(3))
 
 ![](../_img/fig_recursivite.png ":size=60%")
 
-<p class="center-p"> <strong> Comparaison des boucles whiles, For et récursives. </strong>
+<p class="center-p"> <strong> Comparaison des boucles while et For avec une implémentation récursive. </strong>
 </p>
 
 
@@ -188,7 +186,7 @@ def est_palindrome(mot):
     return True
 ```
 
-2. Écrire une version récursive rec_est_palindrome. Pour cela identifier l'état trivial (donc la condition d'arrêt) et utiliser l'idée que "selles" est un palindrome si "s"= "s" et "elle" est un palindrome.
+2. Écrire une version récursive *rec_est_palindrome*. Pour cela identifier l'état trivial (donc la condition d'arrêt) et utiliser l'idée que "selles" est un palindrome si "s"= "s" et "elle" est un palindrome.
 
 3. Modifier votre programme pour qu’il considère que la phrase "Karine alla en Irak" soit un palindrome.
 
@@ -205,6 +203,15 @@ def est_palindrome(mot):
 !> Work in progress
 
 ## Programmation objet
+
+Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programmation impérative qui repose sur les notions de : 
+- **séquence d'instructions** (les instructions d'un programme s'exécutent dans l'ordre dans lequel on les écrit)
+- **affectation** (on attribue une valeur à une variable, par exemple : texte = "Youpi")
+- les instructions conditionnelles (if / else) et les boucles (while et for)
+
+Il existe d'autre manière de programmer, le paradigme de la programmation objet en est un. Dans ce paradigme ... 
+
+!> Work in progress
 
 ?> Créer une classe chien qui à les attributs _nom_, _points_de_santé_ et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_(fait baisser les points de santé d’un autre chien),_manger_(augmente les points de santé),_grogner_(renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 
