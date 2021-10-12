@@ -22,7 +22,7 @@ Les trois règles d'un **algorithme récursif** :
 
 ### Fonction récursive
 
-Une fonction récursive est donc une fonction qui va s’appeller elle-même. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
+Une fonction **récursive** est donc une fonction qui va **s’appeller elle-même**. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
 
 
 ?> Éxaminer le programme ci-dessous et tenter de prévoir son résultat avant de l'exécuté sous [pythontutor](https://pythontutor.com/) pour vérifier votre prévision et comprendre la suite du processus de pile/dépiler.
@@ -40,15 +40,20 @@ fonct(5)
 <summary> <strong> Réponse </strong></summary>
  
 - On appelle la fonction *fonct* avec le paramètre n = 3 ; n est supérieur à 0 donc appel de la fonction *fonct* avec le paramètre n = 2
+
 - 2e appel de la fonction *fonct* avec le paramètre n = 2 ; n est toujours supérieur à 0 donc appel de la fonction *fonct* avec le paramètre n = 1
+
 - 3e appel de la fonction *fonct* avec le paramètre n = 1 ; n > 0 donc appel de la fonction *fonct* avec le paramètre n = 0
+
 - 4e appel de la fonction *fonct* avec le paramètre n = 0 ; n = 0 donc on exécute l'instruction *print(n)* => affichage : 0
+
 - on "dépile" (3e appel, n = 1) : on exécute l'instruction print(n) => affichage : 1
+
 - on "dépile" (2e appel, n = 2) : on exécute l'instruction print(n) => affichage : 2
+
 - on "dépile" (1er appel, n = 3) : on exécute l'instruction print(n) => affichage : 3
 
 Il ne faut jamais perdre de vu qu'à chaque nouvel appel de la fonction fonct le paramètre n est différent. 
-
 Voici un schéma expliquant le processus en termes de pile d'exécution :
 
 ![](../_img/answer_recursivite.png ":size=90%")
@@ -187,6 +192,12 @@ def est_palindrome(mot):
 3. Modifier votre programme pour qu’il considère que la phrase "Karine alla en Irak" soit un palindrome.
 
 
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Faire le [TP](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_tp_tour_de_hanoi.pdf) sur la tour de Hanoï du site isn-icn-ljm.
+
+</details>
 
 ## Modularité
 
