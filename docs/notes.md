@@ -38,6 +38,16 @@ def ma_super_fonction(x, y)
 
 <p class="center-p"> <strong> Exemple de code SQL </strong> avec à gauche les schémas ou les retours de fonction, et à droite l'état de la base de données. </p>
 
+### Des ex. avancés
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Un exercice avancé
+
+</details>
+
 ### Des maths
 
 $$
