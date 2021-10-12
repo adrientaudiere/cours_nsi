@@ -133,6 +133,7 @@ print(somme(L))
 fin=timer()
 print(fin-debut)
 ```
+</details>
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
