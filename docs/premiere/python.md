@@ -100,7 +100,7 @@ Chaque variable a un type. Sous python, pour connaître le type d'une variable _
 - **str** pour les variables constituées de chaîne de caractères (par ex. "Ba oui, c'est Scho!"),
 - **bool** pour les variables constituées de booléens (True/False)
 
-?> Remplacer les trois petits points du code ci-dessous pour obtenir un type _int_. Modifier ensuite votre variable pour obtenir chaqu'un des trois autres types simples vu ci-dessus.
+?> Remplacer les trois petits points du code ci-dessous pour obtenir un type _int_. Modifier ensuite votre variable pour obtenir chacun des trois autres types simples vu ci-dessus.
 
 ```python
 var = ...
@@ -132,7 +132,8 @@ int(c)
 #       int(c)
 #   ValueError: invalid literal for int() with base 10: 'bonjour'
 ```
-?> Lancer le script ci-dessous et expliquer les résultats ou les erreurs 
+
+?> Lancer le script ci-dessous et expliquer les résultats ou les erreurs
 
 ```python
 a = "Je suis né en " + "1989"
@@ -163,6 +164,7 @@ a and b # « et » mathématique
 a or b  # « ou » mathématique
 not(a)  # « non » mathématique
 ```
+
 ?> Tester le code ci-dessous. À votre avis, comment python compare deux chaînes de caractère?
 
 ```python
@@ -174,8 +176,6 @@ a != b
 a > b
 a < b
 ```
-
-
 
 #### Zoom sur les chaînes de caractères (str)
 

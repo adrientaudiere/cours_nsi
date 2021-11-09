@@ -6,12 +6,12 @@
 
 Résoudre un problème de façon récursive c'est **décomposer un problème en sous-problèmes identiques** de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.
 
-?> Regarder la [vidéo](https://www.youtube.com/watch?v=U3nGNJTxYc4&feature=emb_imp_woyt) sur la tour de Hanoï vue comme un processus récursif. 
-
+?> Regarder la [vidéo](https://www.youtube.com/watch?v=U3nGNJTxYc4&feature=emb_imp_woyt) sur la tour de Hanoï vue comme un processus récursif.
 
 <div class="nutshell">
 
-Les trois règles d'un **algorithme récursif** : 
+Les trois règles d'un **algorithme récursif** :
+
 - Il s’**appelle lui même**;
 - Il doit avoir un **état trivial**, ce qui permet de définir une condition d’arrêt;
 - Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinis.
@@ -20,10 +20,9 @@ Les trois règles d'un **algorithme récursif** :
 
 ### Fonction récursive
 
-Une fonction **récursive** est donc une fonction qui va **s’appeller elle-même**. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
+Une fonction **récursive** est donc une fonction qui va **s’appeler elle-même**. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
 
-
-?> Éxaminer le programme ci-dessous et tenter de prévoir son résultat avant de l'exécuté sous [pythontutor](https://pythontutor.com/) pour vérifier votre prévision et comprendre la suite du processus de pile/dépiler.
+?> Examiner le programme ci-dessous et tenter de prévoir son résultat avant de l'exécuter sous [pythontutor](https://pythontutor.com/) pour vérifier votre prévision et comprendre la suite du processus de pile/dépiler.
 
 ```python
 def fonct(n):
@@ -36,7 +35,7 @@ fonct(5)
 
 <details>
 <summary> <strong> Réponse </strong></summary>
- 
+
 - On appelle la fonction *fonct* avec le paramètre n = 3 ; n est supérieur à 0 donc appel de la fonction *fonct* avec le paramètre n = 2
 
 - 2e appel de la fonction *fonct* avec le paramètre n = 2 ; n est toujours supérieur à 0 donc appel de la fonction *fonct* avec le paramètre n = 1
@@ -51,7 +50,7 @@ fonct(5)
 
 - on "dépile" (1er appel, n = 3) : on exécute l'instruction print(n) => affichage : 3
 
-Il ne faut jamais perdre de vu qu'à chaque nouvel appel de la fonction fonct le paramètre n est différent. 
+Il ne faut jamais perdre de vu qu'à chaque nouvel appel de la fonction fonct le paramètre n est différent.
 Voici un schéma expliquant le processus en termes de pile d'exécution :
 
 ![](../_img/answer_recursivite.png ":size=90%")
@@ -61,8 +60,7 @@ Voici un schéma expliquant le processus en termes de pile d'exécution :
 
 </details>
 
-
-?> Expliquez pour chaque script ci-dessous (f, g, h, p) pourquoi on obtient une erreur. 
+?> Expliquez pour chaque script ci-dessous (f, g, h, p) pourquoi on obtient une erreur.
 
 ```python
 def f(n):
@@ -70,7 +68,6 @@ def f(n):
 
 print(f(3))
 ```
-
 
 ```python
 def h(n):
@@ -99,8 +96,7 @@ def p(n):
 print(p(3))
 ```
 
-?> À l'aide de la fonction *fonct* vu précédement, écrire une fonction *fact(x)* qui calcule la factorielle d'un nombre x. 
-
+?> À l'aide de la fonction *fonct* vu précédement, écrire une fonction *fact(x)* qui calcule la factorielle d'un nombre x.
 
 ?> La figure ci-dessous vous présente une fonction qui calcule la somme des valeurs d'une variable de trois façons différentes. Expliquez chacune de ses fonctions puis tester à l'aide de site [pythontutor](https://pythontutor.com/).
 
@@ -108,7 +104,6 @@ print(p(3))
 
 <p class="center-p"> <strong> Comparaison des boucles while et For avec une implémentation récursive. </strong>
 </p>
-
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
@@ -131,6 +126,7 @@ print(somme(L))
 fin=timer()
 print(fin-debut)
 ```
+
 </details>
 
 <details class="advanced_level">
@@ -164,9 +160,7 @@ def flocon(taille, etape):
 flocon(100, 3)
 ```
 
-
 </details>
-
 
 ![](../_img/image_recu_lesmignons.jpg ":size=60%")
 
@@ -190,7 +184,6 @@ def est_palindrome(mot):
 
 3. Modifier votre programme pour qu’il considère que la phrase "Karine alla en Irak" soit un palindrome.
 
-
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
@@ -200,7 +193,16 @@ def est_palindrome(mot):
 
 ## Modularité
 
-!> Work in progress
+### Rappels de première
+
+Dans tout les langages informatiques avec une communauté conséquente, il existe vite un problème à résoudre : comment ne pas recoder (mal) ce qui a déjà été (bien) codé tout en gardant une langage qui ne deviennent pas trop imposant à installer? Autrement dit comment ne pas réinventer la roue tout en permettant aux codeurs qui n'ont pas besoins de roues de ne pas avoir à télécharger cette roue avec le langage. Une solution très utilisée est l'utilisation de **bibliothèques** (aussi appelées modules ou packages). Ces bibliothèques sont des ensembles de fonctions cohérentes.
+
+Par exemple, la bibliothèque « math » permet de calculer, entre autres, des cosinus et des racines carrées. La bibliothèque « random » est utilisé pour générer des nombres aléatoires. Pour charger une bibliothèque on utilise la code **from** _nom_bibliotheque_ **import** \*. Ici l'étoile indique que l'on veut charger toute la bibliothèque. Si on a seulement besoins d'une ou quelques fonction(s) on remplace l'étoile par le nom des fonctions souhaitées.
+
+```python
+from math import * # importation de toute les fonctions de la bibliothèque math
+from random import uniform # importation de la fonction uniform de la bibliothèque random
+```
 
 Un **module** est un fichier qui contient des variables, fonctions, objets, méthodes... En python, il est importé par l'instruction `import nom_module`. Un **package** est un ensemble de fichier qui peut contenir un ou pluieurs modules.
 Une **bibliothèque** est constituée de plusieurs packages. On utilise également le mot library pour désigner une bibliothèque.
@@ -227,12 +229,13 @@ Quelques API (gratuites) disponibles sur le web pour faire des tests.
 
 ## Programmation objet
 
-Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programmation impérative qui repose sur les notions de : 
+Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programmation impérative qui repose sur les notions de :
+
 - **séquence d'instructions** (les instructions d'un programme s'exécutent dans l'ordre dans lequel on les écrit)
 - **affectation** (on attribue une valeur à une variable, par exemple : texte = "Youpi")
 - les instructions conditionnelles (if / else) et les boucles (while et for)
 
-Il existe d'autre manière de programmer, le paradigme de la programmation objet en est un. Dans ce paradigme ... 
+Il existe d'autre manière de programmer, le paradigme de la programmation objet en est un. Dans ce paradigme ...
 
 !> Work in progress
 

@@ -1,4 +1,4 @@
-# Architecture matèriel et système d'exploitation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
+# Architecture matériel et système d'exploitation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 ## :fa fa-laptop: Introduction : c'est quoi un ordinateur
 
@@ -17,7 +17,6 @@ de l'ordinateur de Von Neumann** qui permet les opérations arithmétiques
 et logiques. Pour un aspect historique de l'apparition des ordinateurs,
 référez-vous au cours [Histoire de l'informatique](premiere/histoire.md).
 
-
 Nous verrons ensuite la notion de **système d'exploitation** (souvent
 abrégé **OS** pour « Operating System ») à travers l'exemple de l'OS
 GNU/Linux. Le système d'exploitation (dont les plus connus sont Windows,
@@ -32,7 +31,6 @@ appelée ***Hardware*** et la partie logicielle ***Software***.
 ?> Citer le système d'exploitation, ainsi que 4 logiciels présents sur vos postes informatiques de Scholae.
 
 ## :fa fa-sitemap: L'architecture de la machine de Von Neumann
-
 
 <div class="img-flow" style="max-width:320px;">
 
@@ -102,13 +100,11 @@ Le nom **mov** correspond à l'instruction 10101101 01111001 dans un
 langage assembleur. Le programme assembleur est un programme qui va
 transcrire le langage assembleur en langage machine.
 
-
 ?> À l'aide de recherche sur internet, trouver les instructions
 en langage assembleur x86 pour (i) incrémenter une valeur, (ii) comparer
 deux nombres, (iii) additionner deux nombres.
 
 ?> [TP](https://adrientaudiere.github.io/cours_nsi/_doc/TP-VonNeumann_vanZuijlen.pdf) sur VonNeumann (auteur vanZuijlen, [CC-BY-NC](https://creativecommons.org/licenses/by-nc/2.0/fr/))
-
 
 ### Langages de haut niveau
 
@@ -124,7 +120,7 @@ et paradoxalement **plus long à maîtriser** que d'autres langages.
 
 ![Échelle de niveau des langages informatiques](../_img/echelle_niveau_langage_informatique.svg ':size=50%')
 
-<p class="center-p"> 
+<p class="center-p">
 <strong>Échelle de niveau des langages informatiques.</strong>
 <p>
 
@@ -210,3 +206,5 @@ find -name "svg"
 ```
 
 ?> S'entraîner à utiliser **Linux** en ligne de commande grâce à [Pixees.fr](https://pixees.fr/informatiquelycee/n_site/nsi_prem_cmd_base_linux.html). Vous ferez en particulier la section « Gestion des utilisateurs et des groupes ».
+
+?> Faire le jeu [Terminus](http://luffah.xyz/bidules/Terminus/)
