@@ -202,6 +202,29 @@ def est_palindrome(mot):
 
 !> Work in progress
 
+Un **module** est un fichier qui contient des variables, fonctions, objets, méthodes... En python, il est importé par l'instruction `import nom_module`. Un **package** est un ensemble de fichier qui peut contenir un ou pluieurs modules.
+Une **bibliothèque** est constituée de plusieurs packages. On utilise également le mot library pour désigner une bibliothèque.
+
+Dans les fait, les développeurs python utilisent beaucoup le terme de module pour parler indifférement de module, package et bibliothèque.
+
+
+Une **API** (Application Programming Interface) est une interface de programmation d'application. Une API est composé de fonctions, constantes, classes qui sont bien **documentés**. L'objectif est de faciliter l'interface, les échanges entre différents programmes informatiques.
+
+Les API web utilisent internet pour échanger de données. Les formats d'échanges sur le web se sont standardisés au fur et à mesures. Aujourd'hui, deux formats sont principalement utilisés dans les API web : **XML**(Extensible Markup Language) et **JSON** (JavaSript Objet Notation).
+
+Quelques API (gratuites) disponibles sur le web pour faire des tests.
+
+- https://geo.api.gouv.fr/
+- https://api.gouv.fr/
+- https://geodatamine.fr/boundaries
+- https://fr.openfoodfacts.org/data
+
+!> Trouver l'adresse qui se trouve au point GPS de latitude 43.977 et de longitude 3.85 grâce à l'[API](https://adresse.data.gouv.fr/api-doc/adresse) du gouvernement.
+
+
+!> TP météo : https://www.lecluse.fr/nsi/NSI_T/langages/modularite/
+
+
 ## Programmation objet
 
 Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programmation impérative qui repose sur les notions de : 
