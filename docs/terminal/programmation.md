@@ -276,6 +276,8 @@ class Eleve:
         return self.qui() + " a une moyenne de " + str(self.calcul_moyenne())
 ```
 
+?> À partir du code ci-dessus, trouver la manière (i) de définir la création d'une nouvelle instance, (ii) de documenter votre classe, et (iii) de définir l'affichage par défaut des instances de la classe.
+
 ?> Après avoir bien lu le code ci-dessus, lancer le code ci dessous pour tester la classe élève.
 
 ```python
@@ -304,4 +306,29 @@ print(eleve1)
 
 ## Programmation fonctionnelle
 
-!> Work in progress
+La programmation fonctionnelle est un autre paradigme de programmation. L'idée générale est d'utilisé au maximum des fonctions qui ne modifient pas les variables. Autrement dit, on essaye de séparer les données initiales d'un côté et les modifications que l'on fait sur ces données d'un autre côté.    
+Les fonctions utilisées en programmation fonctionnelle sont parfois appelées "fonction pure" : le résultat renvoyé par une fonction pure doit uniquement dépendre des paramètres passés à la fonction et pas des valeurs externes à la fonction.
+
+?> Pour les fonctions ci-dessous, trouver si elles sont pures ou non. 
+
+```python
+i = 5
+def fct1():
+  if i > 5:
+    return True
+  else :
+    return False
+fct1()
+```
+
+```python
+def fct2(i):
+  if i > 5:
+    return True
+  else :
+    return False
+fct2(5)
+```
+
+
+
