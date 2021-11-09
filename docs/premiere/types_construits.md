@@ -216,9 +216,9 @@ print(a)
 
 ## Les dictionnaires
 
-Les dictionnaires sont aussi des séquences, mais au lieu d'héberger des
-informations indexées, ils **associent chaque objet (_value_)
-qu'ils contiennent à une clé (_key_). Cette clé **est, la
+Les **dictionnaires** sont aussi des séquences, mais au lieu d'héberger des
+informations indexées, ils associent chaque **objet** (_value_)
+qu'ils contiennent à une **clé** (_key_). Cette **clé** est, la
 plupart du temps, une chaîne de caractères mais peut être n'importe
 quel type d'objet. Les **valeurs** peuvent également être n'importe
 quel type d'objets (des entiers, des chaînes de caractères, des

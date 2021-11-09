@@ -242,7 +242,7 @@ notions d’héritage et de polymorphisme sont également caractéristiques de l
 
 !> Une classe définit la façon dont seront créer et gérer les objets de cette classe. Une instance est une version d'un objet créé grâce à une classe. La différence entre un objet et une instance est subtile et n'est pas au programme. Une instance (=un objet) possède (le plus souvent) des **attributs** (des caractéristiques propre à la classe) et des **méthodes** (des fonctions spécifiques aux objets de cette classe).
 
-Voici comment on définit une nouvelle classe. 
+En fait vous avez déjà utilisé la poo. Par exemple en première on avait vu que le code  `ma_chaine_minuscule = ma_chaine.lower()` permettait de convertir une chaîne de caractère en minuscule. En fait on utilisait une méthode (`.lower()`) d'une instance de classe *str*. Python est donc déjà codé en partie dans le paradigme de la poo. Il est cependant intéressant de pouvoir créer de nouvelles classes pour nos besoins spécifiques. Voici comment on définit une nouvelle classe. 
 
 ```python
 class Eleve:
