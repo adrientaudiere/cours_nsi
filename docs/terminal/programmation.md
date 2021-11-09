@@ -132,7 +132,7 @@ print(fin-debut)
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-?> Regarder la [vidéo](https://www.youtube.com/watch?v=PW_Pka9iBko) sur le flocon de Koch. Lancer ensuite le programme ci-dessous ()
+?> Regarder la [vidéo](https://www.youtube.com/watch?v=PW_Pka9iBko) sur le flocon de Koch. Lancer ensuite le programme ci-dessous.
 
 ```python
 
@@ -209,6 +209,7 @@ Une **bibliothèque** est constituée de plusieurs packages. On utilise égaleme
 
 Dans les fait, les développeurs python utilisent beaucoup le terme de module pour parler indifférement de module, package et bibliothèque.
 
+### API
 
 Une **API** (Application Programming Interface) est une interface de programmation d'application. Une API est composé de fonctions, constantes, classes qui sont bien **documentés**. L'objectif est de faciliter l'interface, les échanges entre différents programmes informatiques.
 
@@ -227,7 +228,7 @@ Quelques API (gratuites) disponibles sur le web pour faire des tests.
 !> TP météo : https://www.lecluse.fr/nsi/NSI_T/langages/modularite/
 
 
-## Programmation objet
+## Programmation orientée objet
 
 Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programmation impérative qui repose sur les notions de :
 
@@ -235,17 +236,71 @@ Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programm
 - **affectation** (on attribue une valeur à une variable, par exemple : texte = "Youpi")
 - les instructions conditionnelles (if / else) et les boucles (while et for)
 
-Il existe d'autre manière de programmer, le paradigme de la programmation objet en est un. Dans ce paradigme ...
+Il existe d'autre manière de programmer, le paradigme de la programmation orienté objet (abrégée *poo*) en est un. 
+La poo repose sur les notions de **classe**, d’**attribut** et de **méthode**. Les
+notions d’héritage et de polymorphisme sont également caractéristiques de la poo mais ne sont pas au programme.
 
-!> Work in progress
+!> Une classe définit la façon dont seront créer et gérer les objets de cette classe. Une instance est une version d'un objet créé grâce à une classe. La différence entre un objet et une instance est subtile et n'est pas au programme. Une instance (=un objet) possède (le plus souvent) des **attributs** (des caractéristiques propre à la classe) et des **méthodes** (des fonctions spécifiques aux objets de cette classe).
 
-?> Créer une classe chien qui à les attributs _nom_, _points_de_santé_ et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_(fait baisser les points de santé d’un autre chien),_manger_(augmente les points de santé),_grogner_(renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
+Voici comment on définit une nouvelle classe. 
 
-?> Créer un combat automatique entre deux chiens: les valeurs de dégâts et de pv gagner quand il mange sont tirées au hasard, chaque chien grogne avant d'attaquer, les chiens attaquent puis mangent chacun leur tour, le combat s'arrête quand les pv d'un chien tombe à 0 et le gagnant mâchouille.
+```python
+class Eleve:
+    '''
+    La classe élève définit des objets élèves qui ont un nom, un prénon, une date de naissance et des notes. 
+    La méthode calcul_moyenne() permet de calculer la moyenne des notes de l'élève.
+    '''
+
+    # constructeur (attention deux underscores de chaque côté !!)
+    def __init__(self,Nom,Prenom,Date,Notes):
+        # Attributs 
+        self.nom=Nom
+        self.prenom=Prenom
+        self.date=Date
+        self.notes=Notes
+    
+    # Accesseur
+    def qui(self):
+        return self.nom + " " + self.prenom
+
+    # Mutateur
+    def set_notes(self, Notes):
+        self.notes = Notes
+
+    # Autres méthodes
+    def calcul_moyenne(self):
+        return sum(self.notes)/len(self.notes)
+    
+    # Méthode d'affichage
+    def __repr__(self):
+        return self.qui() + " a une moyenne de " + str(self.calcul_moyenne())
+```
+
+?> Après avoir bien lu le code ci-dessus, lancer le code ci dessous pour tester la classe élève.
+
+```python
+eleve1=Eleve("Féfé","Yoplait","01/11/2000",[12,12,15])
+print(eleve1.calcul_moyenne())
+print(eleve1)
+```
+
+?> Comprendre la construction des classes [personnage](https://github.com/courumix/pySCHO/blob/main/python/class_perso.py) et [monstre](https://github.com/courumix/pySCHO/blob/main/python/class_monstre.py) du jeux de rôle pyScho (en cours de dév.).
+
+?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_(fait baisser les points de santé d’un autre chien),_manger_(augmente les points de santé),_grogner_(renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Créer un combat automatique entre deux chiens: les valeurs de dégâts et de pv gagner quand ils mangent sont tirées au hasard (vous aurez besoin d'utiliser la fonction *randint* du module *random*), chaque chien grogne avant d'attaquer, les chiens attaquent puis mangent chacun leur tour, le combat s'arrête quand les pv d'un chien tombe à 0 et le gagnant mâchouille.
+
+</details>
 
 ## Mise au point de programme
 
 !> Work in progress
+### Assertion
+
 
 ## Programmation fonctionnelle
 

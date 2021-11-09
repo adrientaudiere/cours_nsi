@@ -30,6 +30,8 @@ On peut lister quelques opérations sur les piles :
 
 !> Work in progress
 
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html
+
 ###  Arbres binaires
 
 ###  Arbres binaires de recherche
@@ -40,6 +42,8 @@ On peut lister quelques opérations sur les piles :
 
 !> Work in progress
 
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre4.html
+
 ### Définition d'un graphe
 
 ### Parcours en profondeurs et en largeur
@@ -48,14 +52,19 @@ On peut lister quelques opérations sur les piles :
 
 !> !! Work in progress
 
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre6.html
+
+
 ## Programmation dynamique
 
 !> Work in progress
+
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre6.html
 
 ## Recherche textuelle
 
 ?> Faire le TD sur l'algorithme de Boyer-Moore (modifié de Stéphan Van Zuijlen (CC-BY-NC)).
 
-## Calculabilité
+## Calculabilité/décidabilité
 
-!> !! Work in progress
+?> Lire le [chapitre 0](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre0.html) de Stéphan Van Zuijlen. Expliquer en deux phrases la notion de décidabilité.
