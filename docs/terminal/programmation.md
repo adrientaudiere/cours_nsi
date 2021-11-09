@@ -278,13 +278,15 @@ class Eleve:
 
 ?> À partir du code ci-dessus, trouver la manière (i) de définir la création d'une nouvelle instance, (ii) de documenter votre classe, et (iii) de définir l'affichage par défaut des instances de la classe.
 
-?> Après avoir bien lu le code ci-dessus, lancer le code ci dessous pour tester la classe élève.
+?> Après avoir bien lu le code ci-dessus, lancer le code ci-dessous pour tester la classe élève.
 
 ```python
 eleve1=Eleve("Féfé","Yoplait","01/11/2000",[12,12,15])
 print(eleve1.calcul_moyenne())
 print(eleve1)
 ```
+
+?> Écrire une classe *Rectangle*, permettant de construire un rectangle doté d’attributs longueur et largeur. Ajouter deux méthodes *perimetre*(self) et *surface*(self).
 
 ?> Comprendre la construction des classes [personnage](https://github.com/courumix/pySCHO/blob/main/python/class_perso.py) et [monstre](https://github.com/courumix/pySCHO/blob/main/python/class_monstre.py) du jeux de rôle pyScho (en cours de dév.).
 
