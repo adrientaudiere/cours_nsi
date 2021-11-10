@@ -2,20 +2,55 @@
 
 !> !! Work in progress !!
 
+!> Réviser le [programme de première](../premiere/types_construits.md) sur les types construits.
+
+## Liste 
+
+!> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste.
+
+https://pixees.fr/informatiquelycee/term/c5c.html
+    Une liste est une structure de données permettant de regrouper des données. Une liste L est composée de 2 parties : sa tête (souvent notée car), qui correspond au dernier élément ajouté à la liste, et sa queue (souvent notée cdr) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
+
+    obtenir une liste vide (vide)
+    tester si une liste est vide (estVide)
+    obtenir le dernier élément ajouté à la liste (car)
+    obtenir une liste contenant tous les éléments d'une liste à l'exception du dernier élément ajouté (cdr)
+    construire une liste à partir d'un élément et d'un autre liste (cons)
+
+
+
 ## Listes chaînées
 
 !> Work in progress
 
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_listes.pdf
+
+https://isn-icn-ljm.pagesperso-orange.fr/basthon-notebook/?from=https://isn-icn-ljm.pagesperso-orange.fr/notebook/listes_cha%C3%AEn%C3%A9e_TD.ipynb
+
+
+
+https://pixees.fr/informatiquelycee/term/c5c.html
+
+    Les listes, les piles ou les files sont des "vues de l'esprit" présentes uniquement dans la tête des informaticiens, on dit que ce sont des types abstraits de données (ou plus simplement des types abstraits). L'implémentation de ces types abstraits, afin qu'ils soient utilisables par une machine, est loin d'être une chose triviale. L'implémentation d'un type de données dépend du langage de programmation. Il faut, quel que soit le langage utilisé, que le programmeur retrouve les fonctions qui ont été définies pour le type abstrait (pour les listes, les piles et les files cela correspond aux fonctions définies ci-dessus).
+
+    Pour implémenter les listes (ou les piles et les files), beaucoup de langages de programmation utilisent 2 structures : les tableaux et les listes chaînées.
+
+
+
 ## Piles et files
 
-Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). 
+Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste.
 
 
 ![](../_img/fifo_lifo.png ":size=60%")
 
-<p class="center-p"> Comparaison des structures File et Pile .</p>
+<p class="center-p"> Comparaison des structures **File** et **Pile**.</p>
 
 ---
+
+
+https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks
+
 
 ### Piles
 
@@ -38,6 +73,10 @@ Une file (FIFO pour *First In First Out*) est une structure dans laquelle les pr
 
 
 ##  Dictionnaires
+
+https://pixees.fr/informatiquelycee/term/c6c.html
+
+
 
 ## Structures en arbres
 

@@ -11,7 +11,7 @@ _Sources : Première [version](http://usuarios.arnet.com.ar/ngiunta/pages/EQUIPA
 
 </p>
 
-!> Réviser le [programme de premiere](../premiere/archi_OS.md).
+!> Réviser le [programme de première](../premiere/archi_OS.md).
 
 ## Circuits intégrés
 
