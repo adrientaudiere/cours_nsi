@@ -8,11 +8,21 @@
 
 ## Piles et files
 
+Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). 
+
+
+![](../_img/fifo_lifo.png ":size=60%")
+
+<p class="center-p"> Comparaison des structures File et Pile .</p>
+
+---
+
 ### Piles
 
-Une pile est une façon de structurer des données qui est très utilisée en informatique. Par exemple on utilise les piles dans les piles d'appels de fonctions ou encore pour parcourir des graphes.
+Une pile (LIFO pour *Last In First Out*) est une façon de structurer des données qui est très utilisée en informatique. Par exemple, des cartons de déménagement qu'on empile forme une pile. Le dernier carton arrivé (Last In) sur le tas est le premier à être enlever. 
+En informatique, on utilise par exemple les piles dans les piles d'appels de fonctions ou encore pour parcourir des graphes.
 
-On peut lister quelques opérations sur les piles :
+On peut lister quelques opérations courantes sur les piles :
 
 - la création d’une pile,
 
@@ -23,6 +33,9 @@ On peut lister quelques opérations sur les piles :
 - la consultation du sommet d’une pile.
 
 ### files
+
+Une file (FIFO pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. En informatique, on utilise les files,  
+
 
 ##  Dictionnaires
 

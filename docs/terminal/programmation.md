@@ -219,10 +219,10 @@ Quelques API (gratuites) disponibles sur le web pour faire des tests.
 - https://geodatamine.fr/boundaries
 - https://fr.openfoodfacts.org/data
 
-!> Trouver l'adresse qui se trouve au point GPS de latitude 43.977 et de longitude 3.85 grâce à l'[API](https://adresse.data.gouv.fr/api-doc/adresse) du gouvernement.
+?> Trouver l'adresse qui se trouve au point GPS de latitude 43.977 et de longitude 3.85 grâce à l'[API](https://adresse.data.gouv.fr/api-doc/adresse) du gouvernement.
 
 
-!> TP météo : https://www.lecluse.fr/nsi/NSI_T/langages/modularite/
+?> TP météo : https://www.lecluse.fr/nsi/NSI_T/langages/modularite/
 
 
 ## Programmation orientée objet
