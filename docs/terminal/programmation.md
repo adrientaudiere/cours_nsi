@@ -302,8 +302,38 @@ print(eleve1)
 
 ## Mise au point de programme
 
-!> Work in progress
+Il y a plusieurs façon d'améliorer un programme pour l'utilisateur. En premier lieu, un code bien structurée (par ex. des fonctions dont il est facile de comprendre ce qu'elles font) avec des conventions conservées (par ex. dans le choix des noms de foctions) est important. Ensuite, une bonne documentation (une aide) est essentielle pour les utilisateurs. Enfin, on peut aider l'utilisateur en anticipant les erreurs qu'il pourrait faire et en lui expliquant son erreur (assertion). 
+
+### Documentation
+
+En python, on commente au plus près du code à travers deux types de texte: 
+- des **commentaires** précédés d'un dièse 
+- des **Docstrings** dont les conventions sont décrites [en ligne](https://www.python.org/dev/peps/pep-0257/). Le teste d'aide est écrit entre trois ''' comme ci-dessous.  
+
+```python
+'''Ce module permet d'afficher un objet'''
+def fonction_qui_va_tout_revolutionner(x):
+    '''Cette fonction affiche un objet 
+
+    Cette fonction révolutionnaire prend en paramêtre x un objet de n'importe quel type de base (int, float, bool, str) et l'affiche.
+    '''
+    print(x) # fonction d'affichage
+```
+
+
 ### Assertion
+
+Une manière d'aider l'utilisateur est d'anticiper certaines erreurs et de prévoir des messages associés à ces erreurs.
+
+```python
+assert condition, 'Message'
+```
+
+?> Créer une fonction qui prend en paramètre une année de naissance et qui renvoie un âge à la date d'aujourd'hui ; ou créer une fonction qui affiche les dates des x prochaines élections présidentielles avec x le paramètre; ou créer une fonction qui prend deux paramètres (x et y par exemple, *x* représente un nombre parmis un nombre total *y*) et qui renvoie un pourcentage.
+
+?> Changer de place et essayer de faire "bugger" le programme de l'autre élève en proposant (et en testant) des valeurs de paramêtres qui renvoient des erreurs ou des valeurs qui n'ont pas de sens (par exemple un âge négatif). 
+
+?> Reprennez vos fonctions et améliorer les en utilisant des assertions qui permettent d'éviter certains comportements non voulus de vos fonctions et d'informer l'utilisateurs des problèmes rencontrés par la fonction. 
 
 
 ## Programmation fonctionnelle
