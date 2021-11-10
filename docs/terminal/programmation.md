@@ -1,7 +1,5 @@
 # Programmation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> !! Work in progress !!
-
 ## Récursivité
 
 Résoudre un problème de façon récursive c'est **décomposer un problème en sous-problèmes identiques** de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.
@@ -135,7 +133,6 @@ print(fin-debut)
 ?> Regarder la [vidéo](https://www.youtube.com/watch?v=PW_Pka9iBko) sur le flocon de Koch. Lancer ensuite le programme ci-dessous.
 
 ```python
-
 import turtle as t
 
 def koch(longueur, n):
@@ -320,6 +317,26 @@ def fonction_qui_va_tout_revolutionner(x):
     print(x) # fonction d'affichage
 ```
 
+On peut décrire les paramètres de la fonction, le retour de la fonction ou encore le type des paramètres et du retour dans le **Docstring**. 
+
+```python
+def est_palindrome(mot):
+    '''Test si un mot est un palindrome
+    
+    Cette fonction test si un mot est un palindrome
+
+    :param str mot: Le mot à tester
+    :return: Retourne un booléen qui dit si le mot est un palindrome   
+    :rtype : Bool
+    '''
+    mot=mot.lower()
+    for i in range(len(mot)//2): 
+        if mot[i]!=mot[-i-1]:
+            return False
+    return True
+
+
+```
 
 ### Assertion
 
