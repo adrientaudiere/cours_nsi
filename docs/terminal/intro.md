@@ -1,6 +1,6 @@
 # NSI en terminal
 
-!> !! Work in progress !!
+L'ensemble du programme est disponible sur la page d'accueil [Terminales](/terminal.md)
 
 ## Pour réviser 
 

@@ -77,6 +77,12 @@ Une file (FIFO pour *First In First Out*) est une structure dans laquelle les pr
 https://pixees.fr/informatiquelycee/term/c6c.html
 
 
+## Structure de données
+
+Distinguer interface et implémentation 
+
+!> Work in progress
+
 
 ## Structures en arbres
 

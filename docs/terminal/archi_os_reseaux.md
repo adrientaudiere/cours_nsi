@@ -4,6 +4,10 @@
 
 ---
 
+<!-- pdf sur la découverte des sockets avec python 
+https://github.com/prologin/gcc-resources/raw/gh-pages/03_reseau.pdf 
+-->
+
 <p class="center-p">
 
 **Understanding computer technology**.
@@ -229,6 +233,7 @@ Par la suite Jules César utilisa une technique de substitution mono-alphabétiq
 <details class="advanced_level">
 <summary> <strong> En savoir plus :</strong></summary>
 La page wikipedia d'[histoire de la cryptologie](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie) est très complet.
+Vous pouvez aussi faire le TP des *Girls Can Code* sur la [cryptologie sous python](https://github.com/prologin/gcc-resources/raw/gh-pages/08_cryptologie.pdf). 
 </details>
 
 ?> Écrire une fonction python `chiffrer` qui chiffre un texte avec la technique de César. Il faudra mettre un paramètre qui correspond au nombre du décalage.

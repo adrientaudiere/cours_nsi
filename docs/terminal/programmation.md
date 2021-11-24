@@ -194,7 +194,7 @@ def est_palindrome(mot):
 
 Dans tout les langages informatiques avec une communauté conséquente, il existe vite un problème à résoudre : comment ne pas recoder (mal) ce qui a déjà été (bien) codé tout en gardant une langage qui ne deviennent pas trop imposant à installer? Autrement dit comment ne pas réinventer la roue tout en permettant aux codeurs qui n'ont pas besoins de roues de ne pas avoir à télécharger cette roue avec le langage. Une solution très utilisée est l'utilisation de **bibliothèques** (aussi appelées modules ou packages). Ces bibliothèques sont des ensembles de fonctions cohérentes.
 
-Par exemple, la bibliothèque « math » permet de calculer, entre autres, des cosinus et des racines carrées. La bibliothèque « random » est utilisé pour générer des nombres aléatoires. Pour charger une bibliothèque on utilise la code **from** _nom_bibliotheque_ **import** \*. Ici l'étoile indique que l'on veut charger toute la bibliothèque. Si on a seulement besoins d'une ou quelques fonction(s) on remplace l'étoile par le nom des fonctions souhaitées.
+Par exemple, la bibliothèque « math » permet de calculer, entre autres, des cosinus et des racines carrées. La bibliothèque « random » est utilisé pour générer des nombres aléatoires. Pour charger une bibliothèque on utilise la code **from** nom_bibliotheque **import** \*. Ici l'étoile indique que l'on veut charger toute la bibliothèque. Si on a seulement besoins d'une ou quelques fonction(s) on remplace l'étoile par le nom des fonctions souhaitées.
 
 ```python
 from math import * # importation de toute les fonctions de la bibliothèque math
@@ -233,11 +233,9 @@ Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programm
 - **affectation** (on attribue une valeur à une variable, par exemple : texte = "Youpi")
 - les instructions conditionnelles (if / else) et les boucles (while et for)
 
-Il existe d'autre manière de programmer, le paradigme de la programmation orienté objet (abrégée *poo*) en est un. 
-La poo repose sur les notions de **classe**, d’**attribut** et de **méthode**. Les
-notions d’héritage et de polymorphisme sont également caractéristiques de la poo mais ne sont pas au programme.
+Il existe d'autres manières de programmer, le paradigme de la programmation orienté objet (abrégée *poo*) en est un. La poo repose sur les notions de **classe**, d’**attribut** et de **méthode**. Les notions d’héritage et de polymorphisme sont également caractéristiques de la poo mais ne sont pas au programme.
 
-!> Une classe définit la façon dont seront créer et gérer les objets de cette classe. Une instance est une version d'un objet créé grâce à une classe. La différence entre un objet et une instance est subtile et n'est pas au programme. Une instance (=un objet) possède (le plus souvent) des **attributs** (des caractéristiques propre à la classe) et des **méthodes** (des fonctions spécifiques aux objets de cette classe).
+!> Une classe définit la façon dont seront créés et gérés les objets de cette classe. Une instance est une version d'un objet créé grâce à une classe. La différence entre un objet et une instance est subtile et n'est pas au programme. Une instance (=un objet) possède (le plus souvent) des **attributs** (des caractéristiques propres à la classe) et des **méthodes** (des fonctions spécifiques aux objets de cette classe).
 
 En fait vous avez déjà utilisé la poo. Par exemple en première on avait vu que le code  `ma_chaine_minuscule = ma_chaine.lower()` permettait de convertir une chaîne de caractère en minuscule. En fait on utilisait une méthode (`.lower()`) d'une instance de classe *str*. Python est donc déjà codé en partie dans le paradigme de la poo. Il est cependant intéressant de pouvoir créer de nouvelles classes pour nos besoins spécifiques. Voici comment on définit une nouvelle classe. 
 
@@ -287,13 +285,16 @@ print(eleve1)
 
 ?> Comprendre la construction des classes [personnage](https://github.com/courumix/pySCHO/blob/main/python/class_perso.py) et [monstre](https://github.com/courumix/pySCHO/blob/main/python/class_monstre.py) du jeux de rôle pyScho (en cours de dév.).
 
-?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_(fait baisser les points de santé d’un autre chien),_manger_(augmente les points de santé),_grogner_(renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
-
+?> Créer une classe plante avec au moins les attributs _nom_, *points_de_santé*, *attaque*, *cris_guerre*. Vous devez également définir les méthodes _attaquer()_ (fait baisser les points de santé d’une autre plante), _photosynthèse_ (augmente les points de santé), _menacer_ (renvoie le cris de guerre), _enlacer(texte)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-?> Créer un combat automatique entre deux chiens: les valeurs de dégâts et de pv gagner quand ils mangent sont tirées au hasard (vous aurez besoin d'utiliser la fonction *randint* du module *random*), chaque chien grogne avant d'attaquer, les chiens attaquent puis mangent chacun leur tour, le combat s'arrête quand les pv d'un chien tombe à 0 et le gagnant mâchouille.
+?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_ (fait baisser les points de santé d’un autre chien), _manger_ (augmente les points de santé), _grogner_ (renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
+
+?> Créer un combat automatique entre deux chiens: les valeurs de dégâts et de PVs gagnés quand ils mangent sont tirées au hasard (vous aurez besoin d'utiliser la fonction *randint* du module *random*), chaque chien grogne avant d'attaquer, les chiens attaquent puis mangent chacun leur tour, le combat s'arrête quand les PVs d'un chien tombe à 0 et le gagnant mâchouille.
+
+?> Créer une classe zombie avec les attributs et les méthodes que vous voulez. Puis créer une fonction combat entre une instance de zombie et une instance de antes.
 
 </details>
 
