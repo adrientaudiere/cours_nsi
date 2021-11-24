@@ -201,16 +201,16 @@ from math import * # importation de toute les fonctions de la bibliothèque math
 from random import uniform # importation de la fonction uniform de la bibliothèque random
 ```
 
-Un **module** est un fichier qui contient des variables, fonctions, objets, méthodes... En python, il est importé par l'instruction `import nom_module`. Un **package** est un ensemble de fichier qui peut contenir un ou pluieurs modules.
+Un **module** est un fichier qui contient des variables, fonctions, objets, méthodes... En python, il est importé par l'instruction `import nom_module`. Un **package** est un ensemble de fichier qui peut contenir un ou plusieurs modules.
 Une **bibliothèque** est constituée de plusieurs packages. On utilise également le mot library pour désigner une bibliothèque.
 
-Dans les fait, les développeurs python utilisent beaucoup le terme de module pour parler indifférement de module, package et bibliothèque.
+Dans les fait, les développeurs python utilisent beaucoup le terme de module pour parler indifféremment de module, package et bibliothèque.
 
 ### API
 
 Une **API** (Application Programming Interface) est une interface de programmation d'application. Une API est composé de fonctions, constantes, classes qui sont bien **documentés**. L'objectif est de faciliter l'interface, les échanges entre différents programmes informatiques.
 
-Les API web utilisent internet pour échanger de données. Les formats d'échanges sur le web se sont standardisés au fur et à mesures. Aujourd'hui, deux formats sont principalement utilisés dans les API web : **XML**(Extensible Markup Language) et **JSON** (JavaSript Objet Notation).
+Les API web utilisent internet pour échanger de données. Les formats d'échanges sur le web se sont standardisés au fur et à mesures. Aujourd'hui, deux formats sont principalement utilisés dans les API web : **XML**(Extensible Markup Language) et **JSON** (JavaScript Objet Notation).
 
 Quelques API (gratuites) disponibles sur le web pour faire des tests.
 
@@ -300,7 +300,7 @@ print(eleve1)
 
 ## Mise au point de programme
 
-Il y a plusieurs façon d'améliorer un programme pour l'utilisateur. En premier lieu, un code bien structurée (par ex. des fonctions dont il est facile de comprendre ce qu'elles font) avec des conventions conservées (par ex. dans le choix des noms de foctions) est important. Ensuite, une bonne documentation (une aide) est essentielle pour les utilisateurs. Enfin, on peut aider l'utilisateur en anticipant les erreurs qu'il pourrait faire et en lui expliquant son erreur (assertion). 
+Il y a plusieurs façon d'améliorer un programme pour l'utilisateur. En premier lieu, un code bien structurée (par ex. des fonctions dont il est facile de comprendre ce qu'elles font) avec des conventions conservées (par ex. dans le choix des noms de fonctions) est important. Ensuite, une bonne documentation (une aide) est essentielle pour les utilisateurs. Enfin, on peut aider l'utilisateur en anticipant les erreurs qu'il pourrait faire et en lui expliquant son erreur (assertion). 
 
 ### Documentation
 
@@ -313,7 +313,7 @@ En python, on commente au plus près du code à travers deux types de texte:
 def fonction_qui_va_tout_revolutionner(x):
     '''Cette fonction affiche un objet 
 
-    Cette fonction révolutionnaire prend en paramêtre x un objet de n'importe quel type de base (int, float, bool, str) et l'affiche.
+    Cette fonction révolutionnaire prend en paramètre x un objet de n'importe quel type de base (int, float, bool, str) et l'affiche.
     '''
     print(x) # fonction d'affichage
 ```
@@ -347,11 +347,11 @@ Une manière d'aider l'utilisateur est d'anticiper certaines erreurs et de prév
 assert condition, 'Message'
 ```
 
-?> Créer une fonction qui prend en paramètre une année de naissance et qui renvoie un âge à la date d'aujourd'hui ; ou créer une fonction qui affiche les dates des x prochaines élections présidentielles avec x le paramètre; ou créer une fonction qui prend deux paramètres (x et y par exemple, *x* représente un nombre parmis un nombre total *y*) et qui renvoie un pourcentage.
+?> Créer une fonction qui prend en paramètre une année de naissance et qui renvoie un âge à la date d'aujourd'hui ; ou créer une fonction qui affiche les dates des x prochaines élections présidentielles avec x le paramètre; ou créer une fonction qui prend deux paramètres (x et y par exemple, *x* représente un nombre parmi un nombre total *y*) et qui renvoie un pourcentage.
 
-?> Changer de place et essayer de faire "bugger" le programme de l'autre élève en proposant (et en testant) des valeurs de paramêtres qui renvoient des erreurs ou des valeurs qui n'ont pas de sens (par exemple un âge négatif). 
+?> Changer de place et essayer de faire "bugger" le programme de l'autre élève en proposant (et en testant) des valeurs de paramètres qui renvoient des erreurs ou des valeurs qui n'ont pas de sens (par exemple un âge négatif). 
 
-?> Reprennez vos fonctions et améliorer les en utilisant des assertions qui permettent d'éviter certains comportements non voulus de vos fonctions et d'informer l'utilisateurs des problèmes rencontrés par la fonction. 
+?> Reprenez vos fonctions et améliorer les en utilisant des assertions qui permettent d'éviter certains comportements non voulus de vos fonctions et d'informer l'utilisateurs des problèmes rencontrés par la fonction. 
 
 
 ## Programmation fonctionnelle

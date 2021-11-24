@@ -66,7 +66,7 @@ Le principal inconvénient des SoC est l'impossibilité de mettre à jour une pa
 | Nom                  | Raspberry Pi pico                                                              | Raspberry Pi 3 Model B+                                                        |
 | Consommation de base | 8,50 mA ([source](https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf)) | 350 mA ([source](https://www.pidramble.com/wiki/benchmarks/power-consumption)) |
 | Mémoire vive         | 264KB                                                                          | 1GB                                                                            |
-| Mémoire flash inclus | 2MB                                                                            | aucune (étendable)                                                             |
+| Mémoire flash inclus | 2MB                                                                            | aucune (extensible)                                                             |
 | Taille               | 21x51mm                                                                        | 56x85mm                                                                        |
 | Prix                 | 4                                                                              | 30                                                                             |
 
@@ -146,7 +146,7 @@ top
 
 ?> Regarder la <a href='https://invidious.fdn.fr/watch?v=DI3xmtAKZJA' target="_blank" rel=noopener>vidéo</a> suivante qui fait un petit rappel du programme de seconde.
 
-?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) et particulièrement sur les protocoles IP et TCP.
+?> Relire la partie sur [internet](https://adrientaudiere.github.io/cours_nsi/#/premiere/IHM#internet-un-protocole-pour-communiquer-dans-un-réseau-informatique-globale) du programme de première et particulièrement sur les protocoles IP et TCP.
 
 ### Routeurs et topologie
 
@@ -232,8 +232,10 @@ Par la suite Jules César utilisa une technique de substitution mono-alphabétiq
 
 <details class="advanced_level">
 <summary> <strong> En savoir plus :</strong></summary>
+
 La page wikipedia d'[histoire de la cryptologie](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie) est très complet.
 Vous pouvez aussi faire le TP des *Girls Can Code* sur la [cryptologie sous python](https://github.com/prologin/gcc-resources/raw/gh-pages/08_cryptologie.pdf). 
+
 </details>
 
 ?> Écrire une fonction python `chiffrer` qui chiffre un texte avec la technique de César. Il faudra mettre un paramètre qui correspond au nombre du décalage.

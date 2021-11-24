@@ -39,7 +39,7 @@ https://pixees.fr/informatiquelycee/term/c5c.html
 
 ## Piles et files
 
-Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste.
+Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste. On peut d'ailleurs facilement utiliser les listes pythons comme des piles ou des files (voire la [documentation python](https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks) en français) 
 
 
 ![](../_img/fifo_lifo.png ":size=60%")
@@ -48,8 +48,6 @@ Il existe deux structures de données très utilisées en informatiques : les fi
 
 ---
 
-
-https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks
 
 
 ### Piles
