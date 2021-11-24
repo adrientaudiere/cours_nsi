@@ -285,7 +285,7 @@ Ce protocole résout le problème de l'échange de clé avec un système de clé
 
 #### Protocole RSA
 
-?> Regarder la [vidéo](https://invidious.fdn.fr/watch?v=8BM9LPDjOw0) de ScienceEtonnante sur les codes secrets. Expliquez pourquoi les méthodes par substitution sont assez facile à déchiffrer. Expliquer en trois phrases le protocole RSA avec vos mots.
+?> Regarder la [vidéo](https://invidious.fdn.fr/watch?v=8BM9LPDjOw0) de *ScienceEtonnante* sur les codes secrets. Expliquez pourquoi les méthodes par substitution sont assez facile à déchiffrer. Expliquer en trois phrases le protocole RSA avec vos mots.
 
 Ce protocole repose sur des théorèmes mathématiques complexes. Le chiffrement RSA est surtout utilisé pour transmettre des clé de chiffrement symétrique (par ex. dans le protocole HTTPS avec les tiers de confiance), mais il est aussi utilisé par des protocoles entiers comme le protocole SSH (_Secure SHell_) qui permet d'accéder de façon sécurisé à un serveur distant depuis un ordinateur client.
 

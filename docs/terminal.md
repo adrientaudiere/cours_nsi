@@ -97,6 +97,7 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
 
 ### MACHINES
 #### Architectures matérielles, systèmes d'exploitation et réseaux
+
 - [ ] Identifier les principaux composants d'un système sur puce (**SoCs**, *Systems on Chips*) et les avantages de leur intégration en termes de vitesse et de consommation
 
 - [ ] Décrire la création d'un **processus** et l'**ordonnancement** de plusieurs processus par le système d'exploitation

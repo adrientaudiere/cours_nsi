@@ -1,6 +1,6 @@
 # NSI en terminal
 
-L'ensemble du programme est disponible sur la page d'accueil [Terminales](/terminal.md)
+L'ensemble du programme est disponible sur la page d'accueil des [terminals](/terminal.md)
 
 ## Pour réviser 
 
