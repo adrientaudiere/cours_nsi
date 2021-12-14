@@ -110,7 +110,7 @@ flowchart TD
 
 ---
 
-<p class="center-p"> Schema simplifié d'un algorithme.</p>
+<p class="center-p"> Schema d'un arbre avec la racine en orange et les feuilles en vert.</p>
 
 
 
