@@ -489,6 +489,8 @@ pre::after {
 svg[id^="mermaid-"] {
   background-color: #ececec;
   background-image: none;
+  margin: auto;
+  display: block;
 }
 .advanced_level {
   background-color: rgba(68, 74, 67, 0.53);
@@ -820,8 +822,10 @@ pre::after {
   list-style-image: none; 
 }
 svg[id^="mermaid-"] {
-  background-color: rgba(105, 99, 85, 0.2);
+  background-color: rgba(105, 99, 85, 0.1);
   background-image: none;
+  margin: auto;
+  display: block;
 }
 .advanced_level {
   background-color: rgba(68, 74, 67, 0.53);

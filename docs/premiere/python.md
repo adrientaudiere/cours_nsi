@@ -328,3 +328,4 @@ Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe p
 ##  :fa fa-keyboard: Comprendre python avec des tortues
 
 ?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne.
+

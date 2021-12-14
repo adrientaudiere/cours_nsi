@@ -15,7 +15,7 @@ _Sources : Première [version](http://usuarios.arnet.com.ar/ngiunta/pages/EQUIPA
 
 </p>
 
-!> Réviser le [programme de première](../premiere/archi_OS.md).
+!> Réviser le [programme de première](/premiere/archi_OS.md).
 
 ## Circuits intégrés
 
@@ -92,9 +92,9 @@ Un **programme informatique** est une description statique d'une tâche. C'est e
 <p class="center-p"><a href="https://commons.wikimedia.org/wiki/File:Diagramme_etat_processus.svg#/media/Fichier:Diagramme_etat_processus.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Diagramme_etat_processus.svg/1200px-Diagramme_etat_processus.svg.png" alt="Diagramme etat processus.svg"></a>Diagramme état-transition suivi par les processus des systèmes d'exploitation modernes. Domaine public, <a href="https://commons.wikimedia.org/w/index.php?curid=9559518"><i class="fab fa-wikipedia-w"></i></a></p>
 </div>
 
-Pour gérer les différents processus en cours sur un ordinateur, il faut un « chef d'orchestre » qui va nommer les processus (les tâches), et décider de l'ordre d'exécution. Lors de la création d'un nouveau processus, il sera identifié par un numéro propre (PID), le numéro du processus père (PPID) et par l'identifiant de l'utilisateur qui a lancé ce processus (UID). Chaque processus se verra allouer de la mémoire virtuelle qui stockera le code du programme à exécuter, les variables (globales, et locales sous formes d'une pile) et les bibliothèques si nécessaire.
+Pour gérer les différents processus en cours sur un ordinateur, il faut un « chef d'orchestre » qui va nommer les processus (les tâches), et décider de l'ordre d'exécution. Lors de la création d'un nouveau processus, il sera identifié par un numéro propre (***PID***), le numéro du **processus père** (***PPID***) et par l'**identifiant de l'utilisateur** qui a lancé ce processus (***UID***). Chaque processus se verra allouer de la **mémoire virtuelle** qui stockera le code du programme à exécuter, les variables (globales, et locales sous formes d'une pile) et les bibliothèques si nécessaire.
 
-Tous les programmes listés précédemment par la commande top semble s'exécuter en même temps. Pourtant on sait que notre ordinateur est limité par le nombre de processeur pour effectuer des calculs. Comment le processeur peux exécuter autant d'instruction en même temps? Cette **exécution concurrente** est rendu possible par les systèmes d'exploitation **multitâches** (tout les OS modernes le sont) qui utilise un **ordonnanceur de processus**.
+Tous les programmes listés précédemment par la commande `top` semble s'exécuter en même temps. Pourtant on sait que notre ordinateur est limité par le nombre de processeur pour effectuer des calculs. Comment le processeur peux exécuter autant d'instruction en même temps? Cette **exécution concurrente** est rendu possible par les systèmes d'exploitation **multitâches** (tout les OS modernes le sont) qui utilise un **ordonnanceur de processus**.
 
 L'**ordonnanceur** du système d'exploitation va définir les **états** de chaque processus. Les états les plus courants sont :
 
@@ -108,7 +108,7 @@ L'**ordonnanceur** du système d'exploitation va définir les **états** de chaq
 graph LR
     A(Initialisation) --> B(Prêt)
     B ---> |mise en exécution <br> par l'ordonnanceur| C(Exécution)
-    C --> |interruption <br> par l'ordonnanceur| D(Suspendu)
+    C --> |interruption <br> par l'ordonnanceur| D(Suspendu (ou bloqué))
     D --> B
     C -->| | E(Terminé)
     D ---> |interruption <br> anormale | E
@@ -120,9 +120,9 @@ graph LR
 
 ---
 
-En tant normal, l'état des processus variera entre prêt, en attente et en exécution. L'ordonnanceur suspend (très) régulièrement les processus pour allouer de la ressource à d'autres processus. Ainsi, plusieurs tâches s'exécutent les une à la suite des autres, mais tellement rapidement qu'on a l'impression que les processus s'exécutent simultanément. On parle de _pseudo-parallélisme_. Le terme de **calcul parallèle** est réservé au processus qui s'exécute sur deux processeurs différents.
+En temps normal, l'état des processus variera entre prêt, en attente et en exécution. L'ordonnanceur suspend (très) régulièrement les processus pour allouer de la ressource à d'autres processus. Ainsi, plusieurs tâches s'exécutent les une à la suite des autres, mais tellement rapidement qu'on a l'impression que les processus s'exécutent simultanément. On parle de _pseudo-parallélisme_. Le terme de **calcul parallèle** est réservé au processus qui s'exécute sur deux processeurs différents.
 
-Dans certains cas il existe des situations d'interblocage (_deadlock_ en anglais). Cela se produit quand deux processus concurrents s'attendent mutuellement. Par exemple supposons un système possédant les ressources (au sens de ressource informatique) R1 et R2 et avec les processus A et B en cours d'exécution, il y a interblocage dans le cas suivant :
+Dans certains cas il existe des situations d'**interblocage** (_deadlock_ en anglais). Cela se produit quand deux processus concurrents s'attendent mutuellement. Par exemple supposons un système possédant les ressources (au sens de ressource informatique) R1 et R2 et avec les processus A et B en cours d'exécution, il y a interblocage dans le cas suivant :
 
 - Le processus A réserve la ressource R1
 - Le processus B réserve la ressource R2
@@ -150,9 +150,9 @@ top
 
 ### Routeurs et topologie
 
-Les ordinateurs reliés à internet forment des réseaux de réseaux dont les sommets sont de deux types : des ordinateurs et des **routeurs**. Les routeurs sont des machines dont le rôle est de relayer les paquets d'information dans le réseau internet. Les liens entre les ordinateurs et les routeurs sont établis par des switchs. Les routeurs sont également reliés entre eux. Mais comment les routeurs et les switchs savent à qui transférer les informations?
+Les ordinateurs reliés à internet forment des réseaux de réseaux dont les sommets sont de deux types : des **ordinateurs** et des **routeurs**. Les routeurs sont des **machines dont le rôle est de relayer les paquets d'information** dans le réseau internet. Les liens entre les ordinateurs et les routeurs sont établis par des **switchs** (aussi appelés commutateurs). Les routeurs sont également reliés entre eux. Mais comment les routeurs et les switchs savent à qui transférer les informations?
 
-La première solution consiste à centraliser les informations du réseau vers un ordinateur qui peut alors prendre les meilleurs décisions. Dans le cas des très petits réseaux, on peut même utilisé un routage pré-établis par l'administrateur·ice, c'est le routage statique (sans calcul). Mais cette solution centralisée est très gourmande en information dès lors que le réseau devient grand. La deuxième solution est une solution distribuée (on dit aussi décentralisée) et dynamique (l'administrateur·ice ne). Chaque routeur va entretenir une table de routage qui lui permettra d'avoir des informations sur quels voisins contacter lorsqu'il veux atteindre tel machine. Une table de routage stocke les noms des destinations, le moyen de l'atteindre et la distance à la destination. Les routeurs dynamiques sont plus complexes à mettre en place mais sont plus facile à maintenir. De plus, les protocoles utilisés permettent de recalculer des chemins lorsque certains routeurs sont en pannes.
+La première solution consiste à centraliser les informations du réseau vers un ordinateur qui peut alors prendre les meilleurs décisions. Dans le cas des très petits réseaux, on peut même utilisé un routage pré-établis par l'administrateur·ice, c'est le **routage statique** (sans calcul). Mais cette solution **centralisée** est très gourmande en information dès lors que le réseau devient grand. La deuxième solution est une solution **distribuée** (on dit aussi **décentralisée**) et **dynamique** (l'administrateur·ice intervient beaucoup moins que dans le routage statique). Chaque routeur va entretenir une **table de routage** qui lui permettra d'avoir des informations sur quels voisins contacter lorsqu'il veux atteindre tel machine. Une table de routage stocke les noms des destinations, le moyen de l'atteindre et la distance à la destination. Les routeurs dynamiques sont plus complexes à mettre en place mais sont plus faciles à maintenir. De plus, les protocoles utilisés permettent de recalculer des chemins lorsque certains routeurs sont en pannes.
 
 | Réseau destination | Moyen de l'atteindre | Distance |
 | ------------------ | -------------------- | -------- |

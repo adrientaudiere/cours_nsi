@@ -17,3 +17,5 @@
 ## Jeux vidéo 
 
 !> S'initier à pygame à travers la réalisation d'un jeu avec animation : https://github.com/prologin/gcc-resources/raw/gh-pages/05_projet_jeu.pdf 
+
+!> Jeux Roguelite en python (en anglais) : http://rogueliketutorials.com/tutorials/tcod/v2/ 

@@ -212,7 +212,7 @@ Une **API** (Application Programming Interface) est une interface de programmati
 
 Les API web utilisent internet pour échanger de données. Les formats d'échanges sur le web se sont standardisés au fur et à mesures. Aujourd'hui, deux formats sont principalement utilisés dans les API web : **XML**(Extensible Markup Language) et **JSON** (JavaScript Objet Notation).
 
-Quelques API (gratuites) disponibles sur le web pour faire des tests.
+Quelques API (gratuites) disponibles sur le web pour faire des tests (une liste plus complète d'API gratuite est disponible [en anglais](https://github.com/public-apis/public-apis)).
 
 - https://geo.api.gouv.fr/
 - https://api.gouv.fr/

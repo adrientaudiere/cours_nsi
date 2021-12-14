@@ -1071,7 +1071,10 @@ ol li {
 }
 
 svg[id^="mermaid-"] {
-  background: rgba(158, 158, 158, 0.2);
+  background: rgba(158, 158, 158, 0.1);
+  margin: auto;
+  background-image: none;
+  display: block;
 }
 
 .markdown-section li p {

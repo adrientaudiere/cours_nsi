@@ -9,13 +9,14 @@
 !> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste.
 
 https://pixees.fr/informatiquelycee/term/c5c.html
-    Une liste est une structure de données permettant de regrouper des données. Une liste L est composée de 2 parties : sa tête (souvent notée car), qui correspond au dernier élément ajouté à la liste, et sa queue (souvent notée cdr) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
 
-    obtenir une liste vide (vide)
-    tester si une liste est vide (estVide)
-    obtenir le dernier élément ajouté à la liste (car)
-    obtenir une liste contenant tous les éléments d'une liste à l'exception du dernier élément ajouté (cdr)
-    construire une liste à partir d'un élément et d'un autre liste (cons)
+Une liste est une structure de données permettant de regrouper des données. Une liste est composée de 2 parties : sa **tête** (souvent notée ***car***), qui correspond au dernier élément ajouté à la liste, et sa **queue** (souvent notée ***cdr***) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
+
+- obtenir une liste vide (vide)
+- tester si une liste est vide (estVide)
+- obtenir le dernier élément ajouté à la liste (car)
+- obtenir une liste contenant tous les éléments d'une liste à l'exception du dernier élément ajouté (cdr)
+- construire une liste à partir d'un élément et d'un autre liste (cons)
 
 
 
@@ -39,12 +40,12 @@ https://pixees.fr/informatiquelycee/term/c5c.html
 
 ## Piles et files
 
-Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste. On peut d'ailleurs facilement utiliser les listes pythons comme des piles ou des files (voire la [documentation python](https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks) en français) 
+Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste. On peut d'ailleurs facilement utiliser les listes pythons comme des piles ou des files (voir la [documentation python](https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks) en français) 
 
 
 ![](../_img/fifo_lifo.png ":size=60%")
 
-<p class="center-p"> Comparaison des structures **File** et **Pile**.</p>
+<p class="center-p"> Comparaison des structures <b>File</b> et <b>Pile</b>.</p>
 
 ---
 
@@ -86,15 +87,59 @@ Distinguer interface et implémentation
 
 !> Work in progress
 
-https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html
+En informatique, un **arbre** est une **structure de données** composés de **noeuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux noeuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
+
+Ces structures en arbres sont caractérisés par un ensemble de mots de vocabulaire importants : 
+Un **arbre** est constitué de **noeuds** reliés par des branches. Un des noeud est appelé **racine** et les noeuds qui sont à l'opposé de la racine sont des **feuilles**. Un noeud peut être caractérisé par sa distance à la racine que l'on apelle **hauteur** (= **profondeur**) et par le nombre de fils qu'il a que l'on apelle **degré**. La **hauteur d'un arbre** correspond à la hauteur du noeud le plus haut. De même **le degré d'un arbre** correspond à la valeur de degré du noeud ayant le plus grand degré. Enfin la taille d'un arbre se calcul en comptant le nombre de noeuds sur cette arbre. On emprunte le **vocabulaire à la généalogie** pour décrire les relations entre noeuds on parle de noeuds parents, frères, ascendants, descendants, ancêtres.
+
+
+<div style="margin:auto">
+
+```mermaid
+flowchart TD
+    A:::racine --- B
+    A --- C
+    B --- D:::feuille
+    B --- E:::feuille
+    B --- F:::feuille
+    C --- G:::feuille
+
+    classDef racine fill:#f81;
+    classDef feuille fill:#196;
+```
+
+---
+
+<p class="center-p"> Schema simplifié d'un algorithme.</p>
+
+
+
+!> https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html
+
 
 ###  Arbres binaires
+
+Un arbre binaire est un arbre de degré 2 (dont les noeuds sont de degré 2 au maximum). On appelle les 2 noeuds descendants d'un noeud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous arbre droit. 
+
+#### Parcours en largeur
+
+#### Parcours en profondeur
+
+
+Infixe
+
+Prefixe
+
+
+
 
 ###  Arbres binaires de recherche
 
 ### Autres structures arborescentes
 
 ## Graphe
+
+Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas des arbres.
 
 !> Work in progress
 
