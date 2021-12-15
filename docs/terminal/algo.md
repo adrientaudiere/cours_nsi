@@ -132,13 +132,93 @@ Un arbre binaire est un arbre de degré 2 (dont les noeuds sont de degré 2 au m
 
 #### Parcours en largeur
 
+
+```mermaid
+flowchart TD
+    A["A (1)"]:::racine --- B["B (2)"]
+    A --- C["C (3)"]
+    B --- D["D (4)"]:::feuille
+    B --- F["F (5)"]:::feuille
+    C --- G["G (6)"]:::feuille
+
+    classDef racine fill:#f81;
+    classDef feuille fill:#196;
+```
+
+---
+
+<p class="center-p"> Schema du parcours en largeur.</p>
+
 #### Parcours en profondeur
 
 
-Infixe
+##### Infixe
+Ordre infixe
 
-Prefixe
+    Parcours branche gauche
+    Visite du nœud
+    Parcours branche droite
 
+
+```mermaid
+flowchart TD
+  flowchart TD
+    A["A (1)"]:::racine --- B["B (2)"]
+    A --- C["C (5)"]
+    B --- D["D (3)"]:::feuille
+    B --- F["F (4)"]:::feuille
+    C --- G["G (6)"]:::feuille
+
+    classDef racine fill:#f81;
+    classDef feuille fill:#196;
+
+```
+
+---
+
+<p class="center-p"> Schema du parcours en longeur de type infixe.</p>
+
+##### Prefixe
+
+```mermaid
+flowchart TD
+  flowchart TD
+    A["A (1)"]:::racine --- B["B (2)"]
+    A --- C["C (6)"]
+    B --- D["D (3)"]:::feuille
+    B --- E["E (4)"]:::feuille
+    B --- F["F (5)"]:::feuille
+    C --- G["G (7)"]:::feuille
+
+    classDef racine fill:#f81;
+    classDef feuille fill:#196;
+
+```
+
+---
+
+<p class="center-p"> Schema du parcours en longeur de type infixe.</p>
+
+##### Suffixe
+
+
+
+
+?> Décrire le parcours en hauteur, en profondeur infixe, prefixe et suffixe de l'arbre binaire ci-dessous.
+
+```mermaid
+
+flowchart TD
+    1((1)) --- 2((2))
+    1 --- 3((3))
+    3 --- 4((4))
+    3 --- 5((5))
+    4 --- 8((8))
+    4 --- 9((9))
+    5 --- 6((6))
+    5 --- 7((7))
+    9 --- 10((10))
+```
 
 
 
