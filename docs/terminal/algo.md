@@ -207,7 +207,6 @@ flowchart TD
 ?> Décrire le parcours en hauteur, en profondeur infixe, prefixe et suffixe de l'arbre binaire ci-dessous.
 
 ```mermaid
-
 flowchart TD
     1((1)) --- 2((2))
     1 --- 3((3))
