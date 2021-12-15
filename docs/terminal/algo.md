@@ -6,18 +6,27 @@
 
 ## Liste 
 
-!> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste.
+https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_listes.pdf
 
 https://pixees.fr/informatiquelycee/term/c5c.html
 
-Une liste est une structure de données permettant de regrouper des données. Une liste est composée de 2 parties : sa **tête** (souvent notée ***car***), qui correspond au dernier élément ajouté à la liste, et sa **queue** (souvent notée ***cdr***) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
 
-- obtenir une liste vide (vide)
-- tester si une liste est vide (estVide)
-- obtenir le dernier élément ajouté à la liste (car)
-- obtenir une liste contenant tous les éléments d'une liste à l'exception du dernier élément ajouté (cdr)
-- construire une liste à partir d'un élément et d'un autre liste (cons)
+!> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste.
 
+Une liste est une structure de données permettant de regrouper des données. Une liste est composée de 2 parties : sa **tête** (souvent notée ***car*** pour : *contents of address register*), qui correspond au dernier élément ajouté à la liste, et sa **queue** (souvent notée ***cdr*** pour *contents of decrement register*) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
+
+- **obtenir une liste vide** (on appelle souvent une liste vide ***nil***)
+- **tester si une liste est vide** 
+- **obtenir le tête** de la liste (car)
+- **obtenir la queue** de la liste (cdr)
+- **construire une liste** à partir d'un élément et d'un autre liste (cons)
+
+
+![](../_img/schema_liste.png ":size=70%")
+
+<p class="center-p"> Schéma d'une liste comprtant les valeurs 1, 2 et 4 dans cet ordre.</p>
+
+---
 
 
 ## Listes chaînées

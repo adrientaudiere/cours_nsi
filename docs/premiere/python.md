@@ -329,3 +329,7 @@ Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe p
 
 ?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne.
 
+
+## Jeu du py-rates
+
+?> Faire le jeu des [py-rates](https://py-rates.org/index.html)
