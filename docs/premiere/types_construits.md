@@ -4,7 +4,15 @@ En programmation, on stocke souvent plusieurs valeurs dans un même objet
 aussi appelé séquence. Ces objets sont des ensembles finis et ordonnés
 contenant n éléments indexés (en python, l'index va de 0 à n-1). Dans
 ce chapitre, nous allons étudier les trois principaux types d'objets
-utilisés en python : les tuples, les listes et les dictionnaires.
+utilisés en python : les tuples, les tableaux (aussi appelé abusivement listes en python) et les dictionnaires.
+
+---
+
+<p class="center-p"> <strong> Résumés des types construits.</strong> </p>
+
+![types construits](../_img/dessin_types_construits.svg ":size=80%")
+
+---
 
 ## Les p-uplets (ou tuples)
 
@@ -48,77 +56,79 @@ permet de concaténer variable et chaîne de caractère sans faire
 attention à la classe de l'objet contenu dans la variable (nouveauté
 introduite par python 3.5).
 
-## Les listes
+## Les tableaux
 
-Les listes sont des séquences notées entre crochets. Contrairement aux
+!> Attention, le langage python abuse du mot liste pour parler du type abstrait tableau. Nous parlerons ici de tableau mais de nombreuses ressources (en particulier en anglais) autour des tableaux pythons parlerons de listes...
+
+Les tableaux sont des séquences notées entre crochets. Contrairement aux
 tuples, elles peuvent être modifiées après leur création, on dit
-qu'elles sont mutables. Créons plusieurs listes :
+qu'elles sont mutables. Créons plusieurs tableaux :
 
 ```python
-ma_liste = list() # liste vide*
+mon_tableau = list() # tableau vide*
 
-ma_nouvelle_liste = [1, 2, 3, 4, 5] # liste d'entiers
+nom_autre_tableau = [1, 2, 3, 4, 5] # tableau d'entiers
 
-mon_autre_liste = [1, 3.5, 'une chaîne',[]] # liste d'éléments de différentes classes
+mon_troisième_tableau = [1, 3.5, 'une chaîne',[]] # tableau d'éléments de différentes classes
 ```
 
-On **accède** aux différents éléments d'une liste de la façon que pour
+On **accède** aux différents éléments d'une tableau de la façon que pour
 un tuple.
 
 ```python
-ma_liste[2] # renvoie le troisième élément de la liste
+mon_tableau[2] # renvoie le troisième élément de la tableau
 ```
 
-Il existe plusieurs méthodes permettant de modifier des listes. La
-méthode _append_ permet d'ajouter un élément en fin de liste et la
+Il existe plusieurs méthodes permettant de modifier des tableaux. La
+méthode _append_ permet d'ajouter un élément en fin de tableau et la
 méthode _insert_ permet de choisir l'indice d'insertion.
 
 ```python
-ma_liste = [1, 2, 3]
-ma_liste.append = [4] # on ajoute 4 à la fin de la liste
-ma_liste = [a, b, d, e]
-ma_liste.insert(2, 'c') # on insère un c à l'indice 2
+mon_tableau = [1, 2, 3]
+mon_tableau.append = [4] # on ajoute 4 à la fin du tableau
+mon_tableau = [a, b, d, e]
+mon_tableau.insert(2, 'c') # on insère un c à l'indice 2
 ```
 
-On peut aussi **concaténer** deux listes avec la méthode _extend_ :
+On peut aussi **concaténer** deux tableaux avec la méthode _extend_ :
 
 ```python
-ma_liste1 = [3, 4, 5]
+tab1 = [3, 4, 5]
 
-ma_liste2 = [8, 9, 10]
+tab2 = [8, 9, 10]
 
-ma_liste1.extend(ma_liste2) # on insère la liste 2 à la fin de la liste 1.
+tab1.extend(tab2) # on insère le tableau 2 à la fin du tableau 1.
 ```
 
-Pour **supprimer** des éléments d'une liste on peut utiliser le mot-clé
+Pour **supprimer** des éléments d'un tableau on peut utiliser le mot-clé
 _del_ ou la méthode _remove_.
 
 ```python
-ma_liste = [-5, -4, 0, 4, 6, 78]
-del ma_liste[0] #supprime le premier élément de la liste
-ma_liste = [19, 20, 21, 22, 23]
-ma_liste.remove(21) # supprime l'élément 21*
+mon_tableau = [-5, -4, 0, 4, 6, 78]
+del mon_tableau[0] #supprime le premier élément du tableau
+mon_tableau = [19, 20, 21, 22, 23]
+mon_tableau.remove(21) # supprime l'élément 21*
 ```
 
-?> **Exercice 1** : Que fait le code **ma_liste.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
+?> **Exercice 1** : Que fait le code **mon_tableau.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
 
-Pour déterminer la **longueur d'une liste**, on utilise la fonction _len()_ :
+Pour déterminer la **longueur d'un tableau**, on utilise la fonction _len()_ :
 
 ```python
-ma_liste = [5, 8, 6, 9]
-nombre_*ele*ment = len(ma_liste)
+mon_tableau = [5, 8, 6, 9]
+nombre_element = len(mon_tableau)
 ```
 
-Pour **parcourir une liste**, on peut utiliser des boucles while ou for :
+Pour **parcourir un tableau**, on peut utiliser des boucles while ou for :
 
 ```python
-ma_liste = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+mon_tableau = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 i = 0
-while i < len(ma_liste):
-    print(ma_liste[i])
+while i < len(mon_tableau):
+    print(mon_tableau[i])
     i += 1
 
-for elt in ma_liste :
+for elt in mon_tableau :
     print elt
 ```
 
@@ -126,20 +136,20 @@ Il est également possible d'utiliser la méthode _enumerate_ qui
 retourne un tuple qui donne l'index et l'élément :
 
 ```python
-ma_liste = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-for elt in enumerate(ma_liste):
+mon_tableau = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+for elt in enumerate(mon_tableau):
 print(elt)
 ```
 
-La **compréhension de liste** est un moyen qui permet de parcourir une
+La **compréhension de liste** (on utilise ici liste comme un synonyme de tableau) est un moyen qui permet de parcourir une
 liste et d'en renvoyer une seconde, modifiée ou filtrée. Cela consiste
 à écrire l'opération que l'on effectue pour modifier la liste
 originale à l'intérieure de la liste modifiée.
 
 ```python
-liste_originale = [0, 1, 2, 3, 4, 5]
+tab_original = [0, 1, 2, 3, 4, 5]
 
-liste_modifiee = [nb * nb for nb in liste_originale] # renvoie la liste originale au carré
+tab_modifie = [nb * nb for nb in tab_original] # renvoie la liste originale au carré
 ```
 
 ?> **Exercice 2** : Que renvoie le code qui suit? Essayer de trouver le résultat avant de le tester.
@@ -152,9 +162,9 @@ pi = 3.14159
 Pour effectuer un **filtrage**, il suffit d'ajouter une condition :
 
 ```python
-liste_originale = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+tab_original = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-liste_modifiee = [nb for nb in liste_originale if nb % 2 == 0]
+tab_modifie = [nb for nb in tab_original if nb % 2 == 0]
 #renvoie les nombres pairs
 ```
 
@@ -175,17 +185,17 @@ li2 = [**********************]
 print(li2)
 ```
 
-## Les tableaux
+## Les tableaux à plusieurs dimensions
 
-Les **tableaux** sont des listes de listes. On parle aussi de
+Les **tableaux** peuvent être composé d'autres tableaux. On parle aussi de
 **matrice** lorsque l'ensemble des valeurs du tableau sont numériques.
-On les écrit ligne par ligne ou en concaténant des listes :
+On les écrit ligne par ligne ou en concaténant des tableaux :
 
 ```python
 ma_matrice = [[1, 2, 3], [4, 5, 6]]
-ma_liste1 = [1, 2, 3]
-ma_liste2 = [4, 5, 6]
-ma_matrice = [ma_liste1, ma_liste2]
+tab1 = [1, 2, 3]
+tab2 = [4, 5, 6]
+ma_matrice = [tab1, tab2]
 ```
 
 Dans cet exemple, la valeur 6 de ma matrice _ma_matrice_ est donc dans
@@ -193,14 +203,13 @@ la deuxième ligne (d'indice 1) et dans la troisième colonne (d'indice
 2). Pour récupérer la valeur 6 dans une variable m, on écrira :
 
 ```python
-a = m[1][2] # renvoie le numéro de la ligne d'indice 1 et de la
-colonne d'indice 2*
+a = m[1][2] # renvoie le numéro de la ligne d'indice 1 et de la colonne d'indice 2*
 ```
 
-**Attention**: Dans le cas où l'on concatène des listes, la
-modification d'une des listes utilisées pour créer la matrice modifiera
+**Attention**: Dans le cas où l'on concatène des tableaux, la
+modification d'un des tableaux utilisés pour créer la matrice modifiera
 également la matrice... En fait, la matrice renvoie directement aux
-listes préalablement crées pour connaître les valeurs.
+tableaux préalablement crées pour connaître les valeurs.
 
 Pour **parcourir** une matrice, on utilisera une double boucle _for_ :
 

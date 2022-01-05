@@ -13,14 +13,14 @@ Vous pouvez poster un message d'amélioration en créant une *new issue* sur Git
 
 ## Outils utilisés dans les cours de NSI
 
-### :fab fa-linux: Linux 
+### :fab fa-linux: Linux
 
 À Scholae, les ordinateurs sont équipés du systèmes d'exploitation [OpenSUSE Leap](https://blog.microlinux.fr/opensuse-setup-15-2/) :fab fa-suse: geré par Kikinovac de [microlinux](microlinux.fr/).
 
 ### :fa fa-laptop-code: VScodium
 
+Nous utiliserons l'IDE (pour environnement de développement intégré) VScodium pour écrire nos scripts. Il permet de coder dans de nombreux langages différents et bénéficie de nombreuses extensions.
+
 ### :fab fa-firefox-browser: Mozilla Firefox
 
-### Anaconda
-
-!> Pour lancer anaconda sur les ordinateurs de Scholae, il faut ouvrir un terminal et y écrire : 
+Bien entendu, le navigateur que nous utiliserons sera Mozilla firefox

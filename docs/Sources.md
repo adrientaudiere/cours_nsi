@@ -7,14 +7,16 @@
 
 - Les cours de Pierre-Erwan Le Marec et Jean Mortreux, enseignant de NSI à Scholae 2019-2020 pour les premières. Ces cours m'ont en particulier aidé à structurer les parties « Histoire de l'informatique » et « codage-typage ».
 
-- Les cours de Stéphan Van Zuijlen ([https://isn-icn-ljm.pagesperso-orange.fr](https://isn-icn-ljm.pagesperso-orange.fr/)) sous licence libre
+- Les cours de Stéphan Van Zuijlen ([https://isn-icn-ljm.pagesperso-orange.fr](https://isn-icn-ljm.pagesperso-orange.fr/)) sous licence libre.
 
-- Les cours en ligne de [Mon lycée numérique](http://www.monlyceenumerique.fr/index_nsi.html)
+- Les cours en ligne de [Mon lycée numérique](http://www.monlyceenumerique.fr/index_nsi.html).
+
+- Les cours en ligne de Pascal Grossé au [lycée Carnot](https://python-carnot.fr/) sous licence libre.
 
 - Le livre Numérique et Sciences de l'Informatiques pour les premières (éd. Ellipses) co-écrit par T. Balabonski, S. Conchon, J.-C.
-  Filliâtre et K. Nguyen
+  Filliâtre et K. Nguyen.
 
-- Les cours en ligne du site [librecours.net](https://librecours.net) écrit par [Stéphane Crozat](http://stph.crzt.fr) dont la majorité est sous licence [CC-by-sa-3.0](http://creativecommons.org/licenses/by-sa/3.0/fr/)
+- Les cours en ligne du site [librecours.net](https://librecours.net) écrit par [Stéphane Crozat](http://stph.crzt.fr) dont la majorité est sous licence [CC-by-sa-3.0](http://creativecommons.org/licenses/by-sa/3.0/fr/).
 
 - Le travail des lycéens de Scholae pour améliorer le site.
 

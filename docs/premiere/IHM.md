@@ -153,7 +153,7 @@ $$ \textcolor{red}{Nom_du_protocole}://\textcolor{blue}{nom.de.domaine}/\textcol
 
 Il s'agit des paramètres d'une requête **GET** (voire partie sur le protocole HTTP).
 
-?> Aller sur la page wikipedia suivante : https://fr.wikipedia.org/w/index.php?search=bilbo. Sur quelle page se retrouve t'on. Avec la même méthode faire une recherche directe du mot clé "_informatique_".
+?> Aller sur la page wikipedia suivante : <https://fr.wikipedia.org/w/index.php?search=bilbo>. Sur quelle page se retrouve t'on. Avec la même méthode faire une recherche directe du mot clé "_informatique_".
 
 ### HTML :fab fa-html5: (le fond) & CSS :fab fa-css3-alt: (la forme)
 
@@ -209,7 +209,7 @@ toutes les balises sur le site
 une introduction au base du langage HTML sur le site
 [MDN](https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_HTML).
 
-#### Balises de premier niveau 
+#### Balises de premier niveau
 
 Les balises de premier niveau structurent une page HTML, indispensables pour réaliser le « code minimal » d'une page web (voir exemple ci-dessus).
 
@@ -217,7 +217,7 @@ Les balises de premier niveau structurent une page HTML, indispensables pour ré
 - En-tête de la page : **\<head\>**
 - Corps de la page : **\<body\>**
 
-#### Balises sectionnantes : permettent de construire le squelette de votre site web.
+#### Balises sectionnantes : permettent de construire le squelette de votre site web
 
 <div class="img-flow" style="max-width:320px;">
 <p><a href="https://commons.wikimedia.org/wiki/File:Plan_html_5.png#/media/File:Plan_html_5.png"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Plan_html_5.png" alt="Plan html 5.png"></a> Exemple de structure d'une page HTML-5. <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=30209550"><i class="fab fa-wikipedia-w"></i></a></p>
@@ -276,7 +276,7 @@ Les balises de premier niveau structurent une page HTML, indispensables pour ré
 - **\<option\>** : Élément d'une liste déroulante
 - **\<optgroup\>** : Groupe d'éléments d'une liste déroulante
 
-#### Balises génériques ou balise universelles:
+#### Balises génériques ou balise universelles
 
 - **\<span\>** : Balise générique de type _inline_
 - **\<div\>** : Balise générique de type _block_
@@ -301,7 +301,7 @@ Les **sélecteurs** CSS comportent une ou plusieurs **propriétés
 **auxquelles sont affectées des valeurs.Les sélecteurs peuvent être des
 **sélecteurs d'éléments** (par ex. pour modifier tous les paragraphes du
 document), de **classe** (précisés dans la balise html par
-**class **= "nom_de_classe"), ou d'**identifiant **(précisés dans la
+**class**= "nom_de_classe"), ou d'**identifiant**(précisés dans la
 balise html par **id** = "nom_d'identifiant"). Plusieurs éléments
 d'une page peuvent être de la même classe, par contre un identifiant est
 unique.
@@ -396,14 +396,14 @@ requêtes, appelées méthodes, au serveur pour lui demander d'effectuer
 une action. La méthode la plus courante est la requête **GET** pour
 récupérer une page web, elle s'écrit ainsi :
 
-| Requête                        | Explication                                 |
-| ------------------------------ | ------------------------------------------- |
-| GET / HTTP/                    | 1.1 Méthode / Protocole utilisé             |
-| Host: www.scholae.fr           | Page à récupérer                            |
-| User-Agent : Firefox 65.0      | Client                                      |
-| Accept : text/html             | Type de fichier que veut recevoir le client |
-| Accept-Language : fr-FR        | Langue qu'utilise le client                 |
-| Referer : https://www.qwant.fr | Page d'où vient le client                   |
+| Requête                          | Explication                                 |
+| -------------------------------- | ------------------------------------------- |
+| GET / HTTP/                      | 1.1 Méthode / Protocole utilisé             |
+| Host: www.scholae.fr             | Page à récupérer                            |
+| User-Agent : Firefox 65.0        | Client                                      |
+| Accept : text/html               | Type de fichier que veut recevoir le client |
+| Accept-Language : fr-FR          | Langue qu'utilise le client                 |
+| Referer : <https://www.qwant.fr> | Page d'où vient le client                   |
 
 ?> Ouvrez votre outil de développement sur votre navigateur (Ctrl+Maj+I sous firefox). Naviguez sur la page de [scholae.fr](https://scholae.fr). Décrire les requêtes GET qui sont utilisés lors du chargement de la page.
 
@@ -420,7 +420,7 @@ page, on parle alors de web interactif ou de web dynamique. Les langages les plu
 
 Le protocole HTTP n'est pas sécurisé, il est notamment très sensible aux attaques par l'homme du milieu. Nous verrons en Terminale comment le protocole [HTTPS](../terminal/archi_os_réseaux.md) résout se problème en chiffrant les paquets.
 
-### Javascript :fab fa-js:
+### Javascript :fab fa-js
 
 En combinant HTML et CSS on obtient un site qui permet une très faible
 variété d'interactions avec l'utilisateur. Pour ces interactions
@@ -430,6 +430,8 @@ le site) soit côté **serveur**. Javascript (JS) est un langage de
 programmation à l'origine côté client mais certaines bibliothèque JS
 permettent également une utilisation côté serveur (par ex. Node.js).
 D'autre langage comme PHP sont clairement orientés serveur.
+
+Pour une introduction à Javascript quand on connaît déjà python, voire le [site de Pascal Grossé](https://python-carnot.fr/ressources/javascript).
 
 Pour inclure des fonctions JS dans notre fichier, il existe plusieurs
 méthodes :
