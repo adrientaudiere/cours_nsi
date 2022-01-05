@@ -10,7 +10,7 @@ utilisés en python : les tuples, les tableaux (aussi appelé abusivement liste
 
 <p class="center-p"> <strong> Résumés des types construits.</strong> </p>
 
-![types construits](../_img/dessin_types_construits.png ":size=80%")
+![types construits](../_img/dessin_types_construits.png ":size=60%")
 
 ---
 
