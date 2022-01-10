@@ -1,16 +1,10 @@
-#  Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
-
-!> !! Work in progress !!
+# Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
 !> Réviser le [programme de première](../premiere/types_construits.md) sur les types construits.
 
 ## Liste
 
-<https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_listes.pdf>
-
-<https://pixees.fr/informatiquelycee/term/c5c.html>
-
-!> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste.
+!> Attention, les listes Python sont en fait des tableaux dynamiques. On parle ici du type abstrait de liste. Ce sont des faux amis.
 
 Une liste est une structure de données permettant de regrouper des données. Une liste est composée de 2 parties : sa **tête** (souvent notée ***car*** pour : *contents of address register*), qui correspond au dernier élément ajouté à la liste, et sa **queue** (souvent notée ***cdr*** pour *contents of decrement register*) qui correspond au reste de la liste. Voici les opérations qui peuvent être effectuées sur une liste :
 
@@ -20,7 +14,7 @@ Une liste est une structure de données permettant de regrouper des données. Un
 - **obtenir la queue** de la liste (cdr)
 - **construire une liste** à partir d'un élément et d'un autre liste (cons)
 
-![](../_img/schema_liste.png ":size=70%")
+![Schéma d'une liste comportant les valeurs 1, 2 et 4 dans cet ordre](../_img/schema_liste.png ":size=70%")
 
 <p class="center-p"> Schéma d'une liste comportant les valeurs 1, 2 et 4 dans cet ordre.</p>
 
@@ -30,23 +24,127 @@ Nous avons défini ici le concept théorique de liste en informatique. C'est pou
 
 ## Listes chaînées
 
-Les tableaux (abusivement appelés listes dans le langage python) sont une implémentation possible du type abstrait liste.
+### Le problème des tableaux comme implémentation des liste
 
-!> Work in progress
+Les tableaux (abusivement appelés listes dans le langage python) sont une implémentation possible du type abstrait liste. En effet, on peux construire une liste vide, tester si une liste est vide, obtenir la tête, obtenir la queue et construire une liste à partir d'un élément que l'on ajoute/retire à une autre liste. Cependant, cette implémentation est très gourmande en ressource lorsque l'on veux insérer/supprimer un élément en début de liste. C'est pourquoi dans la suite nous allons nous intéressé à la structure de liste chaînées. À noter que dans le langage python, les tableaux ont une taille qui peux varier, c'est ce qu'on appelle des tableaux dynamiques.
 
-<https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_listes.pdf>
+?> Compléter le script ci-dessous qui montre que les tableaux pythons sont une implémentation possible du type abstrait liste.
 
-<https://isn-icn-ljm.pagesperso-orange.fr/basthon-notebook/?from=https://isn-icn-ljm.pagesperso-orange.fr/notebook/listes_cha%C3%AEn%C3%A9e_TD.ipynb>
+```python
+# Une liste vide
+t = []
 
-<https://pixees.fr/informatiquelycee/term/c5c.html>
+# Une fonction de test d'une liste vide
+def tableau_est_vide(tab):
+    if len(tab)>0: 
+        print("Le tableau n'est pas vide")
+    else:
+        print("Le tableau est vide")
 
-    Les listes, les piles ou les files sont des "vues de l'esprit" présentes uniquement dans la tête des informaticiens, on dit que ce sont des types abstraits de données (ou plus simplement des types abstraits). L'implémentation de ces types abstraits, afin qu'ils soient utilisables par une machine, est loin d'être une chose triviale. L'implémentation d'un type de données dépend du langage de programmation. Il faut, quel que soit le langage utilisé, que le programmeur retrouve les fonctions qui ont été définies pour le type abstrait (pour les listes, les piles et les files cela correspond aux fonctions définies ci-dessus).
+# Obtenir la tête
+....................
 
-    Pour implémenter les listes (ou les piles et les files), beaucoup de langages de programmation utilisent 2 structures : les tableaux et les listes chaînées.
+# Obtenir la queue
+....................
+
+# Modifier une liste
+t.append("Jimmy ")
+t.insert(0, "J'aime ")
+t.insert(1, "Corrigan")
+print(t)
+```
+
+### Le principe de la liste chaînée
+
+Une liste chaînée est caractérisée par une séquence de valeurs dont chaque élément est matérialisé par un emplacement en mémoire contenant d'une part sa valeur et d'autre part l'adresse mémoire de la valeur suivante.
+
+```python
+class Cellule:
+    """Une cellule d'une liste chaînée"""
+    def __init__(self, valeur, suivante):
+        self.car = valeur
+        self.cdr = suivante
+
+class Liste:
+    def __init__(self, c):
+        self.cellule = c
+    def estVide(self):
+        return self.cellule is None
+    def car(self):
+        assert not(self.cellule is None), 'Liste vide'
+        return self.cellule.car
+    def cdr(self):
+        assert not(self.cellule is None), 'Liste vide'
+        return self.cellule.cdr
+
+def cons(valeur, suivante):
+        return Liste(Cellule(valeur, suivante))
+
+nil=Liste(None)
+L = cons(5, cons(4, cons(3, cons(2, cons(1, cons(0,nil))))))
+print(L)
+```
+
+?> À l'aide des  instructions  suivantes que vous testerez, écrire une fonction  qui  permet  d’afficher le dernier élément de la liste.
+
+```python
+print(L.estVide())
+print(L.car())
+print(L.cdr().car())
+print(L.cdr().cdr().car())
+```
+
+?> Que permettent les deux fonctions ci dessous? Écrire une version récursive de la fonction *fonction_mystere2()*.
+
+```python
+def fonction_mystere1(L):
+    n = 0
+    while not(L.estVide()):
+        n += 1
+        L = L.cdr()
+    return n
+
+def fonction_mystere2(L):
+    t = []
+    while not(L.estVide()):
+        t.append(L.car())
+        L = L.cdr()
+    return t
+```
+
+?> Que produisent les instructions suivantes :
+
+```python
+#Instruction 1
+L=cons(6,L)
+
+# Instruction 2
+x = L.car()
+L = cons(L.cdr().car(),L.cdr().cdr())
+```
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Faire le TP de [isn-icn-ljm](https://isn-icn-ljm.pagesperso-orange.fr/basthon-notebook/?from=https://isn-icn-ljm.pagesperso-orange.fr/notebook/listes_cha%C3%AEn%C3%A9e_TD.ipynb)
+
+</details>
+
+<div class="nutshell">
+
+Une **liste chaînée** est une structure de données permettant de représenter une **séquence finie d'éléments**. Chaque élément contient une **valeur** (*car*) et fournis un moyen d'accéder à la cellule suivante (une **adresse** *cdr*). C'est une **implémentation** (une façon concrète de manipuler) du **type abstrait de liste** puisqu'il permet toute les opérations que l'on peut effectuer sur une liste.
+
+</div>
+
+![Schéma des implémentations de liste en tableau et en liste chaînée](../_img/tableau_et_liste_chainee.png ":size=70%")
+
+<p class="center-p"> Schéma des implémentations de liste (type abstrait) en tableau et en liste chaînée. </p>
+
+---
 
 ## Piles et files
 
-Il existe deux structures de données très utilisées en informatiques : les files (aussi appelé FIFO pour *First In First Out*) et les piles (aussi appelé LIFO pour *Last In First Out*). Ces structures sont des types particuliers de liste. On peut d'ailleurs facilement utiliser les listes pythons comme des piles ou des files (voir la [documentation python](https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks) en français)
+Il existe deux structures de données très utilisées en informatiques : les **files** (aussi appelé **FIFO** pour *First In First Out*) et les **piles** (aussi appelé **LIFO** pour *Last In First Out*). Ces structures sont des types particuliers de **liste**. On peut d'ailleurs facilement utiliser les tableaux pythons comme des piles ou des files (voir la [documentation python](https://docs.python.org/fr/3/tutorial/datastructures.html#using-lists-as-stacks) en français)
 
 ![](../_img/fifo_lifo.png ":size=60%")
 
@@ -56,7 +154,7 @@ Il existe deux structures de données très utilisées en informatiques : les fi
 
 ### Piles
 
-Une pile (LIFO pour *Last In First Out*) est une façon de structurer des données qui est très utilisée en informatique. Par exemple, des cartons de déménagement qu'on empile forme une pile. Le dernier carton arrivé (Last In) sur le tas est le premier à être enlever.
+Une **pile** (**LIFO** pour *Last In First Out*) est une façon de structurer des données qui est très utilisée en informatique. Prenons une analogie: des cartons de déménagement qu'on empile forme une pile. Le dernier carton arrivé (Last In) sur le tas est le premier à être enlever.
 En informatique, on utilise par exemple les piles dans les piles d'appels de fonctions ou encore pour parcourir des graphes.
 
 On peut lister quelques opérations courantes sur les piles :
@@ -71,26 +169,40 @@ On peut lister quelques opérations courantes sur les piles :
 
 ### files
 
-Une file (FIFO pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. En informatique, on utilise les files,  
+Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. En informatique, on utilise les files,  
 
-##  Dictionnaires
+## Dictionnaires
 
-<https://pixees.fr/informatiquelycee/term/c6c.html>
+Le dictionnaire est un type abstrait de données qui ressemble à première vue beaucoup à un tableau. La différence est qu'un tableau associe un élément à une position alors qu'un dictionnaire associe un élément (une valeur) à une clé. Un dictionnaire est donc un ensemble de couple clé:valeur. Nous avons déjà vu cette structure [en première](../premiere/types_construits.md#les-dictionnaires).
+
+Les opérations que l'on peut effectuer sur un dictionnaire sont les suivantes :
+
+- Ajout d'un nouveau couple clé:valeur
+- Modification d'un couple en changeant la valeur
+- Suppression d'un couple
+- Recherche d'une valeur grâce à la clé associée
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+L'implémentation des dictionnaires utilise souvent des tables de hachages. Ce n'est pas au programme mais vous pouvez en savoir plus en lisant [c'est quoi le hachage](https://culture-informatique.net/cest-quoi-hachage/) et en visionnant une [vidéo](https://www.youtube.com/watch?v=CkLctGYWFPA) de Dalila Chiadmi.
+
+</details>
 
 ## Structure de données
 
 Distinguer interface et implémentation
 
-!> Work in progress
+!> To do later
 
 ## Structures en arbres
 
-!> Work in progress
+!> TO DO (work in progress)
 
-En informatique, un **arbre** est une **structure de données** composés de **noeuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux noeuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
+En informatique, un **arbre** est une **structure de données** composés de **nœuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux nœuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
 
 Ces structures en arbres sont caractérisés par un ensemble de mots de vocabulaire importants :
-Un **arbre** est constitué de **noeuds** reliés par des branches. Un des noeud est appelé **racine** et les noeuds qui sont à l'opposé de la racine sont des **feuilles**. Un noeud peut être caractérisé par sa distance à la racine que l'on apelle **hauteur** (= **profondeur**) et par le nombre de fils qu'il a que l'on apelle **degré**. La **hauteur d'un arbre** correspond à la hauteur du noeud le plus haut. De même **le degré d'un arbre** correspond à la valeur de degré du noeud ayant le plus grand degré. Enfin la taille d'un arbre se calcul en comptant le nombre de noeuds sur cette arbre. On emprunte le **vocabulaire à la généalogie** pour décrire les relations entre noeuds on parle de noeuds parents, frères, ascendants, descendants, ancêtres.
+Un **arbre** est constitué de **nœuds** reliés par des branches. Un des nœud est appelé **racine** et les nœuds qui sont à l'opposé de la racine sont des **feuilles**. Un nœud peut être caractérisé par sa distance à la racine que l'on appelle **hauteur** (= **profondeur**) et par le nombre de fils qu'il a que l'on appelle **degré**. La **hauteur d'un arbre** correspond à la hauteur du nœud le plus haut. De même **le degré d'un arbre** correspond à la valeur de degré du nœud ayant le plus grand degré. Enfin la taille d'un arbre se calcul en comptant le nombre de nœuds sur cette arbre. On emprunte le **vocabulaire à la généalogie** pour décrire les relations entre nœuds on parle de nœuds parents, frères, ascendants, descendants, ancêtres.
 
 <div style="margin:auto">
 
@@ -113,9 +225,9 @@ flowchart TD
 
 !> <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html>
 
-###  Arbres binaires
+###  Arbres binaires
 
-Un arbre binaire est un arbre de degré 2 (dont les noeuds sont de degré 2 au maximum). On appelle les 2 noeuds descendants d'un noeud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous arbre droit.
+Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous arbre droit.
 
 #### Parcours en largeur
 
@@ -147,7 +259,6 @@ Ordre infixe
 
 ```mermaid
 flowchart TD
-  flowchart TD
     A["A (1)"]:::racine --- B["B (2)"]
     A --- C["C (5)"]
     B --- D["D (3)"]:::feuille
@@ -167,7 +278,6 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  flowchart TD
     A["A (1)"]:::racine --- B["B (2)"]
     A --- C["C (6)"]
     B --- D["D (3)"]:::feuille
@@ -201,7 +311,7 @@ flowchart TD
     9 --- 10((10))
 ```
 
-###  Arbres binaires de recherche
+###  Arbres binaires de recherche
 
 ### Autres structures arborescentes
 
@@ -209,7 +319,7 @@ flowchart TD
 
 Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas des arbres.
 
-!> Work in progress
+!> To do later
 
 <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre4.html>
 
@@ -219,13 +329,13 @@ Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas de
 
 ## Diviser pour régner
 
-!> !! Work in progress
+!> TO DO (work in progress)
 
 <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre6.html>
 
 ## Programmation dynamique
 
-!> Work in progress
+!> To do later
 
 <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre6.html>
 

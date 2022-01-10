@@ -16,7 +16,7 @@ calculatrice mécanique, la **Pascaline**, fonctionnant avec des roues
 dentées d'horlogerie. Elle permet d'effectuer des additions et des
 soustractions de nombre à 6 chiffres en faisant tourner des cadrans en
 forme d'étoiles à dix branches. Sur certains modèles, le résultat peut
-être conservé en « mémoire » et l'opérateur peut ainsi réaliser des
+être conservé en « mémoire » et l'opérateur peut ainsi réaliser des
 multiplications ou des divisions en effectuant des additions ou des
 soustractions en cascade.
 
@@ -103,7 +103,7 @@ et la partie fixe est constituée d'un bac rempli de mercure. A chaque
 trou, un contact électrique a lieu entre les pointes et le mercure et un
 compteur correspondant à la catégorie voulue est implémenté. Il va
 également développer une trieuse permettant de ranger les cartes
-perforées par catégories : il s'agit d'un meuble à tiroir dont
+perforées par catégories : il s'agit d'un meuble à tiroir dont
 l'ouverture est pilotée par la machine de traitement (**Machine de
 classement de Hollerith**). En 1887, il dépose le brevet de ses machines
 qui seront utilisées pour le recensement de 1890 qui durera seulement 6
@@ -128,8 +128,8 @@ le **FORTRAN**) seront développés pour les cartes perforées à 80
 colonnes d'IBM. De nombreuses machines de lectures des cartes perforées
 utilisaient des amplificateurs de courant à lampe qui chauffaient
 beaucoup et attiraient les insectes provoquant ainsi des
-courts-circuits : c'était la principale cause de panne, elle prit le nom
-de « bug ».
+courts-circuits : c'était la principale cause de panne, elle prit le nom
+de « bug ».
 
 ### :fa fa-memory: La naissance des ordinateurs
 
@@ -137,7 +137,7 @@ En 1936, **Alan Turing** (1912 – 1954), doctorant de l'université de
 Cambridge, propose un modèle abstrait de fonctionnement d'une machine de
 calcul, c'est la **machine universelle de Turing**. Pour voir une animation
 d'une machine de Turing, aller sur le site [Interstices](https://interstices.info/comment-fonctionne-une-machine-de-turing/).
-Cette machine est constituée des 4 éléments suivants :
+Cette machine est constituée des 4 éléments suivants :
 
 - Le ruban infini divisé en cases contenant chacune un symbole d'un
   alphabet fini,
@@ -159,12 +159,12 @@ virgule flottante programmable entièrement mécanique mais ne parvient
 pas à la faire fonctionner. En 1937, **Claude Shannon** (1916 – 2001),
 doctorant au MIT, propose un modèle de machine à relais
 électromécaniques dans laquelle il utilise l'algèbre de Boole pour
-décrire l'état des relais (0 : ouvert, 1 : fermé). En 1938, Helmut
+décrire l'état des relais (0 : ouvert, 1 : fermé). En 1938, Helmut
 Schreyer (1912 – 1984), doctorant à l'université de Berlin, propose
 d'utiliser des tubes électroniques pour effectuer les opérations
-booléennes (0 : déchargé, 1 : chargé) mais cette solution ne sera pas
-retenue par le gouvernement allemand qui la considère « non
-indispensable à l'effort de guerre ». Zuse reprend alors l'idée de
+booléennes (0 : déchargé, 1 : chargé) mais cette solution ne sera pas
+retenue par le gouvernement allemand qui la considère « non
+indispensable à l'effort de guerre ». Zuse reprend alors l'idée de
 Shannon et il faut attendre 1941 et la troisième version de son
 **calculateur**, nommé **Z3**, pour avoir une machine opérationnelle
 respectant les principes de la machine de Turing. Il sera utilisé pour
@@ -182,7 +182,7 @@ l'université d'Harvard, commence le développement d'une machine de calcul déc
 programmable en collaboration avec IBM, le **ASCC-Harvard Mark 1**. Pour
 des raisons financières, il utilise des relais électromécaniques et des
 composants déjà utilisé par IBM. Il mesure 16 m de longueur et pèse
-4 500 kg. La machine sera opérationnelle en 1943 et servira à des
+4 500 kg. La machine sera opérationnelle en 1943 et servira à des
 applications militaires. En 1938, Alan Turing entre dans les services de
 renseignements britanniques ou il va développer des méthodes de
 déchiffrage des messages chiffrés allemands. Des calculateurs
@@ -211,13 +211,13 @@ Dès 1944, conscients de la difficulté à câbler le programme sur le
 tableau de connexion, Eckert et Mauchly démarrent un autre projet nommé
 **EDVAC** (Electronic Discrete Variable Automatic Computer) en
 collaboration avec John von Neumann (1903-1957) qui rédige, en 1945, le
-« Premier rapport sur la conception d'EDVAC ». Le modèle d'architecture
+« Premier rapport sur la conception d'EDVAC ». Le modèle d'architecture
 proposé, appelé couramment **architecture de Von Neumann**, est novateur
 et est toujours utilisé aujourd'hui. La première innovation est la
 **séparation entre l'unité de commande**, qui organise le flot de
 séquencement des instructions, **et l'unité arithmétique**, chargée de
 l'exécution de ces instructions. La seconde innovation, la plus
-fondamentale, est l'idée du **programme enregistré :** les instructions
+fondamentale, est l'idée du **programme enregistré :** les instructions
 au lieu d'être codées sur un support externe (cartes perforées, tableau
 de connexion), sont enregistrées dans une mémoire interne selon un
 codage conventionnel. Un compteur contient l'**adresse de
@@ -241,8 +241,8 @@ pendant 10 ans pour des applications militaires. En 1946, sous la
 direction de Max Newman, Frederic Williams (1911 – 1977) et Thomas
 Kilburn (1921 – 2001), de l'université de Manchester, développèrent une
 mémoire utilisant l'écran dans tube cathodique pour le stockage de bits,
-nommée « tube williams » qu'ils expérimentèrent sur un mini-calculateur
-nommé SSEM et surnommé « The baby ». En 1949, ils construisirent ensuite un second calculateur,
+nommée « tube williams » qu'ils expérimentèrent sur un mini-calculateur
+nommé SSEM et surnommé « The baby ». En 1949, ils construisirent ensuite un second calculateur,
 **Manchester Mark 1**, en y ajoutant une mémoire secondaire à tambour
 magnétique. Cette machine fut la première à être commercialisée à partir
 de 1951 par la compagnie Ferranti.
@@ -253,7 +253,7 @@ enregistré nommé EDSAC (Electronic Delay Storage Automatic Calculator)
 qui fonctionna à partir de 1949 et fut le premier à pouvoir utiliser des
 sous-programmes.
 
-### :fa fa-microchip: La révolution électronique : du transistor au microprocesseur
+### :fa fa-microchip: La révolution électronique : du transistor au microprocesseur
 
 En 1947, **John Bardeen**(1908 – 1991), **William Shockley** (1910 – 1989)
 et **Walter Brattain** (1902 – 1987), chercheurs pour les
@@ -284,31 +284,31 @@ microprocesseur est le premier circuit à intégrer en une seule puce
 toutes les fonctions de l'architecture de Von Neumann.
 
 En 1972, **François Gernelle** (1944 – ) met au point le **Micral**, le
-premier ordinateur personnel (en anglais : personal computer, PC) à
+premier ordinateur personnel (en anglais : personal computer, PC) à
 partir d'un microprocesseur Intel 8008. Par la suite, c'est l'**Altair
 8800** équipé d'un microprocesseur Intel 8080 et commercialisé en 1975
 qui lancera l'industrie informatique. En effet, **Bill Gates** (1955 - )
 et **Paul Allen** (1953 – 2018), les fondateurs de Microsoft, ainsi que
 **Steve Jobs** (1955 – 2011) et **Steve Wozniak** (1950 - ), les
 fondateurs d'Apple, vont entrer dans l'histoire de l'informatique grâce
-à cette machine : les premiers en développant le premier interpréteur
+à cette machine : les premiers en développant le premier interpréteur
 permettant de programmer sur cette machine, les seconds en la copiant
 pour commercialiser leur propre machine, l'Apple 1.
 
 ### :fa fa-sitemap: Architecture de Von Neumann
 
 L'architecture de Von Neumann d'un ordinateur se résume par le schéma
-suivant : **L'unité arithmétique et logique UAL** (en anglais ALU :
+suivant : **L'unité arithmétique et logique UAL** (en anglais ALU :
 Arithmetical and Logical Unit) effectue les opérations arithmétique
 (incrémentation, décrémentation, addition, soustraction, propagation de
 la retenue\...) et logiques (ET, OU, NON, NOR, NAND, XOR). Elle est
 intègre souvent une unité de calcul en virgule flottante (en anglais
-FPU : floating-point unit) afin d'accélérer les calculs sur les nombres
+FPU : floating-point unit) afin d'accélérer les calculs sur les nombres
 réels. L'UAL contient plusieurs **registres** (petites mémoires d'accès
 rapides) dont les principaux sont **l'accumulateur** qui sert à stocker
 les données traitées par l'UAL et **le registre d'état** servant à
 stocker les résultats de la dernière instruction traitée. L'unité de
-contrôle ou **séquenceur** (en anglais : Control Unit) gère le
+contrôle ou **séquenceur** (en anglais : Control Unit) gère le
 séquencement des instructions au rythme d'une horloge. Il gère l'envoi
 des instructions à l'UAL. Elle contient également des registres dont les
 principaux sont le **registre d'instruction** qui stocke l'instruction

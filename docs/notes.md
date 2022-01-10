@@ -42,7 +42,7 @@ def ma_super_fonction(x, y)
 
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> Un exercice avancé
 

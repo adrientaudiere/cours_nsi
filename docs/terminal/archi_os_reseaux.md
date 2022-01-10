@@ -66,13 +66,13 @@ Le principal inconvénient des SoC est l'impossibilité de mettre à jour une pa
 | Nom                  | Raspberry Pi pico                                                              | Raspberry Pi 3 Model B+                                                        |
 | Consommation de base | 8,50 mA ([source](https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf)) | 350 mA ([source](https://www.pidramble.com/wiki/benchmarks/power-consumption)) |
 | Mémoire vive         | 264KB                                                                          | 1GB                                                                            |
-| Mémoire flash inclus | 2MB                                                                            | aucune (extensible)                                                             |
+| Mémoire flash inclus | 2MB                                                                            | aucune (extensible)                                                            |
 | Taille               | 21x51mm                                                                        | 56x85mm                                                                        |
 | Prix                 | 4                                                                              | 30                                                                             |
 
 ---
 
-<p class="center-p"> <strong> Tableau de comparaison d'un microcontrôleur et d'un Soc.</strong> </p>
+<p class="center-p"> <strong> Tableau de comparaison d'un microcontrôleur et d'un Soc.</strong> </p>
 
 ![raspberry-pi-4](../_img/raspberry-pi-4.png ":size=60%")
 
@@ -94,7 +94,7 @@ Un **programme informatique** est une description statique d'une tâche. C'est e
 
 Pour gérer les différents processus en cours sur un ordinateur, il faut un « chef d'orchestre » qui va nommer les processus (les tâches), et décider de l'ordre d'exécution. Lors de la création d'un nouveau processus, il sera identifié par un numéro propre (***PID***), le numéro du **processus père** (***PPID***) et par l'**identifiant de l'utilisateur** qui a lancé ce processus (***UID***). Chaque processus se verra allouer de la **mémoire virtuelle** qui stockera le code du programme à exécuter, les variables (globales, et locales sous formes d'une pile) et les bibliothèques si nécessaire.
 
-Tous les programmes listés précédemment par la commande `top` semble s'exécuter en même temps. Pourtant on sait que notre ordinateur est limité par le nombre de processeur pour effectuer des calculs. Comment le processeur peux exécuter autant d'instruction en même temps? Cette **exécution concurrente** est rendu possible par les systèmes d'exploitation **multitâches** (tout les OS modernes le sont) qui utilise un **ordonnanceur de processus**.
+Tous les programmes listés précédemment par la commande `top` semble s'exécuter en même temps. Pourtant on sait que notre ordinateur est limité par le nombre de processeur pour effectuer des calculs. Comment le processeur peux exécuter autant d'instruction en même temps? Cette **exécution concurrente** est rendu possible par les systèmes d'exploitation **multitâches** (tout les OS modernes le sont) qui utilise un **ordonnanceur de processus**.
 
 L'**ordonnanceur** du système d'exploitation va définir les **états** de chaque processus. Les états les plus courants sont :
 
@@ -167,7 +167,7 @@ Exemple d'une table de routage simplifiée. Dans les table de routage, le moyen 
 
 </p>
 
-?> Lancer la commande `ip route` dans votre terminal Linux. À l'aide de recherche en ligne si besoin, décrire le résultat de cette commande.
+?> Lancer la commande `ip route` dans votre terminal Linux. À l'aide de recherche en ligne si besoin, décrire le résultat de cette commande.
 
 > Par **analogie**, le **routeur** peut être vu comme un **bureau de poste**. Les courriers représentent les paquets de données qui transitent dans le réseau. Le bureau de poste établie vers quelle bureau de poste plus proche de la destination il doit envoyer le courrier. Ainsi, pour filer l'analogie, vous postez une lettre à Saint-Hippolyte-du-Fort à destination de Montretout dans les Hauts-de-Seine. Le bureau de poste de St Hippolyte ferait transiter cette lettre par Montpellier qui lui est recommandé pour les destinations hors de sa région. Puis le bureau de poste de Montpellier, en regardant sa « table de routage » ferait suivre au bureau de poste de Paris qui pourrait enfin livrer la lettre à Montretout.
 
@@ -188,16 +188,16 @@ Le protocole **OSPF** (Open Shortest Path First) repose aussi sur l'**échanges 
 
 Ce protocole a également l'avantage de s'appuyer sur les débits réels et non sur un nombre de routeur. Ainsi, si une liaison entre deux routeurs directement reliés est très lente, alors qu'une liaison via un troisième routeur est plus rapide, le protocole OSPF choisira le chemin le plus rapide au contraire du protocole RIP. C'est d'autant plus important que les débits au sein d'un réseau sont aujourd'hui très variables selon les liaisons.
 
-> RIP c'est un peu une application GPS qui vous ferez passer par une petite route de montagne pour vous faire gagner du temps car elle ne sait pas prendre en compte la différence entre une route de montagne et une autoroute. Le problème c'est que notre GPS RIP fait l'hypothèse que la distance de trajet est suffisante pour estimer le temps de trajet. Au contraire, OSPF est une application qui sait que passer par l'autoroute prend tant de temps et que c'est plus rapide que par la route de montagne.
+> RIP c'est un peu une application GPS qui vous ferez passer par une petite route de montagne pour vous faire gagner du temps car elle ne sait pas prendre en compte la différence entre une route de montagne et une autoroute. Le problème c'est que notre GPS RIP fait l'hypothèse que la distance de trajet est suffisante pour estimer le temps de trajet. Au contraire, OSPF est une application qui sait que passer par l'autoroute prend tant de temps et que c'est plus rapide que par la route de montagne.
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 - Une suite de [vidéos](https://www.youtube.com/watch?v=e3I4opl8EH4&list=PLjXls-kqM6JDyMO3Llm5olS_U2I_P6OHG) qui reprend tout les concepts de routage vu en cours.
 
 </details>
 
-### Commande UNIX de gestion des protocoles
+### Commande UNIX de gestion des protocoles
 
 On a déjà vu la commande `ip route` qui permet d'afficher le routage statique de notre ordinateur.
 Cette commande permet également de modifier notre routage, par exemple en ajoutant une route (`ip route add`).
@@ -231,7 +231,7 @@ Rendre illisible une information pour un ennemi est un sport qui est apparu sans
 Par la suite Jules César utilisa une technique de substitution mono-alphabétique en décalant les lettres de l'alphabet. Par exemple le code de César avec une valeur de 3 consiste à écrire 'Je t'aime' : _mh w dlph_. Vous pouvez vous amuser a faire des essais sur un [générateur en ligne](https://calculis.net/code-cesar).
 
 <details class="advanced_level">
-<summary> <strong> En savoir plus :</strong></summary>
+<summary> <strong> En savoir plus :</strong></summary>
 
 La page wikipedia d'[histoire de la cryptologie](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie) est très complet.
 Vous pouvez aussi faire le TP des *Girls Can Code* sur la [cryptologie sous python](https://github.com/prologin/gcc-resources/raw/gh-pages/08_cryptologie.pdf). 
@@ -259,7 +259,7 @@ Un site entier est dédié à la terminologie de la cryptologie : [On dit chiffr
 
 ### Cryptographie symétrique
 
-On dit qu'un algorithme de chiffrement est symétrique lorsque c'est la même clé qui permet de chiffrer et de déchiffrer les messages. Cette clé doit être tenu secrète pour éviter que quelqu'un qui intercepte le message puisse le lire. Le code de César est un exemple d'algorithme de chiffrement symétrique : on envoie un message ainsi qu'une clé pour le déchiffrer. Dans le cas du code de César la clé est un nombres qui correspond au décalage dans l'alphabet. La clé qui sert à chiffrer est la même que celle qui permet de déchiffrer.
+On dit qu'un algorithme de chiffrement est symétrique lorsque c'est la même clé qui permet de chiffrer et de déchiffrer les messages. Cette clé doit être tenu secrète pour éviter que quelqu'un qui intercepte le message puisse le lire. Le code de César est un exemple d'algorithme de chiffrement symétrique : on envoie un message ainsi qu'une clé pour le déchiffrer. Dans le cas du code de César la clé est un nombres qui correspond au décalage dans l'alphabet. La clé qui sert à chiffrer est la même que celle qui permet de déchiffrer.
 
 Dans le cas du code de César, il est assez facile de trouver la clé. Mais il existe des techniques de chiffrement symétrique ([AES](https://fr.wikipedia.org/wiki/Advanced_Encryption_Standard) et [ChaCha20](https://fr.wikipedia.org/wiki/Salsa20) par exemple) plus complexes qui se basent sur des clés composées de nombreux caractères qui sont mélangés au message initial. Ces algorithmes symétriques sont très efficaces, c'est à dire qu'ils sont difficiles à casser/décrypter sans la clé tout en étant très rapide à déchiffrer (avec la clé). Tout le problème de ces méthodes est de se communiquer la clé de façon sûre. C'est tout l'enjeux des algorithmes asymétrique.
 
@@ -293,7 +293,7 @@ Ce protocole repose sur des théorèmes mathématiques complexes. Le chiffrement
 
 ### Protocole HTTPS
 
-#### HTTP n'est pas sécurisé
+#### HTTP n'est pas sécurisé
 
 Le protocole HTTP (_HyperText Transfert Protocol_) est un protocole de communication que nous avons déjà vu en première ([Interface homme-machine](../premiere/IHM.md)).
 
@@ -316,7 +316,7 @@ Lors de la communication client-serveur une première étape (**poignée de main
 
 À la suite d'une poignée de main réussie, la communication entre le client et le serveur va utiliser le protocole RSA ou Diffie-Hellman pour partager une clé secrète qui chiffrera les informations.
 
-Les autorités de certification sont des tiers de confiance pouvant être des entreprises spécialisées, des états ou même des associations à but non lucratif. L'initiative [Let's encrypt](https://letsencrypt.org/fr/) fut lancée en 2015 par l'université du Michigan, la fondation Mozilla (à l'origine du navigateur web firefox) et l'Electronic Frontier Foundation. Let's encrypt propose des certificats TSL/SSL gratuits ce qui a grandement facilité l'adoption du protocole HTTPS pour un grand nombre de sites.
+Les autorités de certification sont des tiers de confiance pouvant être des entreprises spécialisées, des états ou même des associations à but non lucratif. L'initiative [Let's encrypt](https://letsencrypt.org/fr/) fut lancée en 2015 par l'université du Michigan, la fondation Mozilla (à l'origine du navigateur web firefox) et l'Electronic Frontier Foundation. Let's encrypt propose des certificats TSL/SSL gratuits ce qui a grandement facilité l'adoption du protocole HTTPS pour un grand nombre de sites.
 
 ![](../_img/tls_1.png ":size=90%")
 

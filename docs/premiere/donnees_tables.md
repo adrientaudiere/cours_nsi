@@ -1,10 +1,10 @@
 # Données en tables <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-## :fa fa-play-circle: Introduction
+## :fa fa-play-circle: Introduction
 
 Pour stocker des données de façon fiable et organisé il existe plusieurs
 façons de procéder. Les jeux de données les plus complexes utilisent des
-logiciels de bases de données (**SGDB** = **système de gestion de bases de
+logiciels de bases de données (**SGDB** = **système de gestion de bases de
 données**). Pour des petits jeux de données simples, il existe des formats
 de stockages plus simple comme le **JSON** ou encore le **CSV**.
 
@@ -12,7 +12,7 @@ Les données doivent être décrites, par un **descripteur** compréhensible
 pour celui qui veut les interpréter. Par exemple, considérons
 l'organisation d'une médiathèque. Lors de son inscription chaque abonné
 fournit des données (nom, prénom, adresse...). Ces données seront
-associées aux **descripteurs** « Nom », « Prénom », « Adresse »... Ces
+associées aux **descripteurs** « Nom », « Prénom », « Adresse »... Ces
 données des abonnés seront regroupées dans **collection** sous forme de
 une **table**. Chaque ligne de la table est un abonné, chaque colonne
 est un **descripteur**. De la même manière, on peut faire une
@@ -24,14 +24,14 @@ une base de données.
 ?> Faire un schéma qui représente les données d'une médiathèque et leur
 relations.
 
-?> Dans l'exemple de la médiathèque, qu'elle est le descripteur qui
+?> Dans l'exemple de la médiathèque, qu'elle est le descripteur qui
 permet de faire le lien entre la table (collection) des abonnées et
-celle des ouvrages ?
+celle des ouvrages ?
 
 ## :fa fa-file-csv: Le format CSV
 
 Le format **CSV** (de l'anglais _comma separated value_, c'est-à-dire
-« **valeurs séparées par des virgules** ») est un format texte utilisé
+« **valeurs séparées par des virgules** ») est un format texte utilisé
 couramment pour représenter des données structurées en tableau. On peut
 facilement importer ou exporter des fichiers _.csv_ avec un tableur (par
 ex. Libreoffice Calc).
@@ -39,7 +39,7 @@ ex. Libreoffice Calc).
 ?> Enregistrer les fichiers [results.csv] et Pokemon.csv sur votre
 ordinateur, puis les ouvrir avec le logiciel
 LibreOffice Calc puis avec VScodium. Les deux logiciels
-réagissent-ils pareil à l'ouverture d'un fichier CSV ?
+réagissent-ils pareil à l'ouverture d'un fichier CSV ?
 
 ?> En utilisant LibreOffice Calc, trouver le nombre de pokémons légendaires? Est-ce que l'attaque moyenne des pokémons légendaires est supérieurs à celle des autres pokémons?
 
@@ -69,9 +69,9 @@ qu'en JSON on peut l'inclure directement dans le même fichier.
 Pour importer un fichier CSV dans un environnement python en vue
 d'utiliser les données ensuite, on utilise la bibliothèque **csv**. Dans
 cette bibliothèque, deux fonctions principales permettent d'importer un
-fichier .csv :
+fichier .csv :
 
-- la fonction **_reader()_** renvoie un objet _csv.reader_ qui est une
+- la fonction **_reader()_** renvoie un objet _csv.reader_ qui est une
 **liste**.
 
 ```python
@@ -87,7 +87,7 @@ for ligne in csvenliste:  #parcours du lecteur avec une boucle
 file.close()  #fermeture du fichier
 ```
 
-- la fonction **_DictReader()_** renvoie un objet **dictionnaire** ordonné _csv.DictReader_.
+- la fonction **_DictReader()_** renvoie un objet **dictionnaire** ordonné _csv.DictReader_.
 
 ```python
 import csv  #importation de la bibliothèque csv
@@ -124,12 +124,12 @@ ordre = ['nom', 'prenom', 'age']
 vers_csv('table_exemple', ordre, 'mon_fichier_example')
 ```
 
-## :fa fa-keyboard: Manipulez les données
+## :fa fa-keyboard: Manipulez les données
 
-?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site https://isn-icn-ljm.pagesperso-orange.fr/) avec VScodium.
+?> Faire le TP Titanic en ouvrant le fichier [TP_Titanic.ipynb](https://adrientaudiere.github.io/cours_nsi/_doc/TP_Titanic.ipynb) (TP issus du site <https://isn-icn-ljm.pagesperso-orange.fr/>) avec VScodium.
 
 ---
 
 ## :fa fa-brain: Exercices
 
-!> TO DO
+!> TO DO (work in progress)

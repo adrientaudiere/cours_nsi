@@ -1,10 +1,10 @@
 # :fa fa-project-diagram: Bases de la programmation <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-##  Pseudo-code : les instructions principales d'algorithmique
+##  Pseudo-code : les instructions principales d'algorithmique
 
 Pour écrire un algorithme il est souvent plus simple de passer par une étape d'écriture en pseudo-code avant de coder à proprement parler dans un langage de programmation choisis. Nous détaillons ici les instructions principales d'algorithmique et leur écriture en pseudo-code (avec des exemples en français et en anglais) ainsi que leur implémentation en python comme exemple de programmation.
 
-**Affectation de variables (symbolisées par <-, -> , :=, voir =)**
+**Affectation de variables (symbolisées par <-, -> , :=, voir =)**
 
 ```pseudo-code
 Ma_variable <- 5
@@ -80,7 +80,7 @@ Un script en pseudo-code permet d'utiliser tous les ingrédients (que nous verro
 - des **données** sous forme de constantes (non modifiables) ou de variables (modifiables),
 - des **opérateurs** arithmétiques (+, -, / …), relationnels (==, !=, > …) et logique (et, ou, …),
 - des **expressions** (par ex. b/a),
-- des **instructions** (par ex. des affectations x <- b/a),
+- des **instructions** (par ex. des affectations x <- b/a),
 - des **fonctions** qui automatisent les tâches répétitives.
 
 ## Quelques notions de base sur la programmation
@@ -89,7 +89,7 @@ Un **programme informatique** est un ensemble d'opérations destinées à être 
 
 ### Les différents types de langage de programmation
 
-Un ordinateur ne « comprend » que les suites de 0 et de 1, on parle de
+Un ordinateur ne « comprend » que les suites de 0 et de 1, on parle de
 langage binaire ou **langage machine**. Mais aucun humain ne parle le
 langage machine. Au cours de l'histoire de l'informatique, les humains
 ont inventé des langages qui utilise des instructions qui sont
@@ -102,7 +102,7 @@ Il existe un gradient des langages de programmation le long d'un **axe
 de compromis** rapidité _vs_ facilité d'utilisation :
 
 - depuis les langages de **bas niveau** qui permettent des programmes
-  très rapides car la traduction en langage machine est facile ; mais
+  très rapides car la traduction en langage machine est facile ; mais
   qui sont complexes à utiliser (car très éloignés du langage
   naturel), on dit que ce sont des langages « proches de la machine ».
 - Jusqu'aux langages de **haut niveau** : ils sont plus faciles à
@@ -324,14 +324,14 @@ nombreuses applications (depuis l'intelligence artificielle jusqu'à la
 création de site web) grâce à une grande communauté et de très nombreux
 modules.
 
-> :fa fa-microscope: Le mouvement du **logiciel libre** (_Free Software_) fait campagne pour la liberté des utilisateurs de l'informatique ;
-> c'est un mouvement qui lutte pour la liberté et la justice. Quand on dit qu'un logiciel est « libre » [free\], on entend
-> par là qu'il respecte [**les libertés essentielles de l'utilisateur**](https://www.gnu.org/philosophy/free-sw.html) :
+> :fa fa-microscope: Le mouvement du **logiciel libre** (_Free Software_) fait campagne pour la liberté des utilisateurs de l'informatique ;
+> c'est un mouvement qui lutte pour la liberté et la justice. Quand on dit qu'un logiciel est « libre » [free\], on entend
+> par là qu'il respecte [**les libertés essentielles de l'utilisateur**](https://www.gnu.org/philosophy/free-sw.html) :
 > la liberté de l'utiliser, de l'étudier, de le modifier et d'en
 > redistribuer des copies, modifiées ou non. C'est une question de
-> liberté, pas de prix -- pensez à « liberté d'expression » et pas à
-> « entrée libre » (think of "free speech", not "free beer"). Il est souvent le produit de la collaboration bénévole de plusieurs développeurs dispersés dans le monde entier. <br>
-> Des exemples de logiciels libres : le système d'exploitation **GNU/Linux**, la suite **Open Office**.
+> liberté, pas de prix -- pensez à « liberté d'expression » et pas à
+> « entrée libre » (think of "free speech", not "free beer"). Il est souvent le produit de la collaboration bénévole de plusieurs développeurs dispersés dans le monde entier. <br>
+> Des exemples de logiciels libres : le système d'exploitation **GNU/Linux**, la suite **Open Office**.
 > Un logiciel non libre est dit **propriétaire** (par ex. le système d'exploitation **Windows**, la suite **Microsoft Office**). Le
 > mouvement de l'**open source** (code source accessible à tous), met surtout l'accent sur les avantages pratiques et ne fait pas campagne pour des principes. Pour en savoir plus, aller visiter le site du [GNU](https://www.gnu.org/philosophy/free-sw.html) dont la traduction française est très bien faîte.
 
@@ -342,13 +342,13 @@ Attention pour faire certains de ces exercices il faut certaines connaissances e
 ### Introduction
 
 1. On dispose de la formule $C=0.55556\times(F-32)$ pour convertir les degrés
-   Fahrenheit en degrés Celsius :
+   Fahrenheit en degrés Celsius :
    où $F$ est une température en degrés Fahrenheit et $C$ la
    température correspondante en degrés Celsius.
    - Écrire un programme qui convertit en degrés Celsius une température rentrée au clavier en degrés Fahrenheit.
    - Même question pour la conversion inverse.
 2. Écrire un programme qui permute et affiche les valeurs de trois
-   variables $a$, $b$, $c$ qui sont entrées au clavier : $a \Rightarrow b$ ,
+   variables $a$, $b$, $c$ qui sont entrées au clavier : $a \Rightarrow b$ ,
    $b \Rightarrow c$ , $c \Rightarrow a$.
 
 ### Boucles et conditions
@@ -359,12 +359,12 @@ Attention pour faire certains de ces exercices il faut certaines connaissances e
     multiplication de tous les chiffres compris entre 2 et 9 (inclus).
     Pensez à laisser un espace entre deux tables de multiplication (print() imprime une ligne vide).
 4. :fa fa-award: Écrire un programme qui affiche un triangle rempli d'étoiles (\*)
-    sur un nombre de lignes donné passé en paramètre, exemple :
-    - 1ère version : à l'aide de deux boucles for, en imprimant les \*
+    sur un nombre de lignes donné passé en paramètre, exemple :
+    - 1ère version : à l'aide de deux boucles for, en imprimant les \*
       une par une.
-    - 2ème version : avec une seul boucle for, et une chaîne de
+    - 2ème version : avec une seul boucle for, et une chaîne de
       caractères où vous accumulerez des étoiles (pour ceux qui vont un
-      peu plus vite, print(« machin » end= '') évite de passer à la ligne.
+      peu plus vite, print(« machin » end= '') évite de passer à la ligne.
 5. Écrire un programme qui teste si un nombre _a_ est divisible par un
     nombre _b_, les deux étant rentrés au clavier. Le programme
     retournera un message signalant la divisibilité ou non, et
@@ -373,12 +373,12 @@ Attention pour faire certains de ces exercices il faut certaines connaissances e
 6. :fa fa-award: Programmation d'un petit jeu de devinette. L'ordinateur choisit au
     hasard un nombre compris entre 1 et 100. Le but du jeu est de le
     deviner en un nombre d'essai minimal. À chaque tentative,
-    l'ordinateur, indique « gagné », « trop petit » ou « trop grand ».
+    l'ordinateur, indique « gagné », « trop petit » ou « trop grand ».
     L'utilisateur dispose d'un nombre d'essais limités.
-    Écrire l'algorithme en « langage naturel ». Programmer le jeu, et le tester.
-    On utilisera la bibliothèque _random._ Pour cela, on écrit « import random » en début de programme.
-    *nombre* = random.randint(a, b) renverra un nombre aléatoire tel que $a \le Nombre \le b$.
-    Pour plus d'informations sur le bibliothèque random et de possibilités voir la [**documentation**](https://docs.python.org/3.5/library/random.html).
+    Écrire l'algorithme en « langage naturel ». Programmer le jeu, et le tester.
+    On utilisera la bibliothèque _random._ Pour cela, on écrit « import random » en début de programme.
+    *nombre* = random.randint(a, b) renverra un nombre aléatoire tel que $a \le Nombre \le b$.
+    Pour plus d'informations sur le bibliothèque random et de possibilités voir la [**documentation**](https://docs.python.org/3.5/library/random.html).
 7. Écrire une fonction qui retourne la factorielle d'un nombre (par exemple $6!=6 \times 5 \times 4 \times 3 \times 2 \times 1$).
 8. :fa fa-award: Un nombre entier est dit parfait s'il est égal à la somme de ses diviseurs (sauf lui-même). Ainsi $6 = 1 + 2 + 3$ est parfait.
     - Écrire une fonction somme_div qui retourne la somme des diviseurs d'un nombre passé en paramètre.

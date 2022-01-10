@@ -1008,6 +1008,7 @@ pre::after {
   margin: 2px;
   font-family: serif;
   position: relative;
+  margin-top: 25px;
 }
 .nutshell::before {
   font-family: "Font Awesome 5 Free";
@@ -1024,6 +1025,10 @@ pre::after {
   height: 20px;
   width: 20px;
   vertical-align: middle;
+}
+.nutshell p {
+  padding: 10px;
+  font-size: 100%;
 }
 .katex {
   font-size: 1.1em !important;
@@ -1102,7 +1107,7 @@ svg[id^="mermaid-"] {
   margin: 0.2em 0;
 }
 
-.correction{
+.correction {
   display: none;
 }
 
@@ -1111,7 +1116,7 @@ svg[id^="mermaid-"] {
 }
 
 /* -----------------------
-CSS for printing
+CSS for printing
 ------------------------- */
 @media print {
   .sidebar {
@@ -1139,4 +1144,4 @@ CSS for printing
   }
 }
 
-/* end of CSS for printing */
+/* end of CSS for printing */

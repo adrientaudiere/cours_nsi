@@ -1,8 +1,8 @@
 # Interfaces homme-machine <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-## Introduction : le Web (:fa fa-spider:) utilise Internet (:fa fa-network-wired:)
+## Introduction : le Web (:fa fa-spider:) utilise Internet (:fa fa-network-wired:)
 
-### Le web : un ensemble de documents reliés par des liens hypertextes
+### Le web : un ensemble de documents reliés par des liens hypertextes
 
 Le "**World Wide Web**" (en anglais la toile d'araignée), plus
 communément appelé "Web" a été développé au CERN (Conseil Européen
@@ -36,14 +36,14 @@ réseau Internet puisque HTTP est un des nombreux protocoles de la couche
 d'application s'exécutant au dessus des protocoles TCP et IP. Comme
 nous venons de le voir, le web est la combinaison de trois technologies
 : **HTTP** (protocole de communication), **URL** (emplacement d'une
-ressource) et **HTML + CSS** (édition et mise en page). D'ailleurs on
+ressource) et **HTML + CSS** (édition et mise en page). D'ailleurs on
 trouve autre chose que le "web" sur internet, par exemple, les emails
 avec le protocole SMTP (Simple Mail Transfert Protocol) et les
 transferts de fichiers avec le protocole FTP (File Transfert Protocol).
 
 ?> Aller sur le site [internet live stats](https://www.internetlivestats.com/one-second/) et trouver le nombre de recherches google effectués et d'emails envoyés en 30 secondes.
 
-### Internet : un protocole pour communiquer dans un réseau informatique globale
+### Internet : un protocole pour communiquer dans un réseau informatique globale
 
 Dès les années cinquante, les ordinateurs ont été mis en réseau pour
 échanger des informations, mais de façon très liée aux constructeurs
@@ -54,7 +54,7 @@ projet ArpaNet a rapidement évolué pour devenir la paire de protocole
 TCP-IP (1974).
 
 Schématiquement, le modèle internet est un langage de communication qui
-est structuré en quatre couches :
+est structuré en quatre couches :
 
 - Une couche **application** qui contient les logiciels réseaux
   (protocole **HTTP** pour le web, FTP pour le transfert de fichiers ou
@@ -83,7 +83,7 @@ est structuré en quatre couches :
 </p>
 </div> -->
 
-Dans le modèle Internet, le protocole **IP** rajoute à chaque petit paquet de données (votre message) différentes informations :
+Dans le modèle Internet, le protocole **IP** rajoute à chaque petit paquet de données (votre message) différentes informations :
 
 - l'adresse de l'expéditeur (votre adresse IP),
 - l'adresse IP du destinataire,
@@ -147,7 +147,7 @@ et permet une représentation simple d'un réseau comportant un système de
 liens complexes.
 
 À la suite d'une URL, il peux y avoir une liste de paramètres de
-requêtes indiquée après un "?" :
+requêtes indiquée après un "?" :
 
 $$ \textcolor{red}{Nom_du_protocole}://\textcolor{blue}{nom.de.domaine}/\textcolor{purple}{chemin_vers_la/page}\Large{?}\normalsize{\textcolor{green}{nom=Saquet\&age=30}} $$
 
@@ -201,7 +201,7 @@ organisé de la façon suivante :
 La balise utilisée pour le codage des caractères est d'un type
 particulier, elle s'ouvre et se ferme toute seule sous la forme : \<meta \... /\>.
 Voici une liste des balises principales. Vous trouverez plein
-d'information complémentaires sur les sites suivants : mémento des
+d'information complémentaires sur les sites suivants : mémento des
 balises sur le site
 [openclassroom](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608357-memento-des-balises-html),
 toutes les balises sur le site
@@ -214,8 +214,8 @@ une introduction au base du langage HTML sur le site
 Les balises de premier niveau structurent une page HTML, indispensables pour réaliser le « code minimal » d'une page web (voir exemple ci-dessus).
 
 - Description : **\<html\>**
-- En-tête de la page : **\<head\>**
-- Corps de la page : **\<body\>**
+- En-tête de la page : **\<head\>**
+- Corps de la page : **\<body\>**
 
 #### Balises sectionnantes : permettent de construire le squelette de votre site web
 
@@ -244,7 +244,7 @@ Les balises de premier niveau structurent une page HTML, indispensables pour ré
 - **\<br /\>** : Retour à la ligne
 - **\<p\>** : Paragraphe
 
-#### Balises de liste : permettent de créer des listes (à puces, numérotées, listes de définitions...)
+#### Balises de liste : permettent de créer des listes (à puces, numérotées, listes de définitions...)
 
 - **\<ul\>** : Liste à puces, non numérotée
 - **\<ol\>** : Liste numérotée
@@ -278,8 +278,8 @@ Les balises de premier niveau structurent une page HTML, indispensables pour ré
 
 #### Balises génériques ou balise universelles
 
-- **\<span\>** : Balise générique de type _inline_
-- **\<div\>** : Balise générique de type _block_
+- **\<span\>** : Balise générique de type _inline_
+- **\<div\>** : Balise générique de type _block_
 
 Avant d'attaquer la création d'un site, il est indispensable d'élaborer
 une maquette sur papier de son site afin de connaître l'ensemble des
@@ -287,7 +287,7 @@ boites et de pouvoir créer toutes les balises nécessaires. Il est très
 courant d'avoir recours à un graphiste pour cette étape.
 
 ?> Créer un compte puis se connecter sur [FreeCodeCamp](https://www.freecodecamp.org/) et faire tous les
-exercices de la section « Basic HTML and HTML5 » dans la session _Responsive Web Design Certification_.
+exercices de la section « Basic HTML and HTML5 » dans la session _Responsive Web Design Certification_.
 
 ### CSS : ajouter une mise en page à notre fond HTML
 
@@ -295,14 +295,14 @@ CSS est un langage qui permet de spécifier la forme du document (par
 opposition au contenu donné par html), en précisant les attributs d'une
 balise. La bonne pratique consiste à définir les styles dans un document
 à part, dont on en précise la localisation dans l'en-tête du document
-html : \<link rel="stylesheet" type="text/css" href="style.css"\>.
+html : \<link rel="stylesheet" type="text/css" href="style.css"\>.
 
 Les **sélecteurs** CSS comportent une ou plusieurs **propriétés
 **auxquelles sont affectées des valeurs.Les sélecteurs peuvent être des
 **sélecteurs d'éléments** (par ex. pour modifier tous les paragraphes du
 document), de **classe** (précisés dans la balise html par
-**class**= "nom_de_classe"), ou d'**identifiant**(précisés dans la
-balise html par **id** = "nom_d'identifiant"). Plusieurs éléments
+**class**= "nom_de_classe"), ou d'**identifiant**(précisés dans la
+balise html par **id** = "nom_d'identifiant"). Plusieurs éléments
 d'une page peuvent être de la même classe, par contre un identifiant est
 unique.
 
@@ -434,7 +434,7 @@ D'autre langage comme PHP sont clairement orientés serveur.
 Pour une introduction à Javascript quand on connaît déjà python, voire le [site de Pascal Grossé](https://python-carnot.fr/ressources/javascript).
 
 Pour inclure des fonctions JS dans notre fichier, il existe plusieurs
-méthodes :
+méthodes :
 
 - (i) On peut l'inclure directement dans le **_body_** ou le **_head_** de notre fichier html,
 
@@ -453,7 +453,7 @@ méthodes :
 </script>
 ```
 
-?> Pourquoi écrit t'on le script à la fin du body alors qu'on appelle le fichier css au début du fichier html ? Il faut faire une recherche sur le web pour répondre à cette question.
+?> Pourquoi écrit t'on le script à la fin du body alors qu'on appelle le fichier css au début du fichier html ? Il faut faire une recherche sur le web pour répondre à cette question.
 
 Le JS permet la majorité des fonctions évènementielles sur le web.
 C'est devenu un langage incontournable pour presque tous les
@@ -461,9 +461,9 @@ développeurs. Il existe de nombreuses ressources très bien écrites en
 ligne à commencer par les cours
 d'[Openclassroom](https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript)
 
-?> Faire l'exercice en ligne [Pixel Art](https://projects.raspberrypi.org/en/projects/pixel-art).
+?> Faire l'exercice en ligne [Pixel Art](https://projects.raspberrypi.org/en/projects/pixel-art).
 
-?> Naviguez sur le site [state of JS](https://2020.stateofjs.com/fr-FR/technologies/). Qu'en comprenez-vous ?
+?> Naviguez sur le site [state of JS](https://2020.stateofjs.com/fr-FR/technologies/). Qu'en comprenez-vous ?
 
 ?> :fas fa-dungeon: Fabriquer un site internet localement sur un sujet de votre choix. Vous pouvez vous aider de tutoriel (par ex. sur
 [Openclassroom](https://openclassrooms.com/fr/courses) ou encore du [cours](https://www.pierre-giraud.com/html-css-apprendre-coder-cours/) de Pierre Giraud).

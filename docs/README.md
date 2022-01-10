@@ -1,4 +1,4 @@
-# NSI à Scholae
+# NSI à Scholae
 
 > Cours de Numérique et Sciences Informatiques d'[Adrien Taudière](https://adrientaudiere.com) au lycée [Scholae](https://scholae.fr)
 

@@ -104,7 +104,7 @@ print(p(3))
 </p>
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> À l'aide du script ci-dessous calculer puis comparer les vitesses de calcul.
 
@@ -128,7 +128,7 @@ print(fin-debut)
 </details>
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> Regarder la [vidéo](https://www.youtube.com/watch?v=PW_Pka9iBko) sur le flocon de Koch. Lancer ensuite le programme ci-dessous.
 
@@ -182,7 +182,7 @@ def est_palindrome(mot):
 3. Modifier votre programme pour qu’il considère que la phrase "Karine alla en Irak" soit un palindrome.
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> Faire le [TP](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_tp_tour_de_hanoi.pdf) sur la tour de Hanoï du site isn-icn-ljm.
 
@@ -288,7 +288,7 @@ print(eleve1)
 ?> Créer une classe plante avec au moins les attributs _nom_, *points_de_santé*, *attaque*, *cris_guerre*. Vous devez également définir les méthodes _attaquer()_ (fait baisser les points de santé d’une autre plante), _photosynthèse_ (augmente les points de santé), _menacer_ (renvoie le cris de guerre), _enlacer(texte)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_ (fait baisser les points de santé d’un autre chien), _manger_ (augmente les points de santé), _grogner_ (renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 

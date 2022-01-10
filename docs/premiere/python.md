@@ -14,7 +14,7 @@ print(3*4)
 quit() # quitter le programme python
 ```
 
-> Remarque sur les **commentaires** dans le code. Les caractères suivants un dièse (**#**) sont des commentaires, ils n'influent en rien sur le programme mais nous permettent d'annoter le programme pour d'autres utilisateurs, ou pour nous plus tard. On peut mettre des commentaires de plusieurs lignes entre triples guillemets : """ ... """. **Il est très important de commenter son code**. La relecture du programme, la recherche de bug et sa réutilisation future nécessitent des commentaires réguliers dans le code.
+> Remarque sur les **commentaires** dans le code. Les caractères suivants un dièse (**#**) sont des commentaires, ils n'influent en rien sur le programme mais nous permettent d'annoter le programme pour d'autres utilisateurs, ou pour nous plus tard. On peut mettre des commentaires de plusieurs lignes entre triples guillemets : """ ... """. **Il est très important de commenter son code**. La relecture du programme, la recherche de bug et sa réutilisation future nécessitent des commentaires réguliers dans le code.
 
 Le problème du terminal, c'est que c'est long de relancer chaque script (ensemble d'instruction) et que l'historique est difficile à conserver. Pour simplifier l'utilisation des langages informatique on utilise des environnements de développement intégré (IDE pour _integrated development environment_) Sur vos machines plusieurs IDE sont déjà installés (listés du plus simple au plus complet):
 
@@ -88,8 +88,8 @@ En plus des signes d'arithmétiques **+**, **-**, **\*** et **/**, on peut utili
 
 ?> Utiliser les symboles //, % et \*\* dans des opérations avec des nombres simples. Essayer d'en déduire l'usage de ces trois symboles.
 
-- De plus, les variables ne peuvent pas être un des « mots
-  réservés » suivant utilisés par le langage lui-même :
+- De plus, les variables ne peuvent pas être un des « mots
+  réservés » suivant utilisés par le langage lui-même :
 
 ### Typage
 
@@ -108,8 +108,8 @@ type(var)
 ```
 
 On peut forcer une variable d'un type à devenir une variable d'un autre
-type ; attention cela peut causer des erreurs ! Pour changer le type
-d'une variable, on utilise le type que l'on veut affecter :
+type ; attention cela peut causer des erreurs ! Pour changer le type
+d'une variable, on utilise le type que l'on veut affecter :
 
 ```python
 a = 23.1
@@ -151,7 +151,7 @@ logiques **and**, **or** et **not**.
 ```python
 # Tests logiques
 x == y # x est égal à y
-x != y # x est différent de y
+x != y # x est différent de y
 x > y  # x est plus grand que y
 x < y  # x est plus petit que y
 x >= y # x est plus grand que, ou égal à y
@@ -160,9 +160,9 @@ x <= y # x est plus petit que, ou égal à y
 
 ```python
 # Connecteurs logiques
-a and b # « et » mathématique
-a or b  # « ou » mathématique
-not(a)  # « non » mathématique
+a and b # « et » mathématique
+a or b  # « ou » mathématique
+not(a)  # « non » mathématique
 ```
 
 ?> Tester le code ci-dessous. À votre avis, comment python compare deux chaînes de caractère?
@@ -199,10 +199,10 @@ print("Cette phrase comporte " + str(len(a+b+c+d)) + " caractères")
 
 ### Instructions conditionnelles
 
-Le « si _condition_ alors _instruction_ (sinon _instruction_) » s'écrit en python en utilisant l'indentation (4 espaces). C'est l'un des rares langages à utiliser l'indentation comme structure de code (de nombreux langage utilise les {} pour encadrer les conditions). Les conditions sont des booléens (par exemple le résultat d'un test d'égalité).
+Le « si _condition_ alors _instruction_ (sinon _instruction_) » s'écrit en python en utilisant l'indentation (4 espaces). C'est l'un des rares langages à utiliser l'indentation comme structure de code (de nombreux langage utilise les {} pour encadrer les conditions). Les conditions sont des booléens (par exemple le résultat d'un test d'égalité).
 
 ```python
-if condition :
+if condition :
     ... # instruction 1
 else:
     ... # instruction 2
@@ -212,7 +212,7 @@ suite_du_programme
 On peut emboîter des conditions dans des conditions, il faut alors bien faire attention aux indentations.
 
 ```python
-if condition_1 :
+if condition_1 :
     if condition_2 :
         ... # instruction 1
     else :
@@ -224,7 +224,7 @@ else:
 Lorsque l'on a plusieurs alternative possible on utilise le mot clé `elif` (abréviation de _else if_).
 
 ```python
-if condition_1 :
+if condition_1 :
     ... # instruction 1
 elif condition_2 :
     ... # instruction 2
@@ -313,10 +313,10 @@ help(bonjour_personnalise)
 
 ?> Que renvoie `print(b)` si vous changer l'ordre des valeurs "Sy" et "Omar"? Et si vous écrivez b = bonjour_personnalise(prenom="Omar", nom="Sy")
 
-L'ordre des paramètres d'entrée est important. Si vous ne connaissez pas l'ordre il y a deux solutions. Soit il faut faire une recherche (commande `help` ou recherche sur le Web), soit il faut nommer les valeurs des paramètres sous la forme ma_fonction(param1="valeur_param1", param2="valeur_param2"). La partie entre ''' est ce qu'on appelle la **docstring** (documentation de code). On parle aussi de **spécification** de la fonction. Cette docstring est indispensable à une fonction. Elle est ce qui va apparaître aux utilisateurs qui utiliserons la commande `help(votre_fonction)`. Cela ne vous empêche pas de commenter certaines lignes de codes importantes et/ou cruciales pour comprendre votre fonction. En python, il n'y a pas de convention dominante pour structurer le docstring, mais pour une bonne spécification il faut que votre docstring:
+L'ordre des paramètres d'entrée est important. Si vous ne connaissez pas l'ordre il y a deux solutions. Soit il faut faire une recherche (commande `help` ou recherche sur le Web), soit il faut nommer les valeurs des paramètres sous la forme ma_fonction(param1="valeur_param1", param2="valeur_param2"). La partie entre ''' est ce qu'on appelle la **docstring** (documentation de code). On parle aussi de **spécification** de la fonction. Cette docstring est indispensable à une fonction. Elle est ce qui va apparaître aux utilisateurs qui utiliserons la commande `help(votre_fonction)`. Cela ne vous empêche pas de commenter certaines lignes de codes importantes et/ou cruciales pour comprendre votre fonction. En python, il n'y a pas de convention dominante pour structurer le docstring, mais pour une bonne spécification il faut que votre docstring:
 
 - Définisse l'**objectif** de la fonction,
-- Liste les **paramètres d'entrée et de sortie** de la fonction (en particulier leur format et leur type),
+- Liste les **paramètres d'entrée et de sortie** de la fonction (en particulier leur format et leur type),
 - Précise les conditions pour que votre fonction fonctionne:
   - **Précondition**: condition sur les paramètres d'entrée (par ex. mon paramètre doit être une variable de type \_int\ et doit être positif),
   - **Postcondition**: condition sur les paramètres de sortie (par ex. la postcondition d'une fonction qui fait la somme de deux nombres positifs est que cette somme doit être positive). Il s'agit souvent de conditions que l'on testera grâce à des tests unitaires par exemple avec le framework unittest de python (pas au programme).
@@ -325,7 +325,7 @@ Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe p
 
 ?> :fa fa-award: Écrire un script qui met en évidence le caractère locale d'une variable définie dans une fonction.
 
-##  :fa fa-keyboard: Comprendre python avec des tortues
+##  :fa fa-keyboard: Comprendre python avec des tortues
 
 ?> Réaliser ces [exercices](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) en ligne.
 

@@ -24,7 +24,7 @@ graph LR
 <p class="center-p"> Schema simplifié d'un algorithme.</p>
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Donald E. Knuth, Algorithmes, Stanford, CSLI Publications, 2011, 510 p. (ISBN 978-1-57586-620-8)"> 2011 </abbr>) :
 
@@ -33,11 +33,12 @@ Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Dona
 - **Entrées** : « quantités qui lui sont données avant qu'un algorithme ne commence. Ces entrées sont prises dans un ensemble d'objets spécifié ».
 - **Sorties** : « quantités ayant une relation spécifiée avec les entrées ».
 - **Rendement** : « toutes les opérations que l'algorithme doit accomplir doivent être suffisamment basiques pour pouvoir être en principe réalisées dans une durée finie par un homme utilisant un papier et un crayon ».
+
 </details>
 
 > Une recette de cuisine peut être réduite à un algorithme. En **entrée** on injecte des ingrédients et on spécifie le matériel utilisé. Ces entrées sont ensuite utilisés par des **instructions élémentaires simples** (couper, frire, mélanger...) pour donner en **sortie** un plat préparé.
 
-### L'algorithme d'Euclide
+###  L'algorithme d'Euclide
 
 L'algorithme antique le plus connu est l'algorithme d'Euclide qui permet de calculer le plus grand commun diviseur (PGCD) de deux nombres entiers, c'est à dire de trouver le plus grand entier qui divise les deux entiers en laissant un reste nul. Cet algorithme simple est décrit ci-dessous grâce à un organigramme, un pseudo-code (code en langage naturel) puis sous une version python.
 
@@ -193,21 +194,21 @@ Une des façons intuitive de trier des cartes, c'est :
 
 ```pseudocode
 tri_insertion(liste L)
-	Pour i allant de 1 à la longueur de L-1 faire
-		placer l'élément L[i] dans la liste déjà classée L[0:i-1]
-	retourner la liste L
+ Pour i allant de 1 à la longueur de L-1 faire
+  placer l'élément L[i] dans la liste déjà classée L[0:i-1]
+ retourner la liste L
 ```
 
 ```python
 def tri_insertion(L):
-	for i in range(1, len(L)):
-		elt = L[i]
-		j = i
-		while elt < L[j-1] and j > 0:
-			L[j]  =L[j-1]
-			j -= 1
-		L[j] = elt
-	return L
+ for i in range(1, len(L)):
+  elt = L[i]
+  j = i
+  while elt < L[j-1] and j > 0:
+   L[j]  =L[j-1]
+   j -= 1
+  L[j] = elt
+ return L
 ```
 
 ?> Regarder les animations [en ligne](http://lwh.free.fr/pages/algo/tri/tri_insertion.html) du tri par insertion. Vous pouvez également visualiser l'algorithme de tri par insertion grâce à des [danseurs roumains](https://www.youtube.com/watch?v=ROalU379l3U).
@@ -231,13 +232,13 @@ Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité 
 
 ## Invariant et preuve de terminaison
 
-http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1
+<http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1>
 
-!> Work in progress
+!> TO DO (work in progress)
 
 ## Apprentissage et algorithme du plus proche voisin
 
-!> Work in progress
+!> TO DO (work in progress)
 
 ## Algorithmes gloutons
 
@@ -250,7 +251,7 @@ Imaginez un paysage dans lequel vous souhaitez atteindre le point le plus haut. 
 
 ?> Prenons l'exemple d'un commerçant qui doit vous rendre 9€ en monnaie. Combien y a t'il de combinaisons possibles sachant que le commerçant a des pièces de 1€, de 2€ et des billet de 5€ et de 10€? Lister toutes ces solutions. Quelle est la solution qui utilise le moins de pièces/billets ?
 
-Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ * 113, 1€*111 + 2€ …) ?
+Bravo, dans l'exercice précédent vous venez d'utiliser la force brute. Maintenant imaginez que je vous pose la même question pour rendre 113 euros, listeriez vous toutes les solutions (1€ *113, 1€*111 + 2€ …) ?
 
 Une solution assez simple utilise un algorithme glouton. Avec une stratégie gloutonne de rendu de monnaie, on va d'abord rendre la valeur maximal possible (ici 5€). Pour rendre 9 euros, on ne peut pas utiliser un billet de 10€, donc on rend d'abord un billet de 5€. Il reste alors 4€ à rendre. On va rendre alors une pièce de 2€. Il reste 2€ à rendre. On rend enfin une deuxième pièce de 2€. Dans le cas du rendu de monnaie en euro, un algorithme glouton va toujours permettre de trouver la solution optimal. On dit que le système en euro est **canonique**. Avec d'autres systèmes monétaire, l'algorithme glouton peut manquer la solution optimale.
 

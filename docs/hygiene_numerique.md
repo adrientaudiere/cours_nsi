@@ -20,7 +20,7 @@ Il est fortement conseiller d'utiliser un gestionnaire de mot de passe. L'idée 
 
 ## Écologie et numérique
 
-https://httparchive.org/reports/page-weight
+<https://httparchive.org/reports/page-weight>
 
 ## La neutralité du net
 
@@ -30,13 +30,13 @@ Site de l'association [La Quadrature du Net](https://www.laquadrature.net/neutra
 ## Aller plus loin dans l'apprentissage de l'informatique
 
 ### Devenir développeur
+
 De nombreuses formations sont disponibles en lignes. Le plus difficile est d'identifier ce qu'il faut apprendre. Pour cela vous pouvez aller voir les guides visuels de conseils d'apprentissages sur [roadmap.sh](https://roadmap.sh)
 
 - [développeur frontend](https://roadmap.sh/frontend)
 - [développeur backend](https://roadmap.sh/backend)
 - [développeur python](https://roadmap.sh/python)
 - [développeur android](https://roadmap.sh/android)
-
 
 ### Ressources pour python
 

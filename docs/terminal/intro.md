@@ -1,4 +1,4 @@
-# NSI en terminal
+# NSI en terminal
 
 L'ensemble du programme est disponible sur la page d'accueil des [terminals](/terminal.md)
 

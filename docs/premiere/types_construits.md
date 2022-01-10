@@ -4,11 +4,11 @@ En programmation, on stocke souvent plusieurs valeurs dans un même objet
 aussi appelé séquence. Ces objets sont des ensembles finis et ordonnés
 contenant n éléments indexés (en python, l'index va de 0 à n-1). Dans
 ce chapitre, nous allons étudier les trois principaux types d'objets
-utilisés en python : les tuples, les tableaux (aussi appelé abusivement listes en python) et les dictionnaires.
+utilisés en python : les tuples, les tableaux (aussi appelé abusivement listes en python) et les dictionnaires.
 
 ---
 
-<p class="center-p"> <strong> Résumés des types construits.</strong> </p>
+<p class="center-p"> <strong> Résumés des types construits.</strong> </p>
 
 ![types construits](../_img/dessin_types_construits.png ":size=60%")
 
@@ -110,7 +110,7 @@ mon_tableau = [19, 20, 21, 22, 23]
 mon_tableau.remove(21) # supprime l'élément 21*
 ```
 
-?> **Exercice 1** : Que fait le code **mon_tableau.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
+?> **Exercice 1** : Que fait le code **mon_tableau.remove(21)** quand plusieurs éléments sont égaux à 21 ? N'hésitez pas à tester!
 
 Pour déterminer la **longueur d'un tableau**, on utilise la fonction _len()_ :
 
@@ -168,7 +168,7 @@ tab_modifie = [nb for nb in tab_original if nb % 2 == 0]
 #renvoie les nombres pairs
 ```
 
-?> **Exercice 3** : Que renvoie le code suivant? Essayer de trouver le résultat avant de le tester.
+?> **Exercice 3** : Que renvoie le code suivant? Essayer de trouver le résultat avant de le tester.
 
 ```python
 li = [1, 2, 7, 6, 9]
@@ -177,7 +177,7 @@ li2 = [nb * 2 for nb in li if nb
 *print**(li2)*
 ```
 
-?> **Exercice 4** : Compléter le code suivant pour qu'il renvoie le résultat « [2, 8] ».
+?> **Exercice 4** : Compléter le code suivant pour qu'il renvoie le résultat « [2, 8] ».
 
 ```python
 li = [1, 2, 7, 6, 9]
@@ -308,7 +308,7 @@ mon_titre = 'introduction'
 mon_titre.upper().center(20)
 ```
 
-?> **Exercice 5** : Expliquer ce que permettent les méthodes _lower_, _upper_, _capitalize_ et _center_ utilisées ci-dessus.
+?> **Exercice 5** : Expliquer ce que permettent les méthodes _lower_, _upper_, _capitalize_ et _center_ utilisées ci-dessus.
 
 La méthode _format_ permet de formater une chaîne de caractère pour l'afficher.
 
@@ -320,7 +320,7 @@ lycee = 'Scholae'
 print("Je m'appelle {} et j'enseigne le {} à {}.".format(prenom, matiere, lycee))
 ```
 
-?> **Exercice 6** : Quel est le résultat du code suivant ?
+?> **Exercice 6** : Quel est le résultat du code suivant ?
 
 ```python
 ma_chaine = *'*Hello, world !'

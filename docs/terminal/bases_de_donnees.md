@@ -109,7 +109,7 @@ On peut représenter la structure d'une base données relationnelle à partir d'
 
 On écrit une ligne par relation avec ces attributs entre parenthèse et séparés par des virgules. On note également le type des attributs. Par exemple, la base de données des joueurs de football de Ligue 1 pourrait s'écrire :
 
-- *Joueur*(<u><em>Nom</u></em> STRING, *Prénom* STRING, *Age* INT, *Ratio_ _but_par_tir* FLOAT, *Date_naissance* INT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>Club</em></u> STRING)
+- *Joueur*(<u><em>Nom</u></em> STRING, *Prénom* STRING, *Age* INT, *Ratio_ _but_par_tir* FLOAT, *Date_naissance* INT, <u style="text-decoration: none; border-bottom: 1px dotted; cursor: help;"><em>Club</em></u> STRING)
 
 - *Club*(<u style="border-bottom: 1px dotted; cursor: help;"><em>Acronyme</em></u>, STRING, *Nb_joueurs* INT, *Année_création* DATE)
 
@@ -171,7 +171,7 @@ ON Monstres.Race = Races.Race
 ```
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 ?> Pour s'exercer au SQL vous pouvez suivre les cours du [COLIBRI](https://colibri.unistra.fr/fr/course/list/notions-de-base-en-sql) de Strasbourg et vous entraîner sur la [Khan academy](https://fr.khanacademy.org/computing/computer-programming/sql).
 
@@ -216,11 +216,11 @@ Un **SGBD** (**Systèmes de Gestion de Bases de Données**) est un logiciel qui 
 - la **modification** (ajout, suppression, mise à jour) de ces bases de données (modification d'entité, d'attribut ou de valeur),
 - l'**interrogation** de la base de données (par ex. avec le langage SQL).
 
-Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui ont accès à des données/fonctions différentes. Ils sont souvent organisés sur un modèle **client-serveur** pour permettre à plusieurs utilisateurs d'avoir un **accès simultanés aux données**. Un autre aspect fondamental des SGBD modernes qui utilisent le langage SQL est que l'utilisateur peut demander des résultats sans coder la manière dont ils vont lui être donnés. Par exemple, si vous demandez une liste triée des livres d'une médiathèque datant de l'année 2000, vous ne faîtes aucune recommandation sur les algorithmes qui vont être utilisés (tri fusion par exemple). C'est le SGBD qui se charge de décider de la meilleure manière de calculer la réponse à votre question. C'est la raison pour laquelle le langage SQL est parfois qualifié de **langage déclaratif**.
+Les SGBD permettent souvent de définir plusieurs **niveaux d'utilisateurs** qui ont accès à des données/fonctions différentes. Ils sont souvent organisés sur un modèle **client-serveur** pour permettre à plusieurs utilisateurs d'avoir un **accès simultanés aux données**. Un autre aspect fondamental des SGBD modernes qui utilisent le langage SQL est que l'utilisateur peut demander des résultats sans coder la manière dont ils vont lui être donnés. Par exemple, si vous demandez une liste triée des livres d'une médiathèque datant de l'année 2000, vous ne faîtes aucune recommandation sur les algorithmes qui vont être utilisés (tri fusion par exemple). C'est le SGBD qui se charge de décider de la meilleure manière de calculer la réponse à votre question. C'est la raison pour laquelle le langage SQL est parfois qualifié de **langage déclaratif**.
 
 
 <details class="advanced_level">
-<summary> <strong> Niveau avancé :</strong></summary>
+<summary> <strong> Niveau avancé :</strong></summary>
 
 !> Le langage SQL permet l'ajout de contrainte d'intégrité dans de nombreux SGBD. Pour cela on utilise la formule : *CREATE ASSERTION Nom_contrainte CHECK (expression_conditionnelle)*. Par exemple, pour vérifier que l'attribut courriel est composé d'une arrobase entouré par au moins une lettre avant et une après, on utilise la commande ci-dessous. 
 
@@ -241,7 +241,7 @@ En informatique, les propriétés ACID (atomicité, cohérence, isolation et dur
 - **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
 - **Isolation** : chaque transaction est indépendante, elles s'exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
 
-- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
+- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
 
 > À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants on des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
 
@@ -258,7 +258,7 @@ curseur = connexion.cursor()
 # l'utilisation du nom cursor n'est pas au programme
 
 # Exécution d'une requête
-curseur.execute ("MA REQUÊTE SQL")
+curseur.execute ("MA REQUÊTE SQL")
 
 # Affichage des résultats de la requête
 for element in curseur:
@@ -328,7 +328,7 @@ connexion.close()
 
 1. Regrouper les mots synonymes : relation, colonne, entité, column, entité, attribut, table, schéma, base de données, domaine, ligne, type, row
 
-1. Créer la base de données relationnelle de la médiathèque schématiser dans les exercices précédents à l'aide de la requête CREATE TABLE en ajoutant un maximum de contrainte d'intégrité.
+1. Créer la base de données relationnelle de la médiathèque schématiser dans les exercices précédents à l'aide de la requête CREATE TABLE en ajoutant un maximum de contrainte d'intégrité.
 
 1. Écrire les requêtes SQL sur la base de données de la médiathèque permettant de :
    1. Tous les titres des livres,
