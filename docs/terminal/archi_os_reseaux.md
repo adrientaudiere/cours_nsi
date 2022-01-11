@@ -46,7 +46,7 @@ La miniaturisation des circuits intégrées a permit l'avènement des microcontr
 
 </div>
 
-Les microcontrôleurs reposent souvent sur l'**architecture de Harvard** (car inventé à l'université d'Harvard). Dans cette architecture, la mémoire des programmes est dissocié physiquement de la mémoire des données. L'Unité Arithmétique et Logique (UAL) communique avec les deux types de mémoire grâce à deux bus distincts. Cela permet un accès simultanée aux données et aux programmes ce qui accélère le processus mais complexifie l'architecture. Autrement dit l’architecture de type von Neumann (vu en [première](../premiere/archi_OS.md)) s’oppose à celle de Harvard car elle utilise une unique structure pour stocker à la fois le programme et les données. L'architecture de Harvard peut donc se montrer plus rapide que l'architecture de von Neumann au prix d'une complexité accrue de la structure.
+Les microcontrôleurs reposent souvent sur l'**architecture de Harvard** (car inventé à l'université d'Harvard). Dans cette architecture, la mémoire des programmes est dissocié physiquement de la mémoire des données. L'Unité Arithmétique et Logique (UAL) communique avec les deux types de mémoire grâce à deux bus distincts. Cela permet un accès simultanée aux données et aux programmes ce qui accélère le processus mais complexifie l'architecture. Autrement dit l’architecture de type von Neumann (vu en [première](/premiere/archi_OS.md)) s’oppose à celle de Harvard car elle utilise une unique structure pour stocker à la fois le programme et les données. L'architecture de Harvard peut donc se montrer plus rapide que l'architecture de von Neumann au prix d'une complexité accrue de la structure.
 
 ### Système sur puce (SoC)
 
@@ -295,9 +295,9 @@ Ce protocole repose sur des théorèmes mathématiques complexes. Le chiffrement
 
 #### HTTP n'est pas sécurisé
 
-Le protocole HTTP (_HyperText Transfert Protocol_) est un protocole de communication que nous avons déjà vu en première ([Interface homme-machine](../premiere/IHM.md)).
+Le protocole HTTP (_HyperText Transfert Protocol_) est un protocole de communication que nous avons déjà vu en première ([Interface homme-machine](/premiere/IHM.md)).
 
-?> Relire la partie HTTP du cours de première ([Interface homme-machine](../premiere/IHM.md))
+?> Relire la partie HTTP du cours de première ([Interface homme-machine](/premiere/IHM.md))
 
 Le protocole HTTP n'est pas sécurisé, les communications entre le client et le serveur peuvent être interceptées et lues puisque les paquets sont envoyés en clair.
 
