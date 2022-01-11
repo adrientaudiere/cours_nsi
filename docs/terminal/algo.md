@@ -57,7 +57,6 @@ t1.insert(0, "J'aime ")
 t1.insert(2, "Corrigan")
 print(t1)
 
-
 ```
 
 ### Le principe de la liste chaînée
@@ -100,7 +99,7 @@ print(L.cdr().car())
 print(L.cdr().cdr().car())
 ```
 
-?> Que permettent les deux fonctions ci dessous? Écrire une version récursive de la fonction *fonction_mystere2()*.
+?> Que permettent les deux fonctions ci-dessous? Écrire une version récursive de la fonction *fonction_mystere2()*.
 
 ```python
 def fonction_mystere1(L):
@@ -229,7 +228,13 @@ flowchart TD
 
 <p class="center-p"> Schema d'un arbre avec la racine en orange et les feuilles en vert.</p>
 
-!> <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html>
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Voire le cours de [isn-icn-ljm](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html)
+
+</details>
+
 
 ?> Donner le degré et la hauteur des arbres ci-dessous ainsi que le degré et la hauteur des nœuds B de chaque arbre. 
 
@@ -259,7 +264,7 @@ A-|      +-- F
 
 Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous-arbre droit.
 
-?> Compléter le texte : L'image ci dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbres binaires. Les arbres ... et ... sont identiques (ils ont la même structure). 
+?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbres binaires. Les arbres ... et ... sont identiques (ils ont la même structure). 
 
 ![](../_img/dessin_arbres.png ":size=60%")
 
@@ -352,7 +357,69 @@ flowchart TD
     9 --- 10((10))
 ```
 
+### Implémentation d'un arbre binaire en python
+
+Une implémentation d'arbres binaires doit permettre un certain nombre d'opération : 
+- Construire un arbre vide 
+- Tester si un arbre est vide
+- Construire un arbre à partir d’un entier et de deux sous-arbres gauche et droit
+- Accèder à la racine d’un arbre
+- Accèders au sous-arbre gauche et au sous-arbre droit
+
+
+```python
+class Noeud:
+    def __init__(self, valeur, gauche, droit):
+        self.n = valeur
+        self.g = gauche 
+        self.d = droit
+
+class ArbreBinaire: 
+    def __init__(self, c):
+        self.r = c
+    def creeVide():
+        return ArbreBinaire(None)
+    def creeNGD(valeur, gauche = None, droit = None):
+        return ArbreBinaire(Noeud(valeur, gauche, droit))
+    def estVide(self):
+        return self.r is None
+    def racine(self):
+        assert not(self.r is None), 'Arbre vide'
+        return self.r.n
+    def filsGauche(self): 
+        assert not(self.r is None), 'Arbre vide'
+        return self.r.g 
+    def filsDroit(self): 
+        assert not(self.r is None), 'Arbre vide'
+        return self.r.d
+```
+?> À partir du pseudo-code ci-dessous, écrire une méthode qui permet de calculer la taille de l'arbre et une méthode qui calcul sa hauteur.
+
+```pseudo code
+# Calcul de la taille de façon récursive : retourne le nombre de sommets (racine + nœuds + feuilles)
+
+taille(arbre):
+    Si arbre est vide 
+        Retourner 0 
+    Sinon 
+        Retourner 1 + taille (fils gauche) + taille (fils droit)
+
+# Calcul de la hauteur de façon récursive
+
+hauteur(arbre):
+    Si arbre est vide
+        Retourner 0 
+    Sinon 
+        Retourner 1 + max(hauteur (fils gauche), hauteur(fils droit))
+``` 
+
 ###  Arbres binaires de recherche
+
+Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à dire que les nœuds ont des valeurs) que l'on utilise pour trier des données afin de faire des recherches. Il a la particularité suivante : pour  tout  nœud A,  tous  les  nœuds  situés  dans  le  sous-arbre  gauche de A ont  une  valeur  inférieur ou égale à celle de A, et tous les nœuds situés dans le sous-arbre droit ont une valeur supérieure ou égale à celle de A.
+
+
+!> To do :  exercice avec des arbres binaires de recherche ou non !!!!!!!!!!!!!!
+
 
 ### Autres structures arborescentes
 
