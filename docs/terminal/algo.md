@@ -32,7 +32,8 @@ Les tableaux (abusivement appelés listes dans le langage python) sont une impl�
 
 ```python
 # Une liste vide
-t = []
+t1 = []
+t2 = [1, 2, 3]
 
 # Une fonction de test d'une liste vide
 def tableau_est_vide(tab):
@@ -42,16 +43,21 @@ def tableau_est_vide(tab):
         print("Le tableau est vide")
 
 # Obtenir la tête
-....................
+#....................
 
 # Obtenir la queue
-....................
+#....................
+
+# Tester vos fonctions tete et queue sur les tableaux t1 et t2
+#....................
 
 # Modifier une liste
-t.append("Jimmy ")
-t.insert(0, "J'aime ")
-t.insert(1, "Corrigan")
-print(t)
+t1.append("Jimmy ")
+t1.insert(0, "J'aime ")
+t1.insert(2, "Corrigan")
+print(t1)
+
+
 ```
 
 ### Le principe de la liste chaînée
@@ -225,9 +231,34 @@ flowchart TD
 
 !> <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html>
 
+
+?> Donner le degré et la hauteur des arbres ci-dessous :
+
+```text
+  +-- B 
+A-| 
+  +-- C
+```
+
+```text
+         +-- D
+  +-- B--|  
+A-|      +-- F
+  +-- C
+```
+
+```text
+         +-- D -- G -- H
+  +-- B--|-- E  
+A-|      +-- F
+  +-- C
+```
+
+?> Dessiner un arbre de degré 5 et de hauteur 4.
+
 ###  Arbres binaires
 
-Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous arbre droit.
+Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous-arbre droit.
 
 #### Parcours en largeur
 
