@@ -1,6 +1,6 @@
 # Algorithmique <span onclick="window.print()" class="pdf-link"> :fa fa-file-pdf:</span>
 
-!> Réviser le [programme de première](../premiere/types_construits.md) sur les types construits.
+!> Réviser le [programme de première](/premiere/types_construits.md) sur les types construits.
 
 ## Liste
 
@@ -179,7 +179,7 @@ Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquell
 
 ## Dictionnaires
 
-Le dictionnaire est un type abstrait de données qui ressemble à première vue beaucoup à un tableau. La différence est qu'un tableau associe un élément à une position alors qu'un dictionnaire associe un élément (une valeur) à une clé. Un dictionnaire est donc un ensemble de couple clé:valeur. Nous avons déjà vu cette structure [en première](../premiere/types_construits.md#les-dictionnaires).
+Le dictionnaire est un type abstrait de données qui ressemble à première vue beaucoup à un tableau. La différence est qu'un tableau associe un élément à une position alors qu'un dictionnaire associe un élément (une valeur) à une clé. Un dictionnaire est donc un ensemble de couple clé:valeur. Nous avons déjà vu cette structure [en première](/premiere/types_construits.md#les-dictionnaires).
 
 Les opérations que l'on peut effectuer sur un dictionnaire sont les suivantes :
 
@@ -208,7 +208,7 @@ Distinguer interface et implémentation
 En informatique, un **arbre** est une **structure de données** composés de **nœuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux nœuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
 
 Ces structures en arbres sont caractérisés par un ensemble de mots de vocabulaire importants :
-Un **arbre** est constitué de **nœuds** reliés par des branches. Un des nœud est appelé **racine** et les nœuds qui sont à l'opposé de la racine sont des **feuilles**. Un nœud peut être caractérisé par sa distance à la racine que l'on appelle **hauteur** (= **profondeur**) et par le nombre de fils qu'il a que l'on appelle **degré**. La **hauteur d'un arbre** correspond à la hauteur du nœud le plus haut. De même **le degré d'un arbre** correspond à la valeur de degré du nœud ayant le plus grand degré. Enfin la taille d'un arbre se calcul en comptant le nombre de nœuds sur cette arbre. On emprunte le **vocabulaire à la généalogie** pour décrire les relations entre nœuds on parle de nœuds parents, frères, ascendants, descendants, ancêtres.
+Un **arbre** est constitué de **nœuds** reliés par des branches. Un des nœud est appelé **racine** et les nœuds qui sont à l'opposé de la racine sont des **feuilles**. Un nœud peut être caractérisé par sa distance à la racine que l'on appelle **hauteur** (= **profondeur**) et par le nombre de fils qu'il a que l'on appelle **degré**. La **hauteur d'un arbre** correspond à la hauteur du nœud le plus haut (par convention la racine a souvent une hauteur de 0). De même **le degré d'un arbre** correspond à la valeur de degré du nœud ayant le plus grand degré. Enfin la taille d'un arbre se calcul en comptant le nombre de nœuds sur cette arbre. On emprunte le **vocabulaire à la généalogie** pour décrire les relations entre nœuds on parle de nœuds parents, frères, ascendants, descendants, ancêtres.
 
 <div style="margin:auto">
 
@@ -231,8 +231,7 @@ flowchart TD
 
 !> <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html>
 
-
-?> Donner le degré et la hauteur des arbres ci-dessous :
+?> Donner le degré et la hauteur des arbres ci-dessous ainsi que le degré et la hauteur des nœuds B de chaque arbre. 
 
 ```text
   +-- B 
@@ -259,6 +258,17 @@ A-|      +-- F
 ###  Arbres binaires
 
 Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous-arbre droit.
+
+?> Compléter le texte : L'image ci dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbres binaires. Les arbres ... et ... sont identiques (ils ont la même structure). 
+
+![](../_img/dessin_arbres.png ":size=60%")
+
+
+Les arbres binaires forment une structure de données qui peut se définir de façon récursive. Ainsi, un arbre binaire est :
+- Soit vide;
+- Soit composé d’une racine et d’une paire d’arbres binaires, appelés sous-arbres gauche et droit.
+
+Un arbre binaire peut être parcouru en largeur ou en profondeur. Le parcours en profondeur peut être de type infixe, préfixe ou suffixe.
 
 #### Parcours en largeur
 
@@ -323,7 +333,7 @@ flowchart TD
 
 ---
 
-<p class="center-p"> Schema du parcours en longeur de type infixe.</p>
+<p class="center-p"> Schéma du parcours en longeur de type infixe.</p>
 
 ##### Suffixe
 
@@ -374,6 +384,13 @@ Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas de
 
 ?> Faire le TD sur l'algorithme de Boyer-Moore (modifié de Stéphan Van Zuijlen (CC-BY-NC)).
 
+!> To do later
+
+
+
+
 ## Calculabilité/décidabilité
 
 ?> Lire le [chapitre 0](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre0.html) de Stéphan Van Zuijlen. Expliquer en deux phrases la notion de décidabilité.
+
+!> To do later
