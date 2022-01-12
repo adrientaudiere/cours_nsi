@@ -281,7 +281,7 @@ A-|      +-- F
 
 Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous-arbre droit.
 
-?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbres binaires. Les arbres ... et ... sont identiques (ils ont la même structure). 
+?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbre(s) binaire(s). Les arbres ... et ... sont identiques (ils ont la même structure). 
 
 ![](../_img/dessin_arbres.png ":size=45%")
 
@@ -383,14 +383,11 @@ flowchart TD
 
     classDef racine fill:#f81;
     classDef feuille fill:#196;
-
 ```
 
 ---
 
 <p class="center-p"> Schéma du parcours en profondeur de type suffixe.</p>
-
-
 
 
 ?> Décrire le parcours en hauteur, en profondeur infixe, prefixe et suffixe de l'arbre binaire ci-dessous.
@@ -488,9 +485,11 @@ Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à d
 
 !> Voici 4 arbres, quels sont les arbres binaires de recherche.
 
+!> TO DO changer les ABR du dessin qui ne sont pas bon
+
 ![exercice_ABR](../_img/dessin_ABR.png ":size=60%")
 
-<p class="center-p"> Différents arbres, lesquels sont des ABR. </p>
+<p class="center-p"> Différents arbres, lesquels sont des ABR? </p>
 
 ---
 
