@@ -125,7 +125,7 @@ L=cons(6,L)
 
 # Instruction 2
 x = L.car()
-L = cons(L.cdr().car(),L.cdr().cdr())
+L = cons(L.cdr().car(), L.cdr().cdr())
 ```
 
 <details class="advanced_level">
@@ -172,9 +172,21 @@ On peut lister quelques opérations courantes sur les piles :
 
 - la consultation du sommet d’une pile.
 
-### files
+### Files
 
-Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. En informatique, on utilise les files,  
+Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. 
+
+
+On peut lister quelques opérations courantes sur les files :
+
+- la création d’une file,
+
+- l'ajout d’un élément dans une file,
+
+- la suppression du premier élément d'une file (défilement),
+
+- la consultation du début d’une file.
+
 
 ## Dictionnaires
 
@@ -202,7 +214,6 @@ Distinguer interface et implémentation
 
 ## Structures en arbres
 
-!> TO DO (work in progress)
 
 En informatique, un **arbre** est une **structure de données** composés de **nœuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux nœuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
 
@@ -479,6 +490,8 @@ Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à d
 
 
 ### Autres structures arborescentes
+
+!> TO DO (work in progress)
 
 ## Graphe
 
