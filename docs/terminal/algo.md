@@ -20,7 +20,19 @@ Une liste est une structure de données permettant de regrouper des données. Un
 
 ---
 
-Nous avons défini ici le concept théorique de liste en informatique. C'est pourquoi on parle de type abstrait de données. Chaque langage de programmation est libre d'implémenter cette structure comme il le souhaite tant que les opérations décrites ci-dessus sont permises par l'implémentation. Pour implémenter le type abstrait *liste*, beaucoup de langages de programmation utilisent 2 types de structures : les tableaux et les listes chaînées.
+Nous avons définis ici le concept théorique de liste en informatique. C'est pourquoi on parle de type abstrait de données. Chaque langage de programmation est libre d'implémenter cette structure comme il le souhaite tant que les opérations décrites ci-dessus sont permises par l'implémentation. Pour implémenter le type abstrait *liste*, beaucoup de langages de programmation utilisent 2 types de structures : les tableaux et les listes chaînées.
+
+
+
+
+<div class="nutshell">
+
+L'implémentation d'une liste doit permettre (moyen mémnotechnique : initiale CAT) : 
+- de **construire** une liste vide et une liste à partir d'autres listes,
+- d'**accéder** aux valeurs (obtenir la tête et la queue),
+- de **tester** si une liste est vide.
+
+</div>
 
 ## Listes chaînées
 
@@ -159,17 +171,14 @@ Il existe deux structures de données très utilisées en informatiques : les **
 
 ### Piles
 
-Une **pile** (**LIFO** pour *Last In First Out*) est une façon de structurer des données qui est très utilisée en informatique. Prenons une analogie: des cartons de déménagement qu'on empile forme une pile. Le dernier carton arrivé (Last In) sur le tas est le premier à être enlever.
+Une **pile** (**LIFO** pour *Last In First Out*) est une façon de structurer des données qui est très utilisée en informatique. Prenons une analogie: des cartons de déménagement qu'on empile forment une pile. Le dernier carton arrivé (Last In) sur le tas est le premier à être enlever.
 En informatique, on utilise par exemple les piles dans les piles d'appels de fonctions ou encore pour parcourir des graphes.
 
 On peut lister quelques opérations courantes sur les piles :
 
 - la création d’une pile,
-
 - l'empilement d’un élément sur une pile,
-
 - le dépilement d’une pile,
-
 - la consultation du sommet d’une pile.
 
 ### Files
@@ -180,11 +189,8 @@ Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquell
 On peut lister quelques opérations courantes sur les files :
 
 - la création d’une file,
-
 - l'ajout d’un élément dans une file,
-
 - la suppression du premier élément d'une file (défilement),
-
 - la consultation du début d’une file.
 
 
@@ -242,7 +248,7 @@ flowchart TD
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-?> Voire le cours de [isn-icn-ljm](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html)
+?> Voir le cours de [isn-icn-ljm](https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html)
 
 </details>
 
@@ -277,7 +283,7 @@ Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au m
 
 ?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbres binaires. Les arbres ... et ... sont identiques (ils ont la même structure). 
 
-![](../_img/dessin_arbres.png ":size=60%")
+![](../_img/dessin_arbres.png ":size=45%")
 
 
 Les arbres binaires forment une structure de données qui peut se définir de façon récursive. Ainsi, un arbre binaire est :
@@ -309,7 +315,7 @@ flowchart TD
 Il existe trois façon de parcourir en profondeur un arbre. En suivant le chemin bleu dans la figure ci-dessous, on passe par chaque nœud 3 fois. On peut alors noter un nœud la première (préfixe), la deuxième (infixe) ou la troisième fois (suffixe) que l'on croise le nœud. Notez que pour cela, nous avons représenter les feuilles fantômes avec des liens qui ne sont liés à aucun nœuds. 
 
 
-![Schéma des parcours en profondeur d'un arbre binaire](../_img/dessin_parcours_arbres.png ":size=70%")
+![Schéma des parcours en profondeur d'un arbre binaire](../_img/dessin_parcours_prof.png ":size=70%")
 
 <p class="center-p"> Schéma des parcours en profondeur d'un arbre binaire. </p>
 
@@ -406,12 +412,12 @@ flowchart TD
 <div class="nutshell">
 
 Un arbre peut être parcouru de 4 façon différentes : 
-
 - en largeur
 - en profondeur 
   - dans un ordre préfixe
   - dans un ordre infixe
   - dans un ordre suffixe
+
 </div>
 
 ![Schéma des parcours d'un arbre binaire](../_img/dessin_parcours_arbres.png ":size=70%")
