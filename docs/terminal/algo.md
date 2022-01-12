@@ -295,21 +295,28 @@ flowchart TD
 
 #### Parcours en profondeur
 
-##### Infixe
+Il existe trois façon de parcourir en profondeur un arbre. En suivant le chemin bleu dans la figure ci-dessous, on passe par chaque nœud 3 fois. On peut alors noter un nœud la première (préfixe), la deuxième (infixe) ou la troisième fois (suffixe) que l'on croise le nœud. Notez que pour cela, nous avons représenter les feuilles fantômes avec des liens qui ne sont liés à aucun nœuds. 
 
-Ordre infixe
 
-    Parcours branche gauche
-    Visite du nœud
-    Parcours branche droite
+![Schéma des parcours en profondeur d'un arbre binaire](../_img/dessin_parcours_arbres.png ":size=70%")
+
+<p class="center-p"> Schéma des parcours en profondeur d'un arbre binaire. </p>
+
+---
+
+##### Prefixe
+
+1. Visite du nœud
+1. Parcours branche gauche
+1. Parcours branche droite
 
 ```mermaid
 flowchart TD
     A["A (1)"]:::racine --- B["B (2)"]
     A --- C["C (5)"]
     B --- D["D (3)"]:::feuille
-    B --- F["F (4)"]:::feuille
-    C --- G["G (6)"]:::feuille
+    B --- E["E (4)"]:::feuille
+    C --- F["F (6)"]:::feuille
 
     classDef racine fill:#f81;
     classDef feuille fill:#196;
@@ -318,18 +325,21 @@ flowchart TD
 
 ---
 
-<p class="center-p"> Schema du parcours en longeur de type infixe.</p>
+<p class="center-p"> Schéma du parcours en profondeur de type infixe.</p>
 
-##### Prefixe
+##### Ordre Infixe
+
+1. Parcours branche gauche
+1. Visite du nœud
+1. Parcours branche droite
 
 ```mermaid
 flowchart TD
-    A["A (1)"]:::racine --- B["B (2)"]
-    A --- C["C (6)"]
-    B --- D["D (3)"]:::feuille
-    B --- E["E (4)"]:::feuille
-    B --- F["F (5)"]:::feuille
-    C --- G["G (7)"]:::feuille
+    A["A (4)"]:::racine --- B["B (2)"]
+    A --- C["C (5)"]
+    B --- D["D (1)"]:::feuille
+    B --- E["E (3)"]:::feuille
+    C --- F["F (6)"]:::feuille
 
     classDef racine fill:#f81;
     classDef feuille fill:#196;
@@ -338,9 +348,33 @@ flowchart TD
 
 ---
 
-<p class="center-p"> Schéma du parcours en longeur de type infixe.</p>
+<p class="center-p"> Schema du parcours en profondeur de type infixe.</p>
 
 ##### Suffixe
+
+1. Parcours branche gauche
+1. Parcours branche droite
+1. Visite du nœud
+   
+```mermaid
+flowchart TD
+    A["A (4)"]:::racine --- B["B (3)"]
+    A --- C["C (5)"]
+    B --- D["D (1)"]:::feuille
+    B --- E["E (2)"]:::feuille
+    C --- F["F (6)"]:::feuille
+
+    classDef racine fill:#f81;
+    classDef feuille fill:#196;
+
+```
+
+---
+
+<p class="center-p"> Schéma du parcours en profondeur de type suffixe.</p>
+
+
+
 
 ?> Décrire le parcours en hauteur, en profondeur infixe, prefixe et suffixe de l'arbre binaire ci-dessous.
 
@@ -356,6 +390,24 @@ flowchart TD
     5 --- 7((7))
     9 --- 10((10))
 ```
+
+
+<div class="nutshell">
+
+Un arbre peut être parcouru de 4 façon différentes : 
+
+- en largeur
+- en profondeur 
+  - dans un ordre préfixe
+  - dans un ordre infixe
+  - dans un ordre suffixe
+</div>
+
+![Schéma des parcours d'un arbre binaire](../_img/dessin_parcours_arbres.png ":size=70%")
+
+<p class="center-p"> Schéma des parcours d'un arbre binaire. </p>
+
+---
 
 ### Implémentation d'un arbre binaire en python
 
@@ -417,8 +469,13 @@ hauteur(arbre):
 
 Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à dire que les nœuds ont des valeurs) que l'on utilise pour trier des données afin de faire des recherches. Il a la particularité suivante : pour  tout  nœud A,  tous  les  nœuds  situés  dans  le  sous-arbre  gauche de A ont  une  valeur  inférieur ou égale à celle de A, et tous les nœuds situés dans le sous-arbre droit ont une valeur supérieure ou égale à celle de A.
 
+!> Voici 4 arbres, quels sont les arbres binaires de recherche.
 
-!> To do :  exercice avec des arbres binaires de recherche ou non !!!!!!!!!!!!!!
+![exercice_ABR](../_img/dessin_ABR.png ":size=60%")
+
+<p class="center-p"> Différents arbres, lesquels sont des ABR. </p>
+
+---
 
 
 ### Autres structures arborescentes
