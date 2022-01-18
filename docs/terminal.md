@@ -149,3 +149,6 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
 </div>
 
 
+## Fiche de révision
+
+- [Fiche structure de données](https://adrientaudiere.github.io/cours_nsi/_doc/fiche_structure_donnees.pdf)
