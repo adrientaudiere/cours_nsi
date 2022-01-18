@@ -485,11 +485,11 @@ Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à d
 
 !> Voici 4 arbres, quels sont les arbres binaires de recherche.
 
-!> TO DO changer les ABR du dessin qui ne sont pas bon
-
 ![exercice_ABR](../_img/dessin_ABR.png ":size=60%")
 
 <p class="center-p"> Différents arbres, lesquels sont des ABR? </p>
+
+https://github.com/joowani/binarytree
 
 ---
 
