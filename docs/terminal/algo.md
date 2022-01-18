@@ -27,7 +27,7 @@ Nous avons définis ici le concept théorique de liste en informatique. C'est po
 
 <div class="nutshell">
 
-L'implémentation d'une liste doit permettre (moyen mémnotechnique : initiale CAT) : 
+L'implémentation d'une liste doit permettre (moyen mnémotechnique : initiale CAT) : 
 - de **construire** une liste vide et une liste à partir d'autres listes,
 - d'**accéder** aux valeurs (obtenir la tête et la queue),
 - de **tester** si une liste est vide.
