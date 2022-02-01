@@ -52,3 +52,15 @@
 <https://townline.org/welcome-to-the-world-of-big-data/>
 
 <https://www.internetlivestats.com/>
+
+
+### Chaîne youtube NSI
+
+#### Terminal 
+
+https://www.youtube.com/playlist?list=PLmu0dyrWo2AR5SABHluBseMDxPpq5OEmb
+https://www.youtube.com/watch?v=XbXEpBe6EGg&list=PL2V_2xzaQW7dz4-gBt4Hj3VrmTskn4l2N
+
+#### Première
+
+https://www.youtube.com/watch?v=EHuwB082jEE&list=PL2V_2xzaQW7fUYnjbOZdj0_It7BeRXBQx
