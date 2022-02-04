@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="346.21735mm"
+   height="273.63693mm"
+   viewBox="0 0 346.21735 273.63693"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="dessin_recursivite.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker2791"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#ff9800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2789" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2670"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#00a4d9;fill-opacity:1;fill-rule:evenodd;stroke:#00a4d9;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2668" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2598"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#00a4d9;fill-opacity:1;fill-rule:evenodd;stroke:#00a4d9;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2596" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2520"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#ff9800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2518" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2126"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#ff9800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2124" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2023"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#ff9800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path2021" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1850"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#009800;fill-opacity:1;fill-rule:evenodd;stroke:#009800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1848" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1780"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#009800;fill-opacity:1;fill-rule:evenodd;stroke:#009800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1778" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#009800;fill-opacity:1;fill-rule:evenodd;stroke:#009800;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1520" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.4590395"
+     inkscape:cx="588.18468"
+     inkscape:cy="533.72313"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(78.739197,54.075357)">
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffdede;fill-opacity:1;stroke:#db2626;stroke-width:0.996506;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:none;stop-color:#000000;stop-opacity:1"
+       id="rect2666"
+       width="38.805798"
+       height="16.370249"
+       x="3.742377"
+       y="175.44734"
+       ry="4.7904696"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffdede;fill-opacity:1;stroke:#db2626;stroke-width:0.996506;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:none;stop-color:#000000;stop-opacity:1"
+       id="rect2738"
+       width="38.805798"
+       height="16.370249"
+       x="3.742377"
+       y="201.9057"
+       ry="4.7904696"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1368"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="rotate(-90,65.244121,90.955668)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1364"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"><rect
+           id="rect1362"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold Italic';font-family:sans-serif;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"
+         id="flowPara1366">Récursif</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot833"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(-7.9713346,27.425183)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion835"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect837"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara922">def somme_for(vec):</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara971">    somme = 0</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara973">    <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1299">for</flowSpan> i in range(len(vec)):</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara975">        somme += vec[i]</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara977">    return somme</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1003" /></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1045"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(-8.8032918,111.54238)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1007"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect1005"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1021">def somme_while(vec):</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1023">    somme = 0</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1025">    <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1301">while</flowSpan> len(vec)&gt;0:</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1027">        somme += vec[0]</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1029">        vec = vec[1:]</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1043">    return somme</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1062"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle"><flowRegion
+         id="flowRegion1064"><rect
+           id="rect1066"
+           width="4.1332746"
+           height="13.570255"
+           x="266.55695"
+           y="84.093399"
+           style="stroke-width:0.264583" /></flowRegion><flowPara
+         id="flowPara1068" /></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1137"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(-6.7385266,205.12663)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1099"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect1097"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1127">def somme_recu(vec):</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1129">    if len(vec) == 1:</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1131">        return vec[0]</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1133">    else :</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara1135">        return vec[0] + somme_recu(vec[1:])</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1303"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle"><flowRegion
+         id="flowRegion1305"><rect
+           id="rect1307"
+           width="222.1179"
+           height="212.2133"
+           x="185.60901"
+           y="-25.560682"
+           style="stroke-width:0.264583" /></flowRegion><flowPara
+         id="flowPara1309" /></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1329"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="rotate(-90,-19.799073,5.9589836)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1313"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"><rect
+           id="rect1311"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold Italic';font-family:sans-serif;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"
+         id="flowPara1327">Boucle FOR</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1360"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="rotate(-90,28.607075,54.36513)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1356"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"><rect
+           id="rect1354"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold Italic';font-family:sans-serif;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start"
+         id="flowPara1358">Boucle WHILE</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1360-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(196.61478,5.546896)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1356-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;text-anchor:start"><rect
+           id="rect1354-8"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;text-anchor:start"
+         id="flowPara1358-1">Condition d'arrêt</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1408"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(166.67554,26.19202)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1404"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"><rect
+           id="rect1402"
+           width="148.94537"
+           height="202.18236"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:justify;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
+         id="flowPara1406">S'arrête quand toute les valeurs de i ont été passées en revue.</flowPara></flowRoot>
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:3.14262;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect1410"
+       width="104.8438"
+       height="20.056589"
+       x="140.3519"
+       y="-52.504047"
+       ry="6.1680121"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M -43.743969,11.79093 H 72.37129"
+       id="path1432"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="M -33.107837,123.31153 H 29.568225"
+       id="path1432-2"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1466"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(166.22081,110.30922)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1462"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"><rect
+           id="rect1460"
+           width="149.8315"
+           height="201.35191"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:justify;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
+         id="flowPara1464">S'arrête quand la condition du while est obtenue. Attention au boucle infinie!</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1474"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(166.318,203.89347)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1470"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"><rect
+           id="rect1468"
+           width="149.8315"
+           height="201.35191"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:justify;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
+         id="flowPara1472">S'arrête quand la condition du <flowSpan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand"
+   id="flowSpan1915">if</flowSpan> est obtenue. Attention au boucle infinie!</flowPara></flowRoot>
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker1780);stop-color:#000000"
+       d="m 53.115395,91.284703 c 0,0 29.849164,4.548844 29.033003,15.486867 -1.277781,17.12457 -48.112875,16.39081 -48.112875,16.39081"
+       id="path1432-2-1"
+       sodipodi:nodetypes="csc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m 128.84635,218.56159 h 29.04266"
+       id="path1844"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker1850);stop-color:#000000"
+       d="m 41.628762,168.97429 c 0,0 27.84959,-0.51876 29.03302,15.48687 0.6579,8.89796 21.49006,9.47779 35.045228,9.91273 34.98545,1.12256 34.98524,7.20276 34.98524,7.20276"
+       id="path1846"
+       sodipodi:nodetypes="cssc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1360-5-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(-17.812006,3.6686349)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png"><flowRegion
+         id="flowRegion1356-4-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;text-anchor:start"><rect
+           id="rect1354-8-1"
+           width="353.10016"
+           height="273.22827"
+           x="-48.671703"
+           y="-54.799603"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:start;text-anchor:start"
+         id="flowPara1358-1-0">Initialisation de la variable</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1938"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle"><flowRegion
+         id="flowRegion1940"><rect
+           id="rect1942"
+           width="26.428989"
+           height="32.599663"
+           x="165.57251"
+           y="72.807739"
+           style="stroke-width:0.264583" /></flowRegion><flowPara
+         id="flowPara1944" /></flowRoot>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff9800;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2023);stop-color:#000000;stop-opacity:1"
+       d="M -48.197215,-7.5533818 H -64.83495"
+       id="path2009"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff9800;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2126);stop-color:#000000;stop-opacity:1"
+       d="M -49.255549,76.584123 H -64.788911"
+       id="path2122"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="fill:none;stroke:#00a4d9;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -30.948511,162.29655 h 64.53846"
+       id="path2554"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="fill:none;stroke:#00a4d9;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 56.334456,218.56908 H 120.87292"
+       id="path2554-2"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff9800;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M -64.782993,76.341678 V -36.184795"
+       id="path2758"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       inkscape:export-filename="/home/adrien/Desktop/cours_NSI/docs/_img/fig_recursivite.png" />
+  </g>
+</svg>

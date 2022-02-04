@@ -467,3 +467,5 @@ d'[Openclassroom](https://openclassrooms.com/fr/courses/6175841-apprenez-a-progr
 
 ?> :fas fa-dungeon: Fabriquer un site internet localement sur un sujet de votre choix. Vous pouvez vous aider de tutoriel (par ex. sur
 [Openclassroom](https://openclassrooms.com/fr/courses) ou encore du [cours](https://www.pierre-giraud.com/html-css-apprendre-coder-cours/) de Pierre Giraud).
+
+?> :fas fa-dungeon: Jouer au jeu [js robot](https://lab.reaal.me/jsrobot).
