@@ -73,6 +73,10 @@ est structuré en quatre couches :
 - Une couche **physique** qui concrétise le transport de données
   (câbles, Wi-Fi ).
 
+
+<iframe src="https://ourworldindata.org/grapher/share-of-individuals-using-the-internet" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
 #### IP (Internet Protocol)
 
 <!--
