@@ -240,6 +240,8 @@ Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité 
 
 !> TO DO (work in progress)
 
+https://eduscol.education.fr/document/30061/download
+
 ## Algorithmes gloutons
 
 Un **algorithme glouton** est une stratégie qui consiste à tenter de trouver une solution optimale à un problème en avançant par étape de solution locale.

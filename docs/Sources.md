@@ -20,6 +20,8 @@
 
 - Le travail des lycéens de Scholae pour améliorer le site.
 
+- [eduscol](https://eduscol.education.fr/2068/programmes-et-ressources-en-numerique-et-sciences-informatiques-voie-g)
+
 ## Sources secondaire
 
 <https://www.apprendre-en-ligne.net/index-info.html>
@@ -33,6 +35,12 @@
 <https://freecodecamp.org/>
 
 <https://librecours.net/>
+
+#### Se former en jouant
+
+[hackinscience](https://www.hackinscience.org/exercises/)
+
+[py-rates](https://py-rates.org/index.html)
 
 ###  Internet
 
@@ -63,4 +71,4 @@ https://www.youtube.com/watch?v=XbXEpBe6EGg&list=PL2V_2xzaQW7dz4-gBt4Hj3VrmTskn4
 
 #### Première
 
-https://www.youtube.com/watch?v=EHuwB082jEE&list=PL2V_2xzaQW7fUYnjbOZdj0_It7BeRXBQx
+https://www.youtube.com/watch?v=EHuwB082jEE&list=PL2V_2xzaQW7fUYnjbOZdj0_It7BeRXBQx_de
