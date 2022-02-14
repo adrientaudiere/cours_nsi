@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (1.0.1+r73)"
+   sodipodi:docname="dessin representation_des_nombres.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6960735"
+     inkscape:cx="303.46288"
+     inkscape:cy="388.90189"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot833"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-40.612053,-17.504783)"><flowRegion
+         id="flowRegion835"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville'"><rect
+           id="rect837"
+           width="278.12946"
+           height="157.39799"
+           x="48.433136"
+           y="27.559202"
+           style="stroke-width:0.264583;-inkscape-font-specification:'Libre Baskerville';font-family:'Libre Baskerville';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara839">Nombres naturels (entier positif)</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot833-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-37.196085,46.594067)"><flowRegion
+         id="flowRegion835-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville'"><rect
+           id="rect837-5"
+           width="278.12946"
+           height="157.39799"
+           x="48.433136"
+           y="27.559202"
+           style="stroke-width:0.264583;-inkscape-font-specification:'Libre Baskerville';font-family:'Libre Baskerville';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara839-0">Nombres relatifs</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot871"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-38.421747,120.88068)"><flowRegion
+         id="flowRegion867"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville'"><rect
+           id="rect865"
+           width="278.12946"
+           height="157.39799"
+           x="48.433136"
+           y="27.559202"
+           style="stroke-width:0.264583;-inkscape-font-specification:'Libre Baskerville';font-family:'Libre Baskerville';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+         id="flowPara869">Nombres décimaux</flowPara></flowRoot>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="132.14166"
+       y="37.322895"
+       id="text875"><tspan
+         sodipodi:role="line"
+         id="tspan873"
+         x="132.14166"
+         y="37.322895"
+         style="stroke-width:0.264583"> </tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot901"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="translate(-38.421747,136.75569)"><flowRegion
+         id="flowRegion897"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville'"><rect
+           id="rect895"
+           width="278.12946"
+           height="157.39799"
+           x="48.433136"
+           y="27.559202"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';stroke-width:0.264583;font-size:7.05555556px;" /></flowRegion><flowPara
+         id="flowPara899">Complément à 2</flowPara><flowPara
+         id="flowPara903" /></flowRoot>
+  </g>
+</svg>

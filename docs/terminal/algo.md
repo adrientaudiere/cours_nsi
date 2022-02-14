@@ -22,12 +22,10 @@ Une liste est une structure de données permettant de regrouper des données. Un
 
 Nous avons définis ici le concept théorique de liste en informatique. C'est pourquoi on parle de type abstrait de données. Chaque langage de programmation est libre d'implémenter cette structure comme il le souhaite tant que les opérations décrites ci-dessus sont permises par l'implémentation. Pour implémenter le type abstrait *liste*, beaucoup de langages de programmation utilisent 2 types de structures : les tableaux et les listes chaînées.
 
-
-
-
 <div class="nutshell">
 
-L'implémentation d'une liste doit permettre (moyen mnémotechnique : initiale CAT) : 
+L'implémentation d'une liste doit permettre (moyen mnémotechnique : initiale CAT) :
+
 - de **construire** une liste vide et une liste à partir d'autres listes,
 - d'**accéder** aux valeurs (obtenir la tête et la queue),
 - de **tester** si une liste est vide.
@@ -183,8 +181,7 @@ On peut lister quelques opérations courantes sur les piles :
 
 ### Files
 
-Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi. 
-
+Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquelle les premiers éléments arrivés sont les premiers à sortir. Une file ressemble à une file d'attente à la boulangerie, le premier arrivé devant la porte sera le premier servi.
 
 On peut lister quelques opérations courantes sur les files :
 
@@ -192,7 +189,6 @@ On peut lister quelques opérations courantes sur les files :
 - l'ajout d’un élément dans une file,
 - la suppression du premier élément d'une file (défilement),
 - la consultation du début d’une file.
-
 
 ## Dictionnaires
 
@@ -214,12 +210,11 @@ L'implémentation des dictionnaires utilise souvent des tables de hachages. Ce n
 
 ## Structure de données
 
-Distinguer interface et implémentation
+Distinguer interface et implémentation.
 
 !> To do later
 
 ## Structures en arbres
-
 
 En informatique, un **arbre** est une **structure de données** composés de **nœuds** reliés entre eux par des **branches**. Les arbres généalogiques en sont une illustration. Il y a une seul règle pour un arbre : il ne doit pas y avoir deux chemins possibles entre deux nœuds; autrement dit il ne doit **pas** y avoir **de cycle dans un arbre** (dans ce cas on parle de graphe).
 
@@ -252,8 +247,7 @@ flowchart TD
 
 </details>
 
-
-?> Donner le degré et la hauteur des arbres ci-dessous ainsi que le degré et la hauteur des nœuds B de chaque arbre. 
+?> Donner le degré et la hauteur des arbres ci-dessous ainsi que le degré et la hauteur des nœuds B de chaque arbre.
 
 ```text
   +-- B 
@@ -277,16 +271,16 @@ A-|      +-- F
 
 ?> Dessiner un arbre de degré 5 et de hauteur 4.
 
-###  Arbres binaires
+### Arbres binaires
 
 Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au maximum). On appelle les 2 nœuds descendants d'un nœud parents fils gauche et fils droit. On peut décomposer un arbre binaire de façon récursive en le divisant en sous-arbre gauche et sous-arbre droit.
 
-?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbre(s) binaire(s). Les arbres ... et ... sont identiques (ils ont la même structure). 
+?> Compléter le texte : L'image ci-dessous représente une forêt avec .... graphe(s) et .... arbre(s) dont .... arbre(s) binaire(s). Les arbres ... et ... sont identiques (ils ont la même structure).
 
 ![](../_img/dessin_arbres.png ":size=45%")
 
-
 Les arbres binaires forment une structure de données qui peut se définir de façon récursive. Ainsi, un arbre binaire est :
+
 - Soit vide;
 - Soit composé d’une racine et d’une paire d’arbres binaires, appelés sous-arbres gauche et droit.
 
@@ -312,8 +306,7 @@ flowchart TD
 
 #### Parcours en profondeur
 
-Il existe trois façon de parcourir en profondeur un arbre. En suivant le chemin bleu dans la figure ci-dessous, on passe par chaque nœud 3 fois. On peut alors noter un nœud la première (préfixe), la deuxième (infixe) ou la troisième fois (suffixe) que l'on croise le nœud. Notez que pour cela, nous avons représenter les feuilles fantômes avec des liens qui ne sont liés à aucun nœuds. 
-
+Il existe trois façon de parcourir en profondeur un arbre. En suivant le chemin bleu dans la figure ci-dessous, on passe par chaque nœud 3 fois. On peut alors noter un nœud la première (préfixe), la deuxième (infixe) ou la troisième fois (suffixe) que l'on croise le nœud. Notez que pour cela, nous avons représenter les feuilles fantômes avec des liens qui ne sont liés à aucun nœuds.
 
 ![Schéma des parcours en profondeur d'un arbre binaire](../_img/dessin_parcours_prof.png ":size=70%")
 
@@ -372,7 +365,7 @@ flowchart TD
 1. Parcours branche gauche
 1. Parcours branche droite
 1. Visite du nœud
-   
+
 ```mermaid
 flowchart TD
     A["A (4)"]:::racine --- B["B (3)"]
@@ -389,7 +382,6 @@ flowchart TD
 
 <p class="center-p"> Schéma du parcours en profondeur de type suffixe.</p>
 
-
 ?> Décrire le parcours en hauteur, en profondeur infixe, prefixe et suffixe de l'arbre binaire ci-dessous.
 
 ```mermaid
@@ -405,12 +397,12 @@ flowchart TD
     9 --- 10((10))
 ```
 
-
 <div class="nutshell">
 
-Un arbre peut être parcouru de 4 façon différentes : 
+Un arbre peut être parcouru de 4 façon différentes :
+
 - en largeur
-- en profondeur 
+- en profondeur
   - dans un ordre préfixe
   - dans un ordre infixe
   - dans un ordre suffixe
@@ -425,13 +417,13 @@ Un arbre peut être parcouru de 4 façon différentes :
 
 ### Implémentation d'un arbre binaire en python
 
-Une implémentation d'arbres binaires doit permettre un certain nombre d'opération : 
-- Construire un arbre vide 
+Une implémentation d'arbres binaires doit permettre un certain nombre d'opération :
+
+- Construire un arbre vide
 - Tester si un arbre est vide
 - Construire un arbre à partir d’un entier et de deux sous-arbres gauche et droit
 - Accèder à la racine d’un arbre
 - Accèders au sous-arbre gauche et au sous-arbre droit
-
 
 ```python
 class Noeud:
@@ -459,6 +451,7 @@ class ArbreBinaire:
         assert not(self.r is None), 'Arbre vide'
         return self.r.d
 ```
+
 ?> À partir du pseudo-code ci-dessous, écrire une méthode qui permet de calculer la taille de l'arbre et une méthode qui calcul sa hauteur.
 
 ```pseudo code
@@ -477,9 +470,9 @@ hauteur(arbre):
         Retourner 0 
     Sinon 
         Retourner 1 + max(hauteur (fils gauche), hauteur(fils droit))
-``` 
+```
 
-###  Arbres binaires de recherche
+### Arbres binaires de recherche
 
 Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à dire que les nœuds ont des valeurs) que l'on utilise pour trier des données afin de faire des recherches. Il a la particularité suivante : pour  tout  nœud A,  tous  les  nœuds  situés  dans  le  sous-arbre  gauche de A ont  une  valeur  inférieur ou égale à celle de A, et tous les nœuds situés dans le sous-arbre droit ont une valeur supérieure ou égale à celle de A.
 
@@ -489,14 +482,24 @@ Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à d
 
 <p class="center-p"> Différents arbres, lesquels sont des ABR? </p>
 
-https://github.com/joowani/binarytree
-
 ---
 
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+Il existe une bibliothèque python pour explorer les Arbres binaire : [binarytree](https://github.com/joowani/binarytree)
+
+</details>
+
+<https://isn-icn-ljm.pagesperso-orange.fr/basthon-notebook/?from=https://isn-icn-ljm.pagesperso-orange.fr/notebook/ABR.ipynb>
 
 ### Autres structures arborescentes
 
-!> TO DO (work in progress)
+<!--  !> To complete later -->
+
+Il existe d'autres structures arborescentes en informatique. Une **arborescence** est un ensemble de nœuds qui sont organisés. Un des nœuds constitue la racine de l'arborescence et cette racine est relié aux racines des arborescences que l'on appelle ses fils (le nombre de fils est indéfini). On est typiquement dans une définition récursive de la structure.
+
+Les documents XML (eXtensible Markup Language) et JSON (JavaScript Notation Object) sont deux exemples d'utilisation de la structure arborescente très utilisé en informatique.
 
 ## Graphe
 
@@ -514,7 +517,11 @@ Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas de
 
 !> TO DO (work in progress)
 
+Lire le cours et regarder la vidéo :
 <https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre6.html>
+
+Faire le TP
+<https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/res/res_recherche.pdf>
 
 ## Programmation dynamique
 
@@ -527,9 +534,6 @@ Un arbre est un type particulier de graphe, mais tous les graphes ne sont pas de
 ?> Faire le TD sur l'algorithme de Boyer-Moore (modifié de Stéphan Van Zuijlen (CC-BY-NC)).
 
 !> To do later
-
-
-
 
 ## Calculabilité/décidabilité
 
