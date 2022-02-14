@@ -82,6 +82,8 @@ Chaque langage a des règles obligatoires (leur manquement entraîne une erreur)
 
 ## :fab fa-python: Bases de python
 
+?> Commencer par vous inscrire sur le site [hackinscience](https://www.hackinscience.org) (et conserver votre code) et réaliser les exercices de la partie *Les bases de Python*. 
+
 ### Symboles arithmétiques
 
 En plus des signes d'arithmétiques **+**, **-**, **\*** et **/**, on peut utiliser les symboles suivants : **//**, **%**, **\*\***.

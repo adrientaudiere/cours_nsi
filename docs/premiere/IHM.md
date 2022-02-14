@@ -153,7 +153,7 @@ liens complexes.
 À la suite d'une URL, il peux y avoir une liste de paramètres de
 requêtes indiquée après un "?" :
 
-$$ \textcolor{red}{Nom_du_protocole}://\textcolor{blue}{nom.de.domaine}/\textcolor{purple}{chemin_vers_la/page}\Large{?}\normalsize{\textcolor{green}{nom=Saquet\&age=30}} $$
+$$ \textcolor{red}{Nom\_du\_protocole}://\textcolor{blue}{nom.de.domaine}/\textcolor{purple}{chemin\_vers\_la/page}\Large{?}\normalsize{\textcolor{green}{nom=Saquet\&age=30}} $$
 
 Il s'agit des paramètres d'une requête **GET** (voire partie sur le protocole HTTP).
 
