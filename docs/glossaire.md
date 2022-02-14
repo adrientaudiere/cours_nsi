@@ -2,6 +2,20 @@
 
 ## Liste de termes pour la Première
 
+<div class="list_of_terms">
+
+### Langages de programation
+
+> Python
+
+Définition
+
+> JavaScript (JS)
+
+On peut écrire de très nomreaux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
+
+</div>
+
 ## Liste de termes pour la Terminale
 
 <div class="list_of_terms">

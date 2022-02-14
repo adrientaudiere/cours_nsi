@@ -195,6 +195,8 @@ Ce protocole a également l'avantage de s'appuyer sur les débits réels et non 
 
 - Une suite de [vidéos](https://www.youtube.com/watch?v=e3I4opl8EH4&list=PLjXls-kqM6JDyMO3Llm5olS_U2I_P6OHG) qui reprend tout les concepts de routage vu en cours.
 
+- Un [dépot github](https://github.com/TheAlgorithms/Javascript) regroupe de nombreux algorithmes en javascript dont l'[alogrithme de Dijkstra](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js).
+
 </details>
 
 ### Commande UNIX de gestion des protocoles
@@ -234,7 +236,7 @@ Par la suite Jules César utilisa une technique de substitution mono-alphabétiq
 <summary> <strong> En savoir plus :</strong></summary>
 
 La page wikipedia d'[histoire de la cryptologie](https://fr.wikipedia.org/wiki/Histoire_de_la_cryptologie) est très complet.
-Vous pouvez aussi faire le TP des *Girls Can Code* sur la [cryptologie sous python](https://github.com/prologin/gcc-resources/raw/gh-pages/08_cryptologie.pdf). 
+Vous pouvez aussi faire le TP des _Girls Can Code_ sur la [cryptologie sous python](https://github.com/prologin/gcc-resources/raw/gh-pages/08_cryptologie.pdf).
 
 </details>
 
@@ -287,7 +289,7 @@ Ce protocole résout le problème de l'échange de clé avec un système de clé
 
 #### Protocole RSA
 
-?> Regarder la [vidéo](https://invidious.fdn.fr/watch?v=8BM9LPDjOw0) de *ScienceEtonnante* sur les codes secrets. Expliquez pourquoi les méthodes par substitution sont assez facile à déchiffrer. Expliquer en trois phrases le protocole RSA avec vos mots.
+?> Regarder la [vidéo](https://invidious.fdn.fr/watch?v=8BM9LPDjOw0) de _ScienceEtonnante_ sur les codes secrets. Expliquez pourquoi les méthodes par substitution sont assez facile à déchiffrer. Expliquer en trois phrases le protocole RSA avec vos mots.
 
 Ce protocole repose sur des théorèmes mathématiques complexes. Le chiffrement RSA est surtout utilisé pour transmettre des clé de chiffrement symétrique (par ex. dans le protocole HTTPS avec les tiers de confiance), mais il est aussi utilisé par des protocoles entiers comme le protocole SSH (_Secure SHell_) qui permet d'accéder de façon sécurisé à un serveur distant depuis un ordinateur client.
 
