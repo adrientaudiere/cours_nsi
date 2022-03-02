@@ -19,3 +19,7 @@
 !> S'initier à pygame à travers la réalisation d'un jeu avec animation : https://github.com/prologin/gcc-resources/raw/gh-pages/05_projet_jeu.pdf 
 
 !> Jeux Roguelite en python (en anglais) : http://rogueliketutorials.com/tutorials/tcod/v2/ 
+
+!> Créer un démineur : https://trieles.gitlab.io/nsi/10-demineur/
+
+!> Utiliser tkinter pour l'interface graphique d'un jeu : https://trieles.gitlab.io/nsi/30-tkinter-pour-jouer/
