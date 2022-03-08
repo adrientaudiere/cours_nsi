@@ -205,7 +205,7 @@ L’usage de cette norme de préfixe binaire ne s’est pas encore généralisé
 
 <div class="list_of_terms">
 
-> Fichier dossier caché
+> Dossier caché
 
 Un dossier caché est un dossier invisible sauf à le demander expressément. Il s'agit d'un moyen de simplifier le cheminement dans l'arbre des dossiers. On symbolise ces dossiers par un point devant le nom (par ex. ".monDossier").
 
@@ -216,4 +216,12 @@ Les fichiers cachés suivent le même principe.
 
 Sous Linux les fichiers et dossiers cachés sont matérialisés par un point devant leur nom.Exemple : .sshLes fichiers et dossiers cachés sont visibles via la commande ls -a (a pour all) et sont accessibles par leur chemins comme les dossiers normaux. Exemple de chemin : ~/.ssh
 
+> Git 
+
+Git est un langage TO DO
+[Fiche de commande](https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf)
+
+
 </div>
+
+

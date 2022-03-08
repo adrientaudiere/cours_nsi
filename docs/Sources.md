@@ -42,6 +42,8 @@
 
 [py-rates](https://py-rates.org/index.html)
 
+[Oh my git](https://ohmygit.org/)
+
 ###  Internet
 
 - [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR)
@@ -61,6 +63,7 @@
 
 <https://www.internetlivestats.com/>
 
+<https://lyc-84-bollene.gitlab.io/chambon/>
 
 ### Chaîne youtube NSI
 
