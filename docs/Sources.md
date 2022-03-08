@@ -28,7 +28,8 @@
 
 <http://jargonf.org/wiki/Accueil>
 
-### Se former en ligne
+### Se former
+#### Se former en ligne
 
 <https://openclassrooms.com/fr/>
 
@@ -42,7 +43,15 @@
 
 [py-rates](https://py-rates.org/index.html)
 
+<<<<<<< HEAD
 [Oh my git](https://ohmygit.org/)
+=======
+#### Se former sans écran (activités débranchées)
+
+- [castor-informatique](https://castor-informatique.fr/)
+- [Médiation ](https://members.loria.fr/MDuflot/files/mediation.html)
+- [Un livre sur l'apprentissage de l'informatique débranché](https://interstices.info/wp-content/uploads/2018/01/csunplugged2014-fr-comp.pdf)
+>>>>>>> 1eef02100732ad2610afde832477ba896f1e0c8b
 
 ###  Internet
 

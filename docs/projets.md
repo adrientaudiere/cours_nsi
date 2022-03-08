@@ -20,6 +20,9 @@
 
 !> Jeux Roguelite en python (en anglais) : http://rogueliketutorials.com/tutorials/tcod/v2/ 
 
+!> Créer un démineur : https://trieles.gitlab.io/nsi/10-demineur/
+
+!> Utiliser tkinter pour l'interface graphique d'un jeu : https://trieles.gitlab.io/nsi/30-tkinter-pour-jouer/
 
 
 # Utiliser Git avec Github
