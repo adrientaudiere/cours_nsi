@@ -12,7 +12,7 @@ Définition
 
 > JavaScript (JS)
 
-On peut écrire de très nomreaux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
+On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
 
 </div>
 
