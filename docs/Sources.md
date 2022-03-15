@@ -54,6 +54,11 @@
 - [L'internet rapide et permanent](http://irp.nain-t.net/doku.php/start) (CC BY-NC-SA 2.0 FR)
 - Routage sur [idum](http://idum.fr/spip.php?article213)
 
+### Histoire de l'informatique
+
+<https://pablo.rauzy.name/teaching/hi/>
+
+
 ### À creuser
 
 <https://science.sciencemag.org/content/sci/332/6025/60/F2.large.jpg>

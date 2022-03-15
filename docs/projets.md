@@ -23,3 +23,5 @@
 !> Créer un démineur : https://trieles.gitlab.io/nsi/10-demineur/
 
 !> Utiliser tkinter pour l'interface graphique d'un jeu : https://trieles.gitlab.io/nsi/30-tkinter-pour-jouer/
+
+!> Coder le jeu Othello : https://pablo.rauzy.name/teaching/mp/05-tp-reversi.pdf

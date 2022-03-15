@@ -273,6 +273,8 @@ Une solution assez simple utilise un algorithme glouton. Avec une stratégie glo
 
 Selon les problèmes, les algorithmes gloutons produisent d’excellents résultats ou se trompe complètement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
 
+!> Aller voir un [animation](http://fred.boissac.free.fr/AnimsJS/Dariush_Glouton/index.html) de la méthode glouton.
+
 ---
 
 ## :fa fa-brain: Exercices
