@@ -25,3 +25,13 @@
 !> Utiliser tkinter pour l'interface graphique d'un jeu : https://trieles.gitlab.io/nsi/30-tkinter-pour-jouer/
 
 !> Coder le jeu Othello : https://pablo.rauzy.name/teaching/mp/05-tp-reversi.pdf
+
+
+# Utiliser Git avec Github
+
+- Créer un compte sur https://github.com
+- Créer un token (settings / developer settings / token) et bien le conserver quelque part de sûr
+- Jouez à [Oh My Git](https://ohmygit.org/)
+
+- Consulter la [fiche](https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf) de commandes Git 
+

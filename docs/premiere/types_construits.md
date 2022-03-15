@@ -172,9 +172,8 @@ tab_modifie = [nb for nb in tab_original if nb % 2 == 0]
 
 ```python
 li = [1, 2, 7, 6, 9]
-li2 = [nb * 2 for nb in li if nb
-% 3 == 0]*
-*print**(li2)*
+li2 = [nb * 2 for nb in li if nb % 3 == 0]
+print(li2)
 ```
 
 ?> **Exercice 4** : Compléter le code suivant pour qu'il renvoie le résultat « [2, 8] ».

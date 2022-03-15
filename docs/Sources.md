@@ -43,6 +43,8 @@
 
 [py-rates](https://py-rates.org/index.html)
 
+[Oh my git](https://ohmygit.org/)
+
 #### Se former sans écran (activités débranchées)
 
 - [castor-informatique](https://castor-informatique.fr/)
@@ -73,6 +75,7 @@
 
 <https://www.internetlivestats.com/>
 
+<https://lyc-84-bollene.gitlab.io/chambon/>
 
 ### Chaîne youtube NSI
 

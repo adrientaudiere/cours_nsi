@@ -382,3 +382,6 @@ fct2(5)
 
 
 
+## Ressources pour s'entraîner en ligne à Python
+
+https://ens-fr.gitlab.io/nsi-pratique/
