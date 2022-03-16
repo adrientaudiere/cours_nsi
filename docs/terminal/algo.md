@@ -423,7 +423,7 @@ Une implémentation d'arbres binaires doit permettre un certain nombre d'opérat
 - Tester si un arbre est vide
 - Construire un arbre à partir d’un entier et de deux sous-arbres gauche et droit
 - Accèder à la racine d’un arbre
-- Accèders au sous-arbre gauche et au sous-arbre droit
+- Accèder au sous-arbre gauche et au sous-arbre droit
 
 ```python
 class Noeud:

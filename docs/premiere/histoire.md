@@ -331,7 +331,7 @@ mémoire cache permettant d'accélérer le traitement en limitant l'accès à
 la mémoire vive. Le cache d'instructions reçoit les prochaines
 instructions à exécuter et le cache de données manipule les données.
 
-![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg ":size=60%")
+![Architecture de Von Neumann](/../_img/svg/Von_Neumann_architecture_fr.svg ":size=60%")
 
 <p class="center-p">
 

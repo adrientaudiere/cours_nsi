@@ -34,7 +34,7 @@ appelée ***Hardware*** et la partie logicielle ***Software***.
 
 <div class="img-flow" style="max-width:320px;">
 
-![Architecture de Von Neumann](/../_img/Von_Neumann_architecture_fr.svg)
+![Architecture de Von Neumann](/../_img/svg/Von_Neumann_architecture_fr.svg)
 
 <p class="center-p"><strong>Architecture de Von Neumann </strong> : l'unité de contrôle et l'UAL forment l'<strong>unité centrale</strong> aussi appelé <strong>processeur</strong>. <p>
 </div>
@@ -118,7 +118,7 @@ d'autres) du langage. Enfin les langages assembleurs ont un nombre de
 fonctions très restreints ce qui les rend plus **fastidieux** à écrire
 et paradoxalement **plus long à maîtriser** que d'autres langages.
 
-![Échelle de niveau des langages informatiques](../_img/echelle_niveau_langage_informatique.svg ':size=50%')
+![Échelle de niveau des langages informatiques](../_img/svg/echelle_niveau_langage_informatique.svg ':size=50%')
 
 <p class="center-p">
 <strong>Échelle de niveau des langages informatiques.</strong>

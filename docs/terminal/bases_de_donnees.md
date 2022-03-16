@@ -239,11 +239,11 @@ En informatique, les propriétés ACID (atomicité, cohérence, isolation et dur
 - **Atomicité** : il faut qu'une transaction informatique se fasse complètement ou ne se fasse pas du tout. Cette propriété permet d'éviter des erreurs dûs à des transactions incomplètes. Par exemple, si une requête SQL d'ajout d'une entité n'ajoute qu'une partie des attributs (par ex. à cause d'une coupure de courant), alors il faut annuler la transaction.
 
 - **Cohérence** : chaque transaction doit amener le système d'un état valide à un autre état valide. Par exemple, les contraintes d'intégrité d'une base de données doivent être respectées avant et après une requête.
-- **Isolation** : chaque transaction est indépendante, elles s'exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peux pas accéder à un état intermédiaire d'une transaction T2 qui est exécuté au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
+- **Isolation** : chaque transaction est indépendante, elles s'exécutent comme si elles étaient seules sur le système. Ainsi une transaction T1 ne peut pas accéder à un état intermédiaire d'une transaction T2 qui est exécutée au même moment. Cela revient à dire que l'exécution de T1 et T2 simultanément doit produire le même résultat que leur exécution successive.
 
-- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistré même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
+- **Durabilité** : la propriété de durabilité assure qu'une fois confirmée, une transaction demeure enregistrée même en cas de panne informatique ou d'un autre problème. Par exemple, dans le cas d'une base de données relationnelle, une fois une requête SQL effectuée, la base modifiée doit être sauvegardée de façon permanente.
 
-> À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants on des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
+> À noter qu'en informatique, la sauvegarde de façon permanente est un sujet complexe puisque que les différents supports de stockages informatiques les plus courants ont des durées de vies assez courtes (voir une [Infographie](https://www.silkhom.com/quels-supports-de-stockage-pour-conserver-nos-donnees/) de 2012).
 
 ## Un peu de SQL sous python
 
