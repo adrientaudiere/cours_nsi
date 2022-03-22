@@ -29,6 +29,10 @@ Il est fortement conseiller d'utiliser un gestionnaire de mot de passe. L'idée 
 [#Datageule: Neutralité, j'écris ton nom](https://framatube.org/w/64077068-5d05-4815-9095-af63a33a91c4)
 Site de l'association [La Quadrature du Net](https://www.laquadrature.net/neutralite_du_net/)
 
+## Apprendre à écrire au clavier
+
+Pour écrire plus rapidement et plus efficacement, il est important de s'entraîner. Il existe plusieurs logiciels pour s'entraîner: [Ktouch](https://apps.kde.org/fr/ktouch/) est vraiment très agréable et prenant. [Klavaro](https://klavaro.sourceforge.io/fr/index.html) est une bonne alternative sous Windows, Mac et Linux. [Monkeytype](https://monkeytype.com/) permet ensuite de tester sa rapidité en ligne.
+
 ## Aller plus loin dans l'apprentissage de l'informatique
 
 ### Devenir développeur

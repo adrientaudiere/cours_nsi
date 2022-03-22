@@ -8,11 +8,16 @@
 
 > Python
 
-Définition
+Langage de programmation [haut niveau](#bas_haut_niveau), [open source](#open_source), interprété, multi-paradigme et multiplateformes. Ce langage de programmation est le plus populaire depuis 2022 ([Source](https://www.tiobe.com/tiobe-index/)). Python est utilisé dans les domaines de la gestion d’infrastructure, l’analyse de données ou encore le développement de logiciels et d'applications. 
+
 
 > JavaScript (JS)
 
-On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
+Langage de programmation qui permet de créer du contenu mis à jour de façon dynamique, de contrôler le contenu multimédia, d’animer des images, et tout ce à quoi on peut penser. On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
+
+> Langage bas/haut niveau <a name="bas_haut_niveau"></a>
+
+> Logiciel libre, logiciel open source <a name="open_source"></a>
 
 </div>
 
@@ -22,21 +27,33 @@ On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms
 
 ### Structure de données
 
-> Dictionnaire vs Liste (en python)
+> Dictionnaire vs Tableau (également appelé Liste en python)
 
-Définition
+- un **dictionnaire** est une collection qui associe une clé à une valeur. Par exemple, il est possible d’associer la clé 'nom' à un nom et la clé 'prenom' à un prénom.
 
-> Piles
+'''python
+mon_dico = 
+'''
 
-Définition (parler de LIFO)
+- un **tableau** (aussi appelé abusivement **liste** en python) permet de stocker plusieurs valeurs (chaîne, nombre) dans une structure unique. 
+
+> Piles 
+
+Une pile est une structure de données qui ne permet que deux opérations : empiler un élément (qui consiste à ajouter un élément en haut de la pile) et dépiler un élément (qui consiste à retirer le dernier élément empilé et à lire son contenu). On parle de structure LIFO (*Last In First out*, dernier rentré premier sorti).
 
 > Files
 
-Définition (parler de FIFO)
+Une file est une structure de données qui ne permet que deux opérations : enfiler un élément (qui consiste à ajouter un élément à la fin de la file) et défiler un élément (qui consiste à retirer le premier élément enfilé et à lire son contenu). On parle de structure FIFO (*First In First out*, premier rentré premier sorti).
+
+> Structure en Arbres (hauteur et degré)
+
+Définition
 
 > Arbres binaires
 
-Définition (parler de sa taille et de sa hauteur)
+Arbre dans lequel tous le nœuds internes ne peuvent avoir que deux fils au maximum, c’est-à-dire de n’être que de degré 2, et dont la hauteur est illimitée.
+
+
 
 ### Programmation orientée objet
 

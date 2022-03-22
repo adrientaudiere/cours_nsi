@@ -22,5 +22,9 @@
     },
     "terminal.integrated.env.linux": {
       "PATH": "/usr/local/bin/:/app/bin:/usr/bin:/home/adrien/.var/app/com.vscodium.codium/data/node/bin:/home/adrien/.var/app/com.vscodium.codium/data/cargo/bin:/home/adrien/.var/app/com.vscodium.codium/data/python/bin:/sbin:/usr/sbin"
-    }
+    },
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "cSpell.language": "en,fr"
 }
