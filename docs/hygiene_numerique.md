@@ -14,7 +14,7 @@ Si cela vous intéresse vous trouverez un grand nombre de ressources en françai
 
 </p>
 
-Il est fortement conseiller d'utiliser un gestionnaire de mot de passe. L'idée est de vous souvenir d'un seul mot de passe maître (du coup on peut le choisir long) qui permet d'accéder à tous ces mots de passe que l'on a alors pas besoin de retenir.
+Il est fortement conseillé d'utiliser un gestionnaire de mot de passe. L'idée est de vous souvenir d'un seul mot de passe maître (du coup on peut le choisir long) qui permet d'accéder à tous ces mots de passe que l'on a alors pas besoin de retenir.
 
 !> Il faut se souvenir de son mot de passe maître!
 
@@ -47,5 +47,10 @@ De nombreuses formations sont disponibles en lignes. Le plus difficile est d'ide
 ### Ressources pour python
 
 - [liste "awesome python" *(en)*](https://github.com/vinta/awesome-python)
-- [liste d'algorithmes avec pyhton *(en)*](https://github.com/TheAlgorithms/Python)
+- [liste d'algorithmes avec python *(en)*](https://github.com/TheAlgorithms/Python)
 - [Invent with python *(en)*](https://inventwithpython.com/)
+
+
+### Ressources Markdown
+
+- [Tutoriel Markdown](https://www.markdowntutorial.com/fr/)

@@ -472,6 +472,20 @@ hauteur(arbre):
         Retourner 1 + max(hauteur (fils gauche), hauteur(fils droit))
 ```
 
+<!-- 
+def hauteur(self):
+    if estVide(self):
+        return -1
+    else:
+        return 1 + max(hauteur(self.filsGauche), hauteur(self.filsDroit))
+
+def taille(self):
+    if estVide(self):
+        return 0
+    else:
+        return 1 + taille(self.filsGauche) + taille(self.filsDroit)
+-->
+
 ### Arbres binaires de recherche
 
 Un arbre binaire de recherche (ABR), est un arbre binaire étiqueté (c'est à dire que les nœuds ont des valeurs) que l'on utilise pour trier des données afin de faire des recherches. Il a la particularité suivante : pour  tout  nœud A,  tous  les  nœuds  situés  dans  le  sous-arbre  gauche de A ont  une  valeur  inférieur ou égale à celle de A, et tous les nœuds situés dans le sous-arbre droit ont une valeur supérieure ou égale à celle de A.

@@ -12,7 +12,7 @@ Les trois règles d'un **algorithme récursif** :
 
 - Il s’**appelle lui même**;
 - Il doit avoir un **état trivial**, ce qui permet de définir une condition d’arrêt;
-- Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinis.
+- Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinies.
 
 </div>
 
@@ -306,7 +306,7 @@ Il y a plusieurs façon d'améliorer un programme pour l'utilisateur. En premier
 
 En python, on commente au plus près du code à travers deux types de texte: 
 - des **commentaires** précédés d'un dièse 
-- des **Docstrings** dont les conventions sont décrites [en ligne](https://www.python.org/dev/peps/pep-0257/). Le teste d'aide est écrit entre trois ''' comme ci-dessous.  
+- des **Docstrings** dont les conventions sont décrites [en ligne](https://www.python.org/dev/peps/pep-0257/). Le texte d'aide est écrit entre trois ''' comme ci-dessous.  
 
 ```python
 '''Ce module permet d'afficher un objet'''

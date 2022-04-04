@@ -424,7 +424,7 @@ page, on parle alors de web interactif ou de web dynamique. Les langages les plu
 
 Le protocole HTTP n'est pas sécurisé, il est notamment très sensible aux attaques par l'homme du milieu. Nous verrons en Terminale comment le protocole [HTTPS](../terminal/archi_os_réseaux.md) résout se problème en chiffrant les paquets.
 
-### Javascript :fab fa-js
+### Javascript :fab fa-js:
 
 En combinant HTML et CSS on obtient un site qui permet une très faible
 variété d'interactions avec l'utilisateur. Pour ces interactions
@@ -467,7 +467,7 @@ d'[Openclassroom](https://openclassrooms.com/fr/courses/6175841-apprenez-a-progr
 
 ?> Faire l'exercice en ligne [Pixel Art](https://projects.raspberrypi.org/en/projects/pixel-art).
 
-?> Naviguez sur le site [state of JS](https://2020.stateofjs.com/fr-FR/technologies/). Qu'en comprenez-vous ?
+?> Naviguez sur le site [state of JS](https://2021.stateofjs.com/fr-FR/technologies/). Qu'en comprenez-vous ?
 
 ?> :fas fa-dungeon: Fabriquer un site internet localement sur un sujet de votre choix. Vous pouvez vous aider de tutoriel (par ex. sur
 [Openclassroom](https://openclassrooms.com/fr/courses) ou encore du [cours](https://www.pierre-giraud.com/html-css-apprendre-coder-cours/) de Pierre Giraud).
