@@ -12,7 +12,7 @@ Les trois règles d'un **algorithme récursif** :
 
 - Il s’**appelle lui même**;
 - Il doit avoir un **état trivial**, ce qui permet de définir une condition d’arrêt;
-- Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinis.
+- Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinies.
 
 </div>
 

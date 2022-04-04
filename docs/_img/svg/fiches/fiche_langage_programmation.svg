@@ -341,9 +341,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.58006717"
-     inkscape:cx="886.96625"
-     inkscape:cy="459.42955"
+     inkscape:zoom="0.67806847"
+     inkscape:cx="971.14086"
+     inkscape:cy="643.7403"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -410,7 +410,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
          id="flowPara16191"> - Il doit conduire vers cet <flowSpan
    style="font-weight:bold;fill:#8e0000;fill-opacity:1"
-   id="flowSpan19613">état d’arrêt</flowSpan>, pour éviter les boucles infinis.</flowPara><flowPara
+   id="flowSpan19613">état d’arrêt</flowSpan>, pour éviter les boucles infinies.</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
          id="flowPara16117" /><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
@@ -470,18 +470,18 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot841-6-2"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none"
        transform="matrix(0.64123667,0,0,0.64123667,122.28324,103.45537)"><flowRegion
          id="flowRegion843-7-9"
-         style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none"><rect
            id="rect845-7-1"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="flowPara4023-6-7">Langages et programmation</flowPara></flowRoot>
+           style="stroke-width:0.31189732;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="flowPara4023-6-7">Langages et programmation (1)</flowPara></flowRoot>
     <g
        id="g1925"
        transform="translate(222.25008,-3.4579419)">
@@ -523,47 +523,47 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot10543"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.155949;stroke-miterlimit:4;stroke-dasharray:none;font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1;stroke:#006684"
        transform="matrix(0.64123667,0,0,0.64123667,42.604197,114.56788)"><flowRegion
          id="flowRegion10539"
-         style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="stroke-width:0.155949;stroke-miterlimit:4;stroke-dasharray:none;font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1;stroke:#006684"><rect
            id="rect10537"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="stroke-width:0.155949;stroke-miterlimit:4;stroke-dasharray:none;font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1;stroke:#006684" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.155949;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-variation-settings:normal;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
          id="flowPara10541">Récursivité</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot10965"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;stroke:#006684;stroke-opacity:1"
        transform="matrix(0.64123667,0,0,0.64123667,349.92598,107.79008)"><flowRegion
          id="flowRegion10961"
-         style="text-align:start;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="text-align:start;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;stroke:#006684;stroke-opacity:1"><rect
            id="rect10959"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start" /></flowRegion><flowPara
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start;stroke:#006684;stroke-opacity:1" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara10963">Modularité</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot10965-3"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none"
        transform="matrix(0.64123667,0,0,0.64123667,353.74161,210.1553)"><flowRegion
          id="flowRegion10961-6"
-         style="text-align:start;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="text-align:start;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none"><rect
            id="rect10959-7"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start" /></flowRegion><flowPara
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara10963-5">Documentation de programme (commentaires et docstrings)</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
@@ -866,7 +866,7 @@
              y="-54.799603"
              style="text-align:justify;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
-           id="flowPara1406">S'arrête quand toute les valeurs de i ont été passées en revue.</flowPara></flowRoot>
+           id="flowPara1406">S'arrête quand toutes les valeurs de i ont été passées en revue.</flowPara></flowRoot>
       <rect
          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:3.14262;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
          id="rect1410"
@@ -904,13 +904,13 @@
            id="flowRegion1462"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"><rect
              id="rect1460"
-             width="149.8315"
+             width="157.78989"
              height="201.35191"
              x="-48.671703"
              y="-54.799603"
-             style="text-align:justify;text-anchor:start;stroke-width:0.264583;-inkscape-font-specification:Quicksand;font-family:Quicksand;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
-           id="flowPara1464">S'arrête quand la condition du while est obtenue. Attention au boucle infinie!</flowPara></flowRoot>
+           id="flowPara1464">S'arrête quand la condition du while est obtenue. Attention aux boucles infinies!</flowPara></flowRoot>
       <flowRoot
          xml:space="preserve"
          id="flowRoot1474"
@@ -930,7 +930,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand;text-align:justify;text-anchor:start"
            id="flowPara1472">S'arrête quand la condition du <flowSpan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:Quicksand"
-   id="flowSpan1915">if</flowSpan> est obtenue. Attention au boucle infinie!</flowPara></flowRoot>
+   id="flowSpan1915">if</flowSpan> est obtenue. Attention aux boucles infinies!</flowPara></flowRoot>
       <path
          style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#009800;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker1780);stop-color:#000000"
          d="m 53.115395,91.284703 c 0,0 29.849164,4.548844 29.033003,15.486867 -1.277781,17.12457 -48.112875,16.39081 -48.112875,16.39081"
@@ -1060,39 +1060,39 @@
            y="-148.26442"
            style="text-align:justify;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
-         id="flowPara77640">Pour éviter de surcharger un langage informatique, on utilise des briques logiciels appelés <flowSpan
-   style="font-weight:bold;fill:#8e0000;fill-opacity:0.94117647"
-   id="flowSpan82839">modules</flowSpan> (= bibliothèque). Un module est un fichier qui contient des variables, fonctions, objets, méthodes...</flowPara></flowRoot>
+         id="flowPara77640">Pour éviter de surcharger un langage informatique, on utilise des briques logiciels appelées <flowSpan
+   style="font-weight:bold;fill:#8e0000;fill-opacity:0.941176"
+   id="flowSpan82839">modules</flowSpan> (= bibliothèques). Un module est un fichier qui contient des variables, fonctions, objets, méthodes...</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot96732"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none"
        transform="matrix(0.64123667,0,0,0.64123667,358.63033,319.4215)"><flowRegion
          id="flowRegion96728"
-         style="text-align:start;text-anchor:start;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="text-align:start;text-anchor:start;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none"><rect
            id="rect96726"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start" /></flowRegion><flowPara
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;text-anchor:start;text-align:start" /></flowRegion><flowPara
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start;fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.15594866;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara96730">Gestion de bug (assertion)</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot99250"
-       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:8.80244px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none"
        transform="matrix(0.64123667,0,0,0.64123667,342.28324,103.45537)"><flowRegion
          id="flowRegion99246"
-         style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none"><rect
            id="rect99244"
            width="320.24368"
            height="258.05408"
            x="-187.17186"
            y="-148.26442"
-           style="stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.531785;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="flowPara99248">Langages et programmation</flowPara></flowRoot>
+           style="stroke-width:0.31189732;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:#006684;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="flowPara99248">Langages et programmation (2)</flowPara></flowRoot>
     <g
        id="g1894"
        transform="matrix(0.04170868,0,0,0.04170868,229.63251,43.623248)">
@@ -1195,13 +1195,13 @@
          id="flowRegion75116-4-0-7"
          style="text-align:justify;text-anchor:start;fill:#757575;fill-opacity:1"><rect
            id="rect75114-3-6-2"
-           width="144.02277"
-           height="126.03875"
+           width="184.14725"
+           height="126.11036"
            x="-187.17186"
            y="-148.26442"
            style="text-align:justify;text-anchor:start;fill:#757575;fill-opacity:1;stroke-width:0.264583" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start;fill:#757575;fill-opacity:1"
-         id="flowPara192176-6">Si la condition n'est pas remplie, le programme s'arrête avec une erreur d'asserion en indiquant le Message écrit entre guillemet</flowPara></flowRoot>
+         id="flowPara192176-6">Si la condition n'est pas remplie, le programme s'arrête avec une erreur d'assertion en indiquant le Message écrit entre guillemets.</flowPara></flowRoot>
     <path
        style="fill:none;fill-opacity:1;stroke:#757575;stroke-width:0.365;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow 5)"
        d="m 357.81328,187.10939 c 3.23521,-4.05487 6.91438,-4.3103 9.99306,-2.53436"
@@ -1221,12 +1221,12 @@
            y="-148.26442"
            style="text-align:justify;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
-         id="flowPara167306">La bonne structure d'un code (nom de fonctions bien choisies, conventions conservées, code facile à lire) doit être complété par une <flowSpan
-   style="fill:#8e0000;fill-opacity:0.94117647;font-weight:bold"
+         id="flowPara167306">La bonne structure d'un code (nom de fonctions bien choisies, conventions conservées, code facile à lire) doit être complétée par une <flowSpan
+   style="font-weight:bold;fill:#8e0000;fill-opacity:0.941176"
    id="flowSpan183659">documentation</flowSpan> (<flowSpan
-   style="font-weight:bold;fill:#8e0000;fill-opacity:0.94117647"
+   style="font-weight:bold;fill:#8e0000;fill-opacity:0.941176"
    id="flowSpan170290">docstring</flowSpan>) et par l'anticipation des erreurs des utilisateurs (<flowSpan
-   style="font-weight:bold;fill:#8e0000;fill-opacity:0.94117647"
+   style="font-weight:bold;fill:#8e0000;fill-opacity:0.941176"
    id="flowSpan182939">assertion</flowSpan>). </flowPara></flowRoot>
     <image
        width="88.106247"
