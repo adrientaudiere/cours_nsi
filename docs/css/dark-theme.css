@@ -822,7 +822,7 @@ pre::after {
   list-style-image: none; 
 }
 svg[id^="mermaid-"] {
-  background-color: rgba(105, 99, 85, 0.1);
+  background-color: whitesmoke;
   background-image: none;
   margin: auto;
   display: block;

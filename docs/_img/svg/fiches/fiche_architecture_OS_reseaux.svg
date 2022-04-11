@@ -455,7 +455,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
          id="flowPara1205" /><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
-         id="flowPara1987">Coût et sa consommation d'energie sont très faibles. On les utilise dans des systèmes informatiques embarqués (voiture, avion, lave linge, montre connectée...).</flowPara></flowRoot>
+         id="flowPara1987">On les utilise dans des systèmes informatiques embarqués (voiture, avion, lave linge, montre connectée...).</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot1207-3"
@@ -860,5 +860,26 @@
            style="stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:none;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
          id="flowPara2571">Gestion des processus et des ressources</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5740"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(275.8054,251.88535)"><flowRegion
+         id="flowRegion5730"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect5728"
+           width="187.90932"
+           height="239.49904"
+           x="-187.17186"
+           y="-148.26442"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara5732" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara5734" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara5736" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:start;text-anchor:start"
+         id="flowPara5738">Coût et consommation d'energie très faibles.</flowPara></flowRoot>
   </g>
 </svg>
