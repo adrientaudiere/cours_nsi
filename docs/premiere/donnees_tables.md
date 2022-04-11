@@ -36,7 +36,7 @@ couramment pour représenter des données structurées en tableau. On peut
 facilement importer ou exporter des fichiers _.csv_ avec un tableur (par
 ex. Libreoffice Calc).
 
-?> Enregistrer les fichiers [results.csv] et Pokemon.csv sur votre
+?> Enregistrer les fichiers [results](https://adrientaudiere.github.io/cours_nsi/_doc/results.csv) et [Pokemon](https://adrientaudiere.github.io/cours_nsi/_doc/Pokemon.csv) sur votre
 ordinateur, puis les ouvrir avec le logiciel
 LibreOffice Calc puis avec VScodium. Les deux logiciels
 réagissent-ils pareil à l'ouverture d'un fichier CSV ?
