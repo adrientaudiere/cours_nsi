@@ -108,7 +108,7 @@ L'**ordonnanceur** du système d'exploitation va définir les **états** de chaq
 graph LR;
     A(Initialisation) --> B(Prêt)
     B ---> |mise en exécution <br> par l'ordonnanceur| C(Exécution)
-    C --> |interruption <br> par l'ordonnanceur| D(Suspendu (ou bloqué))
+    C --> |interruption <br> par l'ordonnanceur| D(Suspendu = bloqué)
     D --> B
     C -->| | E(Terminé)
     D ---> |interruption <br> anormale | E

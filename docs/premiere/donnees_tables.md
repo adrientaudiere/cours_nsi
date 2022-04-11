@@ -4,7 +4,7 @@
 
 Pour stocker des données de façon fiable et organisé il existe plusieurs
 façons de procéder. Les jeux de données les plus complexes utilisent des
-logiciels de bases de données (**SGDB** = **système de gestion de bases de
+logiciels de bases de données (**SGBD** = **système de gestion de bases de
 données**). Pour des petits jeux de données simples, il existe des formats
 de stockages plus simple comme le **JSON** ou encore le **CSV**.
 
@@ -13,8 +13,8 @@ pour celui qui veut les interpréter. Par exemple, considérons
 l'organisation d'une médiathèque. Lors de son inscription chaque abonné
 fournit des données (nom, prénom, adresse...). Ces données seront
 associées aux **descripteurs** « Nom », « Prénom », « Adresse »... Ces
-données des abonnés seront regroupées dans **collection** sous forme de
-une **table**. Chaque ligne de la table est un abonné, chaque colonne
+données des abonnés seront regroupées dans une **collection** sous forme de
+ **table**. Chaque ligne de la table est un abonné, chaque colonne
 est un **descripteur**. De la même manière, on peut faire une
 **collection** des ouvrages avec les **descripteurs** (Titre, Type de
 livres, Auteur(s), Emprunté par...). Chacune de ces collections,
@@ -71,8 +71,7 @@ d'utiliser les données ensuite, on utilise la bibliothèque **csv**. Dans
 cette bibliothèque, deux fonctions principales permettent d'importer un
 fichier .csv :
 
-- la fonction **_reader()_** renvoie un objet _csv.reader_ qui est une
-**liste**.
+- la fonction **_reader()_** renvoie un objet _csv.reader_ qui est une **liste**.
 
 ```python
 import csv # importation de la bibliothèque csv
