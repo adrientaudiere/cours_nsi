@@ -161,9 +161,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25798775"
-     inkscape:cx="1465.1858"
-     inkscape:cy="738.40715"
+     inkscape:zoom="0.5159755"
+     inkscape:cx="1329.5205"
+     inkscape:cy="648.28659"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -3558,6 +3558,21 @@ TkSuQmCC
    id="flowSpan38113"> (très faible puissance et consommation)</flowSpan></flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
+       id="flowRoot1069-6-2"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(636.88748,191.18563)"><flowRegion
+         id="flowRegion1049-0-9"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect1047-6-3"
+           width="187.90932"
+           height="239.49904"
+           x="-187.17186"
+           y="-148.26442"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.35;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#8e0000;fill-opacity:1;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="flowPara1067-2-1">Protocole RIP (Routing Information Protocol)</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
        id="flowRoot1131"
        style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;text-align:justify;letter-spacing:0px;word-spacing:0px;text-anchor:start"
        transform="translate(304.75129,231.91932)"><flowRegion
@@ -4295,5 +4310,20 @@ TkSuQmCC
            style="stroke:none;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80244px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';fill:#006684;fill-opacity:1;stroke:none;stroke-width:0.311897;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="flowPara73682">Sécurisation des communications</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot76339"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start"
+       transform="translate(636.88748,228.22732)"><flowRegion
+         id="flowRegion76335"
+         style="text-align:start;text-anchor:start"><rect
+           id="rect76333"
+           width="187.90932"
+           height="239.49904"
+           x="-187.17186"
+           y="-148.26442"
+           style="text-align:start;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;line-height:1.35;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#8e0000;fill-opacity:1;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="flowPara76337">Protocole OSPF (Open Shortest Path First)</flowPara></flowRoot>
   </g>
 </svg>
