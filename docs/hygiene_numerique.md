@@ -2,6 +2,8 @@
 
 Si cela vous intéresse vous trouverez un grand nombre de ressources en français sur le site [GoFoss](https://gofoss.net/fr/) (littéralement "En avant pour les logiciels libres").
 
+Pour ceux qui sont à l'aise avec l'anglais je vous conseille fortement le [Guide de la vie privé](https://www.privacyguides.org/tools/) qui est très complet et un bon compromis entre technicité et pédagogie.
+
 ## Mot de passe
 
 [![xkcd](https://imgs.xkcd.com/comics/password_strength.png)](https://xkcd.com/936/)
