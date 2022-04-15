@@ -290,7 +290,7 @@ for cle, valeur in mon_dictionnaire.items() :
 
 Python fournit également un type de donnée pour les ensembles.
 Un ensemble est une collection **non ordonnée sans élément dupliqué**.
-Les ensembles sont pratiquent pour effectuer les opérations
+Les ensembles sont pratiques pour effectuer les opérations
 mathématiques telles que les unions, intersections, et différences. On
 créé un ensemble grâce à la fonction _set()_ ou avec des accolades.
 
