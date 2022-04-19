@@ -8,7 +8,7 @@
 
 > Python
 
-Langage de programmation [haut niveau](#bas_haut_niveau), [open source](#open_source), interprété, multi-paradigme et multiplateformes. Ce langage de programmation est le plus populaire depuis 2022 ([Source](https://www.tiobe.com/tiobe-index/)). Python est utilisé dans les domaines de la gestion d’infrastructure, l’analyse de données ou encore le développement de logiciels et d'applications. 
+Langage de programmation [haut niveau](#bas_haut_niveau), [open source](#open_source), interprété, multi-paradigme et multiplateformes. Ce langage de programmation est le plus populaire depuis 2022 ([Source](https://www.tiobe.com/tiobe-index/)). Python est utilisé dans les domaines de la gestion d’infrastructure, l’analyse de données ou encore le développement de logiciels et d'applications. Il est notamment très utilisés dans les [projets libres]((https://code.gouv.fr/#/stats)) du gouvernement français.
 
 
 > JavaScript (JS)
@@ -18,6 +18,8 @@ Langage de programmation qui permet de créer du contenu mis à jour de façon d
 > Langage bas/haut niveau <a name="bas_haut_niveau"></a>
 
 > Logiciel libre, logiciel open source <a name="open_source"></a>
+
+
 
 </div>
 
