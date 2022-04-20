@@ -61,6 +61,13 @@
 <https://pablo.rauzy.name/teaching/hi/>
 
 
+### Outils et langages préférés des développeurs
+
+- [Survey stackoverflow](https://insights.stackoverflow.com/survey/)
+- [Tiobe index](https://www.tiobe.com/tiobe-index/)
+- [Code.gouv](https://code.gouv.fr/#/stats)
+- [state of JS](https://2021.stateofjs.com/fr-FR/)
+
 ### À creuser
 
 <https://science.sciencemag.org/content/sci/332/6025/60/F2.large.jpg>
