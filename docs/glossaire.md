@@ -200,6 +200,8 @@ Voici les mesures en informatiques selon le système international de notation s
 
 $$
 8Mb = 8 000 bits = 1 Mo (1000 octets) = 1 MB
+$$
+$$
 32 Gb != 4 GB = 4 Go
 $$
 
