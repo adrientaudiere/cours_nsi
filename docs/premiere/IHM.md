@@ -465,6 +465,37 @@ développeurs. Il existe de nombreuses ressources très bien écrites en
 ligne à commencer par les cours
 d'[Openclassroom](https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript)
 
+#### Programmation évènementielle
+
+Javascript est un langage de programmation qui favorise la **programmation évènementielle**  :
+
+Les principaux évènements JavaScript sont :
+
+- Évènements souris
+
+  - `onclick` : cliquer
+  - `ondblclick` : double clique
+  - `onmouseover` : au survol d'un élément html
+  - `onmouseout` : quitter le survol d'un élément html
+  - `onmousedown` : enfoncer le clique gauche (sans relâcher)
+  - `onmouseup` : relâcher le clique gauche
+  - `onmousmove` : bouger la souris sur un élément
+
+- Évènements clavier
+
+  - `onkeydown` : enfoncer une touche du clavier (sans relâcher)
+  - `onkeyup` : relâcher une touche du clavier
+  - `onkeypress` : enfoncer - relâcher une touche du clavier
+
+- Évènements formulaire
+
+  - `onfocus` : prendre le focus (rentrer dans la zone de saisie)
+  - `onblur` : perdre le focus (sortir d'une zone de saisie)
+  - `onchange` : changer la valeur d'un élément HML
+
+
+#### Exercices Javascript
+
 ?> Faire l'exercice en ligne [Pixel Art](https://projects.raspberrypi.org/en/projects/pixel-art).
 
 ?> Naviguez sur le site [state of JS](https://2021.stateofjs.com/fr-FR/technologies/). Qu'en comprenez-vous ?
