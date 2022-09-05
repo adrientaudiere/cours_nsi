@@ -43,7 +43,7 @@ Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pou
 
 - Savoir utiliser les **valeurs booléennes** et les **opérateurs booléens** (AND, NOT, AND NOT, OR, XOR)
 
-- Expliquer succintement les caractéristiques et les interêts des **systèmes d'encodages** ASCII, IS0-2259-1, UTF-8
+- Expliquer succinctement les caractéristiques et les intérêts des **systèmes d'encodages** ASCII, IS0-2259-1, UTF-8
 
 #### Représentation des données : types construits (ex. avec python)
 
@@ -56,7 +56,7 @@ Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pou
 
 - Construire et manipuler un **dictionnaire**
   - Savoir utiliser les méthodes 'keys()', 'values()' et 'items()' :
-  - Itérer les élements d'un dictionnaires
+  - Itérer les éléments d'un dictionnaire
 
 #### Traitements des données en tables
 
@@ -70,7 +70,7 @@ Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pou
 
 #### Interactions hommes machines sur le Web
 
-- Identifier les différents **composants permettant d'interagir** avec une application web à travers des **évenements**
+- Identifier les différents **composants permettant d'interagir** avec une application web à travers des **événements**
 - Analyser et modifier les **méthodes exécutées** lors d'un clic sur un bouton d'une page Web (par ex. en **javascript**)
 - Distinguer les exécutions côté **client** et côté **serveur**
 - Savoir passer des paramètres à un site grâce au **protocole http**
@@ -82,7 +82,7 @@ Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pou
 
 - Connaître le modèle d'**architecture séquentielle** de **von Neumann**
   - Distinguer les rôles et les caractéristiques des constituants d'une machine
-  - Dérouler l'éxecution d'une séquence d'instructions simples du type language machine
+  - Dérouler l’exécution d'une séquence d'instructions simples du type language machine
 
 - Décrire les **protocoles de communications** aux seins des **réseaux** de machines
   - Comprendre l'intérêt du découpage de données en **paquets** et leur **encapsulation**
@@ -115,12 +115,12 @@ Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pou
 
 - Mettre au point un programme en le **testant**
 
-- Savoir utiliser une **bibliothèque** et savoir expliquer l'intérêt de ce sysytème d'extension du language
+- Savoir utiliser une **bibliothèque** et savoir expliquer l'intérêt de ce système d'extension du language
 
 #### Algorithmique
 
 - Savoir écrire un algorithme simple en pseudo-code et en python
-  - Écrire un **algorithme de recherche** d'une occurence sur des valeurs de type quelconque
+  - Écrire un **algorithme de recherche** d'une occurrence sur des valeurs de type quelconque
   - Écrire un **algorithme calcul d'une moyenne** d'un tableau
   - Écrire un **algorithme de tri** par **insertion** et par **sélection**
   - Décrire un **invariant de boucle** qui prouve la **correction** des tris par insertion et par sélection
