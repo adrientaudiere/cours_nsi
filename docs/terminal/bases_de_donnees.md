@@ -165,9 +165,22 @@ VALUES
 
 SELECT * From Races;
 
-SELECT * FROM Monstres
-INNER JOIN Races
-ON Monstres.Race = Races.Race
+
+SELECT * FROM Monstres 
+INNER JOIN Races ON Monstres.Race = Races.Race
+WHERE Monstres.Race = 'Troll' OR Races.Cris = 'Yo!'; 
+
+UPDATE Races
+SET Cris = 'Abraca' 
+WHERE Cris = 'Yo!';
+
+
+DELETE FROM Monstres
+WHERE Classe = 'Voleur';
+
+
+SELECT * From Races;
+SELECT * From Monstres;
 ```
 
 <details class="advanced_level">
