@@ -151,9 +151,10 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
 
 ## Fiche de révision
 
-- [Fiche structure de données](https://adrientaudiere.github.io/cours_nsi/_doc/svg/fiches/fiche_structure_donnees.pdf)
+- [Fiche structure de données](https://adrientaudiere.github.io/cours_nsi/_doc/fiche_structure_donnees.pdf)
  
-- [Fiche Bases de données](https://adrientaudiere.github.io/cours_nsi/_doc/svg/fiches/fiche_BD_relationnelles.pdf)
+- [Fiche bases de données](https://adrientaudiere.github.io/cours_nsi/_doc/fiche_BD_relationnelles.pdf)
  
-- [Fiche langages et programmation](https://adrientaudiere.github.io/cours_nsi/_doc/svg/fiches/fiche_langage_programmation.pdf)
+- [Fiche langages et programmation](https://adrientaudiere.github.io/cours_nsi/_doc/fiche_langage_programmation.pdf)
 
+- [Fiche algorithmie](https://adrientaudiere.github.io/cours_nsi/_doc/fiche_langage_programmation.pdf)

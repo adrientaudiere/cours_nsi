@@ -278,7 +278,7 @@ intègrent dans des puces en silicium. Il invente ainsi le **circuit
 intégré** pour lequel il obtient le prix Nobel de physique en 2000. En
 1971, Marcian Hoof (1937 – ) et Federico Faggin (1941 – ), ingénieurs
 pour Intel, invente le premier **microprocesseur**, nommé Intel 4004,
-contenant 2300 transistors. Il effectue de opérations logiques et
+contenant 2300 transistors. Il effectue des opérations logiques et
 arithmétiques sur 4 bits à une fréquence maximal de 740 kHz. Ce
 microprocesseur est le premier circuit à intégrer en une seule puce
 toutes les fonctions de l'architecture de Von Neumann.
