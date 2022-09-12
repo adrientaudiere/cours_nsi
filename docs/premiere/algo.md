@@ -234,66 +234,7 @@ Dans tous les cas l'algorithme effectuera n(n-1)/2 comparaisons. Sa complexité 
 
 <http://www.monlyceenumerique.fr/nsi_premiere/algo_a/a3_tri_invariant.php#1>
 
-
-Une grande question lorsqu'on écrit un algorithme est de savoir quand (dans quelles conditions) il fonctionne correctement. Une première approche est de faire des tests pour un grand nombre de valeurs possibles (en particulier des valeurs atypiques, par exemple des valeurs négatives ou très grandes). Cette méthode be permet pas de tester tous les possibles. La méthode de **l'invariant de boucle** permet de démontrer -- au sens mathématique -- qu'un algorithme est correcte.  Un invariant de boucle, est une propriété qui, si elle est vraie avant l'exécution d'une itération de cette boucle, elle le demeure après l'exécution de l'itération. Autrement dit, pour un algorithme donné, on appelle invariant de boucle toute propriété qui est vraie avant et après chaque itération. 
-
-Une preuve de correction d'un algorithme par invariant de boucle ce fait en trois étapes : 
-1. INITIALISATION : on doit montrer que l'invariant de boucle est vrai avant la première itération de la boucle
-1. CONSERVATION : on doit montrer que si l'invariant de boucle est vrai avant une itération de la boucle, il le reste avant l'itération suivante.
-1. TERMINAISON : une fois la boucle terminée, l'invariant fournit une propriété utile qui aide à montrer la correction de l'algorithme.
-
-### Exemples simples d'invariant de boucle
-
-#### Calcul d'une somme 
-
-```python
-def somme(n):
-    s = 0
-    for i in range(1, n+1):
-        s += i
-    return s
-```
-L'invariant de boucle pour ce programme est la somme $s=\displaystyle\sum_{k=0}^{i-1}k$.
-
-- **Initialisation** : L'invariant de boucle est correcte avant les boucles puisque $ s=0 $ et $i=1$.
-
-- **Conservation** : si l'invariant est valable avant la i^ème itération, il en sera de même après cette itération puisque la boucle ajoute i à la somme et incrémente i d'une unité.  à ce poin
-
-- **Terminaison** : Lorsque la boucle est sur le point de se terminer, l'invariant indique que $s= 0+1+2+...+n$, exactement ce qui est nécessaire pour que l'algorithme soit correct.
-
-### Recherche séquentielle d'un maximum dans un tableau
-
-```python
-def maximum(T):
-    maxi = T[0]
-    for i in range(1, len(T)):
-        if T[i] > maxi:
-            maxi = T[i]
-    return maxi
-```
-
-Prouver la correction de cet algorithme consiste donc à prendre un tableau T non vide
-(précondition) quelconque et de montrer qu’à la fin de l’algorithme, la variable maxi est
-bien l’élément maximal de T (postcondition).
-
-
-- Trouver un invariant : pour cela, on cherche une propriété qui est vraie avant d’exécuter le tour de boucle i. Nous pouvons choisir l’invariant de boucle suivant : $maxi = maximum(T[0..i-1]$).
-
-
-- Initialisation (L’invariant est-il vrai avant la première itération ?)
-Vérifions que l’invariant est vrai pour i = 1 (c’est-à-dire que $maxi = maximum(T[0..1-1]) = maximum(T[0..0]))$. Avant l’entrée dans la boucle, $maxi = T[0]$ donc on a bien $maxi = maximum(T[0..0])$.
-
-- **Conservation** (L’invariant est-il maintenu vrai par une itération de la boucle ?)
-On suppose l'initialisation correcte, et donc l’invariant de l’itération précédente est vrai : $maxi = maximum(T[0..i-1])$.
-    - Si $T[i] <= maxi$ alors on sait que maxi ne change pas puisque $T[i]$ est inférieur ou égal à maxi. On a donc bien $maxi = maximum(T[0..i])$ à la fin de l’itération d’indice i.
-    - Si $T[i] > maxi$, alors $maxi = T[i]$. Cela signifie que $T[i] > T[0..i-1]$ et donc $T[i] = maximum(T[0..i])$, c’est-à-dire $maxi = maximum(T[0..i])$ à la fin de l’itération d’indice i.
-Dans le deux cas, l’invariant est conservé par une itération de la boucle.
-
-- **Terminaison** (l'invariant est vrai après la dernière itération) : Au début de la dernière itération on a maxi = maximum(T[0..n-2]) et après les instructions de la dernière itération on a maxi = maximum(T[0..n-1]). Autrement dit, après l’exécution de l’algorithme, la variable maxi est bien le maximum de tous les éléments de T. Cela prouve la correction partielle de l’algorithme.
-
-
-
-
+!> TO DO (work in progress)
 
 ## Apprentissage et algorithme du plus proche voisin
 

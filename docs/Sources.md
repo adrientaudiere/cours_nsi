@@ -37,10 +37,6 @@
 
 <https://librecours.net/>
 
-https://www.khanacademy.org/computing/computer-programming/html-css
-
-https://htmldog.com/guides/
-
 #### Se former en jouant
 
 [hackinscience](https://www.hackinscience.org/exercises/)
