@@ -4,9 +4,9 @@
 
 ## Progression prévue
 
-Sur l'année 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pour faire face aux imprévus) :
+Sur l'**année** 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines pour faire face aux imprévus) :
 
-- Présentation de l'UE et des outils (1 séance)
+- Présentation de la spécialité et des outils (1 séance)
 - Histoire de l'informatique (2 séances)
 - Base de la programmation (4 séances)
 - Introduction à python (3 séances)
