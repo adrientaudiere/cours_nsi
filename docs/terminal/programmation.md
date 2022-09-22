@@ -384,4 +384,5 @@ fct2(5)
 
 ## Ressources pour s'entraîner en ligne à Python
 
-https://ens-fr.gitlab.io/nsi-pratique/
+Faire les activités en ligne [Guidés](https://e-nsi.gitlab.io/pratique/N2/) et [Aventure](https://e-nsi.gitlab.io/pratique/N3/)
+

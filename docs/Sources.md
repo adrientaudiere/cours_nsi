@@ -69,6 +69,7 @@ https://htmldog.com/guides/
 
 - [Survey stackoverflow](https://insights.stackoverflow.com/survey/)
 - [Tiobe index](https://www.tiobe.com/tiobe-index/)
+- [pypl](https://pypl.github.io/PYPL.html)
 - [Code.gouv](https://code.gouv.fr/#/stats)
 - [state of JS](https://2021.stateofjs.com/fr-FR/)
 

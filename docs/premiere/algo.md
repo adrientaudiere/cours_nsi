@@ -34,6 +34,8 @@ Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Dona
 - **Sorties** : « quantités ayant une relation spécifiée avec les entrées ».
 - **Rendement** : « toutes les opérations que l'algorithme doit accomplir doivent être suffisamment basiques pour pouvoir être en principe réalisées dans une durée finie par un homme utilisant un papier et un crayon ».
 
+Voir ["Qu'est-ce qu'un algorithme"](https://www.epi.asso.fr/revue/articles/a2209c.htm)
+pour un article un peu plus détaillé sur cette notion. 
 </details>
 
 > Une recette de cuisine peut être réduite à un algorithme. En **entrée** on injecte des ingrédients et on spécifie le matériel utilisé. Ces entrées sont ensuite utilisés par des **instructions élémentaires simples** (couper, frire, mélanger...) pour donner en **sortie** un plat préparé.

@@ -316,10 +316,12 @@ variantes ainsi que le java. Vous pouvez aller vous en rendre compte en
 regardant l'indice de popularité [TIOBE](https://www.tiobe.com/tiobe-index/) qui recense un grand nombre
 de langage. Mais, le choix du langage est surtout fonction de votre
 domaine d'application (jeux, application mobile, analyses de données).
+Un autre indice de popularité, [pypl](https://pypl.github.io/PYPL.html), repose sur les recherches google 
+pour évaluer la popularité des langages.
 
 **Python** quand à lui est un langage haut-niveau dont la syntaxe est
-assez lisible et qui est très populaire (cf le classement
-[TIOBE](https://www.tiobe.com/tiobe-index/)). Ce langage permet de très
+assez lisible et qui est très populaire (cf les classements
+[TIOBE](https://www.tiobe.com/tiobe-index/) et [pypl](https://pypl.github.io/PYPL.html)). Ce langage permet de très
 nombreuses applications (depuis l'intelligence artificielle jusqu'à la
 création de site web) grâce à une grande communauté et de très nombreux
 modules.

@@ -335,3 +335,10 @@ Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe p
 ## Jeu du py-rates
 
 ?> Faire le jeu des [py-rates](https://py-rates.org/index.html)
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+Faire les activités en ligne [À maîtriser](https://e-nsi.gitlab.io/pratique/N1/)
+
+</details>

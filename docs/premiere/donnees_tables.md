@@ -131,4 +131,25 @@ vers_csv('table_exemple', ordre, 'mon_fichier_example')
 
 ## :fa fa-brain: Exercices
 
-!> TO DO (work in progress)
+
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+Aller sur le site [pypl](https://pypl.github.io/PYPL.html) qui référence la popularité des langages de programmation et essayer d'obtenir les données pour toutes les année depuis 2004. Transformer ces données en csv pour ensuite pouvoir utiliser python pour représenter les courbes d'évolution au cours du temps pour python, Java et R. 
+
+<details>
+<summary> <strong> Un peu d'aide:</strong></summary>
+
+- Il faut regarder dans le code source de la page et repérer un appel à une fonction *ajax*. 
+
+```js
+$.getScript("PYPL/All.js?t=axbAll9066Allbxa")
+```
+
+- Il faut utiliser la console javascript (CTRL + MAJ + I)
+
+</details>
+
+</details>
