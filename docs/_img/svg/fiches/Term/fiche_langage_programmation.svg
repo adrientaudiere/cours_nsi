@@ -418,17 +418,17 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start;fill:#636363;fill-opacity:1"
          id="flowPara16115">Les trois règles d'un algorithme récursif :   </flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
-         id="flowPara16187"> - Il s’<flowSpan
+         id="flowPara16187"> - Il s'<flowSpan
    style="font-weight:bold;fill:#8e0000;fill-opacity:1"
    id="flowSpan18535">appelle lui même </flowSpan>;    </flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
          id="flowPara16189"> - Il doit avoir un <flowSpan
    style="font-weight:bold;fill:#8e0000;fill-opacity:1"
-   id="flowSpan18689">état trivial</flowSpan>, ce qui permet de définir une condition d’arrêt ;    </flowPara><flowPara
+   id="flowSpan18689">état trivial</flowSpan>, ce qui permet de définir une condition d'arrêt ;    </flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
          id="flowPara16191"> - Il doit conduire vers cet <flowSpan
    style="font-weight:bold;fill:#8e0000;fill-opacity:1"
-   id="flowSpan19613">état d’arrêt</flowSpan>, pour éviter les boucles infinies.</flowPara><flowPara
+   id="flowSpan19613">état d'arrêt</flowSpan>, pour éviter les boucles infinies.</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
          id="flowPara16117" /><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
@@ -537,7 +537,7 @@
            y="-148.26442"
            style="text-align:justify;text-anchor:start;stroke-width:0.264583" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville';text-align:justify;text-anchor:start"
-         id="flowPara15039">Résoudre un problème de façon récursive c'est décomposer un problème en sous-problèmes identiques de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.</flowPara></flowRoot>
+         id="flowPara15039">Résoudre un problème de façon récursive c'est décomposer un problème en sous-problèmes identiques de plus en plus petits jusqu'à obtenir un problème suffisamment petit pour qu'il puisse être résolu de manière triviale.</flowPara></flowRoot>
     <flowRoot
        xml:space="preserve"
        id="flowRoot10543"

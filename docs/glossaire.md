@@ -4,16 +4,16 @@
 
 <div class="list_of_terms">
 
-### Langages de programation
+### Langages de programmation
 
 > Python
 
-Langage de programmation [haut niveau](#bas_haut_niveau), [open source](#open_source), interprété, multi-paradigme et multiplateformes. Ce langage de programmation est le plus populaire depuis 2022 ([TIOBE](https://www.tiobe.com/tiobe-index/); [pypl](https://pypl.github.io/PYPL.html)). Python est utilisé dans les domaines de la gestion d’infrastructure, l'analyse de données ou encore le développement de logiciels et d'applications. Il est notamment très utilisés dans les [projets libres](https://code.gouv.fr/#/stats) du gouvernement français et par les [développeurs](https://insights.stackoverflow.com/survey/2021).
+Langage de programmation [haut niveau](#bas_haut_niveau), [open source](#open_source), interprété, multi-paradigme et multiplateformes. Ce langage de programmation est le plus populaire depuis 2022 ([TIOBE](https://www.tiobe.com/tiobe-index/); [pypl](https://pypl.github.io/PYPL.html)). Python est utilisé dans les domaines de la gestion d'infrastructure, l'analyse de données ou encore le développement de logiciels et d'applications. Il est notamment très utilisés dans les [projets libres](https://code.gouv.fr/#/stats) du gouvernement français et par les [développeurs](https://insights.stackoverflow.com/survey/2021).
 
 
 > JavaScript (JS)
 
-Langage de programmation qui permet de créer du contenu mis à jour de façon dynamique, de contrôler le contenu multimédia, d’animer des images, et tout ce à quoi on peut penser. On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
+Langage de programmation qui permet de créer du contenu mis à jour de façon dynamique, de contrôler le contenu multimédia, d'animer des images, et tout ce à quoi on peut penser. On peut écrire de très nombreux [algorithmes](https://github.com/TheAlgorithms/Javascript/blob/master/Graphs/Dijkstra.js) avec JavaScript
 
 > Langage bas/haut niveau <a name="bas_haut_niveau"></a>
 
@@ -31,7 +31,7 @@ Langage de programmation qui permet de créer du contenu mis à jour de façon d
 
 > Dictionnaire vs Tableau (également appelé Liste en python)
 
-- un **dictionnaire** est une collection qui associe une clé à une valeur. Par exemple, il est possible d’associer la clé 'nom' à un nom et la clé 'prenom' à un prénom.
+- un **dictionnaire** est une collection qui associe une clé à une valeur. Par exemple, il est possible d'associer la clé 'nom' à un nom et la clé 'prenom' à un prénom.
 
 '''python
 mon_dico = 
@@ -53,7 +53,7 @@ Définition
 
 > Arbres binaires
 
-Arbre dans lequel tous le nœuds internes ne peuvent avoir que deux fils au maximum, c’est-à-dire de n’être que de degré 2, et dont la hauteur est illimitée.
+Arbre dans lequel tous le nœuds internes ne peuvent avoir que deux fils au maximum, c'est-à-dire de n'être que de degré 2, et dont la hauteur est illimitée.
 
 
 
@@ -220,7 +220,7 @@ des mesures en informatique. Les préfixes binaires sont de la forme :
 | zébi | Zi      | $2^{70} = 1\,180\,591\,620\,717\,411\,303\,424$      |
 | yobi | Yi      | $2^{80} = 1\,208\,925\,819\,614\,629\,174\,706\,176$ |
 
-L’usage de cette norme de préfixe binaire ne s’est pas encore généralisé totalement. Certains logiciels et systèmes d’exploitations (comme Ubuntu à partir de la version 10.10 et Mac OS X à partir de Snow Leopard) se sont mis à jour avec cette norme et propose donc des valeurs en GiO plutôt qu'en GO. D'autres entreprises, comme Microsoft Windows pour ne pas les citer, continuent d'utiliser des valeurs binaires avec des préfixes SI (système international). Les fabricants de périphérique de stockage utilisent également les préfixes SI car la valeur est ainsi plus élevé. Un disque dur de 1 To est en fait un disque dur pouvant contenir 0.91 TiO, ce qui est moins vendeur...
+L'usage de cette norme de préfixe binaire ne s'est pas encore généralisé totalement. Certains logiciels et systèmes d'exploitations (comme Ubuntu à partir de la version 10.10 et Mac OS X à partir de Snow Leopard) se sont mis à jour avec cette norme et propose donc des valeurs en GiO plutôt qu'en GO. D'autres entreprises, comme Microsoft Windows pour ne pas les citer, continuent d'utiliser des valeurs binaires avec des préfixes SI (système international). Les fabricants de périphérique de stockage utilisent également les préfixes SI car la valeur est ainsi plus élevé. Un disque dur de 1 To est en fait un disque dur pouvant contenir 0.91 TiO, ce qui est moins vendeur...
 
 ## Divers
 

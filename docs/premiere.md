@@ -82,7 +82,7 @@ Sur l'**année** 36 semaines x 2 séquences = 72 séquences (comptons 5 semaines
 
 - Connaître le modèle d'**architecture séquentielle** de **von Neumann**
   - Distinguer les rôles et les caractéristiques des constituants d'une machine
-  - Dérouler l’exécution d'une séquence d'instructions simples du type language machine
+  - Dérouler l'exécution d'une séquence d'instructions simples du type language machine
 
 - Décrire les **protocoles de communications** aux seins des **réseaux** de machines
   - Comprendre l'intérêt du découpage de données en **paquets** et leur **encapsulation**

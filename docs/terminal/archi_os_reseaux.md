@@ -46,7 +46,7 @@ La miniaturisation des circuits intégrées a permit l'avènement des microcontr
 
 </div>
 
-Les microcontrôleurs reposent souvent sur l'**architecture de Harvard** (car inventé à l'université d'Harvard). Dans cette architecture, la mémoire des programmes est dissocié physiquement de la mémoire des données. L'Unité Arithmétique et Logique (UAL) communique avec les deux types de mémoire grâce à deux bus distincts. Cela permet un accès simultanée aux données et aux programmes ce qui accélère le processus mais complexifie l'architecture. Autrement dit l’architecture de type von Neumann (vu en [première](/premiere/archi_OS.md)) s’oppose à celle de Harvard car elle utilise une unique structure pour stocker à la fois le programme et les données. L'architecture de Harvard peut donc se montrer plus rapide que l'architecture de von Neumann au prix d'une complexité accrue de la structure.
+Les microcontrôleurs reposent souvent sur l'**architecture de Harvard** (car inventé à l'université d'Harvard). Dans cette architecture, la mémoire des programmes est dissocié physiquement de la mémoire des données. L'Unité Arithmétique et Logique (UAL) communique avec les deux types de mémoire grâce à deux bus distincts. Cela permet un accès simultanée aux données et aux programmes ce qui accélère le processus mais complexifie l'architecture. Autrement dit l'architecture de type von Neumann (vu en [première](/premiere/archi_OS.md)) s'oppose à celle de Harvard car elle utilise une unique structure pour stocker à la fois le programme et les données. L'architecture de Harvard peut donc se montrer plus rapide que l'architecture de von Neumann au prix d'une complexité accrue de la structure.
 
 ### Système sur puce (SoC)
 
@@ -248,15 +248,15 @@ Vous pouvez aussi faire le TP des _Girls Can Code_ sur la [cryptologie sous pyth
 
 Un site entier est dédié à la terminologie de la cryptologie : [On dit chiffrer, et pas crypter](https://chiffrer.info/)
 
-- **Chiffrer** : il s’agit de rendre un document illisible avec une clef de chiffrement, excepté pour son destinataire
-- **Déchiffrer** : il s’agit de rendre lisible un document chiffré, en ayant connaissance de la clef de chiffrement
-- **Décrypter** : il s’agit de rendre lisible un document chiffré, sans avoir connaissance de la clef de chiffrement
-- **Cryptologie** : il s’agit de la science du secret, c’est son sens étymologique. Elle regroupe plusieurs disciplines :
+- **Chiffrer** : il s'agit de rendre un document illisible avec une clef de chiffrement, excepté pour son destinataire
+- **Déchiffrer** : il s'agit de rendre lisible un document chiffré, en ayant connaissance de la clef de chiffrement
+- **Décrypter** : il s'agit de rendre lisible un document chiffré, sans avoir connaissance de la clef de chiffrement
+- **Cryptologie** : il s'agit de la science du secret, c'est son sens étymologique. Elle regroupe plusieurs disciplines :
 
   - La cryptographie : vise à étudier comment protéger par le chiffrement
   - La cryptanalyse : vise à analyser les méthodes de chiffrement pour les casser
 
-- **~~Crypter~~** : cela n’existe pas
+- **~~Crypter~~** : cela n'existe pas
 - **Chiffrage** : cela existe, mais uniquement dans le domaine de la comptabilité ou de la musique
 
 ### Cryptographie symétrique
