@@ -2,9 +2,9 @@
 
 ## Définissons un algorithme
 
-D'un point de vue mathématique, un algorithme est une « **suite finie et non ambiguë d’opérations ou d’instructions permettant de résoudre un problème ou d’obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot _algorithme_ est une référence au mathématicien perse **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
+D'un point de vue mathématique, un algorithme est une « **suite finie et non ambiguë d'opérations ou d'instructions permettant de résoudre un problème ou d'obtenir un résultat** » (Source : [wiktionary](https://fr.wiktionary.org/wiki/algorithme)). Le mot _algorithme_ est une référence au mathématicien perse **Al-Khwârizmî** (en arabe : الخوارزمي) qui a classifié les algorithmes existants à son époque ($\thicksim780 \thickspace \text{\textendash} \thickspace 850$) en fonction de leurs critères de terminaison (nous en parlerons plus tard).
 
-D'un point de vue des sciences informatiques, un algorithme est une **procédure de calcul définie par une suite finie d’opérations élémentaires obéissant à un enchaînement déterminé**. Il s'agit de résoudre un problème en un certain nombre d'étapes clairement définies dans un dialogue avec un ou des ordinateurs. La grande majorité des algorithmes prennent des **valeurs en entrée** et à la **suite des opérations** des l'algorithme renvoient des **valeurs de sortie**.
+D'un point de vue des sciences informatiques, un algorithme est une **procédure de calcul définie par une suite finie d'opérations élémentaires obéissant à un enchaînement déterminé**. Il s'agit de résoudre un problème en un certain nombre d'étapes clairement définies dans un dialogue avec un ou des ordinateurs. La grande majorité des algorithmes prennent des **valeurs en entrée** et à la **suite des opérations** des l'algorithme renvoient des **valeurs de sortie**.
 
 ```mermaid
 graph LR
@@ -28,7 +28,7 @@ graph LR
 
 Un algorithme dois respecter cinq propriétés selon D. Knuth (<abbr title="Donald E. Knuth, Algorithmes, Stanford, CSLI Publications, 2011, 510 p. (ISBN 978-1-57586-620-8)"> 2011 </abbr>) :
 
-- **Finitude** : « Un algorithme doit toujours se terminer après un nombre fini d’étapes. »
+- **Finitude** : « Un algorithme doit toujours se terminer après un nombre fini d'étapes. »
 - **Définition précise** : « Chaque étape d'un algorithme doit être définie précisément, les actions à transposer doivent être spécifiées rigoureusement et sans ambiguïté pour chaque cas. »
 - **Entrées** : « quantités qui lui sont données avant qu'un algorithme ne commence. Ces entrées sont prises dans un ensemble d'objets spécifié ».
 - **Sorties** : « quantités ayant une relation spécifiée avec les entrées ».
@@ -120,7 +120,7 @@ renvoyer la valeur de tr                       (1 op.)          (1 op.)
                                          TOTAL = 3j+5             3n+4
 ```
 
-Le **coût de l’algorithme** est donné par le **nombre d’opérations effectuées dans le pire des cas**.
+Le **coût de l'algorithme** est donné par le **nombre d'opérations effectuées dans le pire des cas**.
 
 ?> Dans notre exemple, quel est le coût de l'algorithme ? <abbr title="Ici, le nombre d'opérations maximum est atteint lorsque le nombre recherché se situe en dernière position (position n)"> <i class="fas fa-life-ring"></i> Indices </abbr>. <!-- 3n+5 -->
 
@@ -259,7 +259,7 @@ L'invariant de boucle pour ce programme est la somme $s=\displaystyle\sum_{k=0}^
 
 - **Initialisation** : L'invariant de boucle est correcte avant les boucles puisque $ s=0 $ et $i=1$.
 
-- **Conservation** : si l'invariant est valable avant la i^ème itération, il en sera de même après cette itération puisque la boucle ajoute i à la somme et incrémente i d'une unité.  à ce poin
+- **Conservation** : si l'invariant est valable avant la i^ème itération, il en sera de même après cette itération puisque la boucle ajoute i à la somme et incrémente i d'une unité.
 
 - **Terminaison** : Lorsque la boucle est sur le point de se terminer, l'invariant indique que $s= 0+1+2+...+n$, exactement ce qui est nécessaire pour que l'algorithme soit correct.
 
@@ -275,23 +275,23 @@ def maximum(T):
 ```
 
 Prouver la correction de cet algorithme consiste donc à prendre un tableau T non vide
-(précondition) quelconque et de montrer qu’à la fin de l’algorithme, la variable maxi est
-bien l’élément maximal de T (postcondition).
+(précondition) quelconque et de montrer qu'à la fin de l'algorithme, la variable maxi est
+bien l'élément maximal de T (postcondition).
 
 
-- Trouver un invariant : pour cela, on cherche une propriété qui est vraie avant d’exécuter le tour de boucle i. Nous pouvons choisir l’invariant de boucle suivant : $maxi = maximum(T[0..i-1]$).
+- Trouver un invariant : pour cela, on cherche une propriété qui est vraie avant d'exécuter le tour de boucle i. Nous pouvons choisir l'invariant de boucle suivant : $maxi = maximum(T[0..i-1]$).
 
 
-- Initialisation (L’invariant est-il vrai avant la première itération ?)
-Vérifions que l’invariant est vrai pour i = 1 (c’est-à-dire que $maxi = maximum(T[0..1-1]) = maximum(T[0..0]))$. Avant l’entrée dans la boucle, $maxi = T[0]$ donc on a bien $maxi = maximum(T[0..0])$.
+- Initialisation (L'invariant est-il vrai avant la première itération ?)
+Vérifions que l'invariant est vrai pour i = 1 (c'est-à-dire que $maxi = maximum(T[0..1-1]) = maximum(T[0..0]))$. Avant l'entrée dans la boucle, $maxi = T[0]$ donc on a bien $maxi = maximum(T[0..0])$.
 
-- **Conservation** (L’invariant est-il maintenu vrai par une itération de la boucle ?)
-On suppose l'initialisation correcte, et donc l’invariant de l’itération précédente est vrai : $maxi = maximum(T[0..i-1])$.
-    - Si $T[i] <= maxi$ alors on sait que maxi ne change pas puisque $T[i]$ est inférieur ou égal à maxi. On a donc bien $maxi = maximum(T[0..i])$ à la fin de l’itération d’indice i.
-    - Si $T[i] > maxi$, alors $maxi = T[i]$. Cela signifie que $T[i] > T[0..i-1]$ et donc $T[i] = maximum(T[0..i])$, c’est-à-dire $maxi = maximum(T[0..i])$ à la fin de l’itération d’indice i.
-Dans le deux cas, l’invariant est conservé par une itération de la boucle.
+- **Conservation** (L'invariant est-il maintenu vrai par une itération de la boucle ?)
+On suppose l'initialisation correcte, et donc l'invariant de l'itération précédente est vrai : $maxi = maximum(T[0..i-1])$.
+    - Si $T[i] <= maxi$ alors on sait que maxi ne change pas puisque $T[i]$ est inférieur ou égal à maxi. On a donc bien $maxi = maximum(T[0..i])$ à la fin de l'itération d'indice i.
+    - Si $T[i] > maxi$, alors $maxi = T[i]$. Cela signifie que $T[i] > T[0..i-1]$ et donc $T[i] = maximum(T[0..i])$, c'est-à-dire $maxi = maximum(T[0..i])$ à la fin de l'itération d'indice i.
+Dans le deux cas, l'invariant est conservé par une itération de la boucle.
 
-- **Terminaison** (l'invariant est vrai après la dernière itération) : Au début de la dernière itération on a maxi = maximum(T[0..n-2]) et après les instructions de la dernière itération on a maxi = maximum(T[0..n-1]). Autrement dit, après l’exécution de l’algorithme, la variable maxi est bien le maximum de tous les éléments de T. Cela prouve la correction partielle de l’algorithme.
+- **Terminaison** (l'invariant est vrai après la dernière itération) : Au début de la dernière itération on a maxi = maximum(T[0..n-2]) et après les instructions de la dernière itération on a maxi = maximum(T[0..n-1]). Autrement dit, après l'exécution de l'algorithme, la variable maxi est bien le maximum de tous les éléments de T. Cela prouve la correction partielle de l'algorithme.
 
 
 
@@ -330,9 +330,9 @@ Une solution assez simple utilise un algorithme glouton. Avec une stratégie glo
 | D     | 400 g | 800 Cal           |
 | E     | 350 g | 700 Cal           |
 
-?> Appliquer un algorithme glouton en faisant varier la manière de choisir les achats : (i) choisir les achats par ordre d'energie décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos, (ii) choisir les achats par ordre de poids croissant, (iii) choisir les achats par ordre de rapport energie/poids décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos.
+?> Appliquer un algorithme glouton en faisant varier la manière de choisir les achats : (i) choisir les achats par ordre d'énergie décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos, (ii) choisir les achats par ordre de poids croissant, (iii) choisir les achats par ordre de rapport énergie/poids décroissant parmi ceux qui ne dépasse pas le poids restant dans le sac à dos.
 
-Selon les problèmes, les algorithmes gloutons produisent d’excellents résultats ou se trompe complètement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
+Selon les problèmes, les algorithmes gloutons produisent d'excellents résultats ou se trompe complètement. Par exemple, dans l'exemple du sac à dos, si les poids des objets sont très déséquilibrés, les algorithmes gloutons trouverons des solutions locales très loin de la solution globale optimales car ce type d'algorithme a une mauvaise vision globale des problèmes. Si on reprend l'exemple de votre marche pour trouver le sommet d'un paysage, si le paysage est une montagne unique, la solution gloutonne (toujours choisir le chemin qui monte) devrait vous emmener au sommet. En revanche, si vous vous trouver dans un paysage constitué d'une multitude de collines, vous trouverez rapidement un sommet local qui sera peut être bien plus bas que le sommet global du paysage.
 
 !> Aller voir un [animation](http://fred.boissac.free.fr/AnimsJS/Dariush_Glouton/index.html) de la méthode glouton.
 
@@ -342,4 +342,4 @@ Selon les problèmes, les algorithmes gloutons produisent d’excellents résult
 
 ?> Écrire un algorithme en pseudo code qui calcule la moyenne de trois nombres a, b et c. Le résultat sera stocké dans une variable moy.
 
-?> Écrire un algorithme qui permet d’échanger le contenu de deux variables var1 et var2
+?> Écrire un algorithme qui permet d'échanger le contenu de deux variables var1 et var2

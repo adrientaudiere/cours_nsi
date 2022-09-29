@@ -31,15 +31,18 @@
 ### Se former
 #### Se former en ligne
 
-<https://openclassrooms.com/fr/>
 
-<https://freecodecamp.org/>
+[France IOI](http://www.france-ioi.org/algo/chapters.php) `python`
 
-<https://librecours.net/>
+[Open Class Room](https://openclassrooms.com/fr/) 
 
-https://www.khanacademy.org/computing/computer-programming/html-css
+[Freecodecamp](<https://freecodecamp.org/>) `js` `html` `css`
 
-https://htmldog.com/guides/
+[Libre Cours](<https://librecours.net/>)
+
+[kanacademy](https://www.khanacademy.org/computing/computer-programming/html-css) `html` `css`
+
+[htmldog](https://htmldog.com/guides/) `html` 
 
 #### Se former en jouant
 

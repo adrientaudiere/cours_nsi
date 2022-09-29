@@ -2,7 +2,7 @@
 
 ## Récursivité
 
-Résoudre un problème de façon récursive c'est **décomposer un problème en sous-problèmes identiques** de plus en plus petits jusqu’à obtenir un problème suffisamment petit pour qu’il puisse être résolu de manière triviale.
+Résoudre un problème de façon récursive c'est **décomposer un problème en sous-problèmes identiques** de plus en plus petits jusqu'à obtenir un problème suffisamment petit pour qu'il puisse être résolu de manière triviale.
 
 ?> Regarder la [vidéo](https://www.youtube.com/watch?v=U3nGNJTxYc4&feature=emb_imp_woyt) sur la tour de Hanoï vue comme un processus récursif.
 
@@ -10,15 +10,15 @@ Résoudre un problème de façon récursive c'est **décomposer un problème en 
 
 Les trois règles d'un **algorithme récursif** :
 
-- Il s’**appelle lui même**;
-- Il doit avoir un **état trivial**, ce qui permet de définir une condition d’arrêt;
-- Il doit conduire vers cet **état d’arrêt**, pour éviter les boucles infinies.
+- Il s'**appelle lui même**;
+- Il doit avoir un **état trivial**, ce qui permet de définir une condition d'arrêt;
+- Il doit conduire vers cet **état d'arrêt**, pour éviter les boucles infinies.
 
 </div>
 
 ### Fonction récursive
 
-Une fonction **récursive** est donc une fonction qui va **s’appeler elle-même**. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
+Une fonction **récursive** est donc une fonction qui va **s'appeler elle-même**. Comme dans le cas des boucle "while", il est crucial de penser à la condition d'arrêt de la fonction au risque de tomber dans une boucle infini. L'utilisation des fonctions récursives est souvent liée à la notion de récurrence en mathématiques.
 
 ?> Examiner le programme ci-dessous et tenter de prévoir son résultat avant de l'exécuter sous [pythontutor](https://pythontutor.com/) pour vérifier votre prévision et comprendre la suite du processus de pile/dépiler.
 
@@ -179,7 +179,7 @@ def est_palindrome(mot):
 
 2. Écrire une version récursive *rec_est_palindrome*. Pour cela identifier l'état trivial (donc la condition d'arrêt) et utiliser l'idée que "selles" est un palindrome si "s"= "s" et "elle" est un palindrome.
 
-3. Modifier votre programme pour qu’il considère que la phrase "Karine alla en Irak" soit un palindrome.
+3. Modifier votre programme pour qu'il considère que la phrase "Karine alla en Irak" soit un palindrome.
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
@@ -233,7 +233,7 @@ Jusqu'à maintenant, nous avons principalement utilisé le paradigme de programm
 - **affectation** (on attribue une valeur à une variable, par exemple : texte = "Youpi")
 - les instructions conditionnelles (if / else) et les boucles (while et for)
 
-Il existe d'autres manières de programmer, le paradigme de la programmation orienté objet (abrégée *poo*) en est un. La poo repose sur les notions de **classe**, d’**attribut** et de **méthode**. Les notions d’héritage et de polymorphisme sont également caractéristiques de la poo mais ne sont pas au programme.
+Il existe d'autres manières de programmer, le paradigme de la programmation orienté objet (abrégée *poo*) en est un. La poo repose sur les notions de **classe**, d'**attribut** et de **méthode**. Les notions d'héritage et de polymorphisme sont également caractéristiques de la poo mais ne sont pas au programme.
 
 !> Une classe définit la façon dont seront créés et gérés les objets de cette classe. Une instance est une version d'un objet créé grâce à une classe. La différence entre un objet et une instance est subtile et n'est pas au programme. Une instance (=un objet) possède (le plus souvent) des **attributs** (des caractéristiques propres à la classe) et des **méthodes** (des fonctions spécifiques aux objets de cette classe).
 
@@ -281,16 +281,16 @@ print(eleve1.calcul_moyenne())
 print(eleve1)
 ```
 
-?> Écrire une classe *Rectangle*, permettant de construire un rectangle doté d’attributs longueur et largeur. Ajouter deux méthodes *perimetre*(self) et *surface*(self).
+?> Écrire une classe *Rectangle*, permettant de construire un rectangle doté d'attributs longueur et largeur. Ajouter deux méthodes *perimetre*(self) et *surface*(self).
 
 ?> Comprendre la construction des classes [personnage](https://github.com/courumix/pySCHO/blob/main/python/class_perso.py) et [monstre](https://github.com/courumix/pySCHO/blob/main/python/class_monstre.py) du jeux de rôle pyScho (en cours de dév.).
 
-?> Créer une classe plante avec au moins les attributs _nom_, *points_de_santé*, *attaque*, *cris_guerre*. Vous devez également définir les méthodes _attaquer()_ (fait baisser les points de santé d’une autre plante), _photosynthèse_ (augmente les points de santé), _menacer_ (renvoie le cris de guerre), _enlacer(texte)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
+?> Créer une classe plante avec au moins les attributs _nom_, *points_de_santé*, *attaque*, *cris_guerre*. Vous devez également définir les méthodes _attaquer()_ (fait baisser les points de santé d'une autre plante), _photosynthèse_ (augmente les points de santé), _menacer_ (renvoie le cris de guerre), _enlacer(texte)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_ (fait baisser les points de santé d’un autre chien), _manger_ (augmente les points de santé), _grogner_ (renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
+?> Créer une classe chien qui à les attributs _nom_, *points_de_santé* et _aboiement_ (chaîne de caractères). Vous devez également définir les méthodes _mordre(autre_chien)_ (fait baisser les points de santé d'un autre chien), _manger_ (augmente les points de santé), _grogner_ (renvoie « Grrr... » + son aboiement),_machouiller(chaîne)_(renvoie la chaîne de caractères mélangée) ainsi qu'une méthode_\_\_repr\_\__.
 
 ?> Créer un combat automatique entre deux chiens: les valeurs de dégâts et de PVs gagnés quand ils mangent sont tirées au hasard (vous aurez besoin d'utiliser la fonction *randint* du module *random*), chaque chien grogne avant d'attaquer, les chiens attaquent puis mangent chacun leur tour, le combat s'arrête quand les PVs d'un chien tombe à 0 et le gagnant mâchouille.
 

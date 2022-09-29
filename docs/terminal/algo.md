@@ -100,7 +100,7 @@ L = cons(5, cons(4, cons(3, cons(2, cons(1, cons(0,nil))))))
 print(L)
 ```
 
-?> À l'aide des  instructions  suivantes que vous testerez, écrire une fonction  qui  permet  d’afficher le dernier élément de la liste.
+?> À l'aide des  instructions  suivantes que vous testerez, écrire une fonction  qui  permet  d'afficher le dernier élément de la liste.
 
 ```python
 print(L.estVide())
@@ -174,10 +174,10 @@ En informatique, on utilise par exemple les piles dans les piles d'appels de fon
 
 On peut lister quelques opérations courantes sur les piles :
 
-- la création d’une pile,
-- l'empilement d’un élément sur une pile,
-- le dépilement d’une pile,
-- la consultation du sommet d’une pile.
+- la création d'une pile,
+- l'empilement d'un élément sur une pile,
+- le dépilement d'une pile,
+- la consultation du sommet d'une pile.
 
 ### Files
 
@@ -185,10 +185,10 @@ Une **file** (**FIFO** pour *First In First Out*) est une structure dans laquell
 
 On peut lister quelques opérations courantes sur les files :
 
-- la création d’une file,
-- l'ajout d’un élément dans une file,
+- la création d'une file,
+- l'ajout d'un élément dans une file,
 - la suppression du premier élément d'une file (défilement),
-- la consultation du début d’une file.
+- la consultation du début d'une file.
 
 ## Dictionnaires
 
@@ -282,7 +282,7 @@ Un arbre binaire est un arbre de degré 2 (dont les nœuds sont de degré 2 au m
 Les arbres binaires forment une structure de données qui peut se définir de façon récursive. Ainsi, un arbre binaire est :
 
 - Soit vide;
-- Soit composé d’une racine et d’une paire d’arbres binaires, appelés sous-arbres gauche et droit.
+- Soit composé d'une racine et d'une paire d'arbres binaires, appelés sous-arbres gauche et droit.
 
 Un arbre binaire peut être parcouru en largeur ou en profondeur. Le parcours en profondeur peut être de type infixe, préfixe ou suffixe.
 
@@ -421,9 +421,9 @@ Une implémentation d'arbres binaires doit permettre un certain nombre d'opérat
 
 - Construire un arbre vide
 - Tester si un arbre est vide
-- Construire un arbre à partir d’un entier et de deux sous-arbres gauche et droit
-- Accèder à la racine d’un arbre
-- Accèder au sous-arbre gauche et au sous-arbre droit
+- Construire un arbre à partir d'un entier et de deux sous-arbres gauche et droit
+- Accéder à la racine d'un arbre
+- Accéder au sous-arbre gauche et au sous-arbre droit
 
 ```python
 class Noeud:
