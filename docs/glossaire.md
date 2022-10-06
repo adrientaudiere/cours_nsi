@@ -177,6 +177,10 @@ Définition
 
 Définition
 
+> Intelligence artificielle
+ 
+[Les maths derrière les réseaux de neurones](https://github.com/olivia-ai/the-math-behind-a-neural-network/blob/master/full-document_FR.pdf)
+
 </div>
 
 ## Unité de mesure en informatique

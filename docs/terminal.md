@@ -14,7 +14,6 @@
     - Langage SQL: requêtes d'interrogation et de mise à jour [:fa fa-atlas:](/terminal/bases_de_donnees.md#le-language-sql)
 
 3. Architectures matérielles, systèmes d'exploitation et réseaux
-    - Composants intégrés d'un système sur puce [:fa fa-atlas:](terminal/archi_os_reseaux.md#circuits-intégrés)
     - Gestion de processus et des ressources par un système d'exploitation [:fa fa-atlas:](terminal/archi_os_reseaux.md#gestion-des-processus-et-des-ressources)
     - Protocole de routage [:fa fa-atlas:](terminal/archi_os_reseaux.md#protocoles-de-routage)
 
@@ -32,6 +31,7 @@
 - Évènements clés de l'histoire de l'informatique (répartie dans l'ensemble du cours)
 - Graphes : structures relationnelles. Sommets, arcs, arêtes, graphes orientés/non orientés [:fa fa-atlas:](/terminal/algo.md#graphe)
 - Système de gestion de bases de données relationnelles [:fa fa-atlas:](terminal/bases_de_donnees.md#systèmes-de-gestion-de-bases-de-données-sgbd)
+- Composants intégrés d'un système sur puce [:fa fa-atlas:](terminal/archi_os_reseaux.md#circuits-intégrés)
 - Sécurisation des communications [:fa fa-atlas:](terminal/archi_os_reseaux.md#sécurisation-des-communications)
 - Notion de programme en tant que données. Calculabilité, décidabilité [:fa fa-atlas:](terminal/algo.md#calculabilitédécidabilité)
 - Algorithmes sur les graphes [:fa fa-atlas:](/terminal/algo.md#graphe)
@@ -86,7 +86,6 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
     - Distinguer la **structure** d'une base de données de son **contenu**
     - Repérer les **anomalies** dans le schéma d'une base de données (redondances de données, anomalies d'insertion, de suppression, de mise à jour)
 
-
 <div class="transparent">
 
 - [ ] Lister les services rendus par un **système de gestion de base de données relationnelles** : persistance des données, gestions des accès concurrents, efficacité du traitement des requêtes, sécurisation des accès
@@ -98,7 +97,11 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
 ### MACHINES
 #### Architectures matérielles, systèmes d'exploitation et réseaux
 
+<div class="transparent">
+
 - [ ] Identifier les principaux composants d'un système sur puce (**SoCs**, *Systems on Chips*) et les avantages de leur intégration en termes de vitesse et de consommation
+
+</div>
 
 - [ ] Décrire la création d'un **processus** et l'**ordonnancement** de plusieurs processus par le système d'exploitation
     - comprendre les sorties de la fonction ***top***
@@ -120,6 +123,28 @@ Les capacités indiquées en gris ne sont pas au programme du bac.
 
 ### PROGRAMMATION
 #### Langages et programmation
+
+<div class="transparent">
+
+- [ ] Comprendre que tout programme est aussi une donnée. Comprendre que la calculabilité ne dépend pas du langage de programmation utilisé. Montrer, sans formalisme théorique, que le problème de l'arrêt est indécidable.
+
+</div>
+
+- [ ] Écrire un programme **récursif**. Analyser le fonctionnement d'un programme récursif. 
+
+
+- [ ] **Modularité** : Utiliser des **API** (Application Programming Interface) ou des **bibliothèques**. Exploiter leur **documentation**. Créer des modules simples et les documenter.
+
+
+- [ ] Mise au point de programmes et gestion des bugs : Dans la pratique de la programmation, savoir répondre aux causes typiques de bugs : problèmes liés au typage, effets de bord non désirés, débordements dans les tableaux, instruction conditionnelle non exhaustive, choix des inégalités, comparaisons et calculs entre flottants, mauvais nommage des variables, etc.  
+
+<div class="transparent">
+
+- [ ] Distinguer sur des exemples les **paradigmes** impératif, fonctionnel et objet. Choisir le **paradigme de programmation** selon le champ d'application d'un programme
+
+</div>
+
+#### Algorithmique
 
 - [ ] Effectuer des algorithmes sur des structures arborescentes de type **arbres binaires**
     - Calculer la **taille** et la **hauteur** d'un **arbre binaire**

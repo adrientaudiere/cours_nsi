@@ -327,7 +327,6 @@ connexion.close()
    7. {('', 'Axel', +331829900)}
    8. {('Doe', 'White', '+3318299EE')}
 
-  À partir des propositions 
 
 6. La table suivante (Anniversaire) comporte des erreurs (des valeurs impossibles). Trouver les erreurs et décrire des contraintes d'integrité qui permettraient de ne pas avoir de nouvelles erreurs lors de l'ajout ultérieur d'entités.  
 
@@ -362,3 +361,66 @@ WHERE economy.agriculture>economy.industry AND economy.agriculture > economy.ser
 ```
 
 Écrire la requête qui va filtrer les pays dont l'inflation est positive et qui va les trier par le taux de chômage.
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Lire les pages 1 à 10 du [document](../_doc/librecours_sql.pdf) et faire les exercices page 19 à 24.
+
+</details>
+
+
+<details class="advanced_level">
+<summary> <strong> Niveau avancé :</strong></summary>
+
+?> Exercices issus de [Librecours.net](https://librecours.net) de Stéphane Crozat (Contributions : Benjamin Lussier, Antoine Vincent); Paternité - Partage des Conditions Initiales à l'Identique : http://creativecommons.org/licenses/by-sa/4.0/fr/. 
+
+1. **Location d'appartements**
+
+Soit le schéma relationnel suivant gérant le fonctionnement d'une agence de location d'appartements.
+
+```schéma relationnel
+APPARTEMENT(#code_appt:String, adresse:String, type:{studio,F1,F2,F3,F4,F5+}, prix_loyer:Real)
+LOCATAIRE(#code_loc:String, nom:String, prenom:String)
+LOCATION(#code_loc=>Locataire, #code_appt=>Appartement)
+PAIEMENT_LOYER(#code_loc=>Locataire, #code_appt=>Appartement, #date_payement:Date,
+prix_paye:Real)
+```
+
+   - Question 1 :
+En SQL afficher tous les paiements effectués par un locataire avec le code X.
+
+  - Question 2 :
+En SQL afficher l'adresse de l'appartement loué par un locataire avec le code X.
+
+  - Question 3 :
+En SQL proposer une requête qui affiche tous les appartements libres.
+
+2. **Employés et salaires**
+
+Soit le schéma relationnel :
+
+```schéma relationnel
+Employe (#Num, Nom, Prenom, Age, Salaire, Fonction=>Fonction, Societe=>Societe)
+Fonction (#Intitule, SalaireMin, SalaireMax, NbHeures)
+Societe (#Nom, Pays, Activite)
+```
+
+   - Question 1 :
+Écrivez une requête SQL permettant de sélectionner les noms de tous les directeurs de France.
+
+   - Question 2 :
+Écrivez une requête SQL permettant d'afficher le salaire de tous les employés en francs (sachant que le
+salaire dans la table est en euros et que un euro vaut 6.55957 franc).
+
+   - Question 3 : 
+Écrivez une requête SQL permettant de vérifier que les salaires de chaque employé correspondent bien à
+ce qui est autorisé par leur fonction.
+
+   - Question 4
+Écrivez une requête SQL permettant le passage aux 35 heures : en modifiant le nombre d'heures travaillées pour chaque fonction (ramené à 35 s'il est supérieur à
+35), et en réajustant les échelles de salaire au pro-rata du nombre d'heures travaillées avant le passage
+aux 35 heures.
+
+</details>

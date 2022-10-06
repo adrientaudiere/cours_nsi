@@ -336,9 +336,14 @@ Lorsqu'une variable est créées à l'intérieur d'une fonction, elle n'existe p
 
 ?> Faire le jeu des [py-rates](https://py-rates.org/index.html)
 
+## Exercices avancées
+
+
 <details class="advanced_level">
 <summary> <strong> Niveau avancé :</strong></summary>
 
-Faire les activités en ligne [À maîtriser](https://e-nsi.gitlab.io/pratique/N1/)
+?> Faire les activités en ligne [À maîtriser](https://e-nsi.gitlab.io/pratique/N1/)
+
+?> Compléter le parcours sur [futurecoder](https://fr.futurecoder.io/course/)
 
 </details>
